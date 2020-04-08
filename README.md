@@ -1,4 +1,5 @@
 # bigNumbers
+(There is a companion-repository for the development of the app software: https://github.com/Palmstroemen/mean2me)
 The aim of this repository is to generate well investigated ordered lists of big numbers.
 
 To achieve this goal, there are various folders in the order how data should trespass the process:
