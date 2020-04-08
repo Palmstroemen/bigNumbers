@@ -14,24 +14,21 @@ The ready_lists should be in TSV format:
 Number | Unit | Year | perYear | Title | Short description | Link_Icon | Link1 (Source) | Link2 (Wikipedia) | Link3 (ourWiki) CR LF
 where | is a Tab-Character to separate columns chr$(9) and CR = chr$(13) and LF = chr$(10).
 
-The first line of the ready_list_file should be built up like:
-BN-V1.0 | ListName | YearOfCreation | LinkToAnIcon CR LF
-
-The second line of the ready_list_file should be empty.
-
-The third line of the ready_list_file should show the headers
-
-The 4th and further lines shall contain the data.
-
+1. The first line of the ready_list_file should be built up like:
+   BN-V1.0 | ListName | YearOfCreation | LinkToAnIcon CR LF
+2. The second line of the ready_list_file should be empty.
+3. The third line of the ready_list_file should show the headers
+4. The 4th and further lines shall contain the data.
 
 There must be one folder per list that contains the icons associated with this list.
 This folder shall have the same name as the list itself.
+It must contain at least one icon with the same name as the list itself. This icon shall be used for the list itself.
 
 Here is an exemple of a well formatted ready_list_file:
 ---Nature2020.tsv------------------------------------------------------
 BN-V1.0 | Nature | 2020 | Nature2020 CR LF
 
 Number | Unit | Year | perYear | Title | Short description | Link_Icon | Link1 (Source) | Link2 (Wikipedia) | Link3 (ourWiki) CR LF
-1.000.000 |   | 2020 | 0       | ...
-1.020.000 |   | 2017 | 1.      | ...
-oredered by ascending Numbers.
+1.000.000 | years | 2020 | 0 | Dinosaurs | lived on earth | Link2niceDinosaurIcon | ...  (bad example not investigated yet ;-)
+1.020.000 |  | 2017 | 1 | ...
+ordered by ascending Numbers.
