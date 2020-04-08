@@ -11,6 +11,7 @@ To achieve this goal, there are various folders in the order how data should tre
 It's not obligatory that data always treaspass all these stages. Sometimes data might directly jump into <ordered_data> i.e.
 
 The ready_lists should be in TSV format:
+
 Number | Unit | Year | perYear | Title | Short description | Link_Icon | Link1 (Source) | Link2 (Wikipedia) | Link3 (ourWiki) CR LF
 where | is a Tab-Character to separate columns chr$(9) and CR = chr$(13) and LF = chr$(10).
 
