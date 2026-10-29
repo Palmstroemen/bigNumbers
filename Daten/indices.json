@@ -1,0 +1,42 @@
+[
+  {
+    "id": "idx_us_cpi",
+    "name": "US Consumer Price Index (CPI-U)",
+    "type": "cpi",
+    "country_code": "US",
+    "base_year": 2024,
+    "source_url": "https://www.bls.gov/cpi/",
+    "source_title": "U.S. Bureau of Labor Statistics",
+    "notes": "Allgemeiner Verbraucherpreisindex fuer historische USD-Werte."
+  },
+  {
+    "id": "idx_eurozone_hicp",
+    "name": "Eurozone HICP",
+    "type": "cpi",
+    "country_code": "EU",
+    "base_year": 2024,
+    "source_url": "https://ec.europa.eu/eurostat/web/hicp",
+    "source_title": "Eurostat HICP",
+    "notes": "Harmonisierter Verbraucherpreisindex fuer historische EUR-Werte."
+  },
+  {
+    "id": "idx_uk_cpi",
+    "name": "UK Consumer Price Index (CPI)",
+    "type": "cpi",
+    "country_code": "GB",
+    "base_year": 2024,
+    "source_url": "https://www.ons.gov.uk/economy/inflationandpriceindices",
+    "source_title": "Office for National Statistics",
+    "notes": "Allgemeiner Verbraucherpreisindex fuer historische GBP-Werte."
+  },
+  {
+    "id": "idx_ch_cpi",
+    "name": "Landesindex der Konsumentenpreise (LIK)",
+    "type": "cpi",
+    "country_code": "CH",
+    "base_year": 2024,
+    "source_url": "https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/landesindex-konsumentenpreise.html",
+    "source_title": "Bundesamt fuer Statistik",
+    "notes": "Allgemeiner Verbraucherpreisindex fuer historische CHF-Werte."
+  }
+]

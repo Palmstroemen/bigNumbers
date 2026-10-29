@@ -1,0 +1,42 @@
+[
+  {
+    "id": "le_001",
+    "list_id": "list_global_core_v1",
+    "entry_id": "entry_chrysler_building_1930",
+    "sort_value": 56000000,
+    "sort_order": 10,
+    "note": "Historischer Geldwert mit Baukostenbezug."
+  },
+  {
+    "id": "le_002",
+    "list_id": "list_global_core_v1",
+    "entry_id": "entry_earth_moon_distance_meters",
+    "sort_value": 384400000,
+    "sort_order": 20,
+    "note": "Anschaulicher globaler Vergleichswert."
+  },
+  {
+    "id": "le_003",
+    "list_id": "list_global_core_v1",
+    "entry_id": "entry_red_blood_cells_per_mm3",
+    "sort_value": 5000000,
+    "sort_order": 5,
+    "note": "Biologischer Vergleichswert fuer kleinere Millionenbetraege."
+  },
+  {
+    "id": "le_004",
+    "list_id": "list_dach_politics_v1",
+    "entry_id": "entry_liechtenstein_health_budget_2023",
+    "sort_value": 720000000,
+    "sort_order": 15,
+    "note": "Regionaler Budgetvergleich."
+  },
+  {
+    "id": "le_005",
+    "list_id": "list_nature_space_v1",
+    "entry_id": "entry_earth_moon_distance_meters",
+    "sort_value": 384400000,
+    "sort_order": 10,
+    "note": "Wissenschaftlicher Vergleich in derselben Groessenordnung."
+  }
+]
