@@ -1,27 +1,63 @@
 # bigNumbers
-(There is a companion-repository for the development of the app software: https://github.com/Palmstroemen/mean2me)
-The aim of this repository is to generate well investigated ordered lists of big numbers.
+(There is a companion-repository for the app software: https://github.com/Palmstroemen/mean2me)
 
-To achieve this goal, there are various folders in the order how data should trespass the process:
-* New_data (These are data you have found somewhere but not processed yet)
-* Scripts (Scripts to process data into ordered lists)
-* Ordered_data (Now data should be already in the ordered form but still may lack information)
-* Reviewed_data (Here data should have their proof like links and all necessary datafields should be filled out.)
-* Ready_lists (Here data are distributed to several ready to use lists.)
+The aim of this repository is to build a well investigated, sourced collection of big numbers.
+It answers the question: *"18 billion – what is that comparable to?"*
 
-It's not obligatory that data always treaspass all these stages. Sometimes data might directly jump into <ordered_data> i.e.
+Each entry is a real-world value (a budget, a price, a population, a distance, ...) with year, unit and source.
+Sorted by value, the entries put any big number from the news into context.
+The companion project mean2me adds the second perspective: *"What does this number mean to me?"*
+(e.g. per citizen, per taxpayer, per household).
 
-The ready_lists should be in TSV format:
+## Folders
 
-Number | Unit | Year | perYear | Title | Short description | Link_Icon | Link1 (Source) | Link2 (Wikipedia) | Link3 (ourWiki) CR LF
-where | is a Tab-Character to separate columns chr$(9) and CR = chr$(13) and LF = chr$(10).
+* `Daten/` – the current dataset (JSON), see below.
+* `Datenbeispiel/` – a small example of the data model, including `mean2me_contexts`. `schema.md` describes all fields.
+* `Altbestand/` – the original material from 2013: `BigNumbers.ods` (first collection of lists) and `Designdokument.odt` (first app design).
 
-1. The first line of the ready_list_file should be built up like:
-   BN-V1.0 | ListName | YearOfCreation | LinkToAnIcon CR LF
-2. The second line of the ready_list_file should be empty.
-3. The third line of the ready_list_file should show the headers
-4. The 4th and further lines shall contain the data.
+## Dataset
 
-There must be one folder per list that contains the icons associated with this list.
-This folder shall have the same name as the list itself.
-It must contain at least one icon with the same name as the list itself. This icon shall be used for the list itself.
+`Daten/` currently holds 145 entries in 6 lists:
+
+| List | Entries |
+| --- | --- |
+| Budget und Steuern | 39 |
+| Ruestung und Grossprojekte | 32 |
+| Wirtschaft und Alltag | 25 |
+| Natur und Weltraum | 17 |
+| Gesundheit | 16 |
+| Energie und Klima | 16 |
+
+The values range from about 10³ to 10¹⁶, with most entries between 10 million and 1 trillion.
+The focus is on Austria, Germany and the EU, complemented by global values.
+
+Files:
+
+* `entries.json` – one record per value: title, `value_original`, `unit`, `year_original`, `country_code`, descriptions, source.
+* `lists.json` – the lists. An entry can belong to several lists.
+* `list_entries.json` – assigns entries to lists, sorted by value.
+* `indices.json` – price indices (CPI, HICP, ...) used to convert historic money values into today's values.
+* `source_quotes.json` – for each researched entry, the literal quote from the source page that contains the number.
+
+Texts are written in German, umlauts as `ae`, `oe`, `ue`, `ss`.
+
+## Status and quality
+
+All entries are `draft`. Nothing has been reviewed by a human yet.
+
+* `confidence_level: 2` – value seen on the source page and backed by a quote in `source_quotes.json`.
+* `confidence_level: 1` – estimate, lower bound, forecast, contradictory sources or old data. These entries carry a note in `list_entries.json`.
+  The 15 entries from the 2013 collection are all at this level.
+
+Workflow for an entry: `draft` → `reviewed` (value, source and description checked by a person) → `published`.
+
+## Rules for new entries
+
+* Every value needs a source that can be opened and actually contains the number.
+* Store the value as it appears in the source, in its base unit (e.g. `5900000000`, not `5,9 Mrd.`). No own conversions.
+* Descriptions may only contain facts that are backed by the source.
+* Mark uncertain values with `confidence_level: 1` and a note.
+
+## License
+
+Not decided yet.
