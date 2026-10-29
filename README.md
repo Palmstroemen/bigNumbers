@@ -1,13 +1,22 @@
 # bigNumbers
-(There is a companion-repository for the app software: https://github.com/Palmstroemen/mean2me)
+The aim of this project is to put big numbers from the news into context. It answers two questions:
 
-The aim of this repository is to build a well investigated, sourced collection of big numbers.
-It answers the question: *"18 billion – what is that comparable to?"*
+1. **Big Numbers:** *"18 billion – what is that comparable to?"*
+   A sorted list of real-world values of similar size (a budget, a price, a population, a distance, ...), each with year, unit and source.
+2. **Mean2Me:** *"What does this number mean to me?"*
+   The same number broken down per citizen, per taxpayer, per household, ...
 
-Each entry is a real-world value (a budget, a price, a population, a distance, ...) with year, unit and source.
-Sorted by value, the entries put any big number from the news into context.
-The companion project mean2me adds the second perspective: *"What does this number mean to me?"*
-(e.g. per citizen, per taxpayer, per household).
+Mean2Me is an integrated feature of this project. The former separate repository https://github.com/Palmstroemen/mean2me is archived.
+
+## Concept
+
+Mobile first. Three views side by side:
+
+| Left | Center | Right |
+| --- | --- | --- |
+| Big Numbers | Number pad / paste field (start view) | Mean2Me |
+
+Enter or paste a number in the center, then swipe sideways: the comparisons are on the left, the personal perspective on the right.
 
 ## Folders
 
