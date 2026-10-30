@@ -81,6 +81,15 @@
     </main>
   </div>
 
+  <dialog class="sheet" id="list-sheet" aria-labelledby="sheet-title">
+    <header class="sheet-head">
+      <h2 id="sheet-title">Listen</h2>
+      <button type="button" id="sheet-close" aria-label="Schließen">✕</button>
+    </header>
+    <p class="sheet-intro">Wähle, welche Listen in die Vergleiche einfließen. Die App führt alle aktiven Listen zusammen.</p>
+    <ul class="sheet-lists" id="sheet-lists"></ul>
+  </dialog>
+
   <div class="toast" id="toast" hidden></div>
   <script type="module" src="app.js"></script>
 </body>

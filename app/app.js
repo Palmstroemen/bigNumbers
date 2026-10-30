@@ -12,7 +12,7 @@ const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(
 const state = {
   calc: new Calculator(),
   data: null,
-  listId: "",            // "" = all lists
+  active: null,          // Set of active list ids; null until the catalog is loaded
   below: STEP,
   above: STEP,
   expanded: null,
@@ -34,25 +34,42 @@ async function loadJson(name) {
 }
 
 async function loadData() {
-  const [entries, lists, listEntries, contexts, rates, indices, indexValues] = await Promise.all(
-    ["entries.json", "lists.json", "list_entries.json", "mean2me_contexts.json", "exchange_rates.json",
-      "indices.json", "index_values.json"].map(loadJson));
-  const byId = new Map(entries.map((e) => [e.id, e]));
-  const listsOf = new Map();
-  const notes = new Map();
-  for (const le of listEntries) {
-    if (!listsOf.has(le.entry_id)) listsOf.set(le.entry_id, new Set());
-    listsOf.get(le.entry_id).add(le.list_id);
-    if (le.note) notes.set(le.entry_id, le.note);
-  }
+  const [catalog, m2m, rates, indices, indexValues] = await Promise.all(
+    ["listen/index.json", "listen/mean2me.json", "exchange_rates.json", "indices.json", "index_values.json"]
+      .map(loadJson));
   const rateOf = new Map(rates.map((r) => [r.currency, r]));
   return {
-    entries, byId, lists, listsOf, notes, contexts, rateOf,
+    lists: catalog.lists,
+    packages: new Map(),   // list id -> loaded list file
+    contexts: m2m.contexts,
+    rateOf,
     convert: makeConverter(rates),
     inflate: makeInflator(indexValues),
     indexOf: new Map(indices.map((i) => [i.id, i])),
     priceYear: Math.max(...indexValues.map((r) => r.year)),
   };
+}
+
+/** Load the files of all active lists that are not loaded yet. */
+async function loadActiveLists() {
+  const { lists, packages } = state.data;
+  await Promise.all(lists
+    .filter((l) => state.active.has(l.id) && !packages.has(l.id))
+    .map(async (l) => packages.set(l.id, await loadJson("listen/" + l.file))));
+}
+
+/** Entries of all active lists, merged; an entry in several lists appears once. */
+function activeEntries() {
+  const seen = new Map();
+  for (const l of state.data.lists) {
+    if (!state.active.has(l.id)) continue;
+    for (const e of state.data.packages.get(l.id)?.entries ?? []) if (!seen.has(e.id)) seen.set(e.id, e);
+  }
+  return [...seen.values()];
+}
+
+function saveActive() {
+  try { localStorage.setItem("bn.lists", JSON.stringify([...state.active])); } catch { /* private mode */ }
 }
 
 // --- Rendering --------------------------------------------------------------------------
@@ -144,7 +161,7 @@ function entryRow(e, v) {
     ? `≈ ${formatShort(cmp)} ${unitLabel(state.unit)}`
     : `${formatShort(e.value_original)} ${unitLabel(e.unit)}`;
   const original = converted ? `${formatShort(e.value_original)} ${unitLabel(e.unit)} · ` : "";
-  const note = state.data.notes.get(e.id);
+  const note = e.note;
   const detail = open ? `
     <div class="bn-detail">
       <div>
@@ -170,10 +187,8 @@ function entryRow(e, v) {
 }
 
 function renderBigNumbers() {
-  const { entries, listsOf } = state.data;
   const v = value();
-  const pool = (state.listId ? entries.filter((e) => listsOf.get(e.id)?.has(state.listId)) : [...entries])
-    .sort((a, b) => compareValue(a) - compareValue(b));
+  const pool = activeEntries().sort((a, b) => compareValue(a) - compareValue(b));
   const w = windowAround(pool, Number.isFinite(v) ? v : 0, state.below, state.above, compareValue);
   const sym = state.unit ? ` ${unitLabel(state.unit)}` : "";
   $("#bn-sub").textContent = state.unit
@@ -193,19 +208,53 @@ function renderBigNumbers() {
 }
 
 function renderListChips() {
-  const chips = [{ id: "", name: "Alle" }, ...state.data.lists];
-  $("#list-chips").innerHTML = chips.map((l) =>
-    `<button data-list="${esc(l.id)}" aria-pressed="${l.id === state.listId}">${esc(l.name)}</button>`).join("");
+  $("#list-chips").innerHTML = state.data.lists.map((l) =>
+    `<button data-list="${esc(l.id)}" aria-pressed="${state.active.has(l.id)}">${esc(l.name)}</button>`).join("") +
+    '<button data-sheet aria-haspopup="dialog">Listen …</button>';
+}
+
+function renderListSheet() {
+  $("#sheet-lists").innerHTML = state.data.lists.map((l) => `
+    <li>
+      <label>
+        <span class="sheet-text">
+          <strong>${esc(l.name)}</strong>
+          <span>${esc(l.description)}</span>
+          <small>${esc(l.count)} Einträge · Version ${esc(l.version)} · ${l.access === "free" ? "kostenlos" : "kostenpflichtig"}</small>
+        </span>
+        <input type="checkbox" data-list="${esc(l.id)}" ${state.active.has(l.id) ? "checked" : ""}>
+      </label>
+    </li>`).join("");
+}
+
+/** Switch a list on or off; at least one list stays active. */
+async function toggleList(id, on) {
+  if (!on && state.active.size === 1 && state.active.has(id)) {
+    toast("Mindestens eine Liste muss aktiv sein");
+    renderListSheet();
+    return;
+  }
+  if (on) state.active.add(id); else state.active.delete(id);
+  saveActive();
+  try {
+    await loadActiveLists();
+  } catch (err) {
+    toast(`Liste konnte nicht geladen werden (${err.message})`);
+  }
+  state.below = state.above = STEP;
+  renderListChips();
+  renderListSheet();
+  renderBigNumbers();
 }
 
 function renderMean2Me() {
   const v = value();
-  const { contexts, byId } = state.data;
+  const { contexts } = state.data;
   const sym = state.unit ? unitLabel(state.unit) : "";
   const items = contexts
     .filter((c) => state.unit || !c.only_currency)
     .map((c) => {
-      const source = c.factor_entry_id ? byId.get(c.factor_entry_id) : null;
+      const source = c.factor_entry ?? null;
       const money = source ? moneyOf(source) : null;
       const factor = money ? money.value : source ? source.value_original : c.factor_value;
       const r = v / factor;
@@ -381,15 +430,20 @@ function toast(msg) {
 
 // --- Lists and Mean2Me controls ---------------------------------------------------------------
 
-$("#list-chips").addEventListener("click", (e) => {
+$("#list-chips").addEventListener("click", async (e) => {
   const b = e.target.closest("button");
   if (!b) return;
-  state.listId = b.dataset.list;
-  state.below = state.above = STEP;
-  renderListChips();
-  renderBigNumbers();
+  if (b.hasAttribute("data-sheet")) { renderListSheet(); $("#list-sheet").showModal(); return; }
+  await toggleList(b.dataset.list, !state.active.has(b.dataset.list));
   $("#bn-mine")?.scrollIntoView({ block: "center" });
 });
+
+$("#sheet-lists").addEventListener("change", (e) => {
+  if (e.target.dataset.list) toggleList(e.target.dataset.list, e.target.checked);
+});
+$("#sheet-close").addEventListener("click", () => $("#list-sheet").close());
+// a tap on the backdrop closes the sheet
+$("#list-sheet").addEventListener("click", (e) => { if (e.target === e.currentTarget) e.currentTarget.close(); });
 
 $("#bn-list").addEventListener("click", (e) => {
   const li = e.target.closest("li[data-id]");
@@ -447,6 +501,14 @@ async function start() {
 
   try {
     state.data = await loadData();
+    const known = new Set(state.data.lists.map((l) => l.id));
+    let saved = null;
+    try { saved = JSON.parse(localStorage.getItem("bn.lists")); } catch { /* none or private mode */ }
+    const active = Array.isArray(saved) ? saved.filter((id) => known.has(id)) : [];
+    // default: all free lists
+    state.active = new Set(active.length ? active
+      : state.data.lists.filter((l) => l.access === "free").map((l) => l.id));
+    await loadActiveLists();
     renderListChips();
     render();
   } catch (err) {

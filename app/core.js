@@ -50,7 +50,8 @@ export function formatFull(value) {
 const UNIT_LABELS = {
   EUR: "€", USD: "$", GBP: "£", CHF: "CHF", people: "Personen", items: "Stück", cells: "Zellen",
   m: "m", m2: "m²", m3: "m³", t: "t", kWh: "kWh", W: "W", barrel: "Barrel", years: "Jahre",
-  seats: "Plätze", subscriptions: "Abos",
+  seats: "Plätze", subscriptions: "Abos", kg: "kg", "overnight stays": "Nächtigungen", species: "Arten",
+  animals: "Tiere",
 };
 export const unitLabel = (unit) => UNIT_LABELS[unit] ?? unit;
 

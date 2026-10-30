@@ -1,0 +1,70 @@
+{
+  "lists": [
+    {
+      "id": "list_military_projects_v1",
+      "name": "Rüstung und Großprojekte",
+      "version": "v1",
+      "description": "Verteidigungsbudgets, Waffensysteme und Militärbetrieb sowie Kosten großer Bau- und Infrastrukturprojekte.",
+      "icon": "shield",
+      "country_code": null,
+      "count": 53,
+      "file": "list_military_projects_v1.json",
+      "access": "free"
+    },
+    {
+      "id": "list_budget_steuern_v1",
+      "name": "Budget und Steuern",
+      "version": "v1",
+      "description": "Staatshaushalte, Steuereinnahmen, Soziales, Bildung und Infrastruktur in Österreich, Deutschland und der EU.",
+      "icon": "government",
+      "country_code": null,
+      "count": 84,
+      "file": "list_budget_steuern_v1.json",
+      "access": "free"
+    },
+    {
+      "id": "list_gesundheit_v1",
+      "name": "Gesundheit",
+      "version": "v1",
+      "description": "Gesundheitsausgaben und Kennzahlen des Gesundheitswesens.",
+      "icon": "health",
+      "country_code": null,
+      "count": 38,
+      "file": "list_gesundheit_v1.json",
+      "access": "free"
+    },
+    {
+      "id": "list_energie_klima_v1",
+      "name": "Energie und Klima",
+      "version": "v1",
+      "description": "Energieverbrauch, Emissionen, Kraftwerke und Klimafinanzierung.",
+      "icon": "energy",
+      "country_code": null,
+      "count": 37,
+      "file": "list_energie_klima_v1.json",
+      "access": "free"
+    },
+    {
+      "id": "list_wirtschaft_alltag_v1",
+      "name": "Wirtschaft und Alltag",
+      "version": "v1",
+      "description": "Unternehmen, Vermögen, Produkte, Bevölkerung und Alltagswerte.",
+      "icon": "chart",
+      "country_code": null,
+      "count": 73,
+      "file": "list_wirtschaft_alltag_v1.json",
+      "access": "free"
+    },
+    {
+      "id": "list_nature_space_v1",
+      "name": "Natur und Weltraum",
+      "version": "v1",
+      "description": "Vergleichswerte aus Natur, Astronomie und Biologie.",
+      "icon": "moon",
+      "country_code": null,
+      "count": 40,
+      "file": "list_nature_space_v1.json",
+      "access": "free"
+    }
+  ]
+}
