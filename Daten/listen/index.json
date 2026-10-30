@@ -83,6 +83,20 @@
       "count": 40,
       "file": "list_nature_space_v1.json",
       "access": "free"
+    },
+    {
+      "id": "list_laender_v1",
+      "name": "Länder",
+      "version": "v1",
+      "description": "Grunddaten der EU-Länder und der Schweiz: Einwohner, Haushalte, Einkommen, Wirtschaftsleistung und Staatsausgaben, automatisch aus Eurostat.",
+      "icon": "globe",
+      "color": "#0e7490",
+      "color_dark": "#67e8f9",
+      "image": null,
+      "country_code": "EU",
+      "count": 151,
+      "file": "list_laender_v1.json",
+      "access": "free"
     }
   ]
 }

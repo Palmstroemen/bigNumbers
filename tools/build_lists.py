@@ -61,7 +61,8 @@ def build_mean2me(entries):
     """Countries with their facts, and the Mean2Me contexts expanded per country.
 
     A context with country_code "*" is a template: it becomes one context per country
-    that has the fact named in `basis`; {country}, {country_in}, {country_genitive} and {capital}
+    that has the fact named in `basis` (and none named in `unless`); {country}, {country_in},
+    {country_genitive}, {capital} and {budget_name}
     in the title are filled in. GLOBAL contexts are taken as they are.
     """
     countries, contexts = [], []
@@ -70,9 +71,9 @@ def build_mean2me(entries):
         facts = {k: entry_for_app(entries[v]) for k, v in c["facts"].items() if v}
         countries.append({**{k: v for k, v in c.items() if k != "facts"}, "facts": facts})
         for t in templates:
-            if t["country_code"] != "*" or t["basis"] not in facts:
+            if t["country_code"] != "*" or t["basis"] not in facts or any(u in facts for u in t.get("unless", [])):
                 continue
-            title = (t["title"].replace("{country_genitive}", c["name_genitive"]).replace("{country_in}", c["name_in"])
+            title = (t["title"].replace("{country_genitive}", c["name_genitive"]).replace("{country_in}", c["name_in"]).replace("{budget_name}", c.get("budget_name", "Bundeshaushalt"))
                      .replace("{country}", c["name"]).replace("{capital}", c["capital"]))
             contexts.append({**t, "id": f"{t['id']}_{c['code'].lower()}", "country_code": c["code"],
                              "title": title, "factor_entry": facts[t["basis"]]})

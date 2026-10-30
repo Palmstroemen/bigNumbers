@@ -50,6 +50,20 @@
     "notes": "Wie viele Monatslöhne zum Medianlohn entspricht das?"
   },
   {
+    "id": "m2m_median_net_income_year",
+    "country_code": "*",
+    "basis": "median_net_income_year",
+    "kind": "divide",
+    "title": "In Jahren Nettoeinkommen (Median {country_genitive})",
+    "result_unit": "Jahre",
+    "only_currency": true,
+    "unless": [
+      "median_income_year",
+      "median_wage_month"
+    ],
+    "notes": "Medianes Nettoäquivalenzeinkommen laut Eurostat; nur, wenn es keinen Bruttowert aus nationaler Quelle gibt."
+  },
+  {
     "id": "m2m_gdp_share",
     "country_code": "*",
     "basis": "gdp",
@@ -64,10 +78,20 @@
     "country_code": "*",
     "basis": "federal_budget",
     "kind": "share",
-    "title": "Anteil am Bundeshaushalt {country_genitive}",
+    "title": "Anteil am {budget_name} {country_genitive}",
     "result_unit": "%",
     "only_currency": true,
-    "notes": "Anteil an den Ausgaben des Bundes in einem Jahr."
+    "notes": "Anteil an den Ausgaben des Bundes oder Zentralstaats in einem Jahr."
+  },
+  {
+    "id": "m2m_government_expenditure_share",
+    "country_code": "*",
+    "basis": "government_expenditure",
+    "kind": "share",
+    "title": "Anteil an allen Staatsausgaben {country_genitive}",
+    "result_unit": "%",
+    "only_currency": true,
+    "notes": "Anteil an den Ausgaben des Gesamtstaats (Bund, Länder, Gemeinden, Sozialversicherung) laut Eurostat."
   },
   {
     "id": "m2m_world_population",

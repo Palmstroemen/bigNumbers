@@ -14,6 +14,7 @@ const ICONS = {
   energy: "M13 2L4 14h7l-1 8 9-12h-7z",
   chart: "M3 21h18M6 21v-7M11 21V9M16 21v-5M20 21V4",
   moon: "M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z",
+  globe: "M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20",
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -340,7 +341,8 @@ function renderUnitChips() {
 }
 
 function renderCountrySheet() {
-  $("#country-list").innerHTML = state.data.countries.map((c) => `
+  const sorted = [...state.data.countries].sort((a, b) => a.name.localeCompare(b.name, "de"));
+  $("#country-list").innerHTML = sorted.map((c) => `
     <li>
       <button type="button" class="country-choice" data-country="${esc(c.code)}" aria-pressed="${c.code === state.country}">
         <span class="flag" aria-hidden="true">${esc(c.flag)}</span>
@@ -586,7 +588,11 @@ for (const chips of document.querySelectorAll(".unit-chips")) {
   });
 }
 
-$("#country-btn").addEventListener("click", () => { renderCountrySheet(); $("#country-sheet").showModal(); });
+$("#country-btn").addEventListener("click", () => {
+  renderCountrySheet();
+  $("#country-sheet").showModal();
+  $('#country-list [aria-pressed="true"]')?.scrollIntoView({ block: "center" });
+});
 $("#country-list").addEventListener("click", (e) => {
   const b = e.target.closest("[data-country]");
   if (!b) return;

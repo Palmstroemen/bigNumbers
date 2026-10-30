@@ -3,7 +3,7 @@
     "id": "fx_ecb_usd_2025",
     "base_currency": "EUR",
     "currency": "USD",
-    "rate": 1.1300,
+    "rate": 1.13,
     "year": 2025,
     "rate_type": "annual_average",
     "source_url": "https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.USD.EUR.SP00.A",
@@ -25,11 +25,77 @@
     "id": "fx_ecb_chf_2025",
     "base_currency": "EUR",
     "currency": "CHF",
-    "rate": 0.9370,
+    "rate": 0.937,
     "year": 2025,
     "rate_type": "annual_average",
     "source_url": "https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.CHF.EUR.SP00.A",
     "source_title": "EZB Data Portal: Euro-Referenzkurs Schweizer Franken, Jahresdurchschnitt",
     "notes": "1 EUR = 0,9370 CHF. Jahresdurchschnitt 2025 der EZB-Referenzkurse (0,93703), auf 4 Stellen gerundet."
+  },
+  {
+    "id": "fx_ecb_huf_2025",
+    "base_currency": "EUR",
+    "currency": "HUF",
+    "rate": 397.7675,
+    "year": 2025,
+    "rate_type": "annual_average",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.HUF.EUR.SP00.A",
+    "source_title": "EZB Data Portal: Euro-Referenzkurs Ungarischer Forint, Jahresdurchschnitt",
+    "notes": "1 EUR = 397,7675 HUF. Jahresdurchschnitt 2025 der EZB-Referenzkurse (397,76749), auf 4 Stellen gerundet."
+  },
+  {
+    "id": "fx_ecb_czk_2025",
+    "base_currency": "EUR",
+    "currency": "CZK",
+    "rate": 24.6879,
+    "year": 2025,
+    "rate_type": "annual_average",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.CZK.EUR.SP00.A",
+    "source_title": "EZB Data Portal: Euro-Referenzkurs Tschechische Krone, Jahresdurchschnitt",
+    "notes": "1 EUR = 24,6879 CZK. Jahresdurchschnitt 2025 der EZB-Referenzkurse (24,68794), auf 4 Stellen gerundet."
+  },
+  {
+    "id": "fx_ecb_dkk_2025",
+    "base_currency": "EUR",
+    "currency": "DKK",
+    "rate": 7.4634,
+    "year": 2025,
+    "rate_type": "annual_average",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.DKK.EUR.SP00.A",
+    "source_title": "EZB Data Portal: Euro-Referenzkurs DKK, Jahresdurchschnitt",
+    "notes": "1 EUR = 7,4634 DKK. Jahresdurchschnitt 2025 der EZB-Referenzkurse."
+  },
+  {
+    "id": "fx_ecb_pln_2025",
+    "base_currency": "EUR",
+    "currency": "PLN",
+    "rate": 4.2397,
+    "year": 2025,
+    "rate_type": "annual_average",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.PLN.EUR.SP00.A",
+    "source_title": "EZB Data Portal: Euro-Referenzkurs PLN, Jahresdurchschnitt",
+    "notes": "1 EUR = 4,2397 PLN. Jahresdurchschnitt 2025 der EZB-Referenzkurse."
+  },
+  {
+    "id": "fx_ecb_ron_2025",
+    "base_currency": "EUR",
+    "currency": "RON",
+    "rate": 5.0424,
+    "year": 2025,
+    "rate_type": "annual_average",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.RON.EUR.SP00.A",
+    "source_title": "EZB Data Portal: Euro-Referenzkurs RON, Jahresdurchschnitt",
+    "notes": "1 EUR = 5,0424 RON. Jahresdurchschnitt 2025 der EZB-Referenzkurse."
+  },
+  {
+    "id": "fx_ecb_sek_2025",
+    "base_currency": "EUR",
+    "currency": "SEK",
+    "rate": 11.0663,
+    "year": 2025,
+    "rate_type": "annual_average",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.SEK.EUR.SP00.A",
+    "source_title": "EZB Data Portal: Euro-Referenzkurs SEK, Jahresdurchschnitt",
+    "notes": "1 EUR = 11,0663 SEK. Jahresdurchschnitt 2025 der EZB-Referenzkurse."
   }
 ]

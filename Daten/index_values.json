@@ -1859,5 +1859,1050 @@
     "index_id": "idx_ch_cpi",
     "year": 2025,
     "value": 105.672
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1972,
+    "value": 2.236
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1973,
+    "value": 2.312
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1974,
+    "value": 2.353
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1975,
+    "value": 2.444
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1976,
+    "value": 2.571
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1977,
+    "value": 2.672
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1978,
+    "value": 2.797
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1979,
+    "value": 3.048
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1980,
+    "value": 3.331
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1981,
+    "value": 3.487
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1982,
+    "value": 3.725
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1983,
+    "value": 3.996
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1984,
+    "value": 4.334
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1985,
+    "value": 4.635
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1986,
+    "value": 4.881
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1987,
+    "value": 5.304
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1988,
+    "value": 6.138
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1989,
+    "value": 7.191
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1990,
+    "value": 9.231
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1991,
+    "value": 12.444
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1992,
+    "value": 15.388
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1993,
+    "value": 18.845
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1994,
+    "value": 22.401
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1995,
+    "value": 28.741
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1996,
+    "value": 35.486
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1997,
+    "value": 41.984
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1998,
+    "value": 47.919
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 1999,
+    "value": 52.713
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2000,
+    "value": 57.879
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2001,
+    "value": 63.168
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2002,
+    "value": 66.472
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2003,
+    "value": 69.57
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2004,
+    "value": 74.262
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2005,
+    "value": 76.906
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2006,
+    "value": 79.922
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2007,
+    "value": 86.282
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2008,
+    "value": 91.496
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2009,
+    "value": 95.35
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2010,
+    "value": 100
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2011,
+    "value": 103.909
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2012,
+    "value": 109.795
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2013,
+    "value": 111.691
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2014,
+    "value": 111.437
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2015,
+    "value": 111.368
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2016,
+    "value": 111.801
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2017,
+    "value": 114.425
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2018,
+    "value": 117.688
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2019,
+    "value": 121.617
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2020,
+    "value": 125.663
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2021,
+    "value": 132.085
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2022,
+    "value": 151.381
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2023,
+    "value": 177.305
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2024,
+    "value": 183.871
+  },
+  {
+    "index_id": "idx_hu_cpi",
+    "year": 2025,
+    "value": 191.984
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 1991,
+    "value": 34.888
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 1992,
+    "value": 38.756
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 1993,
+    "value": 46.822
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 1994,
+    "value": 51.523
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 1995,
+    "value": 56.155
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 1996,
+    "value": 61.073
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 1997,
+    "value": 66.323
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 1998,
+    "value": 73.419
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 1999,
+    "value": 74.987
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2000,
+    "value": 77.818
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2001,
+    "value": 81.446
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2002,
+    "value": 82.996
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2003,
+    "value": 83.094
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2004,
+    "value": 85.388
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2005,
+    "value": 86.974
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2006,
+    "value": 89.178
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2007,
+    "value": 91.722
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2008,
+    "value": 97.554
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2009,
+    "value": 98.549
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2010,
+    "value": 100
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2011,
+    "value": 101.917
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2012,
+    "value": 105.268
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2013,
+    "value": 106.782
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2014,
+    "value": 107.149
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2015,
+    "value": 107.481
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2016,
+    "value": 108.215
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2017,
+    "value": 110.867
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2018,
+    "value": 113.25
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2019,
+    "value": 116.476
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2020,
+    "value": 120.158
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2021,
+    "value": 124.772
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2022,
+    "value": 143.612
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2023,
+    "value": 158.923
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2024,
+    "value": 162.793
+  },
+  {
+    "index_id": "idx_cz_cpi",
+    "year": 2025,
+    "value": 166.798
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 1996,
+    "value": 71.6
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 1997,
+    "value": 73.0
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 1998,
+    "value": 73.9
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 1999,
+    "value": 75.4
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2000,
+    "value": 77.5
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2001,
+    "value": 79.3
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2002,
+    "value": 81.2
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2003,
+    "value": 82.7
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2004,
+    "value": 83.5
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2005,
+    "value": 85.0
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2006,
+    "value": 86.5
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2007,
+    "value": 88.0
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2008,
+    "value": 91.2
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2009,
+    "value": 92.1
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2010,
+    "value": 94.1
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2011,
+    "value": 96.6
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2012,
+    "value": 98.9
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2013,
+    "value": 99.4
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2014,
+    "value": 99.8
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2015,
+    "value": 100.0
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2016,
+    "value": 100.0
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2017,
+    "value": 101.1
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2018,
+    "value": 101.8
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2019,
+    "value": 102.5
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2020,
+    "value": 102.9
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2021,
+    "value": 104.9
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2022,
+    "value": 113.8
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2023,
+    "value": 117.6
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2024,
+    "value": 119.1
+  },
+  {
+    "index_id": "idx_hicp_dk",
+    "year": 2025,
+    "value": 121.3
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 1996,
+    "value": 46.2
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 1997,
+    "value": 53.1
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 1998,
+    "value": 59.4
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 1999,
+    "value": 63.6
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2000,
+    "value": 70.0
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2001,
+    "value": 73.8
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2002,
+    "value": 75.2
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2003,
+    "value": 75.7
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2004,
+    "value": 78.5
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2005,
+    "value": 80.2
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2006,
+    "value": 81.2
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2007,
+    "value": 83.3
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2008,
+    "value": 86.8
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2009,
+    "value": 90.3
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2010,
+    "value": 92.7
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2011,
+    "value": 96.3
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2012,
+    "value": 99.8
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2013,
+    "value": 100.6
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2014,
+    "value": 100.7
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2015,
+    "value": 100.0
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2016,
+    "value": 99.8
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2017,
+    "value": 101.4
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2018,
+    "value": 102.6
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2019,
+    "value": 104.8
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2020,
+    "value": 108.6
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2021,
+    "value": 114.3
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2022,
+    "value": 129.4
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2023,
+    "value": 143.5
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2024,
+    "value": 148.7
+  },
+  {
+    "index_id": "idx_hicp_pl",
+    "year": 2025,
+    "value": 153.7
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 1996,
+    "value": 3.25
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 1997,
+    "value": 8.29
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 1998,
+    "value": 13.19
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 1999,
+    "value": 19.23
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2000,
+    "value": 28.01
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2001,
+    "value": 37.66
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2002,
+    "value": 46.14
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2003,
+    "value": 53.18
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2004,
+    "value": 59.51
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2005,
+    "value": 64.9
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2006,
+    "value": 69.19
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2007,
+    "value": 72.58
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2008,
+    "value": 78.33
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2009,
+    "value": 82.7
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2010,
+    "value": 87.73
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2011,
+    "value": 92.84
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2012,
+    "value": 95.98
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2013,
+    "value": 99.04
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2014,
+    "value": 100.41
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2015,
+    "value": 100.0
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2016,
+    "value": 98.93
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2017,
+    "value": 100.0
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2018,
+    "value": 104.08
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2019,
+    "value": 108.15
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2020,
+    "value": 110.67
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2021,
+    "value": 115.21
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2022,
+    "value": 129.06
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2023,
+    "value": 141.64
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2024,
+    "value": 149.91
+  },
+  {
+    "index_id": "idx_hicp_ro",
+    "year": 2025,
+    "value": 160.06
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 1996,
+    "value": 76.16
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 1997,
+    "value": 77.54
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 1998,
+    "value": 78.32
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 1999,
+    "value": 78.76
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2000,
+    "value": 79.78
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2001,
+    "value": 81.92
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2002,
+    "value": 83.51
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2003,
+    "value": 85.44
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2004,
+    "value": 86.32
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2005,
+    "value": 87.03
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2006,
+    "value": 88.34
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2007,
+    "value": 89.82
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2008,
+    "value": 92.83
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2009,
+    "value": 94.63
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2010,
+    "value": 96.43
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2011,
+    "value": 97.75
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2012,
+    "value": 98.66
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2013,
+    "value": 99.1
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2014,
+    "value": 99.3
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2015,
+    "value": 100.0
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2016,
+    "value": 101.14
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2017,
+    "value": 103.02
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2018,
+    "value": 105.12
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2019,
+    "value": 106.93
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2020,
+    "value": 107.63
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2021,
+    "value": 110.49
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2022,
+    "value": 119.39
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2023,
+    "value": 126.44
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2024,
+    "value": 128.98
+  },
+  {
+    "index_id": "idx_hicp_se",
+    "year": 2025,
+    "value": 132.35
   }
 ]

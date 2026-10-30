@@ -2472,5 +2472,1087 @@
     "entry_id": "entry_privathaushalte_schweiz_2025",
     "sort_value": 4105458,
     "sort_order": 270
+  },
+  {
+    "id": "le_333",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_be",
+    "sort_value": 11955308,
+    "sort_order": 830,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_334",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_bg",
+    "sort_value": 6423207,
+    "sort_order": 750
+  },
+  {
+    "id": "le_335",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_dk",
+    "sort_value": 6025603,
+    "sort_order": 740
+  },
+  {
+    "id": "le_336",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_ee",
+    "sort_value": 1360745,
+    "sort_order": 480
+  },
+  {
+    "id": "le_337",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_fi",
+    "sort_value": 5652881,
+    "sort_order": 730
+  },
+  {
+    "id": "le_338",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_fr",
+    "sort_value": 69112309,
+    "sort_order": 930,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_339",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_gr",
+    "sort_value": 10366586,
+    "sort_order": 790,
+    "note": "Eurostat kennzeichnet den Wert mit „ep“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_340",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_ie",
+    "sort_value": 5510565,
+    "sort_order": 720
+  },
+  {
+    "id": "le_341",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_it",
+    "sort_value": 58942828,
+    "sort_order": 920,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_342",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_hr",
+    "sort_value": 3876002,
+    "sort_order": 640
+  },
+  {
+    "id": "le_343",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_lv",
+    "sort_value": 1845096,
+    "sort_order": 540
+  },
+  {
+    "id": "le_344",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_lt",
+    "sort_value": 2887592,
+    "sort_order": 600
+  },
+  {
+    "id": "le_345",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_lu",
+    "sort_value": 690959,
+    "sort_order": 400
+  },
+  {
+    "id": "le_346",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_mt",
+    "sort_value": 588254,
+    "sort_order": 360
+  },
+  {
+    "id": "le_347",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_nl",
+    "sort_value": 18130208,
+    "sort_order": 850
+  },
+  {
+    "id": "le_348",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_pl",
+    "sort_value": 36332765,
+    "sort_order": 900
+  },
+  {
+    "id": "le_349",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_pt",
+    "sort_value": 11424031,
+    "sort_order": 820
+  },
+  {
+    "id": "le_350",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_ro",
+    "sort_value": 19041322,
+    "sort_order": 860,
+    "note": "Eurostat kennzeichnet den Wert mit „e“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_351",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_se",
+    "sort_value": 10605529,
+    "sort_order": 800
+  },
+  {
+    "id": "le_352",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_sk",
+    "sort_value": 5409407,
+    "sort_order": 710
+  },
+  {
+    "id": "le_353",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_si",
+    "sort_value": 2135107,
+    "sort_order": 560
+  },
+  {
+    "id": "le_354",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_es",
+    "sort_value": 49590099,
+    "sort_order": 910,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_355",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_cz",
+    "sort_value": 10915839,
+    "sort_order": 810
+  },
+  {
+    "id": "le_356",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_hu",
+    "sort_value": 9488428,
+    "sort_order": 780
+  },
+  {
+    "id": "le_357",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_population_cy",
+    "sort_value": 996571,
+    "sort_order": 460,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_358",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_be",
+    "sort_value": 5243300,
+    "sort_order": 700
+  },
+  {
+    "id": "le_359",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_bg",
+    "sort_value": 2850000,
+    "sort_order": 590
+  },
+  {
+    "id": "le_360",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_dk",
+    "sort_value": 3146300,
+    "sort_order": 620
+  },
+  {
+    "id": "le_361",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_ee",
+    "sort_value": 742000,
+    "sort_order": 420
+  },
+  {
+    "id": "le_362",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_fi",
+    "sort_value": 2978800,
+    "sort_order": 610
+  },
+  {
+    "id": "le_363",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_fr",
+    "sort_value": 32382000,
+    "sort_order": 890
+  },
+  {
+    "id": "le_364",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_gr",
+    "sort_value": 4055400,
+    "sort_order": 660
+  },
+  {
+    "id": "le_365",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_ie",
+    "sort_value": 2328300,
+    "sort_order": 570
+  },
+  {
+    "id": "le_366",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_it",
+    "sort_value": 26443900,
+    "sort_order": 880
+  },
+  {
+    "id": "le_367",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_hr",
+    "sort_value": 1466500,
+    "sort_order": 500
+  },
+  {
+    "id": "le_368",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_lv",
+    "sort_value": 888000,
+    "sort_order": 450
+  },
+  {
+    "id": "le_369",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_lt",
+    "sort_value": 1760200,
+    "sort_order": 530
+  },
+  {
+    "id": "le_370",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_lu",
+    "sort_value": 288200,
+    "sort_order": 290
+  },
+  {
+    "id": "le_371",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_mt",
+    "sort_value": 242800,
+    "sort_order": 270
+  },
+  {
+    "id": "le_372",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_nl",
+    "sort_value": 8658800,
+    "sort_order": 770
+  },
+  {
+    "id": "le_373",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_pl",
+    "sort_value": 15521300,
+    "sort_order": 840
+  },
+  {
+    "id": "le_374",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_pt",
+    "sort_value": 4562100,
+    "sort_order": 670
+  },
+  {
+    "id": "le_375",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_ro",
+    "sort_value": 7594400,
+    "sort_order": 760
+  },
+  {
+    "id": "le_376",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_se",
+    "sort_value": 4837300,
+    "sort_order": 690
+  },
+  {
+    "id": "le_377",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_sk",
+    "sort_value": 1726600,
+    "sort_order": 520
+  },
+  {
+    "id": "le_378",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_si",
+    "sort_value": 868900,
+    "sort_order": 440
+  },
+  {
+    "id": "le_379",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_es",
+    "sort_value": 19736500,
+    "sort_order": 870
+  },
+  {
+    "id": "le_380",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_cz",
+    "sort_value": 4579000,
+    "sort_order": 680
+  },
+  {
+    "id": "le_381",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_hu",
+    "sort_value": 4008300,
+    "sort_order": 650
+  },
+  {
+    "id": "le_382",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_households_cy",
+    "sort_value": 390100,
+    "sort_order": 330
+  },
+  {
+    "id": "le_383",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_be",
+    "sort_value": 31299,
+    "sort_order": 170
+  },
+  {
+    "id": "le_384",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_bg",
+    "sort_value": 17333,
+    "sort_order": 80
+  },
+  {
+    "id": "le_385",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_de",
+    "sort_value": 28891,
+    "sort_order": 150
+  },
+  {
+    "id": "le_386",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_dk",
+    "sort_value": 269953,
+    "sort_order": 280
+  },
+  {
+    "id": "le_387",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_ee",
+    "sort_value": 17146,
+    "sort_order": 70
+  },
+  {
+    "id": "le_388",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_fi",
+    "sort_value": 29740,
+    "sort_order": 160
+  },
+  {
+    "id": "le_389",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_fr",
+    "sort_value": 26459,
+    "sort_order": 140
+  },
+  {
+    "id": "le_390",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_gr",
+    "sort_value": 11700,
+    "sort_order": 10
+  },
+  {
+    "id": "le_391",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_ie",
+    "sort_value": 35138,
+    "sort_order": 190
+  },
+  {
+    "id": "le_392",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_it",
+    "sort_value": 22062,
+    "sort_order": 120
+  },
+  {
+    "id": "le_393",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_hr",
+    "sort_value": 15057,
+    "sort_order": 60
+  },
+  {
+    "id": "le_394",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_lv",
+    "sort_value": 13983,
+    "sort_order": 40
+  },
+  {
+    "id": "le_395",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_lt",
+    "sort_value": 13982,
+    "sort_order": 30,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_396",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_lu",
+    "sort_value": 50046,
+    "sort_order": 230,
+    "note": "Eurostat kennzeichnet den Wert mit „b“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_397",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_mt",
+    "sort_value": 22034,
+    "sort_order": 110
+  },
+  {
+    "id": "le_398",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_nl",
+    "sort_value": 34466,
+    "sort_order": 180
+  },
+  {
+    "id": "le_399",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_pl",
+    "sort_value": 61976,
+    "sort_order": 250
+  },
+  {
+    "id": "le_400",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_pt",
+    "sort_value": 14465,
+    "sort_order": 50
+  },
+  {
+    "id": "le_401",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_ro",
+    "sort_value": 40725,
+    "sort_order": 210
+  },
+  {
+    "id": "le_402",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_se",
+    "sort_value": 326671,
+    "sort_order": 310
+  },
+  {
+    "id": "le_403",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_ch",
+    "sort_value": 50462,
+    "sort_order": 240
+  },
+  {
+    "id": "le_404",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_sk",
+    "sort_value": 12990,
+    "sort_order": 20,
+    "note": "Eurostat kennzeichnet den Wert mit „b“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_405",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_si",
+    "sort_value": 20416,
+    "sort_order": 100
+  },
+  {
+    "id": "le_406",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_es",
+    "sort_value": 20367,
+    "sort_order": 90
+  },
+  {
+    "id": "le_407",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_cz",
+    "sort_value": 381800,
+    "sort_order": 320
+  },
+  {
+    "id": "le_408",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_hu",
+    "sort_value": 3475409,
+    "sort_order": 630
+  },
+  {
+    "id": "le_409",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_cy",
+    "sort_value": 22066,
+    "sort_order": 130
+  },
+  {
+    "id": "le_410",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_median_net_income_year_at",
+    "sort_value": 36546,
+    "sort_order": 200
+  },
+  {
+    "id": "le_411",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_be",
+    "sort_value": 640852600000,
+    "sort_order": 1280,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_412",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_bg",
+    "sort_value": 116548500000,
+    "sort_order": 1140
+  },
+  {
+    "id": "le_413",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_dk",
+    "sort_value": 3118537700000,
+    "sort_order": 1420
+  },
+  {
+    "id": "le_414",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_ee",
+    "sort_value": 41874800000,
+    "sort_order": 1040
+  },
+  {
+    "id": "le_415",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_fi",
+    "sort_value": 281783000000,
+    "sort_order": 1210
+  },
+  {
+    "id": "le_416",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_fr",
+    "sort_value": 2991055900000,
+    "sort_order": 1410,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_417",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_gr",
+    "sort_value": 249725600000,
+    "sort_order": 1200,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_418",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_ie",
+    "sort_value": 602440900000,
+    "sort_order": 1270
+  },
+  {
+    "id": "le_419",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_it",
+    "sort_value": 2265002500000,
+    "sort_order": 1380
+  },
+  {
+    "id": "le_420",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_hr",
+    "sort_value": 94026100000,
+    "sort_order": 1130,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_421",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_lv",
+    "sort_value": 43648500000,
+    "sort_order": 1050
+  },
+  {
+    "id": "le_422",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_lt",
+    "sort_value": 85112200000,
+    "sort_order": 1110
+  },
+  {
+    "id": "le_423",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_lu",
+    "sort_value": 91342300000,
+    "sort_order": 1120,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_424",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_mt",
+    "sort_value": 24664000000,
+    "sort_order": 1000
+  },
+  {
+    "id": "le_425",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_nl",
+    "sort_value": 1170579000000,
+    "sort_order": 1320
+  },
+  {
+    "id": "le_426",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_pl",
+    "sort_value": 3915394000000,
+    "sort_order": 1450
+  },
+  {
+    "id": "le_427",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_pt",
+    "sort_value": 308538200000,
+    "sort_order": 1240,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_428",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_ro",
+    "sort_value": 1929930000000,
+    "sort_order": 1360,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_429",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_se",
+    "sort_value": 6644105000000,
+    "sort_order": 1460
+  },
+  {
+    "id": "le_430",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_sk",
+    "sort_value": 138735100000,
+    "sort_order": 1180
+  },
+  {
+    "id": "le_431",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_si",
+    "sort_value": 71170700000,
+    "sort_order": 1100
+  },
+  {
+    "id": "le_432",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_es",
+    "sort_value": 1690012000000,
+    "sort_order": 1340,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_433",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_cz",
+    "sort_value": 8573124000000,
+    "sort_order": 1480
+  },
+  {
+    "id": "le_434",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_hu",
+    "sort_value": 87307647000000,
+    "sort_order": 1510,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_435",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_gdp_cy",
+    "sort_value": 38314100000,
+    "sort_order": 1030,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_436",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_be",
+    "sort_value": 348825500000,
+    "sort_order": 1250,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_437",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_bg",
+    "sort_value": 49012000000,
+    "sort_order": 1080
+  },
+  {
+    "id": "le_438",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_de",
+    "sort_value": 2270044000000,
+    "sort_order": 1390
+  },
+  {
+    "id": "le_439",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_dk",
+    "sort_value": 1472839000000,
+    "sort_order": 1330
+  },
+  {
+    "id": "le_440",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_ee",
+    "sort_value": 19102400000,
+    "sort_order": 980
+  },
+  {
+    "id": "le_441",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_fi",
+    "sort_value": 161966000000,
+    "sort_order": 1190
+  },
+  {
+    "id": "le_442",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_fr",
+    "sort_value": 1714111700000,
+    "sort_order": 1350
+  },
+  {
+    "id": "le_443",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_gr",
+    "sort_value": 119347000000,
+    "sort_order": 1150
+  },
+  {
+    "id": "le_444",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_ie",
+    "sort_value": 134135900000,
+    "sort_order": 1170
+  },
+  {
+    "id": "le_445",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_it",
+    "sort_value": 1157239000000,
+    "sort_order": 1310
+  },
+  {
+    "id": "le_446",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_hr",
+    "sort_value": 46478200000,
+    "sort_order": 1070
+  },
+  {
+    "id": "le_447",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_lv",
+    "sort_value": 19778700000,
+    "sort_order": 990
+  },
+  {
+    "id": "le_448",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_lt",
+    "sort_value": 34993100000,
+    "sort_order": 1020
+  },
+  {
+    "id": "le_449",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_lu",
+    "sort_value": 44440700000,
+    "sort_order": 1060
+  },
+  {
+    "id": "le_450",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_mt",
+    "sort_value": 9152000000,
+    "sort_order": 960
+  },
+  {
+    "id": "le_451",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_nl",
+    "sort_value": 529090000000,
+    "sort_order": 1260,
+    "note": "Eurostat kennzeichnet den Wert mit „p“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_452",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_pl",
+    "sort_value": 1991233000000,
+    "sort_order": 1370
+  },
+  {
+    "id": "le_453",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_pt",
+    "sort_value": 130648400000,
+    "sort_order": 1160
+  },
+  {
+    "id": "le_454",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_ro",
+    "sort_value": 837413300000,
+    "sort_order": 1300
+  },
+  {
+    "id": "le_455",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_se",
+    "sort_value": 3276791000000,
+    "sort_order": 1430
+  },
+  {
+    "id": "le_456",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_ch",
+    "sort_value": 291322300000,
+    "sort_order": 1230
+  },
+  {
+    "id": "le_457",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_sk",
+    "sort_value": 65688600000,
+    "sort_order": 1090
+  },
+  {
+    "id": "le_458",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_si",
+    "sort_value": 34782700000,
+    "sort_order": 1010
+  },
+  {
+    "id": "le_459",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_es",
+    "sort_value": 766296000000,
+    "sort_order": 1290
+  },
+  {
+    "id": "le_460",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_cz",
+    "sort_value": 3712091000000,
+    "sort_order": 1440
+  },
+  {
+    "id": "le_461",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_hu",
+    "sort_value": 41592419000000,
+    "sort_order": 1490
+  },
+  {
+    "id": "le_462",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_cy",
+    "sort_value": 14535000000,
+    "sort_order": 970
+  },
+  {
+    "id": "le_463",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_government_expenditure_at",
+    "sort_value": 282677200000,
+    "sort_order": 1220
+  },
+  {
+    "id": "le_465",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_capital_population_bg",
+    "sort_value": 1295931,
+    "sort_order": 470
+  },
+  {
+    "id": "le_466",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_capital_population_ee",
+    "sort_value": 456518,
+    "sort_order": 340
+  },
+  {
+    "id": "le_467",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_capital_population_fi",
+    "sort_value": 674500,
+    "sort_order": 390
+  },
+  {
+    "id": "le_470",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_capital_population_it",
+    "sort_value": 2747290,
+    "sort_order": 580
+  },
+  {
+    "id": "le_471",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_capital_population_hr",
+    "sort_value": 760020,
+    "sort_order": 430
+  },
+  {
+    "id": "le_472",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_capital_population_lv",
+    "sort_value": 595053,
+    "sort_order": 370
+  },
+  {
+    "id": "le_473",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_capital_population_lt",
+    "sort_value": 607667,
+    "sort_order": 380
+  },
+  {
+    "id": "le_477",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_capital_population_pl",
+    "sort_value": 1863845,
+    "sort_order": 550,
+    "note": "Eurostat kennzeichnet den Wert mit „d“ (z. B. vorläufig oder geschätzt)."
+  },
+  {
+    "id": "le_482",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_estat_capital_population_si",
+    "sort_value": 297575,
+    "sort_order": 300
+  },
+  {
+    "id": "le_485",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_einwohner_prag_2025",
+    "sort_value": 1407084,
+    "sort_order": 490,
+    "note": "Vorläufiger Wert laut ČSÚ (předběžná statistická bilance)."
+  },
+  {
+    "id": "le_486",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_medianlohn_tschechien_monat_2025",
+    "sort_value": 45523,
+    "sort_order": 220,
+    "note": "Quartalswert (Q4 2025), modellbasiert; der ČSÚ veröffentlicht seit 2026 vorübergehend keine Medianlöhne, daher ist dies der letzte verfügbare Wert."
+  },
+  {
+    "id": "le_487",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_staatshaushalt_tschechien_2026",
+    "sort_value": 2427837146587,
+    "sort_order": 1400
+  },
+  {
+    "id": "le_488",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_einwohner_budapest_2026",
+    "sort_value": 1675777,
+    "sort_order": 510
+  },
+  {
+    "id": "le_489",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_medianlohn_ungarn_monat_2025",
+    "sort_value": 565238,
+    "sort_order": 350
+  },
+  {
+    "id": "le_490",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_staatshaushalt_ungarn_2024",
+    "sort_value": 42039530500000,
+    "sort_order": 1500
+  },
+  {
+    "id": "le_491",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_einwohner_usa_2025",
+    "sort_value": 341784857,
+    "sort_order": 950
+  },
+  {
+    "id": "le_492",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_einwohner_washington_dc_2025",
+    "sort_value": 693645,
+    "sort_order": 410
+  },
+  {
+    "id": "le_493",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_haushalte_usa_2025",
+    "sort_value": 134790000,
+    "sort_order": 940
+  },
+  {
+    "id": "le_494",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_medianeinkommen_usa_jahr_2025",
+    "sort_value": 66620,
+    "sort_order": 260
+  },
+  {
+    "id": "le_495",
+    "list_id": "list_laender_v1",
+    "entry_id": "entry_bundeshaushalt_usa_2026",
+    "sort_value": 7395800000000,
+    "sort_order": 1470
   }
 ]

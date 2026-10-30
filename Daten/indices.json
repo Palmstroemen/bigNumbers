@@ -41,5 +41,65 @@
     "source_title": "Weltbank: Consumer price index (2010 = 100), Schweiz",
     "notes": "Allgemeiner Verbraucherpreisindex für historische CHF-Werte. Jahreswerte 1960–2025, Basis 2010 = 100, Weltbank-Indikator FP.CPI.TOTL (Quelle: IWF).",
     "estimate_note": "1945–1959 grob geschätzt: exponentiell zurückgerechnet mit der mittleren Teuerung 1960–1970 (3,3 % pro Jahr)."
+  },
+  {
+    "id": "idx_hu_cpi",
+    "name": "Ungarn: Verbraucherpreisindex",
+    "type": "cpi",
+    "country_code": "HU",
+    "base_year": 2010,
+    "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=HU",
+    "source_title": "Weltbank: Consumer price index (2010 = 100), Ungarn",
+    "notes": "Allgemeiner Verbraucherpreisindex für historische HUF-Werte. Jahreswerte 1972–2025, Basis 2010 = 100, Weltbank-Indikator FP.CPI.TOTL (Quelle: IWF). Für frühere Jahre gibt es keine Schätzung (Währungsreformen)."
+  },
+  {
+    "id": "idx_cz_cpi",
+    "name": "Tschechien: Verbraucherpreisindex",
+    "type": "cpi",
+    "country_code": "CZ",
+    "base_year": 2010,
+    "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=CZ",
+    "source_title": "Weltbank: Consumer price index (2010 = 100), Tschechien",
+    "notes": "Allgemeiner Verbraucherpreisindex für historische CZK-Werte. Jahreswerte 1991–2025, Basis 2010 = 100, Weltbank-Indikator FP.CPI.TOTL (Quelle: IWF). Für frühere Jahre gibt es keine Schätzung (Währungsreformen)."
+  },
+  {
+    "id": "idx_hicp_dk",
+    "name": "HICP Dänemark",
+    "type": "cpi",
+    "country_code": "DK",
+    "base_year": 2015,
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table",
+    "source_title": "Eurostat: HICP – annual data (prc_hicp_aind), Dänemark",
+    "notes": "Harmonisierter Verbraucherpreisindex für historische DKK-Werte, Jahresdurchschnitte 1996–2025, Basis 2015 = 100."
+  },
+  {
+    "id": "idx_hicp_pl",
+    "name": "HICP Polen",
+    "type": "cpi",
+    "country_code": "PL",
+    "base_year": 2015,
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table",
+    "source_title": "Eurostat: HICP – annual data (prc_hicp_aind), Polen",
+    "notes": "Harmonisierter Verbraucherpreisindex für historische PLN-Werte, Jahresdurchschnitte 1996–2025, Basis 2015 = 100."
+  },
+  {
+    "id": "idx_hicp_ro",
+    "name": "HICP Rumänien",
+    "type": "cpi",
+    "country_code": "RO",
+    "base_year": 2015,
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table",
+    "source_title": "Eurostat: HICP – annual data (prc_hicp_aind), Rumänien",
+    "notes": "Harmonisierter Verbraucherpreisindex für historische RON-Werte, Jahresdurchschnitte 1996–2025, Basis 2015 = 100."
+  },
+  {
+    "id": "idx_hicp_se",
+    "name": "HICP Schweden",
+    "type": "cpi",
+    "country_code": "SE",
+    "base_year": 2015,
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table",
+    "source_title": "Eurostat: HICP – annual data (prc_hicp_aind), Schweden",
+    "notes": "Harmonisierter Verbraucherpreisindex für historische SEK-Werte, Jahresdurchschnitte 1996–2025, Basis 2015 = 100."
   }
 ]

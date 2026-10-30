@@ -1,32 +1,68 @@
 [
   {
-    "code": "AT",
-    "name": "Österreich",
-    "name_genitive": "Österreichs",
-    "name_in": "in Österreich",
-    "flag": "🇦🇹",
+    "code": "BE",
+    "eurostat_geo": "BE",
+    "name": "Belgien",
+    "name_in": "in Belgien",
+    "name_genitive": "Belgiens",
+    "flag": "🇧🇪",
     "currency": "EUR",
-    "capital": "Wien",
+    "capital": "Brüssel",
     "locales": [
-      "de-AT"
+      "nl-BE",
+      "fr-BE",
+      "de-BE"
     ],
     "timezones": [
-      "Europe/Vienna"
+      "Europe/Brussels"
     ],
+    "budget_name": "Bundeshaushalt",
     "facts": {
-      "population": "entry_einwohner_oesterreich_2026",
-      "capital_population": "entry_einwohner_wien_2026",
-      "households": "entry_privathaushalte_oesterreich_2025",
-      "median_income_year": "entry_median_bruttojahreseinkommen_oesterreich_2024",
-      "gdp": "entry_bip_oesterreich_2024",
-      "federal_budget": "entry_at_bundeshaushalt_auszahlungen_2024"
+      "population": "entry_estat_population_be",
+      "capital_population": null,
+      "households": "entry_estat_households_be",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_be",
+      "gdp": "entry_estat_gdp_be",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_be"
+    }
+  },
+  {
+    "code": "BG",
+    "eurostat_geo": "BG",
+    "name": "Bulgarien",
+    "name_in": "in Bulgarien",
+    "name_genitive": "Bulgariens",
+    "flag": "🇧🇬",
+    "currency": "EUR",
+    "capital": "Sofia",
+    "locales": [
+      "bg-BG"
+    ],
+    "timezones": [
+      "Europe/Sofia"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_bg",
+      "capital_population": "entry_estat_capital_population_bg",
+      "households": "entry_estat_households_bg",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_bg",
+      "gdp": "entry_estat_gdp_bg",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_bg"
     }
   },
   {
     "code": "DE",
+    "eurostat_geo": "DE",
     "name": "Deutschland",
-    "name_genitive": "Deutschlands",
     "name_in": "in Deutschland",
+    "name_genitive": "Deutschlands",
     "flag": "🇩🇪",
     "currency": "EUR",
     "capital": "Berlin",
@@ -37,20 +73,509 @@
       "Europe/Berlin",
       "Europe/Busingen"
     ],
+    "budget_name": "Bundeshaushalt",
     "facts": {
       "population": "entry_einwohner_deutschland_2026",
       "capital_population": "entry_einwohner_berlin_2025",
       "households": "entry_privathaushalte_deutschland_2025",
       "median_income_year": "entry_median_bruttojahresverdienst_deutschland_2025",
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_de",
       "gdp": "entry_bip_deutschland_2024",
-      "federal_budget": "entry_de_bundeshaushalt_2025"
+      "federal_budget": "entry_de_bundeshaushalt_2025",
+      "government_expenditure": "entry_estat_government_expenditure_de"
+    }
+  },
+  {
+    "code": "DK",
+    "eurostat_geo": "DK",
+    "name": "Dänemark",
+    "name_in": "in Dänemark",
+    "name_genitive": "Dänemarks",
+    "flag": "🇩🇰",
+    "currency": "DKK",
+    "capital": "Kopenhagen",
+    "locales": [
+      "da-DK"
+    ],
+    "timezones": [
+      "Europe/Copenhagen"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_dk",
+      "capital_population": null,
+      "households": "entry_estat_households_dk",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_dk",
+      "gdp": "entry_estat_gdp_dk",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_dk"
+    }
+  },
+  {
+    "code": "EE",
+    "eurostat_geo": "EE",
+    "name": "Estland",
+    "name_in": "in Estland",
+    "name_genitive": "Estlands",
+    "flag": "🇪🇪",
+    "currency": "EUR",
+    "capital": "Tallinn",
+    "locales": [
+      "et-EE"
+    ],
+    "timezones": [
+      "Europe/Tallinn"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_ee",
+      "capital_population": "entry_estat_capital_population_ee",
+      "households": "entry_estat_households_ee",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_ee",
+      "gdp": "entry_estat_gdp_ee",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_ee"
+    }
+  },
+  {
+    "code": "FI",
+    "eurostat_geo": "FI",
+    "name": "Finnland",
+    "name_in": "in Finnland",
+    "name_genitive": "Finnlands",
+    "flag": "🇫🇮",
+    "currency": "EUR",
+    "capital": "Helsinki",
+    "locales": [
+      "fi-FI",
+      "sv-FI"
+    ],
+    "timezones": [
+      "Europe/Helsinki",
+      "Europe/Mariehamn"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_fi",
+      "capital_population": "entry_estat_capital_population_fi",
+      "households": "entry_estat_households_fi",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_fi",
+      "gdp": "entry_estat_gdp_fi",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_fi"
+    }
+  },
+  {
+    "code": "FR",
+    "eurostat_geo": "FR",
+    "name": "Frankreich",
+    "name_in": "in Frankreich",
+    "name_genitive": "Frankreichs",
+    "flag": "🇫🇷",
+    "currency": "EUR",
+    "capital": "Paris",
+    "locales": [
+      "fr-FR"
+    ],
+    "timezones": [
+      "Europe/Paris"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_fr",
+      "capital_population": null,
+      "households": "entry_estat_households_fr",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_fr",
+      "gdp": "entry_estat_gdp_fr",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_fr"
+    }
+  },
+  {
+    "code": "GR",
+    "eurostat_geo": "EL",
+    "name": "Griechenland",
+    "name_in": "in Griechenland",
+    "name_genitive": "Griechenlands",
+    "flag": "🇬🇷",
+    "currency": "EUR",
+    "capital": "Athen",
+    "locales": [
+      "el-GR"
+    ],
+    "timezones": [
+      "Europe/Athens"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_gr",
+      "capital_population": null,
+      "households": "entry_estat_households_gr",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_gr",
+      "gdp": "entry_estat_gdp_gr",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_gr"
+    }
+  },
+  {
+    "code": "IE",
+    "eurostat_geo": "IE",
+    "name": "Irland",
+    "name_in": "in Irland",
+    "name_genitive": "Irlands",
+    "flag": "🇮🇪",
+    "currency": "EUR",
+    "capital": "Dublin",
+    "locales": [
+      "en-IE",
+      "ga-IE"
+    ],
+    "timezones": [
+      "Europe/Dublin"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_ie",
+      "capital_population": null,
+      "households": "entry_estat_households_ie",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_ie",
+      "gdp": "entry_estat_gdp_ie",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_ie"
+    }
+  },
+  {
+    "code": "IT",
+    "eurostat_geo": "IT",
+    "name": "Italien",
+    "name_in": "in Italien",
+    "name_genitive": "Italiens",
+    "flag": "🇮🇹",
+    "currency": "EUR",
+    "capital": "Rom",
+    "locales": [
+      "it-IT"
+    ],
+    "timezones": [
+      "Europe/Rome"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_it",
+      "capital_population": "entry_estat_capital_population_it",
+      "households": "entry_estat_households_it",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_it",
+      "gdp": "entry_estat_gdp_it",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_it"
+    }
+  },
+  {
+    "code": "HR",
+    "eurostat_geo": "HR",
+    "name": "Kroatien",
+    "name_in": "in Kroatien",
+    "name_genitive": "Kroatiens",
+    "flag": "🇭🇷",
+    "currency": "EUR",
+    "capital": "Zagreb",
+    "locales": [
+      "hr-HR"
+    ],
+    "timezones": [
+      "Europe/Zagreb"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_hr",
+      "capital_population": "entry_estat_capital_population_hr",
+      "households": "entry_estat_households_hr",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_hr",
+      "gdp": "entry_estat_gdp_hr",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_hr"
+    }
+  },
+  {
+    "code": "LV",
+    "eurostat_geo": "LV",
+    "name": "Lettland",
+    "name_in": "in Lettland",
+    "name_genitive": "Lettlands",
+    "flag": "🇱🇻",
+    "currency": "EUR",
+    "capital": "Riga",
+    "locales": [
+      "lv-LV"
+    ],
+    "timezones": [
+      "Europe/Riga"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_lv",
+      "capital_population": "entry_estat_capital_population_lv",
+      "households": "entry_estat_households_lv",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_lv",
+      "gdp": "entry_estat_gdp_lv",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_lv"
+    }
+  },
+  {
+    "code": "LT",
+    "eurostat_geo": "LT",
+    "name": "Litauen",
+    "name_in": "in Litauen",
+    "name_genitive": "Litauens",
+    "flag": "🇱🇹",
+    "currency": "EUR",
+    "capital": "Vilnius",
+    "locales": [
+      "lt-LT"
+    ],
+    "timezones": [
+      "Europe/Vilnius"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_lt",
+      "capital_population": "entry_estat_capital_population_lt",
+      "households": "entry_estat_households_lt",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_lt",
+      "gdp": "entry_estat_gdp_lt",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_lt"
+    }
+  },
+  {
+    "code": "LU",
+    "eurostat_geo": "LU",
+    "name": "Luxemburg",
+    "name_in": "in Luxemburg",
+    "name_genitive": "Luxemburgs",
+    "flag": "🇱🇺",
+    "currency": "EUR",
+    "capital": "Luxemburg",
+    "locales": [
+      "lb-LU",
+      "fr-LU",
+      "de-LU"
+    ],
+    "timezones": [
+      "Europe/Luxembourg"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_lu",
+      "capital_population": null,
+      "households": "entry_estat_households_lu",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_lu",
+      "gdp": "entry_estat_gdp_lu",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_lu"
+    }
+  },
+  {
+    "code": "MT",
+    "eurostat_geo": "MT",
+    "name": "Malta",
+    "name_in": "in Malta",
+    "name_genitive": "Maltas",
+    "flag": "🇲🇹",
+    "currency": "EUR",
+    "capital": "Valletta",
+    "locales": [
+      "mt-MT",
+      "en-MT"
+    ],
+    "timezones": [
+      "Europe/Malta"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_mt",
+      "capital_population": null,
+      "households": "entry_estat_households_mt",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_mt",
+      "gdp": "entry_estat_gdp_mt",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_mt"
+    }
+  },
+  {
+    "code": "NL",
+    "eurostat_geo": "NL",
+    "name": "Niederlande",
+    "name_in": "in den Niederlanden",
+    "name_genitive": "der Niederlande",
+    "flag": "🇳🇱",
+    "currency": "EUR",
+    "capital": "Amsterdam",
+    "locales": [
+      "nl-NL"
+    ],
+    "timezones": [
+      "Europe/Amsterdam"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_nl",
+      "capital_population": null,
+      "households": "entry_estat_households_nl",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_nl",
+      "gdp": "entry_estat_gdp_nl",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_nl"
+    }
+  },
+  {
+    "code": "PL",
+    "eurostat_geo": "PL",
+    "name": "Polen",
+    "name_in": "in Polen",
+    "name_genitive": "Polens",
+    "flag": "🇵🇱",
+    "currency": "PLN",
+    "capital": "Warschau",
+    "locales": [
+      "pl-PL"
+    ],
+    "timezones": [
+      "Europe/Warsaw"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_pl",
+      "capital_population": "entry_estat_capital_population_pl",
+      "households": "entry_estat_households_pl",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_pl",
+      "gdp": "entry_estat_gdp_pl",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_pl"
+    }
+  },
+  {
+    "code": "PT",
+    "eurostat_geo": "PT",
+    "name": "Portugal",
+    "name_in": "in Portugal",
+    "name_genitive": "Portugals",
+    "flag": "🇵🇹",
+    "currency": "EUR",
+    "capital": "Lissabon",
+    "locales": [
+      "pt-PT"
+    ],
+    "timezones": [
+      "Europe/Lisbon",
+      "Atlantic/Azores",
+      "Atlantic/Madeira"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_pt",
+      "capital_population": null,
+      "households": "entry_estat_households_pt",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_pt",
+      "gdp": "entry_estat_gdp_pt",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_pt"
+    }
+  },
+  {
+    "code": "RO",
+    "eurostat_geo": "RO",
+    "name": "Rumänien",
+    "name_in": "in Rumänien",
+    "name_genitive": "Rumäniens",
+    "flag": "🇷🇴",
+    "currency": "RON",
+    "capital": "Bukarest",
+    "locales": [
+      "ro-RO"
+    ],
+    "timezones": [
+      "Europe/Bucharest"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_ro",
+      "capital_population": null,
+      "households": "entry_estat_households_ro",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_ro",
+      "gdp": "entry_estat_gdp_ro",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_ro"
+    }
+  },
+  {
+    "code": "SE",
+    "eurostat_geo": "SE",
+    "name": "Schweden",
+    "name_in": "in Schweden",
+    "name_genitive": "Schwedens",
+    "flag": "🇸🇪",
+    "currency": "SEK",
+    "capital": "Stockholm",
+    "locales": [
+      "sv-SE"
+    ],
+    "timezones": [
+      "Europe/Stockholm"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_se",
+      "capital_population": null,
+      "households": "entry_estat_households_se",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_se",
+      "gdp": "entry_estat_gdp_se",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_se"
     }
   },
   {
     "code": "CH",
+    "eurostat_geo": "CH",
     "name": "Schweiz",
-    "name_genitive": "der Schweiz",
     "name_in": "in der Schweiz",
+    "name_genitive": "der Schweiz",
     "flag": "🇨🇭",
     "currency": "CHF",
     "capital": "Bern",
@@ -63,13 +588,259 @@
     "timezones": [
       "Europe/Zurich"
     ],
+    "budget_name": "Bundeshaushalt",
     "facts": {
       "population": "entry_einwohner_schweiz_2025",
       "capital_population": "entry_einwohner_bern_2026",
       "households": "entry_privathaushalte_schweiz_2025",
+      "median_income_year": null,
       "median_wage_month": "entry_medianlohn_schweiz_monat_2024",
+      "median_net_income_year": "entry_estat_median_net_income_year_ch",
       "gdp": "entry_bip_schweiz_2024",
-      "federal_budget": "entry_ausgaben_bund_schweiz_2025"
+      "federal_budget": "entry_ausgaben_bund_schweiz_2025",
+      "government_expenditure": "entry_estat_government_expenditure_ch"
+    }
+  },
+  {
+    "code": "SK",
+    "eurostat_geo": "SK",
+    "name": "Slowakei",
+    "name_in": "in der Slowakei",
+    "name_genitive": "der Slowakei",
+    "flag": "🇸🇰",
+    "currency": "EUR",
+    "capital": "Bratislava",
+    "locales": [
+      "sk-SK"
+    ],
+    "timezones": [
+      "Europe/Bratislava"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_sk",
+      "capital_population": null,
+      "households": "entry_estat_households_sk",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_sk",
+      "gdp": "entry_estat_gdp_sk",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_sk"
+    }
+  },
+  {
+    "code": "SI",
+    "eurostat_geo": "SI",
+    "name": "Slowenien",
+    "name_in": "in Slowenien",
+    "name_genitive": "Sloweniens",
+    "flag": "🇸🇮",
+    "currency": "EUR",
+    "capital": "Ljubljana",
+    "locales": [
+      "sl-SI"
+    ],
+    "timezones": [
+      "Europe/Ljubljana"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_si",
+      "capital_population": "entry_estat_capital_population_si",
+      "households": "entry_estat_households_si",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_si",
+      "gdp": "entry_estat_gdp_si",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_si"
+    }
+  },
+  {
+    "code": "ES",
+    "eurostat_geo": "ES",
+    "name": "Spanien",
+    "name_in": "in Spanien",
+    "name_genitive": "Spaniens",
+    "flag": "🇪🇸",
+    "currency": "EUR",
+    "capital": "Madrid",
+    "locales": [
+      "es-ES",
+      "ca-ES",
+      "eu-ES",
+      "gl-ES"
+    ],
+    "timezones": [
+      "Europe/Madrid",
+      "Atlantic/Canary",
+      "Africa/Ceuta"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_es",
+      "capital_population": null,
+      "households": "entry_estat_households_es",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_es",
+      "gdp": "entry_estat_gdp_es",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_es"
+    }
+  },
+  {
+    "code": "CZ",
+    "eurostat_geo": "CZ",
+    "name": "Tschechien",
+    "name_in": "in Tschechien",
+    "name_genitive": "Tschechiens",
+    "flag": "🇨🇿",
+    "currency": "CZK",
+    "capital": "Prag",
+    "locales": [
+      "cs-CZ"
+    ],
+    "timezones": [
+      "Europe/Prague"
+    ],
+    "budget_name": "Staatshaushalt",
+    "facts": {
+      "population": "entry_estat_population_cz",
+      "capital_population": "entry_einwohner_prag_2025",
+      "households": "entry_estat_households_cz",
+      "median_income_year": null,
+      "median_wage_month": "entry_medianlohn_tschechien_monat_2025",
+      "median_net_income_year": "entry_estat_median_net_income_year_cz",
+      "gdp": "entry_estat_gdp_cz",
+      "federal_budget": "entry_staatshaushalt_tschechien_2026",
+      "government_expenditure": "entry_estat_government_expenditure_cz"
+    }
+  },
+  {
+    "code": "US",
+    "eurostat_geo": null,
+    "name": "USA",
+    "name_in": "in den USA",
+    "name_genitive": "der USA",
+    "flag": "🇺🇸",
+    "currency": "USD",
+    "capital": "Washington, D.C.",
+    "locales": [
+      "en-US",
+      "es-US"
+    ],
+    "timezones": [
+      "America/New_York",
+      "America/Detroit",
+      "America/Indiana/Indianapolis",
+      "America/Chicago",
+      "America/Denver",
+      "America/Boise",
+      "America/Phoenix",
+      "America/Los_Angeles",
+      "America/Anchorage",
+      "Pacific/Honolulu"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_einwohner_usa_2025",
+      "capital_population": "entry_einwohner_washington_dc_2025",
+      "households": "entry_haushalte_usa_2025",
+      "median_income_year": "entry_medianeinkommen_usa_jahr_2025",
+      "median_wage_month": null,
+      "median_net_income_year": null,
+      "gdp": "entry_bip_usa_2024",
+      "federal_budget": "entry_bundeshaushalt_usa_2026",
+      "government_expenditure": null
+    }
+  },
+  {
+    "code": "HU",
+    "eurostat_geo": "HU",
+    "name": "Ungarn",
+    "name_in": "in Ungarn",
+    "name_genitive": "Ungarns",
+    "flag": "🇭🇺",
+    "currency": "HUF",
+    "capital": "Budapest",
+    "locales": [
+      "hu-HU"
+    ],
+    "timezones": [
+      "Europe/Budapest"
+    ],
+    "budget_name": "Staatshaushalt",
+    "facts": {
+      "population": "entry_estat_population_hu",
+      "capital_population": "entry_einwohner_budapest_2026",
+      "households": "entry_estat_households_hu",
+      "median_income_year": null,
+      "median_wage_month": "entry_medianlohn_ungarn_monat_2025",
+      "median_net_income_year": "entry_estat_median_net_income_year_hu",
+      "gdp": "entry_estat_gdp_hu",
+      "federal_budget": "entry_staatshaushalt_ungarn_2024",
+      "government_expenditure": "entry_estat_government_expenditure_hu"
+    }
+  },
+  {
+    "code": "CY",
+    "eurostat_geo": "CY",
+    "name": "Zypern",
+    "name_in": "in Zypern",
+    "name_genitive": "Zyperns",
+    "flag": "🇨🇾",
+    "currency": "EUR",
+    "capital": "Nikosia",
+    "locales": [
+      "el-CY",
+      "tr-CY"
+    ],
+    "timezones": [
+      "Asia/Nicosia",
+      "Asia/Famagusta",
+      "Europe/Nicosia"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_estat_population_cy",
+      "capital_population": null,
+      "households": "entry_estat_households_cy",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_cy",
+      "gdp": "entry_estat_gdp_cy",
+      "federal_budget": null,
+      "government_expenditure": "entry_estat_government_expenditure_cy"
+    }
+  },
+  {
+    "code": "AT",
+    "eurostat_geo": "AT",
+    "name": "Österreich",
+    "name_in": "in Österreich",
+    "name_genitive": "Österreichs",
+    "flag": "🇦🇹",
+    "currency": "EUR",
+    "capital": "Wien",
+    "locales": [
+      "de-AT"
+    ],
+    "timezones": [
+      "Europe/Vienna"
+    ],
+    "budget_name": "Bundeshaushalt",
+    "facts": {
+      "population": "entry_einwohner_oesterreich_2026",
+      "capital_population": "entry_einwohner_wien_2026",
+      "households": "entry_privathaushalte_oesterreich_2025",
+      "median_income_year": "entry_median_bruttojahreseinkommen_oesterreich_2024",
+      "median_wage_month": null,
+      "median_net_income_year": "entry_estat_median_net_income_year_at",
+      "gdp": "entry_bip_oesterreich_2024",
+      "federal_budget": "entry_at_bundeshaushalt_auszahlungen_2024",
+      "government_expenditure": "entry_estat_government_expenditure_at"
     }
   }
 ]
