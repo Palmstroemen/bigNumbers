@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Means2Me im Artikel</title>
+  <link rel="icon" href="../app/favicon.svg" type="image/svg+xml">
+  <style>
+    body { margin: 0; background: #fbfaf7; color: #1d1d1f; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .about { background: #16213a; color: #e8ebf2; padding: 18px 16px; }
+    .about > div { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.5; }
+    .about h1 { margin: 0; font-size: 18px; }
+    .about p { margin: 0; }
+    .about details { font-size: 14px; }
+    .about summary { cursor: pointer; color: #b9c7ff; }
+    .about pre { margin: 8px 0 0; padding: 12px; background: #0d1426; border-radius: 8px; overflow-x: auto; font-size: 12.5px; line-height: 1.45; white-space: pre; }
+    .masthead { border-bottom: 1px solid #ddd8cc; padding: 14px 16px; }
+    .masthead > div { max-width: 720px; margin: 0 auto; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+    .masthead strong { font-family: Georgia, "Times New Roman", serif; font-size: 28px; }
+    .masthead span { font-size: 13px; color: #5f6880; }
+    article { max-width: 720px; margin: 0 auto; padding: 28px 16px 64px; font-family: Georgia, "Times New Roman", serif; }
+    .kicker { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; color: #8a5a00; margin: 0 0 8px; }
+    article h2 { margin: 0 0 14px; font-size: clamp(26px, 6vw, 36px); line-height: 1.2; }
+    .lead { font-size: 20px; line-height: 1.55; margin: 0 0 18px; color: #333; }
+    article p { font-size: 19px; line-height: 1.65; margin: 0 0 18px; }
+    .byline { font-family: system-ui, sans-serif; font-size: 13px; color: #5f6880; margin: 0 0 22px; }
+  </style>
+</head>
+<body>
+  <section class="about">
+    <div>
+      <h1>Testseite: Means2Me in einem Zeitungsartikel</h1>
+      <p>Die markierten Beträge haben ein kleines Zeichen. Mit der Maus darüberfahren oder antippen: Es erscheint die Einordnung, die die Redaktion ausgewählt hat. Die Werte stehen fest im Artikel, beim Lesen gibt es keine Anfrage an einen fremden Server.</p>
+      <details>
+        <summary>So sieht der Einbau aus</summary>
+<pre>&lt;span data-means2me='{"v":1,"n":38000000,"unit":"EUR","country":"AT",
+  "label":"38 Mio. €","asOf":"2026-10-30","items":[
+  {"text":"9,09 €","label":"Pro Haushalt in Österreich"},
+  {"text":"104.110 €","label":"Pro Tag, über ein Jahr verteilt"}]}'&gt;38 Mio. Euro&lt;/span&gt;
+
+&lt;script src="means2me.js" defer&gt;&lt;/script&gt;</pre>
+      </details>
+    </div>
+  </section>
+
+  <header class="masthead"><div><strong>[ZEITUNG]</strong><span>Beispielartikel, Text frei erfunden</span></div></header>
+
+  <article>
+    <p class="kicker">Verkehr</p>
+    <h2>Bund beschließt Förderpaket für Radwege</h2>
+    <p class="lead">Neue Verbindungen zwischen Bezirkshauptstädten sollen bis 2030 fertig sein. Gemeinden müssen einen Teil selbst tragen.</p>
+    <p class="byline">Von [Name] · 30. Oktober 2026</p>
+    <p>Die Bundesregierung hat am Dienstag ein Förderpaket von <span data-means2me='{"v":1,"n":38000000,"unit":"EUR","country":"AT","label":"38 Mio. €","items":[{"text":"9,09 €","label":"Pro Haushalt in Österreich"},{"text":"104.110 €","label":"Pro Tag, über ein Jahr verteilt"}],"asOf":"2026-10-30"}'>38 Mio. Euro</span> beschlossen. Damit sollen bis 2030 rund 120 Kilometer neue Radwege entstehen, vor allem dort, wo Pendlerinnen und Pendler bisher auf Landstraßen ausweichen müssen.</p>
+    <p>Gemeinden, die einen Radweg bauen, bekommen bis zu 60 Prozent der Kosten ersetzt. Den Rest müssen sie selbst aufbringen oder beim Land beantragen. Kleinere Gemeinden kritisieren, dass ihnen dafür oft das Personal für Planung und Ausschreibung fehlt.</p>
+    <p>Im Vergleich zum Ausbau der Bahn ist das Paket klein: Allein heuer fließen <span data-means2me='{"v":1,"n":1200000000,"unit":"EUR","country":"AT","label":"1,2 Mrd. €","items":[{"text":"130 €","label":"Pro Einwohner in Österreich"},{"text":"0,974 %","label":"Anteil am Bundeshaushalt Österreichs"}],"asOf":"2026-10-30"}'>1,2 Mrd. Euro</span> in neue Strecken und Bahnhöfe. Das Ministerium verweist darauf, dass Radwege deutlich günstiger pro Kilometer seien und schneller fertig würden.</p>
+    <p>Die ersten Projekte sollen im Frühjahr ausgeschrieben werden.</p>
+  </article>
+
+  <script src="means2me.js" defer></script>
+</body>
+</html>

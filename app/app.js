@@ -537,6 +537,12 @@ async function start() {
     bn = await openBigNumbers({ bases: DATA_BASES });
     state.country = guessCountry();
     state.unit = savedUnit ?? country().currency;
+    // a link from an article or a QR code may name the country and unit (not saved as the user's choice)
+    if (bn.countries.some((c) => c.code === params.get("c"))) {
+      state.country = params.get("c");
+      state.unit = country().currency;
+    }
+    if (params.has("u") && (params.get("u") === "" || bn.convert.isCurrency(params.get("u")))) state.unit = params.get("u");
     const known = new Set(bn.lists.map((l) => l.id));
     let saved = null;
     try { saved = JSON.parse(localStorage.getItem("bn.lists")); } catch { /* none or private mode */ }

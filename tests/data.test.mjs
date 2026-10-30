@@ -74,5 +74,12 @@ await t("ohne Einheit fallen reine Geld-Bezugsgrößen weg", () => {
   assert.ok(!items.some((m) => m.id.startsWith("m2m_gdp_share")));
 });
 
+await t("Snapshot für einen Artikel: Auswahl in Reihenfolge, Datenstand", () => {
+  const s = bn.snapshot(38e6, { country: "AT", unit: "EUR", pick: ["m2m_per_day", "m2m_households_at"], date: new Date("2026-10-30") });
+  assert.deepEqual([s.v, s.n, s.label, s.asOf, s.items.length], [1, 38e6, "38 Mio. €", "2026-10-30", 2]);
+  assert.deepEqual(s.items[1], { text: "9,09 €", label: "Pro Haushalt in Österreich" });
+  assert.throws(() => bn.snapshot(1, { country: "AT", unit: "EUR", pick: ["gibt_es_nicht"] }), /gibt es für AT nicht/);
+});
+
 console.log(fails ? `${fails} Fehler` : "alle Tests bestanden");
 process.exitCode = fails ? 1 : 0;

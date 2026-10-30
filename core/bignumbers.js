@@ -183,4 +183,23 @@ export class BigNumbers {
         return { id: c.id, title: c.title, custom: !!c.custom, result, text, basis };
       });
   }
+
+  /**
+   * What an article embeds for `value` (see embed/means2me.js): the Mean2Me items
+   * with the ids in `pick`, in that order, frozen with today's data so the text a
+   * newsroom approved never changes by itself.
+   */
+  snapshot(value, { country, unit, pick, custom = [], date = new Date() }) {
+    const all = this.mean2me(value, { country, unit, custom });
+    const items = pick.map((id) => {
+      const m = all.find((x) => x.id === id);
+      if (!m) throw new Error(`Means2Me: ${id} gibt es für ${country}${unit ? "" : " ohne Einheit"} nicht`);
+      return { text: m.text, label: m.title };
+    });
+    return {
+      v: 1, n: value, unit, country,
+      label: `${formatShort(value)} ${unit ? unitLabel(unit) : ""}`.trim(),
+      items, asOf: date.toISOString().slice(0, 10),
+    };
+  }
 }
