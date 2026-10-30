@@ -124,7 +124,8 @@
     panel.append(foot);
 
     const when = data.asOf ? asOfText(data.asOf) : "";
-    panel.append(el("p", "m2m-meta", ["Ausgewählt von der Redaktion", when && `Datenstand ${when}`].filter(Boolean).join(" · ")));
+    const by = data.by === "auto" ? "Automatische Vorschau" : "Ausgewählt von der Redaktion";
+    panel.append(el("p", "m2m-meta", [by, when && `Datenstand ${when}`].filter(Boolean).join(" · ")));
     return panel;
   }
 

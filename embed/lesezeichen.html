@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Means2Me-Vorschau</title>
+  <link rel="icon" href="../app/favicon.svg" type="image/svg+xml">
+  <style>
+    :root { --bg: #f4f5f8; --card: #ffffff; --text: #16213a; --muted: #4a5368; --line: #e2e5ec; --accent: #2f5bea; --on-accent: #ffffff; --code: #eef0f5; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0f1420; --card: #182033; --text: #e8ebf2; --muted: #a9b0c2; --line: #2a3450; --accent: #7d9bff; --on-accent: #0f1420; --code: #0d1426; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 28px 16px 64px; display: flex; flex-direction: column; gap: 22px; }
+    h1 { margin: 0; font-size: 28px; line-height: 1.2; display: flex; gap: 10px; align-items: center; }
+    h1 svg { width: 30px; height: 30px; color: var(--accent); flex: none; }
+    h2 { margin: 0 0 8px; font-size: 18px; }
+    p, ol { margin: 0; }
+    ol { padding-left: 22px; display: flex; flex-direction: column; gap: 6px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 10px; }
+    .muted { color: var(--muted); font-size: 14px; }
+    .bookmarklet { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 12px;
+      background: var(--accent); color: var(--on-accent); font-weight: 650; text-decoration: none; cursor: grab; }
+    .bookmarklet svg { width: 20px; height: 20px; }
+    .row { display: flex; flex-wrap: wrap; gap: 10px; }
+    button { min-height: 44px; padding: 0 16px; border-radius: 12px; border: 1px solid var(--line); background: var(--card); color: var(--text); font: inherit; font-weight: 600; cursor: pointer; }
+    button.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+    textarea { width: 100%; box-sizing: border-box; min-height: 90px; border: 1px solid var(--line); border-radius: 10px; padding: 10px; background: var(--code); color: var(--text); font: 12px/1.4 ui-monospace, monospace; }
+    .sample { background: #fbfaf7; color: #1d1d1f; border-radius: 12px; padding: 16px; font-family: Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.6; }
+    .sample p + p { margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="butt" aria-hidden="true"><circle cx="12" cy="12" r="10.4" stroke-width="1.6"/><path d="M1.65 11.6 L7 7.6 L12 11 L17 7.6 L22.35 11.6" stroke-width="2"/><path d="M3 17.2 L7 13.2 L12 16.6 L17 13.2 L21 17.2" stroke-width="2"/></svg>Means2Me-Vorschau</h1>
+    <p>Ein Lesezeichen, das auf jeder Nachrichtenseite die Geldbeträge so markiert, wie es mit Means2Me aussähe: ab 1 Mio., mit Einordnung pro Einwohner, pro Haushalt und als Anteil am Budget. Gedacht für Gespräche mit Redaktionen: den aktuellen Artikel öffnen, Lesezeichen antippen, fertig.</p>
+    <p class="muted">Die Vorschau ändert nur die Ansicht in deinem Browser, nicht die Seite selbst. Beim Neuladen ist sie weg. Das Land wird aus der Adresse der Seite erraten (.at, .de, .ch) und lässt sich unten in der Leiste ändern.</p>
+
+    <section class="card">
+      <h2>Am Computer</h2>
+      <p>Diesen Knopf in die Lesezeichenleiste ziehen:</p>
+      <a class="bookmarklet" id="bookmarklet" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="butt" aria-hidden="true"><circle cx="12" cy="12" r="10.4" stroke-width="2"/><path d="M1.65 11.6 L7 7.6 L12 11 L17 7.6 L22.35 11.6" stroke-width="2.4"/><path d="M3 17.2 L7 13.2 L12 16.6 L17 13.2 L21 17.2" stroke-width="2.4"/></svg>Means2Me-Vorschau</a>
+      <p class="muted">Lesezeichenleiste ausgeblendet? In Chrome und Firefox mit Strg+Umschalt+B (Mac: ⌘+Umschalt+B) einblenden.</p>
+    </section>
+
+    <section class="card">
+      <h2>Am Handy</h2>
+      <ol>
+        <li>Code kopieren: <button type="button" id="copy">Code kopieren</button></li>
+        <li>Diese Seite als Lesezeichen speichern.</li>
+        <li>Das Lesezeichen bearbeiten: Name „Means2Me“, als Adresse den kopierten Code einfügen.</li>
+        <li>Auf einer Nachrichtenseite: Safari öffnet es über die Lesezeichen; in Chrome „Means2Me“ in die Adressleiste tippen und das Lesezeichen aus der Liste wählen.</li>
+      </ol>
+      <textarea id="code" readonly aria-label="Code des Lesezeichens"></textarea>
+    </section>
+
+    <section class="card">
+      <h2>Hier ausprobieren</h2>
+      <div class="sample">
+        <p>Die Regierung will die Pendlerpauschale anheben. Das kostet den Staat nach Berechnungen des Ministeriums rund 450 Mio. Euro im Jahr. Für den Ausbau der Kinderbetreuung sind weitere 2,1 Mrd. Euro vorgesehen.</p>
+        <p>Ein Kindergartenplatz kostet eine Gemeinde im Schnitt 12.000 Euro pro Jahr. Die Opposition verlangt zusätzlich € 300 Mio. für die Pflege.</p>
+      </div>
+      <p class="muted">Beispieltext, frei erfunden. Kleine Beträge wie die 12.000 Euro bleiben unmarkiert.</p>
+      <div class="row"><button type="button" class="primary" id="try">Vorschau starten</button></div>
+    </section>
+
+    <p class="muted">Funktioniert nicht auf jeder Seite: Manche Seiten verbieten fremde Scripts (Content Security Policy). Dann erscheint eine Meldung, und die Vorschau bleibt aus.</p>
+  </main>
+  <script>
+    const src = new URL("preview.js", location.href).href;
+    const code = "javascript:(()=>{if(window.__m2mPreview){window.__m2mPreview.show();return}" +
+      "const s=document.createElement('script');s.src='" + src + "';" +
+      "s.onerror=()=>alert('Means2Me-Vorschau: Diese Seite erlaubt keine fremden Scripts.');" +
+      "document.head.append(s)})()";
+    const link = document.getElementById("bookmarklet");
+    link.href = code;
+    link.addEventListener("click", (e) => { e.preventDefault(); alert("In die Lesezeichenleiste ziehen, nicht anklicken. Zum Ausprobieren: „Vorschau starten“ weiter unten."); });
+    document.getElementById("code").value = code;
+    document.getElementById("copy").addEventListener("click", async (e) => {
+      try { await navigator.clipboard.writeText(code); e.target.textContent = "Kopiert"; }
+      catch { document.getElementById("code").select(); }
+    });
+    document.getElementById("try").addEventListener("click", () => {
+      if (window.__m2mPreview) { window.__m2mPreview.show(); return; }
+      const s = document.createElement("script");
+      s.src = src;
+      document.head.append(s);
+    });
+  </script>
+</body>
+</html>

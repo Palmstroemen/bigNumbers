@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { parseNumberFromText as p, formatShort, formatWords, windowAround, makeConverter, makeInflator } from "../core/index.js";
+import { parseNumberFromText as p, findAmounts, formatShort, formatWords, windowAround, makeConverter, makeInflator } from "../core/index.js";
 import { Calculator } from "../app/calculator.js";
 
 const run = (keys) => { const c = new Calculator(); for (const k of keys) {
@@ -54,5 +54,17 @@ t("Jahr nach letztem Indexwert unverändert", () => assert.equal(infl("i", 2026)
 t("geschätzter Indexwert markiert", () => assert.deepEqual([infl("i", 1990).factor, infl("i", 1990).estimated], [2.5, true]));
 t("Jahr ohne Indexwert = null", () => assert.equal(infl("i", 1980), null));
 t("unbekannter Index = null", () => assert.equal(infl("x", 2000), null));
+const amounts = [
+  ["Ein Förderpaket von 38 Mio. Euro beschlossen.", [["38 Mio. Euro", 38e6, "EUR"]]],
+  ["Kostet 500.000 € und 2,5 Millionen Euro.", [["500.000 €", 5e5, "EUR"], ["2,5 Millionen Euro", 2.5e6, "EUR"]]],
+  ["US spending reached $5.3 trillion in 2024.", [["$5.3 trillion", 5.3e12, "USD"]]],
+  ["Im Jahr 2024 wurden 500 Mio. Euro investiert.", [["500 Mio. Euro", 5e8, "EUR"]]],
+  ["Es kamen 38 Mio. Besucher.", []],
+  ["€ 4,2 Mrd. für die Bahn, CHF 300 Mio. für Tunnel", [["€ 4,2 Mrd.", 4.2e9, "EUR"], ["CHF 300 Mio.", 3e8, "CHF"]]],
+  ["die Euro-Zone und 18 Milliarden Dollar", [["18 Milliarden Dollar", 18e9, "USD"]]],
+];
+for (const [text, want] of amounts) {
+  t(`Beträge: "${text}"`, () => assert.deepEqual(findAmounts(text).map((a) => [text.slice(a.index, a.index + a.length), a.value, a.currency]), want));
+}
 console.log(fails ? `${fails} Fehler` : "alle Tests bestanden");
 process.exitCode = fails ? 1 : 0;

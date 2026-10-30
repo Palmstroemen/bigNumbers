@@ -57,3 +57,34 @@ export function parseNumberFromText(text) {
   return best;
 }
 
+
+// --- Finding all money amounts in a text, with their position ---
+
+const NUM = String.raw`\d{1,3}(?:[.,   ']\d{3})+(?:[.,]\d+)?|\d+(?:[.,]\d+)?`;
+const SCALE = String.raw`Billiarden?|Billionen|Billion|Milliarden?|Millionen|Million|Tausend|Brd\.|Bio\.|Mrd\.|Mia\.|Mio\.|Tsd\.|trillions?|billions?|millions?|bn|mn`;
+const CUR = String.raw`US-Dollar|Dollar|Euro|Franken|Pfund|EUR|USD|CHF|GBP|€|\$|£`;
+const CURRENCIES = [
+  [/^(Euro|EUR|€)$/, "EUR"], [/^(US-Dollar|Dollar|USD|\$)$/, "USD"], [/^(Franken|CHF)$/, "CHF"], [/^(Pfund|GBP|£)$/, "GBP"],
+];
+// "38 Mio. Euro", "1,2 Mrd. €", "500.000 €" or "€ 38 Mio.", "$5.3 trillion"
+const AMOUNT = new RegExp(
+  String.raw`(?<![\p{L}\d.,])(?:(${NUM})[\s  ]*(?:(${SCALE})[\s  ]*)?(${CUR})` +
+  String.raw`|(${CUR})[\s  ]*(${NUM})(?:[\s  ]*(${SCALE}))?)(?![\p{L}\d])`, "gu");
+
+/**
+ * All money amounts in a text, in order: { index, length, value, currency }.
+ * Only amounts with a currency count; a bare "38 Mio." could be people or tonnes.
+ */
+export function findAmounts(text) {
+  const found = [];
+  for (const m of text.matchAll(AMOUNT)) {
+    const [digits, word, cur] = m[1] ? [m[1], m[2], m[3]] : [m[5], m[6], m[4]];
+    const hit = word && WORD_FACTORS.find(([pattern]) => pattern.test(word));
+    let value = parseDigits(digits, hit && WORD_FACTORS.indexOf(hit) < 5);
+    if (!Number.isFinite(value)) continue;
+    if (hit) value = Number((value * hit[1]).toPrecision(12));
+    const currency = CURRENCIES.find(([pattern]) => pattern.test(cur))[1];
+    found.push({ index: m.index, length: m[0].length, value, currency });
+  }
+  return found;
+}
