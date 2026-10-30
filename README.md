@@ -49,7 +49,7 @@ Files:
 * `indices.json` – price indices (CPI, HICP, ...) used to convert historic money values into today's values.
 * `source_quotes.json` – for each researched entry, the literal quote from the source page that contains the number.
 
-Texts are written in German, umlauts as `ae`, `oe`, `ue`, `ss`.
+Texts are written in German with real umlauts and ß. Literal quotes in `source_quotes.json` stay exactly as on the source page.
 
 ## Status and quality
 

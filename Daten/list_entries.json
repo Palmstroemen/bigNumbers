@@ -21,7 +21,7 @@
     "entry_id": "entry_f35_program_usa_2013",
     "sort_value": 1510000000000,
     "sort_order": 310,
-    "note": "Pruefen: vermutlich Lebenszykluskosten inkl. Betrieb, nicht nur Beschaffung."
+    "note": "Prüfen: vermutlich Lebenszykluskosten inkl. Betrieb, nicht nur Beschaffung."
   },
   {
     "id": "le_004",
@@ -29,7 +29,7 @@
     "entry_id": "entry_apollo_program_1972",
     "sort_value": 25000000000,
     "sort_order": 250,
-    "note": "Quelle in der Altliste ist der F-35-Artikel; eigene Quelle fuer Apollo ergaenzen."
+    "note": "Quelle in der Altliste ist der F-35-Artikel; eigene Quelle für Apollo ergänzen."
   },
   {
     "id": "le_005",
@@ -117,7 +117,7 @@
     "entry_id": "entry_virginia_class_submarine_2005",
     "sort_value": 2600000000,
     "sort_order": 180,
-    "note": "Pruefen: Waehrung EUR bei US-Projekt unplausibel, vermutlich USD."
+    "note": "Prüfen: Währung EUR bei US-Projekt unplausibel, vermutlich USD."
   },
   {
     "id": "le_016",
@@ -237,7 +237,7 @@
     "entry_id": "entry_brenner_basistunnel_kosten",
     "sort_value": 11700000000,
     "sort_order": 200,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_031",
@@ -317,7 +317,7 @@
     "entry_id": "entry_de_rentenversicherung_mitarbeiter_2024",
     "sort_value": 62400,
     "sort_order": 60,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_041",
@@ -357,7 +357,7 @@
     "entry_id": "entry_de_abgeordnetenentschaedigung_monat_2025",
     "sort_value": 11833.47,
     "sort_order": 20,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_046",
@@ -397,7 +397,7 @@
     "entry_id": "entry_de_ber_gesamtkosten",
     "sort_value": 7300000000,
     "sort_order": 180,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_051",
@@ -405,7 +405,7 @@
     "entry_id": "entry_de_stuttgart_21_kosten",
     "sort_value": 14500000000,
     "sort_order": 220,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_052",
@@ -453,7 +453,7 @@
     "entry_id": "entry_stromverbrauch_zwei_personen_haushalt",
     "sort_value": 2890,
     "sort_order": 10,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_058",
@@ -469,7 +469,7 @@
     "entry_id": "entry_leistung_donaukraftwerk_freudenau",
     "sort_value": 172000000,
     "sort_order": 50,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_060",
@@ -485,7 +485,7 @@
     "entry_id": "entry_baukosten_hinkley_point_c",
     "sort_value": 35000000000,
     "sort_order": 80,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_062",
@@ -533,7 +533,7 @@
     "entry_id": "entry_einnahmen_eu_emissionshandel_2025",
     "sort_value": 43000000000,
     "sort_order": 100,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_068",
@@ -565,7 +565,7 @@
     "entry_id": "entry_sterne_milchstrasse",
     "sort_value": 100000000000,
     "sort_order": 110,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_072",
@@ -605,7 +605,7 @@
     "entry_id": "entry_herzschlaege_leben",
     "sort_value": 2500000000,
     "sort_order": 60,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_077",
@@ -613,7 +613,7 @@
     "entry_id": "entry_haare_auf_dem_kopf",
     "sort_value": 100000,
     "sort_order": 20,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_078",
@@ -645,7 +645,7 @@
     "entry_id": "entry_laenge_donau",
     "sort_value": 2850000,
     "sort_order": 30,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_082",
@@ -685,7 +685,7 @@
     "entry_id": "entry_sipri_militaerausgaben_russland_2025",
     "sort_value": 190000000000,
     "sort_order": 290,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_087",
@@ -717,7 +717,7 @@
     "entry_id": "entry_aufbauplan_bundesheer_2032_investitionen",
     "sort_value": 16600000000,
     "sort_order": 230,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_091",
@@ -741,7 +741,7 @@
     "entry_id": "entry_patriot_vier_systeme_bundeswehr_2024",
     "sort_value": 1400000000,
     "sort_order": 160,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_094",
@@ -757,7 +757,7 @@
     "entry_id": "entry_artilleriegranate_155mm_l15_ukraine",
     "sort_value": 3000,
     "sort_order": 10,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_096",
@@ -773,7 +773,7 @@
     "entry_id": "entry_fregatte_f126_erwartete_kosten_sechs_schiffe",
     "sort_value": 18000000000,
     "sort_order": 240,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_098",
@@ -789,7 +789,7 @@
     "entry_id": "entry_ukraine_hilfe_deutschland_gesamt_2026",
     "sort_value": 100000000000,
     "sort_order": 270,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_100",
@@ -805,7 +805,7 @@
     "entry_id": "entry_nvidia_boersenwert_2026",
     "sort_value": 5133000000000,
     "sort_order": 240,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_102",
@@ -829,7 +829,7 @@
     "entry_id": "entry_reichster_mensch_musk_2026",
     "sort_value": 839000000000,
     "sort_order": 230,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_105",
@@ -845,7 +845,7 @@
     "entry_id": "entry_fussball_wm_katar_kosten_2022",
     "sort_value": 220000000000,
     "sort_order": 200,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_107",
@@ -853,7 +853,7 @@
     "entry_id": "entry_olympia_paris_2024_kosten",
     "sort_value": 9000000000,
     "sort_order": 180,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_108",
@@ -877,7 +877,7 @@
     "entry_id": "entry_gpt4_trainingskosten",
     "sort_value": 78000000,
     "sort_order": 130,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_111",
@@ -885,7 +885,7 @@
     "entry_id": "entry_netflix_abonnements_2026",
     "sort_value": 325000000,
     "sort_order": 150,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_112",
@@ -941,7 +941,7 @@
     "entry_id": "entry_at_oegk_aufwendungen_2025",
     "sort_value": 21400000000,
     "sort_order": 90,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_119",
@@ -1013,7 +1013,7 @@
     "entry_id": "entry_global_gesundheitsausgaben_2022",
     "sort_value": 9800000000000,
     "sort_order": 160,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_128",
@@ -1133,7 +1133,7 @@
     "entry_id": "entry_ruestloeschfahrzeug_feuerwehr_hinterstoder_2025",
     "sort_value": 720000,
     "sort_order": 110,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_143",
@@ -1141,7 +1141,7 @@
     "entry_id": "entry_vw_golf_einstiegspreis_at_2026",
     "sort_value": 21290,
     "sort_order": 20,
-    "note": "Unsicher, pruefen."
+    "note": "Unsicher, prüfen."
   },
   {
     "id": "le_144",

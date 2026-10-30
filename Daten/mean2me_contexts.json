@@ -1,7 +1,7 @@
 [
   {
     "id": "m2m_at_population",
-    "title": "Pro Einwohner in Oesterreich",
+    "title": "Pro Einwohner in Österreich",
     "country_code": "AT",
     "factor_source": "Bevoelkerung zu Jahres-/Quartalsanfang - Statistik Austria (2026)",
     "factor_entry_id": "entry_einwohner_oesterreich_2026",
@@ -10,7 +10,7 @@
     "icon": "person",
     "is_default": true,
     "only_currency": false,
-    "notes": "Teilt die Zahl durch die Bevoelkerung Oesterreichs."
+    "notes": "Teilt die Zahl durch die Bevölkerung Österreichs."
   },
   {
     "id": "m2m_vienna_population",
@@ -23,7 +23,7 @@
     "icon": "city",
     "is_default": false,
     "only_currency": false,
-    "notes": "Regionaler Kontext fuer lokalpolitische Zahlen."
+    "notes": "Regionaler Kontext für lokalpolitische Zahlen."
   },
   {
     "id": "m2m_world_population",
@@ -36,11 +36,11 @@
     "icon": "globe",
     "is_default": true,
     "only_currency": false,
-    "notes": "Teilt die Zahl durch die Weltbevoelkerung."
+    "notes": "Teilt die Zahl durch die Weltbevölkerung."
   },
   {
     "id": "m2m_at_median_income",
-    "title": "In Jahren Arbeit (Medianeinkommen Oesterreich)",
+    "title": "In Jahren Arbeit (Medianeinkommen Österreich)",
     "country_code": "AT",
     "factor_source": "Jaehrliche Personeneinkommen - Statistik Austria (2024)",
     "factor_entry_id": "entry_median_bruttojahreseinkommen_oesterreich_2024",
@@ -49,11 +49,11 @@
     "icon": "work",
     "is_default": true,
     "only_currency": true,
-    "notes": "Wie viele Jahre muesste jemand mit mittlerem Bruttojahreseinkommen dafuer arbeiten?"
+    "notes": "Wie viele Jahre müsste jemand mit mittlerem Bruttojahreseinkommen dafür arbeiten?"
   },
   {
     "id": "m2m_per_day",
-    "title": "Pro Tag, ueber ein Jahr verteilt",
+    "title": "Pro Tag, über ein Jahr verteilt",
     "country_code": "GLOBAL",
     "factor_source": "365 Tage",
     "factor_entry_id": null,
@@ -62,11 +62,11 @@
     "icon": "calendar",
     "is_default": true,
     "only_currency": false,
-    "notes": "Hilfreich fuer Jahresbudgets."
+    "notes": "Hilfreich für Jahresbudgets."
   },
   {
     "id": "m2m_per_second",
-    "title": "Pro Sekunde, ueber ein Jahr verteilt",
+    "title": "Pro Sekunde, über ein Jahr verteilt",
     "country_code": "GLOBAL",
     "factor_source": "365 x 24 x 60 x 60 Sekunden",
     "factor_entry_id": null,
@@ -75,6 +75,6 @@
     "icon": "clock",
     "is_default": true,
     "only_currency": false,
-    "notes": "Macht Jahresbetraege im Milliardenbereich greifbar."
+    "notes": "Macht Jahresbeträge im Milliardenbereich greifbar."
   }
 ]

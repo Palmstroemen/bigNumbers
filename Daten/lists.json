@@ -1,10 +1,10 @@
 [
   {
     "id": "list_military_projects_v1",
-    "name": "Ruestung und Grossprojekte",
+    "name": "Rüstung und Großprojekte",
     "version": "v1",
     "country_code": null,
-    "description": "Kosten von Waffensystemen, Militaerbetrieb und staatlichen Grossprojekten. Uebernommen aus der Altliste BigNumbers.ods (2013), noch ungeprueft.",
+    "description": "Kosten von Waffensystemen, Militärbetrieb und staatlichen Großprojekten. Übernommen aus der Altliste BigNumbers.ods (2013), noch ungeprüft.",
     "icon": "shield"
   },
   {
@@ -12,7 +12,7 @@
     "name": "Budget und Steuern",
     "version": "v1",
     "country_code": null,
-    "description": "Staatshaushalte, Steuereinnahmen, Soziales, Bildung und Infrastruktur in Oesterreich, Deutschland und der EU.",
+    "description": "Staatshaushalte, Steuereinnahmen, Soziales, Bildung und Infrastruktur in Österreich, Deutschland und der EU.",
     "icon": "government"
   },
   {
@@ -36,7 +36,7 @@
     "name": "Wirtschaft und Alltag",
     "version": "v1",
     "country_code": null,
-    "description": "Unternehmen, Vermoegen, Produkte, Bevoelkerung und Alltagswerte.",
+    "description": "Unternehmen, Vermögen, Produkte, Bevölkerung und Alltagswerte.",
     "icon": "chart"
   },
   {
