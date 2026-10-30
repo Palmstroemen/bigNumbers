@@ -313,7 +313,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_at_klinik_floridsdorf_baukosten.jpg",
+        "width": 800,
+        "height": 408,
+        "alt": "Klinik Floridsdorf in Wien",
+        "credit": "C.Stadler/Bwag",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wien_-_Krankenhaus_Nord.JPG"
+      }
     },
     {
       "id": "entry_adipositas_kosten_oesterreich_2019",

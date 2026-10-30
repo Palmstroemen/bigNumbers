@@ -107,7 +107,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_f16_ab_1998.jpg",
+        "width": 800,
+        "height": 542,
+        "alt": "Formation dänischer F-16-Kampfflugzeuge",
+        "credit": "Slaunger",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:F-16_Royal_Danish_Air_Force_Diamond_Formation_at_Danish_Air_Show_2014-06-22.jpg"
+      }
     },
     {
       "id": "entry_f16_cd_1998",
@@ -125,7 +134,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_f16_cd_1998.jpg",
+        "width": 800,
+        "height": 522,
+        "alt": "F-16C der US Air Force im Flug",
+        "credit": "SMSGT JOHN P. ROHRER, USAF",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:USAF_F-16C_Profile.jpg"
+      }
     },
     {
       "id": "entry_nimitz_class_operation_per_month_1997",
@@ -162,7 +180,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_gotthard_basistunnel_ausbruchmaterial.jpg",
+        "width": 800,
+        "height": 500,
+        "alt": "Bohrkopf einer Tunnelbohrmaschine in Erstfeld",
+        "credit": "Roy Egloff",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:CH.UR.Erstfeld_Gotthard-Basistunnel_Tunnelbohrkopf_2016-06-04_3743_8x5-R_5120x3200.jpg"
+      }
     },
     {
       "id": "entry_eurofighter_tranche_1_1998",
@@ -181,6 +208,15 @@
       "source2_title": null,
       "confidence_level": 1,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_eurofighter_tranche_1_1998.jpg",
+        "width": 800,
+        "height": 450,
+        "alt": "Eurofighter der deutschen Luftwaffe in Sonderlackierung",
+        "credit": "Julian Herzog (Website)",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:30%2B68_German_Air_Force_Eurofighter_Typhoon_EF2000_ILA_Berlin_2016_06.jpg"
+      },
       "note": "Von Wikipedia errechneter Durchschnitt aus dem Vertragswert; enthält Reservetriebwerke und Ersatzteile, kein reiner Flyaway-Preis."
     },
     {
@@ -336,7 +372,16 @@
       "source2_url": "https://web.archive.org/web/20160229174615/http://www.gao.gov/archive/1998/ns98001.pdf",
       "source2_title": "GAO/NSIAD-98-1: Navy Aircraft Carriers – Cost-Effectiveness of Conventionally and Nuclear-Powered Carriers",
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_nimitz_class_operation_per_year_1997.jpg",
+        "width": 800,
+        "height": 462,
+        "alt": "Flugzeugträger USS Nimitz auf See, 1991",
+        "credit": "USN",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:USS_Nimitz_(CVN-68)_underway_in_1991.jpg"
+      }
     },
     {
       "id": "entry_allianz_arena_baukosten_2005",
@@ -354,7 +399,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_allianz_arena_baukosten_2005.jpg",
+        "width": 800,
+        "height": 604,
+        "alt": "Fassade der Allianz Arena in München",
+        "credit": "Martin Falbisoner",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Allianz_Arena_Exterior_Detail.JPG"
+      }
     },
     {
       "id": "entry_leopard_2a8_erstauftrag_18_panzer",
@@ -372,7 +426,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_leopard_2a8_erstauftrag_18_panzer.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Kampfpanzer Leopard 2A7 auf einer Messe",
+        "credit": "Reise Reise",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Leopard_2A7.jpg"
+      }
     },
     {
       "id": "entry_kamikaze_drohnen_bundeswehr_erstauftrag_2026",
@@ -408,7 +471,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_black_hawk_oesterreich_12_hubschrauber.jpg",
+        "width": 800,
+        "height": 520,
+        "alt": "Black-Hawk-Hubschrauber des Bundesheeres",
+        "credit": "Bundesheer Fotos",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Black_Hawk_Jagdkommando_Bundesheer.jpg"
+      }
     },
     {
       "id": "entry_bundesheer_aw169_hubschrauber_2022",
@@ -426,7 +498,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_bundesheer_aw169_hubschrauber_2022.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "AW169-Hubschrauber des Bundesheeres im Flug",
+        "credit": "Weißnichtmiristlangweilig",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bundesheer_(Austrian_Air_Force)_AW169_5M-IE.jpg"
+      }
     },
     {
       "id": "entry_wien_hauptbahnhof_investition_2014",
@@ -471,7 +552,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_patriot_vier_systeme_bundeswehr_2024.jpg",
+        "width": 800,
+        "height": 443,
+        "alt": "Startgerät des Flugabwehrsystems Patriot",
+        "credit": "Lupus in Saxonia",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Blue_Light_Mile_Dresden_City_Festival_2024_-_MIM-104_PATRIOT_anti-aircraft_missile_system_of_the_Bundeswehr.;_Launcher_with_four_guided_missiles._US_ground-based_anti-aircraft_missile_system.jpg"
+      }
     },
     {
       "id": "entry_pandur_evolution_bundesheer_2024",
@@ -489,7 +579,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_pandur_evolution_bundesheer_2024.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Radpanzer Pandur Evolution des Bundesheeres",
+        "credit": "Bundesheer",
+        "license": "CC BY-SA 2.5",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pandur_Evo.jpg"
+      }
     },
     {
       "id": "entry_bundesheer_luftabwehr_iris_t_modernisierung_2023",
@@ -543,7 +642,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_eurofighter_tranche_5_20_jets.jpg",
+        "width": 800,
+        "height": 462,
+        "alt": "Eurofighter des österreichischen Bundesheeres im Flug",
+        "credit": "Bundesheer (Bundesministerium für Landesverteidigung und Sport) / Markus Zinner",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Eurofighter_Typhoon_AUT.jpg"
+      }
     },
     {
       "id": "entry_semmering_basistunnel_kosten_2026",
@@ -562,6 +670,15 @@
       "source2_title": null,
       "confidence_level": 1,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_semmering_basistunnel_kosten_2026.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Deponie Longsgraben des Semmering-Basistunnels",
+        "credit": "Flexman",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Semmering-Basistunnel_Deponie_Longsgraben.jpg"
+      },
       "note": "Prognose laut Rahmenplan 2025/30, Projekt noch nicht abgeschlossen."
     },
     {
@@ -580,7 +697,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_virginia_class_submarine_2024.jpg",
+        "width": 800,
+        "height": 640,
+        "alt": "Atom-U-Boot USS Virginia an der Oberfläche",
+        "credit": "U.S. Navy photo by General Dynamics Electric Boat",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:US_Navy_040730-N-1234E-002_PCU_Virginia_(SSN_774)_returns_to_the_General_Dynamics_Electric_Boat_shipyard.jpg"
+      }
     },
     {
       "id": "entry_verteidigungsbudget_oesterreich_2026",
@@ -616,7 +742,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_iter_mehrkosten_verzoegerung_2024.jpg",
+        "width": 800,
+        "height": 530,
+        "alt": "Luftbild der ITER-Baustelle in Cadarache, 2017",
+        "credit": "Oak Ridge National Laboratory",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Iter_aerial_2017_Halfway_to_first_plasma_(45588568915).jpg"
+      }
     },
     {
       "id": "entry_u2_u5_finanzpaket_wien_2022",
@@ -635,6 +770,15 @@
       "source2_title": null,
       "confidence_level": 1,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_u2_u5_finanzpaket_wien_2022.jpg",
+        "width": 800,
+        "height": 600,
+        "alt": "U2-Zug an der Station Stadion in Wien",
+        "credit": "Herbert Ortner",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:U2_Stadion_2026-08-14.jpg"
+      },
       "note": "Jahr aus „vor drei Jahren“ (Artikel von 2025) abgeleitet; Endkosten dürften höher liegen."
     },
     {
@@ -716,7 +860,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_f35_beschaffung_deutschland_2022.jpg",
+        "width": 800,
+        "height": 618,
+        "alt": "F-35-Kampfjet im Flug",
+        "credit": "Airman 1st Class Alexander Cook",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:F-35_Heritage_Flight_Team_performs_in_Bell_Fort_Worth_Alliance_AirShow.jpg"
+      }
     },
     {
       "id": "entry_gotthard_basistunnel_kosten_2016",
@@ -761,7 +914,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_flugzeugtraeger_gerald_r_ford_cvn78.jpg",
+        "width": 800,
+        "height": 572,
+        "alt": "Flugzeugträger USS Gerald R. Ford bei einem Schocktest",
+        "credit": "Mass Communication Specialist 3rd Class Novalee Manzella",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:USS_Gerald_R._Ford_(CVN_78)_shock_ttrial_1.jpg"
+      }
     },
     {
       "id": "entry_aufbauplan_bundesheer_2032_investitionen",
@@ -987,7 +1149,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_f35_program_usa_2012.jpg",
+        "width": 800,
+        "height": 540,
+        "alt": "Zwei F-35-Kampfjets im Formationsflug",
+        "credit": "United States Air Force",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:F-35_Lightning_II_Joint_Strike_Fighter_arrives_at_Edwards.jpg"
+      }
     },
     {
       "id": "entry_f35_betriebskosten_gao_2023",

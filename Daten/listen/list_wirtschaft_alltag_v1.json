@@ -60,7 +60,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_olympia_paris_2024_athleten.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Olympisches Feuer in Paris 2024",
+        "credit": "Ibex73",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Paris_2024_Summer_Olympics_cauldron_(3).jpg"
+      }
     },
     {
       "id": "entry_bezug_buergermeister_wien_2025_monat",
@@ -96,7 +105,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_vw_golf_einstiegspreis_at_2026.jpg",
+        "width": 800,
+        "height": 412,
+        "alt": "VW Golf der achten Generation",
+        "credit": "Alexander Migl",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_VIII_R_Variant_1X7A0413.jpg"
+      }
     },
     {
       "id": "entry_median_bruttojahreseinkommen_oesterreich_2024",
@@ -132,7 +150,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_vienna_city_marathon_2025_anmeldungen.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Läuferinnen und Läufer beim Vienna City Marathon",
+        "credit": "C.Stadler/Bwag",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Vienna_City_Marathon_2015_-_Reichsbr%C3%BCcke_(1).JPG"
+      }
     },
     {
       "id": "entry_median_bruttojahresverdienst_deutschland_2025",
@@ -205,6 +232,15 @@
       "source2_title": null,
       "confidence_level": 1,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_kapazitaet_allianz_arena.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Innenraum der Allianz Arena mit Tribünen",
+        "credit": "Ank Kumar",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Allianz_Arena_(Ank_Kumar,_Infosys_Limited)_08.jpg"
+      },
       "note": "Nur Wikipedia als Quelle; Betreiberseite war nicht erreichbar."
     },
     {
@@ -241,7 +277,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_kitzbuehel_hahnenkamm_siegpraemie_2026.jpg",
+        "width": 800,
+        "height": 600,
+        "alt": "Zielbereich der Streif in Kitzbühel",
+        "credit": "Michael Fleischhacker",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hahnekammrennen2011.jpg"
+      }
     },
     {
       "id": "entry_pkw_neuzulassungen_at_2025",
@@ -387,7 +432,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_einwohner_wien_2026.jpg",
+        "width": 800,
+        "height": 450,
+        "alt": "Wien bei Nacht vom Kahlenberg aus",
+        "credit": "Steffen Flor",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Blick_auf_Wien_vom_Kahlenberg_bei_Nacht.jpg"
+      }
     },
     {
       "id": "entry_besucher_donauinselfest_2014",
@@ -406,6 +460,15 @@
       "source2_title": null,
       "confidence_level": 1,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_besucher_donauinselfest_2014.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Bühne am Donauinselfest",
+        "credit": "Zugeschrieben",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:SOLOzuVIERT_Donauinselfest_Wien.jpg"
+      },
       "note": "Veranstalterangabe; Besucherzahlen bei freiem Eintritt sind Schätzungen."
     },
     {
@@ -424,7 +487,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_eintritte_schloss_schoenbrunn_2025.jpg",
+        "width": 800,
+        "height": 358,
+        "alt": "Schloss Schönbrunn von der Gloriette aus",
+        "credit": "Thomas Wolf, www.foto-tw.de",
+        "license": "CC BY-SA 3.0 de",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Schloss_Sch%C3%B6nbrunn_Wien_2014_(Zuschnitt_1).jpg"
+      }
     },
     {
       "id": "entry_pkw_bestand_oesterreich_2025",
@@ -461,6 +533,15 @@
       "source2_title": null,
       "confidence_level": 1,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_besucher_oktoberfest_2026.jpg",
+        "width": 800,
+        "height": 624,
+        "alt": "Festzelt auf dem Oktoberfest",
+        "credit": "kallerna",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Theresienwiese_Hacker-Festzelt_Oktoberfest_2025.jpg"
+      },
       "note": "Vorläufige Zahl der Festleitung; Besucherzahlen der Wiesn sind Schätzungen."
     },
     {
@@ -497,7 +578,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_passagiere_flughafen_wien_2025.jpg",
+        "width": 800,
+        "height": 264,
+        "alt": "Terminal 1A am Flughafen Wien",
+        "credit": "Gryffindor, panorama made by Digon",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wien_Flughafen_Schwechat_outside_Panorama.jpg"
+      }
     },
     {
       "id": "entry_erwerbstaetige_deutschland_2025",
@@ -678,7 +768,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_fahrgaeste_oebb_2025.jpg",
+        "width": 800,
+        "height": 494,
+        "alt": "Railjet der ÖBB vor Bergkulisse",
+        "credit": "Kabelleger",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:%C3%96BB_1116_208_Mels_-_Flums.jpg"
+      }
     },
     {
       "id": "entry_spotify_nutzer_monatlich_2026",
@@ -714,7 +813,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_fahrgaeste_wiener_linien_2025.jpg",
+        "width": 800,
+        "height": 600,
+        "alt": "U-Bahn-Zug der Wiener Linien in einer Station",
+        "credit": "Andrew Nash from Vienna, Austria",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wiener_Linien_U-6_Siebenhirten_1230_(14026629437).jpg"
+      }
     },
     {
       "id": "entry_burj_khalifa_baukosten",
@@ -732,7 +840,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_burj_khalifa_baukosten.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Der Burj Khalifa über der Skyline von Dubai",
+        "credit": "Laika ac",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Burj_Khalifa_(16260269606).jpg"
+      }
     },
     {
       "id": "entry_signa_holding_anerkannte_forderungen_2025",
@@ -897,6 +1014,15 @@
       "source2_title": null,
       "confidence_level": 1,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_suezkanal_blockade_warenwert_pro_tag_2021.jpg",
+        "width": 800,
+        "height": 531,
+        "alt": "Satellitenbild der Ever Given quer im Suezkanal",
+        "credit": "Contains modified Copernicus Sentinel data [2021], processed by Pierre Markuse",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Container_Ship_%27Ever_Given%27_stuck_in_the_Suez_Canal,_Egypt_-_March_24th,_2021_cropped.jpg"
+      },
       "note": "Schätzung des aufgehaltenen Warenwerts, kein tatsächlicher wirtschaftlicher Schaden."
     },
     {
@@ -1170,7 +1296,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_reichster_mensch_musk_2026.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Elon Musk bei einer Veranstaltung von Tesla",
+        "credit": "Tesla Owners Club Belgium",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Elon_Musk_(12271225556).jpg"
+      }
     },
     {
       "id": "entry_bip_schweiz_2024",

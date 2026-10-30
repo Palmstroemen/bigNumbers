@@ -78,7 +78,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_oeffentliche_ladepunkte_deutschland_2026.jpg",
+        "width": 800,
+        "height": 600,
+        "alt": "Elektroauto an einer Ladesäule",
+        "credit": "VSchagow",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:2023062813_Elektroauto_Audi_Q4_an_Ladesaeule_2023.jpg"
+      }
     },
     {
       "id": "entry_elektro_pkw_bestand_oesterreich_2025",
@@ -132,7 +141,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_balkonkraftwerke_deutschland_2025.jpg",
+        "width": 800,
+        "height": 747,
+        "alt": "Solarmodule an einem Balkon",
+        "credit": "PantheraLeo1359531",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Balkonkraftwerk_20230505_HOF01474_RAW-Export_cens.png"
+      }
     },
     {
       "id": "entry_elektro_pkw_bestand_deutschland_2026",
@@ -168,7 +186,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_nennleistung_neues_windrad_deutschland_2024.jpg",
+        "width": 800,
+        "height": 532,
+        "alt": "Windkraftanlagen in einer Agrarlandschaft",
+        "credit": "Teta",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Diemelstadt-Neudorf_Windkraftanlagen_Sauerland_Ost_463_pk.jpg"
+      }
     },
     {
       "id": "entry_voestalpine_linz_co2_emissionen_2023",
@@ -187,6 +214,15 @@
       "source2_title": null,
       "confidence_level": 1,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_voestalpine_linz_co2_emissionen_2023.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Gasometer und Hochofen der voestalpine in Linz",
+        "credit": "Schiplagerheide",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Voestalpine_Tiegelgas-Gasometer_und_Hochofen.jpg"
+      },
       "note": "Bezugsjahr im Artikel nicht genannt; Jahr des Artikels (2023) angesetzt."
     },
     {
@@ -306,6 +342,15 @@
       "source2_title": null,
       "confidence_level": 1,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_hochwasser_oesterreich_schaden_2024.jpg",
+        "width": 800,
+        "height": 600,
+        "alt": "Hochwasser führender Kamp, 2024",
+        "credit": "Mfchris84",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hochwasser_Gars_am_Kamp_2024_11.jpg"
+      },
       "note": "Erste Schätzung von Ökonomen, ohne Infrastrukturschäden."
     },
     {
@@ -324,7 +369,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_leistung_akw_block_isar_2.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Kühlturm des Kernkraftwerks Isar",
+        "credit": "Helmlechner",
+        "license": "CC0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Kernkraftwerk_Isar_02.jpg"
+      }
     },
     {
       "id": "entry_treibhausgas_emissionen_eu_2024",
@@ -407,7 +461,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_aufbauhilfe_ahrtal_sondervermoegen_2021.jpg",
+        "width": 800,
+        "height": 472,
+        "alt": "Zerstörungen in Altenahr nach der Flut 2021",
+        "credit": "Bettina Vier",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Altenahr_-_8_Tage_nach_der_Flut.jpg"
+      }
     },
     {
       "id": "entry_baukosten_hinkley_point_c",
@@ -426,6 +489,15 @@
       "source2_title": null,
       "confidence_level": 1,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_baukosten_hinkley_point_c.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Baustelle des Kernkraftwerks Hinkley Point C",
+        "credit": "Nick Chipchase",
+        "license": "CC BY-SA 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Construction_of_new_power_station_at_Hinkley_Point_(geograph_5569899).jpg"
+      },
       "note": "Wikipedia als Sekundärquelle; Wert in Preisen von 2015 (Stand 2026). Primärquelle EDF prüfen."
     },
     {
@@ -552,7 +624,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_photovoltaik_leistung_deutschland_2025.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Luftbild eines Solarparks in Dülmen",
+        "credit": "Dietmar Rabich",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Solarpark_--_2014_--_8132.jpg"
+      }
     },
     {
       "id": "entry_abwehrschirm_energiekrise_deutschland",

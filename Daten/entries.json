@@ -54,7 +54,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_f35_program_usa_2012.jpg",
+      "width": 800,
+      "height": 540,
+      "alt": "Zwei F-35-Kampfjets im Formationsflug",
+      "credit": "United States Air Force",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:F-35_Lightning_II_Joint_Strike_Fighter_arrives_at_Edwards.jpg"
+    }
   },
   {
     "id": "entry_f35_betriebskosten_gao_2023",
@@ -120,7 +129,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_f16_ab_1998.jpg",
+      "width": 800,
+      "height": 542,
+      "alt": "Formation dänischer F-16-Kampfflugzeuge",
+      "credit": "Slaunger",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:F-16_Royal_Danish_Air_Force_Diamond_Formation_at_Danish_Air_Show_2014-06-22.jpg"
+    }
   },
   {
     "id": "entry_f16_cd_1998",
@@ -139,7 +157,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_f16_cd_1998.jpg",
+      "width": 800,
+      "height": 522,
+      "alt": "F-16C der US Air Force im Flug",
+      "credit": "SMSGT JOHN P. ROHRER, USAF",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:USAF_F-16C_Profile.jpg"
+    }
   },
   {
     "id": "entry_eurofighter_tranche_1_1998",
@@ -158,7 +185,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 1,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_eurofighter_tranche_1_1998.jpg",
+      "width": 800,
+      "height": 450,
+      "alt": "Eurofighter der deutschen Luftwaffe in Sonderlackierung",
+      "credit": "Julian Herzog (Website)",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:30%2B68_German_Air_Force_Eurofighter_Typhoon_EF2000_ILA_Berlin_2016_06.jpg"
+    }
   },
   {
     "id": "entry_eurofighter_tranche_2_2004",
@@ -290,7 +326,16 @@
     "source2_url": "https://web.archive.org/web/20160229174615/http://www.gao.gov/archive/1998/ns98001.pdf",
     "source2_title": "GAO/NSIAD-98-1: Navy Aircraft Carriers – Cost-Effectiveness of Conventionally and Nuclear-Powered Carriers",
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_nimitz_class_operation_per_year_1997.jpg",
+      "width": 800,
+      "height": 462,
+      "alt": "Flugzeugträger USS Nimitz auf See, 1991",
+      "credit": "USN",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:USS_Nimitz_(CVN-68)_underway_in_1991.jpg"
+    }
   },
   {
     "id": "entry_nimitz_class_operation_per_month_1997",
@@ -328,7 +373,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_virginia_class_submarine_2024.jpg",
+      "width": 800,
+      "height": 640,
+      "alt": "Atom-U-Boot USS Virginia an der Oberfläche",
+      "credit": "U.S. Navy photo by General Dynamics Electric Boat",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:US_Navy_040730-N-1234E-002_PCU_Virginia_(SSN_774)_returns_to_the_General_Dynamics_Electric_Boat_shipyard.jpg"
+    }
   },
   {
     "id": "entry_at_bundeshaushalt_auszahlungen_2024",
@@ -1181,7 +1235,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_leistung_akw_block_isar_2.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Kühlturm des Kernkraftwerks Isar",
+      "credit": "Helmlechner",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kernkraftwerk_Isar_02.jpg"
+    }
   },
   {
     "id": "entry_leistung_donaukraftwerk_freudenau",
@@ -1228,7 +1291,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_nennleistung_neues_windrad_deutschland_2024.jpg",
+      "width": 800,
+      "height": 532,
+      "alt": "Windkraftanlagen in einer Agrarlandschaft",
+      "credit": "Teta",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Diemelstadt-Neudorf_Windkraftanlagen_Sauerland_Ost_463_pk.jpg"
+    }
   },
   {
     "id": "entry_baukosten_hinkley_point_c",
@@ -1247,7 +1319,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 1,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_baukosten_hinkley_point_c.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Baustelle des Kernkraftwerks Hinkley Point C",
+      "credit": "Nick Chipchase",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Construction_of_new_power_station_at_Hinkley_Point_(geograph_5569899).jpg"
+    }
   },
   {
     "id": "entry_abwehrschirm_energiekrise_deutschland",
@@ -1437,7 +1518,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 1,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_sterne_milchstrasse.jpg",
+      "width": 800,
+      "height": 726,
+      "alt": "Die Milchstraße über einem Teleskop der ESO",
+      "credit": "ESO/Yuri Beletsky (ybialets at eso.org)",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Laser_Towards_Milky_Ways_Centre.jpg"
+    }
   },
   {
     "id": "entry_baeume_weltweit",
@@ -1570,7 +1660,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_ameisen_weltweit.jpg",
+      "width": 800,
+      "height": 480,
+      "alt": "Rote Waldameise",
+      "credit": "Richard Bartz, Munich Makro Freak",
+      "license": "CC BY-SA 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_Formica_rufa_sideview.jpg"
+    }
   },
   {
     "id": "entry_volumen_bodensee",
@@ -1589,7 +1688,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_volumen_bodensee.jpg",
+      "width": 800,
+      "height": 500,
+      "alt": "Hafeneinfahrt von Lindau am Bodensee",
+      "credit": "Markus Bernet",
+      "license": "CC BY-SA 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lindau_Lake_Constance_002.jpg"
+    }
   },
   {
     "id": "entry_flaeche_oesterreich",
@@ -1655,7 +1763,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_alter_universum.jpg",
+      "width": 800,
+      "height": 800,
+      "alt": "Hubble Ultra Deep Field mit tausenden Galaxien",
+      "credit": "NASA and the European Space Agency.",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hubble_ultra_deep_field.jpg"
+    }
   },
   {
     "id": "entry_blitze_pro_jahr",
@@ -1674,7 +1791,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_blitze_pro_jahr.jpg",
+      "width": 800,
+      "height": 450,
+      "alt": "Blitze über dem Meer bei Nacht",
+      "credit": "Maxime Raynal from France",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Port_and_lighthouse_overnight_storm_with_lightning_in_Port-la-Nouvelle.jpg"
+    }
   },
   {
     "id": "entry_sipri_militaerausgaben_welt_2025",
@@ -1845,7 +1971,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_leopard_2a8_erstauftrag_18_panzer.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Kampfpanzer Leopard 2A7 auf einer Messe",
+      "credit": "Reise Reise",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Leopard_2A7.jpg"
+    }
   },
   {
     "id": "entry_patriot_vier_systeme_bundeswehr_2024",
@@ -1864,7 +1999,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_patriot_vier_systeme_bundeswehr_2024.jpg",
+      "width": 800,
+      "height": 443,
+      "alt": "Startgerät des Flugabwehrsystems Patriot",
+      "credit": "Lupus in Saxonia",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Blue_Light_Mile_Dresden_City_Festival_2024_-_MIM-104_PATRIOT_anti-aircraft_missile_system_of_the_Bundeswehr.;_Launcher_with_four_guided_missiles._US_ground-based_anti-aircraft_missile_system.jpg"
+    }
   },
   {
     "id": "entry_eurofighter_tranche_5_20_jets",
@@ -1883,7 +2027,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_eurofighter_tranche_5_20_jets.jpg",
+      "width": 800,
+      "height": 462,
+      "alt": "Eurofighter des österreichischen Bundesheeres im Flug",
+      "credit": "Bundesheer (Bundesministerium für Landesverteidigung und Sport) / Markus Zinner",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Eurofighter_Typhoon_AUT.jpg"
+    }
   },
   {
     "id": "entry_artilleriegranate_155mm_l15_ukraine",
@@ -1921,7 +2074,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_black_hawk_oesterreich_12_hubschrauber.jpg",
+      "width": 800,
+      "height": 520,
+      "alt": "Black-Hawk-Hubschrauber des Bundesheeres",
+      "credit": "Bundesheer Fotos",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Black_Hawk_Jagdkommando_Bundesheer.jpg"
+    }
   },
   {
     "id": "entry_fregatte_f126_erwartete_kosten_sechs_schiffe",
@@ -1959,7 +2121,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_flugzeugtraeger_gerald_r_ford_cvn78.jpg",
+      "width": 800,
+      "height": 572,
+      "alt": "Flugzeugträger USS Gerald R. Ford bei einem Schocktest",
+      "credit": "Mass Communication Specialist 3rd Class Novalee Manzella",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:USS_Gerald_R._Ford_(CVN_78)_shock_ttrial_1.jpg"
+    }
   },
   {
     "id": "entry_ukraine_hilfe_deutschland_gesamt_2026",
@@ -2073,7 +2244,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_reichster_mensch_musk_2026.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Elon Musk bei einer Veranstaltung von Tesla",
+      "credit": "Tesla Owners Club Belgium",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Elon_Musk_(12271225556).jpg"
+    }
   },
   {
     "id": "entry_rekordtransfer_neymar_2017",
@@ -2149,7 +2329,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_olympia_paris_2024_athleten.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Olympisches Feuer in Paris 2024",
+      "credit": "Ibex73",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Paris_2024_Summer_Olympics_cauldron_(3).jpg"
+    }
   },
   {
     "id": "entry_burj_khalifa_baukosten",
@@ -2168,7 +2357,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_burj_khalifa_baukosten.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Der Burj Khalifa über der Skyline von Dubai",
+      "credit": "Laika ac",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Burj_Khalifa_(16260269606).jpg"
+    }
   },
   {
     "id": "entry_gpt4_trainingskosten",
@@ -2263,7 +2461,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_einwohner_wien_2026.jpg",
+      "width": 800,
+      "height": 450,
+      "alt": "Wien bei Nacht vom Kahlenberg aus",
+      "credit": "Steffen Flor",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Blick_auf_Wien_vom_Kahlenberg_bei_Nacht.jpg"
+    }
   },
   {
     "id": "entry_weltbevoelkerung_8_milliarden_2022",
@@ -2453,7 +2660,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_at_klinik_floridsdorf_baukosten.jpg",
+      "width": 800,
+      "height": 408,
+      "alt": "Klinik Floridsdorf in Wien",
+      "credit": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wien_-_Krankenhaus_Nord.JPG"
+    }
   },
   {
     "id": "entry_de_gkv_ausgaben_2024",
@@ -2586,7 +2802,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_ernst_happel_stadion_kapazitaet.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Luftbild des Ernst-Happel-Stadions",
+      "credit": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ernst-happel-stadion_vienna.jpg"
+    }
   },
   {
     "id": "entry_mount_everest_hoehe_m",
@@ -2605,7 +2830,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_mount_everest_hoehe_m.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Nordwand des Mount Everest",
+      "credit": "Luca Galuzzi (Lucag)",
+      "license": "CC BY-SA 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+    }
   },
   {
     "id": "entry_wimbledon_2025_preisgeld_erste_runde_einzel",
@@ -2643,7 +2877,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_einwohner_graz_2026.jpg",
+      "width": 800,
+      "height": 532,
+      "alt": "Grazer Schlossberg mit Uhrturm",
+      "credit": "Ralf Roletschek",
+      "license": "CC BY-SA 3.0 at",
+      "source_url": "https://commons.wikimedia.org/wiki/File:16-07-06-Rathaus_Graz_Turmblick-RR2_0275.jpg"
+    }
   },
   {
     "id": "entry_einwohner_linz_2026",
@@ -2681,7 +2924,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_einwohner_salzburg_stadt_2026.jpg",
+      "width": 800,
+      "height": 368,
+      "alt": "Salzburger Altstadt mit Festung Hohensalzburg",
+      "credit": "Uoaei1",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Salzburg_Altstadt_Panorama_20170409_02.jpg"
+    }
   },
   {
     "id": "entry_einwohner_innsbruck_2026",
@@ -2700,7 +2952,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_einwohner_innsbruck_2026.jpg",
+      "width": 800,
+      "height": 600,
+      "alt": "Blick auf Innsbruck von der Nordkette",
+      "credit": "-wuppertaler",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:AUT_Innsbruck,_Nordkette_019.jpg"
+    }
   },
   {
     "id": "entry_vienna_city_marathon_2025_anmeldungen",
@@ -2719,7 +2980,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_vienna_city_marathon_2025_anmeldungen.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Läuferinnen und Läufer beim Vienna City Marathon",
+      "credit": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vienna_City_Marathon_2015_-_Reichsbr%C3%BCcke_(1).JPG"
+    }
   },
   {
     "id": "entry_bezug_buergermeister_wien_2025_monat",
@@ -2776,7 +3046,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_kitzbuehel_hahnenkamm_siegpraemie_2026.jpg",
+      "width": 800,
+      "height": 600,
+      "alt": "Zielbereich der Streif in Kitzbühel",
+      "credit": "Michael Fleischhacker",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hahnekammrennen2011.jpg"
+    }
   },
   {
     "id": "entry_ruestloeschfahrzeug_feuerwehr_hinterstoder_2025",
@@ -2814,7 +3093,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_vw_golf_einstiegspreis_at_2026.jpg",
+      "width": 800,
+      "height": 412,
+      "alt": "VW Golf der achten Generation",
+      "credit": "Alexander Migl",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_VIII_R_Variant_1X7A0413.jpg"
+    }
   },
   {
     "id": "entry_pkw_neuzulassungen_at_2025",
@@ -2890,7 +3178,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_fahrgaeste_wiener_linien_2025.jpg",
+      "width": 800,
+      "height": 600,
+      "alt": "U-Bahn-Zug der Wiener Linien in einer Station",
+      "credit": "Andrew Nash from Vienna, Austria",
+      "license": "CC BY-SA 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wiener_Linien_U-6_Siebenhirten_1230_(14026629437).jpg"
+    }
   },
   {
     "id": "entry_dauerticket_besitzer_wiener_linien_2025",
@@ -2928,7 +3225,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_passagiere_flughafen_wien_2025.jpg",
+      "width": 800,
+      "height": 264,
+      "alt": "Terminal 1A am Flughafen Wien",
+      "credit": "Gryffindor, panorama made by Digon",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wien_Flughafen_Schwechat_outside_Panorama.jpg"
+    }
   },
   {
     "id": "entry_besucher_oktoberfest_2026",
@@ -2947,7 +3253,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 1,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_besucher_oktoberfest_2026.jpg",
+      "width": 800,
+      "height": 624,
+      "alt": "Festzelt auf dem Oktoberfest",
+      "credit": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Theresienwiese_Hacker-Festzelt_Oktoberfest_2025.jpg"
+    }
   },
   {
     "id": "entry_eintritte_schloss_schoenbrunn_2025",
@@ -2966,7 +3281,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_eintritte_schloss_schoenbrunn_2025.jpg",
+      "width": 800,
+      "height": 358,
+      "alt": "Schloss Schönbrunn von der Gloriette aus",
+      "credit": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Schloss_Sch%C3%B6nbrunn_Wien_2014_(Zuschnitt_1).jpg"
+    }
   },
   {
     "id": "entry_preis_klimaticket_oe_classic_2026",
@@ -3080,7 +3404,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_fahrgaeste_oebb_2025.jpg",
+      "width": 800,
+      "height": 494,
+      "alt": "Railjet der ÖBB vor Bergkulisse",
+      "credit": "Kabelleger",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%C3%96BB_1116_208_Mels_-_Flums.jpg"
+    }
   },
   {
     "id": "entry_durchschnittsmiete_oesterreich_2025",
@@ -3232,7 +3565,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 1,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_besucher_donauinselfest_2014.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Bühne am Donauinselfest",
+      "credit": "Zugeschrieben",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:SOLOzuVIERT_Donauinselfest_Wien.jpg"
+    }
   },
   {
     "id": "entry_kapazitaet_allianz_arena",
@@ -3251,7 +3593,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 1,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_kapazitaet_allianz_arena.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Innenraum der Allianz Arena mit Tribünen",
+      "credit": "Ank Kumar",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Allianz_Arena_(Ank_Kumar,_Infosys_Limited)_08.jpg"
+    }
   },
   {
     "id": "entry_spotify_nutzer_monatlich_2026",
@@ -4144,7 +4495,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 1,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_hochwasser_oesterreich_schaden_2024.jpg",
+      "width": 800,
+      "height": 600,
+      "alt": "Hochwasser führender Kamp, 2024",
+      "credit": "Mfchris84",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hochwasser_Gars_am_Kamp_2024_11.jpg"
+    }
   },
   {
     "id": "entry_aufbauhilfe_ahrtal_sondervermoegen_2021",
@@ -4163,7 +4523,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_aufbauhilfe_ahrtal_sondervermoegen_2021.jpg",
+      "width": 800,
+      "height": 472,
+      "alt": "Zerstörungen in Altenahr nach der Flut 2021",
+      "credit": "Bettina Vier",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Altenahr_-_8_Tage_nach_der_Flut.jpg"
+    }
   },
   {
     "id": "entry_stromverbrauch_rechenzentren_welt_2024",
@@ -4258,7 +4627,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_oeffentliche_ladepunkte_deutschland_2026.jpg",
+      "width": 800,
+      "height": 600,
+      "alt": "Elektroauto an einer Ladesäule",
+      "credit": "VSchagow",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2023062813_Elektroauto_Audi_Q4_an_Ladesaeule_2023.jpg"
+    }
   },
   {
     "id": "entry_gasverbrauch_oesterreich_2025",
@@ -4391,7 +4769,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_photovoltaik_leistung_deutschland_2025.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Luftbild eines Solarparks in Dülmen",
+      "credit": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Solarpark_--_2014_--_8132.jpg"
+    }
   },
   {
     "id": "entry_balkonkraftwerke_deutschland_2025",
@@ -4410,7 +4797,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_balkonkraftwerke_deutschland_2025.jpg",
+      "width": 800,
+      "height": 747,
+      "alt": "Solarmodule an einem Balkon",
+      "credit": "PantheraLeo1359531",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Balkonkraftwerk_20230505_HOF01474_RAW-Export_cens.png"
+    }
   },
   {
     "id": "entry_co2_preis_deutschland_2025",
@@ -4533,7 +4929,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 1,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_voestalpine_linz_co2_emissionen_2023.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Gasometer und Hochofen der voestalpine in Linz",
+      "credit": "Schiplagerheide",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Voestalpine_Tiegelgas-Gasometer_und_Hochofen.jpg"
+    }
   },
   {
     "id": "entry_sterbefaelle_deutschland_2025",
@@ -5026,7 +5431,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_durchmesser_erde_aequator_2025.jpg",
+      "width": 800,
+      "height": 801,
+      "alt": "Die Erde aus dem All, Aufnahme „The Blue Marble“",
+      "credit": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg"
+    }
   },
   {
     "id": "entry_alter_der_sonne_2025",
@@ -5139,7 +5553,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 1,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_kosten_artemis_start_2022.jpg",
+      "width": 800,
+      "height": 800,
+      "alt": "Start der Artemis-I-Rakete bei Nacht",
+      "credit": "Joel Kowsky",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Artemis_I_Launch_(NHQ202211160017).jpg"
+    }
   },
   {
     "id": "entry_esa_budget_2025",
@@ -5215,7 +5638,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_gaia_sternkatalog_2018.jpg",
+      "width": 800,
+      "height": 795,
+      "alt": "Modell der Raumsonde Gaia",
+      "credit": "Pline",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Maquette_de_Gaia_salon_du_Bourget_2013_DSC_0191.JPG"
+    }
   },
   {
     "id": "entry_arten_auf_der_erde_2011",
@@ -5328,7 +5760,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_flaeche_nationalpark_hohe_tauern_2025.jpg",
+      "width": 800,
+      "height": 500,
+      "alt": "Berglandschaft im Nationalpark Hohe Tauern",
+      "credit": "Haeferl",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nationalpark_Hohe_Tauern_-_Gletscherweg_Innergschl%C3%B6%C3%9F_-_27_-_Salzboden.jpg"
+    }
   },
   {
     "id": "entry_waldflaeche_oesterreich_2021",
@@ -5347,7 +5788,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_waldflaeche_oesterreich_2021.jpg",
+      "width": 800,
+      "height": 532,
+      "alt": "Herbstwald am Ufer eines Sees",
+      "credit": "Johann Jaritz",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Moosburg_Muehlteich_und_Herbst-Mischwald_31102015_1888.jpg"
+    }
   },
   {
     "id": "entry_holzvorrat_oesterreich_2021",
@@ -5413,7 +5863,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_bienenvoelker_oesterreich_2024.jpg",
+      "width": 800,
+      "height": 600,
+      "alt": "Honigbiene auf einer Blüte",
+      "credit": "Reinhold Möller Ermell",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Honigbiene_(Apis_mellifera)_cosmos-20250815-RM-163237.jpg"
+    }
   },
   {
     "id": "entry_rehwild_abschuesse_oesterreich_2025",
@@ -5508,7 +5967,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_iter_mehrkosten_verzoegerung_2024.jpg",
+      "width": 800,
+      "height": 530,
+      "alt": "Luftbild der ITER-Baustelle in Cadarache, 2017",
+      "credit": "Oak Ridge National Laboratory",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Iter_aerial_2017_Halfway_to_first_plasma_(45588568915).jpg"
+    }
   },
   {
     "id": "entry_militaerausgaben_china_2025",
@@ -5603,7 +6071,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_f35_beschaffung_deutschland_2022.jpg",
+      "width": 800,
+      "height": 618,
+      "alt": "F-35-Kampfjet im Flug",
+      "credit": "Airman 1st Class Alexander Cook",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:F-35_Heritage_Flight_Team_performs_in_Bell_Fort_Worth_Alliance_AirShow.jpg"
+    }
   },
   {
     "id": "entry_semmering_basistunnel_kosten_2026",
@@ -5622,7 +6099,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 1,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_semmering_basistunnel_kosten_2026.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Deponie Longsgraben des Semmering-Basistunnels",
+      "credit": "Flexman",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Semmering-Basistunnel_Deponie_Longsgraben.jpg"
+    }
   },
   {
     "id": "entry_gotthard_basistunnel_kosten_2016",
@@ -5669,7 +6155,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_gotthard_basistunnel_ausbruchmaterial.jpg",
+      "width": 800,
+      "height": 500,
+      "alt": "Bohrkopf einer Tunnelbohrmaschine in Erstfeld",
+      "credit": "Roy Egloff",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CH.UR.Erstfeld_Gotthard-Basistunnel_Tunnelbohrkopf_2016-06-04_3743_8x5-R_5120x3200.jpg"
+    }
   },
   {
     "id": "entry_bundesheer_aw169_hubschrauber_2022",
@@ -5688,7 +6183,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_bundesheer_aw169_hubschrauber_2022.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "AW169-Hubschrauber des Bundesheeres im Flug",
+      "credit": "Weißnichtmiristlangweilig",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bundesheer_(Austrian_Air_Force)_AW169_5M-IE.jpg"
+    }
   },
   {
     "id": "entry_rheinmetall_munitionswerk_unterluess_investition_2024",
@@ -5726,7 +6230,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 1,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_u2_u5_finanzpaket_wien_2022.jpg",
+      "width": 800,
+      "height": 600,
+      "alt": "U2-Zug an der Station Stadion in Wien",
+      "credit": "Herbert Ortner",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:U2_Stadion_2026-08-14.jpg"
+    }
   },
   {
     "id": "entry_kamikaze_drohnen_bundeswehr_erstauftrag_2026",
@@ -5764,7 +6277,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_pandur_evolution_bundesheer_2024.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Radpanzer Pandur Evolution des Bundesheeres",
+      "credit": "Bundesheer",
+      "license": "CC BY-SA 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pandur_Evo.jpg"
+    }
   },
   {
     "id": "entry_bundesheer_aktive_soldaten_2025",
@@ -5830,7 +6352,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_allianz_arena_baukosten_2005.jpg",
+      "width": 800,
+      "height": 604,
+      "alt": "Fassade der Allianz Arena in München",
+      "credit": "Martin Falbisoner",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Allianz_Arena_Exterior_Detail.JPG"
+    }
   },
   {
     "id": "entry_gotthard_basistunnel_laenge",
@@ -6333,7 +6864,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 1,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_suezkanal_blockade_warenwert_pro_tag_2021.jpg",
+      "width": 800,
+      "height": 531,
+      "alt": "Satellitenbild der Ever Given quer im Suezkanal",
+      "credit": "Contains modified Copernicus Sentinel data [2021], processed by Pierre Markuse",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Container_Ship_%27Ever_Given%27_stuck_in_the_Suez_Canal,_Egypt_-_March_24th,_2021_cropped.jpg"
+    }
   },
   {
     "id": "entry_bundesgarantie_ubs_credit_suisse_2023",

@@ -222,7 +222,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_ernst_happel_stadion_kapazitaet.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Luftbild des Ernst-Happel-Stadions",
+        "credit": "Arne Müseler",
+        "license": "CC BY-SA 3.0 de",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Ernst-happel-stadion_vienna.jpg"
+      }
     },
     {
       "id": "entry_de_rentenversicherung_vollzeitstellen_2025",
@@ -258,7 +267,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_einwohner_innsbruck_2026.jpg",
+        "width": 800,
+        "height": 600,
+        "alt": "Blick auf Innsbruck von der Nordkette",
+        "credit": "-wuppertaler",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:AUT_Innsbruck,_Nordkette_019.jpg"
+      }
     },
     {
       "id": "entry_einwohner_salzburg_stadt_2026",
@@ -276,7 +294,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_einwohner_salzburg_stadt_2026.jpg",
+        "width": 800,
+        "height": 368,
+        "alt": "Salzburger Altstadt mit Festung Hohensalzburg",
+        "credit": "Uoaei1",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Salzburg_Altstadt_Panorama_20170409_02.jpg"
+      }
     },
     {
       "id": "entry_einwohner_linz_2026",
@@ -312,7 +339,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_einwohner_graz_2026.jpg",
+        "width": 800,
+        "height": 532,
+        "alt": "Grazer Schlossberg mit Uhrturm",
+        "credit": "Ralf Roletschek",
+        "license": "CC BY-SA 3.0 at",
+        "source_url": "https://commons.wikimedia.org/wiki/File:16-07-06-Rathaus_Graz_Turmblick-RR2_0275.jpg"
+      }
     },
     {
       "id": "entry_ruestloeschfahrzeug_feuerwehr_hinterstoder_2025",

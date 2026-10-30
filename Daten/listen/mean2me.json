@@ -59,7 +59,16 @@
         "source2_url": null,
         "source2_title": null,
         "confidence_level": 2,
-        "status": "draft"
+        "status": "draft",
+        "image": {
+          "src": "bilder/entry_einwohner_wien_2026.jpg",
+          "width": 800,
+          "height": 450,
+          "alt": "Wien bei Nacht vom Kahlenberg aus",
+          "credit": "Steffen Flor",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Blick_auf_Wien_vom_Kahlenberg_bei_Nacht.jpg"
+        }
       }
     },
     {

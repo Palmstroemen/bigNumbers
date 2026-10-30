@@ -96,7 +96,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_mount_everest_hoehe_m.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Nordwand des Mount Everest",
+        "credit": "Luca Galuzzi (Lucag)",
+        "license": "CC BY-SA 2.5",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+      }
     },
     {
       "id": "entry_aktive_satelliten_orbit_2025",
@@ -195,7 +204,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_bienenvoelker_oesterreich_2024.jpg",
+        "width": 800,
+        "height": 600,
+        "alt": "Honigbiene auf einer Blüte",
+        "credit": "Reinhold Möller Ermell",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Honigbiene_(Apis_mellifera)_cosmos-20250815-RM-163237.jpg"
+      }
     },
     {
       "id": "entry_weltraumschrott_ueber_1cm_2025",
@@ -279,7 +297,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_durchmesser_erde_aequator_2025.jpg",
+        "width": 800,
+        "height": 801,
+        "alt": "Die Erde aus dem All, Aufnahme „The Blue Marble“",
+        "credit": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg"
+      }
     },
     {
       "id": "entry_erdumfang_aequator",
@@ -414,7 +441,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_blitze_pro_jahr.jpg",
+        "width": 800,
+        "height": 450,
+        "alt": "Blitze über dem Meer bei Nacht",
+        "credit": "Maxime Raynal from France",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Port_and_lighthouse_overnight_storm_with_lightning_in_Port-la-Nouvelle.jpg"
+      }
     },
     {
       "id": "entry_gaia_sternkatalog_2018",
@@ -432,7 +468,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_gaia_sternkatalog_2018.jpg",
+        "width": 800,
+        "height": 795,
+        "alt": "Modell der Raumsonde Gaia",
+        "credit": "Pline",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Maquette_de_Gaia_salon_du_Bourget_2013_DSC_0191.JPG"
+      }
     },
     {
       "id": "entry_flaeche_nationalpark_hohe_tauern_2025",
@@ -450,7 +495,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_flaeche_nationalpark_hohe_tauern_2025.jpg",
+        "width": 800,
+        "height": 500,
+        "alt": "Berglandschaft im Nationalpark Hohe Tauern",
+        "credit": "Haeferl",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nationalpark_Hohe_Tauern_-_Gletscherweg_Innergschl%C3%B6%C3%9F_-_27_-_Salzboden.jpg"
+      }
     },
     {
       "id": "entry_herzschlaege_leben",
@@ -488,6 +542,15 @@
       "source2_title": null,
       "confidence_level": 1,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_kosten_artemis_start_2022.jpg",
+        "width": 800,
+        "height": 800,
+        "alt": "Start der Artemis-I-Rakete bei Nacht",
+        "credit": "Joel Kowsky",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Artemis_I_Launch_(NHQ202211160017).jpg"
+      },
       "note": "Schätzung des NASA-Generalinspektors."
     },
     {
@@ -570,7 +633,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_alter_universum.jpg",
+        "width": 800,
+        "height": 800,
+        "alt": "Hubble Ultra Deep Field mit tausenden Galaxien",
+        "credit": "NASA and the European Space Agency.",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Hubble_ultra_deep_field.jpg"
+      }
     },
     {
       "id": "entry_waldflaeche_oesterreich_2021",
@@ -588,7 +660,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_waldflaeche_oesterreich_2021.jpg",
+        "width": 800,
+        "height": 532,
+        "alt": "Herbstwald am Ufer eines Sees",
+        "credit": "Johann Jaritz",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Moosburg_Muehlteich_und_Herbst-Mischwald_31102015_1888.jpg"
+      }
     },
     {
       "id": "entry_volumen_bodensee",
@@ -606,7 +687,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_volumen_bodensee.jpg",
+        "width": 800,
+        "height": 500,
+        "alt": "Hafeneinfahrt von Lindau am Bodensee",
+        "credit": "Markus Bernet",
+        "license": "CC BY-SA 2.5",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lindau_Lake_Constance_002.jpg"
+      }
     },
     {
       "id": "entry_flaeche_oesterreich",
@@ -680,6 +770,15 @@
       "source2_title": null,
       "confidence_level": 1,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_sterne_milchstrasse.jpg",
+        "width": 800,
+        "height": 726,
+        "alt": "Die Milchstraße über einem Teleskop der ESO",
+        "credit": "ESO/Yuri Beletsky (ybialets at eso.org)",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Laser_Towards_Milky_Ways_Centre.jpg"
+      },
       "note": "Schätzung als Spanne 100–400 Mrd.; gespeichert ist die Untergrenze, Wikipedia als Quelle."
     },
     {
@@ -788,7 +887,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_ameisen_weltweit.jpg",
+        "width": 800,
+        "height": 480,
+        "alt": "Rote Waldameise",
+        "credit": "Richard Bartz, Munich Makro Freak",
+        "license": "CC BY-SA 2.5",
+        "source_url": "https://commons.wikimedia.org/wiki/File:A_Formica_rufa_sideview.jpg"
+      }
     },
     {
       "id": "entry_wasser_auf_der_erde_2024",
