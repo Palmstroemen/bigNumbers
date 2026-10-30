@@ -59,7 +59,7 @@ All entries are `draft`. Nothing has been reviewed by a human yet.
 
 * `confidence_level: 2` – value seen on the source page and backed by a quote in `source_quotes.json`.
 * `confidence_level: 1` – estimate, lower bound, forecast, contradictory sources or old data. These entries carry a note in `list_entries.json`.
-  The 15 entries from the 2013 collection are all at this level.
+  14 of the 15 entries from the 2013 collection are at this level; the Apollo entry has since been backed by a source.
 
 Workflow for an entry: `draft` → `reviewed` (value, source and description checked by a person) → `published`.
 
