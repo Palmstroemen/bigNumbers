@@ -246,7 +246,8 @@ function renderBigNumbers() {
 }
 
 function renderListChips() {
-  $("#list-chips").innerHTML = state.data.lists.map((l) =>
+  // only active lists appear here; the sheet ("Listen …") switches others back on
+  $("#list-chips").innerHTML = state.data.lists.filter((l) => state.active.has(l.id)).map((l) =>
     `<button class="list-chip lc" style="${listColors(l)}" data-list="${esc(l.id)}" aria-pressed="${state.active.has(l.id)}">` +
     `${listIcon(l, "list-icon", false)}${esc(l.name)}</button>`).join("") +
     '<button data-sheet aria-haspopup="dialog">Listen …</button>';
@@ -474,7 +475,10 @@ $("#list-chips").addEventListener("click", async (e) => {
   const b = e.target.closest("button");
   if (!b) return;
   if (b.hasAttribute("data-sheet")) { renderListSheet(); $("#list-sheet").showModal(); return; }
-  await toggleList(b.dataset.list, !state.active.has(b.dataset.list));
+  const list = state.data.lists.find((l) => l.id === b.dataset.list);
+  const wasLast = state.active.size === 1;
+  await toggleList(list.id, false);
+  if (!wasLast) toast(`„${list.name}“ ausgeblendet. Über „Listen …“ wieder einblenden.`);
   $("#bn-mine")?.scrollIntoView({ block: "center" });
 });
 

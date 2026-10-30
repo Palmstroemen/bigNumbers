@@ -683,7 +683,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_at_koralmbahn_kosten.jpg",
+        "width": 800,
+        "height": 450,
+        "alt": "Westportal des Koralmtunnels während des Baus, 2007",
+        "credit": "113.10",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Koralmtunnel_westportal_20071104.jpg"
+      }
     },
     {
       "id": "entry_arbeitslosenversicherung_leistungen_2026",

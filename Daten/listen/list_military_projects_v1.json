@@ -62,7 +62,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_gotthard_basistunnel_laenge.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Blick in eine Röhre des Gotthard-Basistunnels",
+        "credit": "Kecko",
+        "license": "CC BY 2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:SBB_-_Gotthard_Base_Tunnel_GBT_(29814272146).jpg"
+      }
     },
     {
       "id": "entry_bundeswehr_aktive_soldaten_2026",
@@ -725,7 +734,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_gotthard_basistunnel_kosten_2016.jpg",
+        "width": 800,
+        "height": 434,
+        "alt": "Zug verlässt das Südportal des Gotthard-Basistunnels",
+        "credit": "Bundesamt für Verkehr",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Zugsausfahrt_GBT_S%C3%BCd-Portal.jpg"
+      }
     },
     {
       "id": "entry_flugzeugtraeger_gerald_r_ford_cvn78",
@@ -798,6 +816,15 @@
       "source2_title": null,
       "confidence_level": 2,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_apollo_program_1973.jpg",
+        "width": 800,
+        "height": 800,
+        "alt": "Buzz Aldrin auf dem Mond, Apollo 11, 1969",
+        "credit": "Neil A. Armstrong",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Aldrin_Apollo_11.jpg"
+      },
       "note": "Summe nominaler Ausgaben 1960–1973. Die Inflationsbereinigung ab 1973 unterschätzt den heutigen Wert, weil der Großteil früher ausgegeben wurde. Die Planetary Society kommt mit jahresweiser Bereinigung auf rund 309 Mrd. USD (Tabelle; Preisbasis dort widersprüchlich als 2020 bzw. 2025 angegeben)."
     },
     {

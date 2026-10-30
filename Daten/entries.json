@@ -92,7 +92,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_apollo_program_1973.jpg",
+      "width": 800,
+      "height": 800,
+      "alt": "Buzz Aldrin auf dem Mond, Apollo 11, 1969",
+      "credit": "Neil A. Armstrong",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aldrin_Apollo_11.jpg"
+    }
   },
   {
     "id": "entry_f16_ab_1998",
@@ -585,7 +594,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_at_koralmbahn_kosten.jpg",
+      "width": 800,
+      "height": 450,
+      "alt": "Westportal des Koralmtunnels während des Baus, 2007",
+      "credit": "113.10",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Koralmtunnel_westportal_20071104.jpg"
+    }
   },
   {
     "id": "entry_brenner_basistunnel_kosten",
@@ -1609,7 +1627,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 1,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_laenge_donau.jpg",
+      "width": 800,
+      "height": 447,
+      "alt": "Die Donau in der Wachau, von der Dürnsteiner Kanzel aus",
+      "credit": "Uoaei1",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wachau_von_D%C3%BCrnsteiner_Kanzel_20220411.jpg"
+    }
   },
   {
     "id": "entry_alter_universum",
@@ -5614,7 +5641,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_gotthard_basistunnel_kosten_2016.jpg",
+      "width": 800,
+      "height": 434,
+      "alt": "Zug verlässt das Südportal des Gotthard-Basistunnels",
+      "credit": "Bundesamt für Verkehr",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zugsausfahrt_GBT_S%C3%BCd-Portal.jpg"
+    }
   },
   {
     "id": "entry_gotthard_basistunnel_ausbruchmaterial",
@@ -5813,7 +5849,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_gotthard_basistunnel_laenge.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Blick in eine Röhre des Gotthard-Basistunnels",
+      "credit": "Kecko",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:SBB_-_Gotthard_Base_Tunnel_GBT_(29814272146).jpg"
+    }
   },
   {
     "id": "entry_bip_deutschland_2024",

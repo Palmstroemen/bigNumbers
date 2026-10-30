@@ -248,7 +248,6 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .chips .list-chip { display: inline-flex; align-items: center; }
 .chips .list-chip[aria-pressed="true"] { border-color: currentColor; background: var(--surface); color: var(--lc); }
 @media (prefers-color-scheme: dark) { .chips .list-chip[aria-pressed="true"] { color: var(--lc-dark); } }
-.chips .list-chip[aria-pressed="false"] { color: var(--muted); }
 .chips .list-chip .list-icon { margin-right: 5px; }
 .bn-list li.open { padding: 0; overflow: hidden; }
 .bn-list li.open .bn-row { padding: 10px 12px 0; }

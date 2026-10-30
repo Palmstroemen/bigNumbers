@@ -233,6 +233,15 @@
       "source2_title": null,
       "confidence_level": 1,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_laenge_donau.jpg",
+        "width": 800,
+        "height": 447,
+        "alt": "Die Donau in der Wachau, von der Dürnsteiner Kanzel aus",
+        "credit": "Uoaei1",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wachau_von_D%C3%BCrnsteiner_Kanzel_20220411.jpg"
+      },
       "note": "Länge je nach Quelle und Messpunkt 2.810–2.857 km; Wikipedia als Sekundärquelle."
     },
     {
