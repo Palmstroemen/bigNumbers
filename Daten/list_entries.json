@@ -660,7 +660,7 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_sipri_militaerausgaben_welt_2025",
     "sort_value": 2887000000000,
-    "sort_order": 320,
+    "sort_order": 330,
     "note": null
   },
   {
@@ -1150,5 +1150,12 @@
     "sort_value": 60651,
     "sort_order": 60,
     "note": null
+  },
+  {
+    "id": "le_146",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_f35_betriebskosten_gao_2023",
+    "sort_value": 1580000000000,
+    "sort_order": 320
   }
 ]

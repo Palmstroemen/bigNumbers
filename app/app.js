@@ -124,7 +124,10 @@ function moneyDetail(e, money) {
   } else if (money.infl.factor !== 1) {
     const pct = new Intl.NumberFormat("de-DE", { maximumFractionDigits: 0, signDisplay: "always" })
       .format((money.infl.factor - 1) * 100);
-    lines.push(`Inflation ${money.infl.from}–${money.infl.to}: ${pct} % laut ${indexOf.get(e.index_id)?.name ?? e.index_id}`);
+    const index = indexOf.get(e.index_id);
+    lines.push(`Inflation ${money.infl.from}–${money.infl.to}: ${pct} % laut ${index?.name ?? e.index_id}` +
+      (money.infl.estimated ? " (geschätzt)" : ""));
+    if (money.infl.estimated && index?.estimate_note) lines.push(`Geschätzt: ${index.estimate_note}`);
   }
   if (e.unit !== state.unit) lines.push(`Kurs: ${rateText(e.unit)}`);
   return lines.map((l) => `<p>${esc(l)}</p>`).join("");

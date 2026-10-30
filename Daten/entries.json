@@ -57,6 +57,25 @@
     "status": "draft"
   },
   {
+    "id": "entry_f35_betriebskosten_gao_2023",
+    "slug": "f35-betriebskosten-gao-2023",
+    "title": "F-35: geschätzte Betriebskosten (GAO)",
+    "value_original": 1580000000000,
+    "unit_type": "currency",
+    "unit": "USD",
+    "year_original": 2023,
+    "country_code": "US",
+    "index_id": "idx_us_cpi",
+    "short_description": "Geschätzte Kosten für Betrieb und Unterhalt der F-35-Flotte über die gesamte Nutzungsdauer.",
+    "long_description": "Laut US-Rechnungshof GAO stiegen die geschätzten Betriebs- und Unterhaltskosten der F-35 von 1,1 Billionen Dollar im Jahr 2018 auf 1,58 Billionen Dollar im Jahr 2023. Das Verteidigungsministerium plant, die F-35 bis 2088 zu nutzen.",
+    "source_url": "https://www.gao.gov/products/GAO-24-106703",
+    "source_title": "GAO-24-106703: F-35 Sustainment: Costs Continue to Rise While Planned Use and Availability Have Decreased (15. April 2024)",
+    "source2_url": null,
+    "source2_title": null,
+    "confidence_level": 2,
+    "status": "draft"
+  },
+  {
     "id": "entry_apollo_program_1973",
     "slug": "apollo-program-1973",
     "title": "Apollo-Programm (Mondlandung)",

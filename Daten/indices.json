@@ -7,7 +7,7 @@
     "base_year": null,
     "source_url": "https://data.bls.gov/timeseries/CUUR0000SA0",
     "source_title": "U.S. Bureau of Labor Statistics: CPI-U, U.S. city average, all items (CUUR0000SA0)",
-    "notes": "Allgemeiner Verbraucherpreisindex für historische USD-Werte. Jahresdurchschnitte 1966–2025, Basis 1982–84 = 100, abgerufen über die BLS-API."
+    "notes": "Allgemeiner Verbraucherpreisindex für historische USD-Werte. Jahresdurchschnitte 1913–2025, Basis 1982–84 = 100, abgerufen über die BLS-API."
   },
   {
     "id": "idx_eurozone_hicp",
@@ -17,7 +17,8 @@
     "base_year": 2015,
     "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table",
     "source_title": "Eurostat: HICP – annual data (prc_hicp_aind), Euroraum, Gesamtindex",
-    "notes": "Harmonisierter Verbraucherpreisindex für historische EUR-Werte. Jahresdurchschnitte 1996–2025, Basis 2015 = 100. Euroraum in wechselnder Zusammensetzung. Für Werte vor 1996 gibt es keinen HICP."
+    "notes": "Harmonisierter Verbraucherpreisindex für historische EUR-Werte. Jahresdurchschnitte 1996–2025, Basis 2015 = 100. Euroraum in wechselnder Zusammensetzung. Für Werte vor 1996 gibt es keinen HICP.",
+    "estimate_note": "1960–1995 geschätzt: mit dem Verbraucherpreisindex Deutschlands (Weltbank, FP.CPI.TOTL) an den HICP von 1996 angehängt. 1945–1959 grob geschätzt: exponentiell zurückgerechnet mit der mittleren Teuerung 1960–1970 (2,6 % pro Jahr)."
   },
   {
     "id": "idx_uk_cpi",
@@ -27,7 +28,8 @@
     "base_year": 2010,
     "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=GB",
     "source_title": "Weltbank: Consumer price index (2010 = 100), Vereinigtes Königreich",
-    "notes": "Allgemeiner Verbraucherpreisindex für historische GBP-Werte. Jahreswerte 1970–2025, Basis 2010 = 100, Weltbank-Indikator FP.CPI.TOTL (Quelle: IWF)."
+    "notes": "Allgemeiner Verbraucherpreisindex für historische GBP-Werte. Jahreswerte 1960–2025, Basis 2010 = 100, Weltbank-Indikator FP.CPI.TOTL (Quelle: IWF).",
+    "estimate_note": "1945–1959 grob geschätzt: exponentiell zurückgerechnet mit der mittleren Teuerung 1960–1970 (4,1 % pro Jahr)."
   },
   {
     "id": "idx_ch_cpi",
@@ -37,6 +39,7 @@
     "base_year": 2010,
     "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=CH",
     "source_title": "Weltbank: Consumer price index (2010 = 100), Schweiz",
-    "notes": "Allgemeiner Verbraucherpreisindex für historische CHF-Werte. Jahreswerte 1970–2025, Basis 2010 = 100, Weltbank-Indikator FP.CPI.TOTL (Quelle: IWF)."
+    "notes": "Allgemeiner Verbraucherpreisindex für historische CHF-Werte. Jahreswerte 1960–2025, Basis 2010 = 100, Weltbank-Indikator FP.CPI.TOTL (Quelle: IWF).",
+    "estimate_note": "1945–1959 grob geschätzt: exponentiell zurückgerechnet mit der mittleren Teuerung 1960–1970 (3,3 % pro Jahr)."
   }
 ]

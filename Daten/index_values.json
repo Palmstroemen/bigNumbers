@@ -1,6 +1,271 @@
 [
   {
     "index_id": "idx_us_cpi",
+    "year": 1913,
+    "value": 9.9
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1914,
+    "value": 10.0
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1915,
+    "value": 10.1
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1916,
+    "value": 10.9
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1917,
+    "value": 12.8
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1918,
+    "value": 15.1
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1919,
+    "value": 17.3
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1920,
+    "value": 20.0
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1921,
+    "value": 17.9
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1922,
+    "value": 16.8
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1923,
+    "value": 17.1
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1924,
+    "value": 17.1
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1925,
+    "value": 17.5
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1926,
+    "value": 17.7
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1927,
+    "value": 17.4
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1928,
+    "value": 17.1
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1929,
+    "value": 17.1
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1930,
+    "value": 16.7
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1931,
+    "value": 15.2
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1932,
+    "value": 13.7
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1933,
+    "value": 13.0
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1934,
+    "value": 13.4
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1935,
+    "value": 13.7
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1936,
+    "value": 13.9
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1937,
+    "value": 14.4
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1938,
+    "value": 14.1
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1939,
+    "value": 13.9
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1940,
+    "value": 14.0
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1941,
+    "value": 14.7
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1942,
+    "value": 16.3
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1943,
+    "value": 17.3
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1944,
+    "value": 17.6
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1945,
+    "value": 18.0
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1946,
+    "value": 19.5
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1947,
+    "value": 22.3
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1948,
+    "value": 24.1
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1949,
+    "value": 23.8
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1950,
+    "value": 24.1
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1951,
+    "value": 26.0
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1952,
+    "value": 26.5
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1953,
+    "value": 26.7
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1954,
+    "value": 26.9
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1955,
+    "value": 26.8
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1956,
+    "value": 27.2
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1957,
+    "value": 28.1
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1958,
+    "value": 28.9
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1959,
+    "value": 29.1
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1960,
+    "value": 29.6
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1961,
+    "value": 29.9
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1962,
+    "value": 30.2
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1963,
+    "value": 30.6
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1964,
+    "value": 31.0
+  },
+  {
+    "index_id": "idx_us_cpi",
+    "year": 1965,
+    "value": 31.5
+  },
+  {
+    "index_id": "idx_us_cpi",
     "year": 1966,
     "value": 32.4
   },
@@ -301,6 +566,312 @@
   },
   {
     "index_id": "idx_eurozone_hicp",
+    "year": 1945,
+    "value": 14.774,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1946,
+    "value": 15.155,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1947,
+    "value": 15.546,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1948,
+    "value": 15.948,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1949,
+    "value": 16.36,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1950,
+    "value": 16.782,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1951,
+    "value": 17.215,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1952,
+    "value": 17.66,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1953,
+    "value": 18.116,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1954,
+    "value": 18.584,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1955,
+    "value": 19.064,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1956,
+    "value": 19.556,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1957,
+    "value": 20.061,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1958,
+    "value": 20.579,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1959,
+    "value": 21.11,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1960,
+    "value": 21.655,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1961,
+    "value": 22.152,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1962,
+    "value": 22.782,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1963,
+    "value": 23.458,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1964,
+    "value": 24.006,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1965,
+    "value": 24.784,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1966,
+    "value": 25.659,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1967,
+    "value": 26.12,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1968,
+    "value": 26.504,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1969,
+    "value": 27.011,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1970,
+    "value": 27.943,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1971,
+    "value": 29.408,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1972,
+    "value": 31.021,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1973,
+    "value": 33.202,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1974,
+    "value": 35.522,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1975,
+    "value": 37.621,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1976,
+    "value": 39.219,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1977,
+    "value": 40.683,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1978,
+    "value": 41.789,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1979,
+    "value": 43.479,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1980,
+    "value": 45.845,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1981,
+    "value": 48.754,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1982,
+    "value": 51.309,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1983,
+    "value": 52.999,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1984,
+    "value": 54.274,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1985,
+    "value": 55.395,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1986,
+    "value": 55.323,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1987,
+    "value": 55.462,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1988,
+    "value": 56.168,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1989,
+    "value": 57.73,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1990,
+    "value": 59.287,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1991,
+    "value": 61.686,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1992,
+    "value": 64.805,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1993,
+    "value": 67.705,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1994,
+    "value": 69.529,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
+    "year": 1995,
+    "value": 70.715,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_eurozone_hicp",
     "year": 1996,
     "value": 71.74
   },
@@ -448,6 +1019,146 @@
     "index_id": "idx_eurozone_hicp",
     "year": 2025,
     "value": 128.75
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1945,
+    "value": 3.456,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1946,
+    "value": 3.596,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1947,
+    "value": 3.742,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1948,
+    "value": 3.894,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1949,
+    "value": 4.052,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1950,
+    "value": 4.216,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1951,
+    "value": 4.387,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1952,
+    "value": 4.565,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1953,
+    "value": 4.75,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1954,
+    "value": 4.942,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1955,
+    "value": 5.143,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1956,
+    "value": 5.351,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1957,
+    "value": 5.568,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1958,
+    "value": 5.794,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1959,
+    "value": 6.029,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1960,
+    "value": 6.273
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1961,
+    "value": 6.49
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1962,
+    "value": 6.762
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1963,
+    "value": 6.898
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1964,
+    "value": 7.125
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1965,
+    "value": 7.465
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1966,
+    "value": 7.757
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1967,
+    "value": 7.949
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1968,
+    "value": 8.323
+  },
+  {
+    "index_id": "idx_uk_cpi",
+    "year": 1969,
+    "value": 8.776
   },
   {
     "index_id": "idx_uk_cpi",
@@ -728,6 +1439,146 @@
     "index_id": "idx_uk_cpi",
     "year": 2025,
     "value": 153.135
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1945,
+    "value": 14.699,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1946,
+    "value": 15.189,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1947,
+    "value": 15.696,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1948,
+    "value": 16.219,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1949,
+    "value": 16.76,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1950,
+    "value": 17.319,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1951,
+    "value": 17.896,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1952,
+    "value": 18.493,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1953,
+    "value": 19.109,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1954,
+    "value": 19.747,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1955,
+    "value": 20.405,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1956,
+    "value": 21.085,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1957,
+    "value": 21.788,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1958,
+    "value": 22.515,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1959,
+    "value": 23.265,
+    "estimated": true
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1960,
+    "value": 24.041
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1961,
+    "value": 24.485
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1962,
+    "value": 25.542
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1963,
+    "value": 26.42
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1964,
+    "value": 27.234
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1965,
+    "value": 28.164
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1966,
+    "value": 29.509
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1967,
+    "value": 30.691
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1968,
+    "value": 31.426
+  },
+  {
+    "index_id": "idx_ch_cpi",
+    "year": 1969,
+    "value": 32.209
   },
   {
     "index_id": "idx_ch_cpi",
