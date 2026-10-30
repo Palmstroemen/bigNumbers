@@ -7,6 +7,7 @@
 
   const BASE = new URL("../", document.currentScript.src).href;
   const MIN = 1e6;   // smaller amounts stay unmarked
+  const NOT_COMPARED = ["list_laender_v1"];   // population, GDP, ... make dull comparisons
   const SKIP = "script, style, noscript, textarea, input, select, option, a, button, code, pre, svg, " +
     "[contenteditable], [data-means2me], .m2m-panel, #m2m-preview";
 
@@ -16,6 +17,8 @@
     if (state.bn) return;
     state.core = await import(BASE + "core/index.js");
     state.bn = await state.core.openBigNumbers({ bases: [BASE + "Daten/"] });
+    state.lists = state.bn.defaultLists.filter((id) => !NOT_COMPARED.includes(id));
+    await state.bn.loadLists(state.lists);
     if (!window.Means2Me) {
       await new Promise((resolve, reject) => {
         const s = document.createElement("script");
@@ -77,7 +80,7 @@
         if (!ids.length) continue;
         node.splitText(a.index + a.length);
         const mid = node.splitText(a.index);
-        const data = bn.snapshot(value, { country: c.code, unit: c.currency, pick: ids });
+        const data = bn.snapshot(value, { country: c.code, unit: c.currency, pick: ids, compare: { lists: state.lists } });
         data.label = a.currency === c.currency ? mid.data
           : `${mid.data} (≈ ${core.formatShort(value)} ${core.unitLabel(c.currency)})`;
         data.by = "auto";

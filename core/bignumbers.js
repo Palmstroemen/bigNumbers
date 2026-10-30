@@ -127,9 +127,9 @@ export class BigNumbers {
    * Entries of the given lists around `value` (in `unit`): `below` smaller and
    * `above` larger ones, ascending, plus whether more exist on either side.
    */
-  compare(value, { lists, unit, below = 8, above = 8 }) {
+  compare(value, { lists, unit, below = 8, above = 8, filter = () => true }) {
     const key = (e) => this.compareValue(e, unit);
-    const pool = this.entries(lists).sort((a, b) => key(a) - key(b));
+    const pool = this.entries(lists).filter(filter).sort((a, b) => key(a) - key(b));
     return windowAround(pool, Number.isFinite(value) ? value : 0, below, above, key);
   }
 
@@ -188,18 +188,47 @@ export class BigNumbers {
    * What an article embeds for `value` (see embed/means2me.js): the Mean2Me items
    * with the ids in `pick`, in that order, frozen with today's data so the text a
    * newsroom approved never changes by itself.
+   * `compare: { lists, below, above, exclude }` adds the neighbouring entries of
+   * those (loaded) lists; for a money value only money entries, in today's prices.
    */
-  snapshot(value, { country, unit, pick, custom = [], date = new Date() }) {
+  snapshot(value, { country, unit, pick, custom = [], compare = null, date = new Date() }) {
     const all = this.mean2me(value, { country, unit, custom });
     const items = pick.map((id) => {
       const m = all.find((x) => x.id === id);
       if (!m) throw new Error(`Means2Me: ${id} gibt es für ${country}${unit ? "" : " ohne Einheit"} nicht`);
       return { text: m.text, label: m.title };
     });
-    return {
+    const out = {
       v: 1, n: value, unit, country,
       label: `${formatShort(value)} ${unit ? unitLabel(unit) : ""}`.trim(),
       items, asOf: date.toISOString().slice(0, 10),
+    };
+    if (compare) out.compare = this.frozenComparison(value, unit, compare);
+    return out;
+  }
+
+  /** The neighbours of `value` as plain text: { note, smaller, larger }, each row { title, year, text, source }. */
+  frozenComparison(value, unit, { lists, below = 3, above = 3, exclude = [] }) {
+    const money = !!unit && this.convert.isCurrency(unit);
+    const skip = new Set(exclude);
+    const w = this.compare(value, {
+      lists, unit, below, above,
+      filter: (e) => !skip.has(e.id) && (!money || this.convert.isCurrency(e.unit)),
+    });
+    const row = (e) => {
+      const m = this.money(e, unit);
+      return {
+        id: e.id,
+        title: e.title,
+        year: e.title.includes(String(e.year_original)) ? null : e.year_original,
+        text: m?.changed ? `≈ ${formatShort(m.value)} ${unitLabel(unit)}` : `${formatShort(e.value_original)} ${unitLabel(e.unit)}`,
+        source: e.source_url,
+      };
+    };
+    return {
+      note: money ? `Geldbeträge in Preisen von ${this.priceYear}, umgerechnet in ${unitLabel(unit)}.` : "",
+      smaller: w.smaller.map(row),
+      larger: w.larger.map(row),
     };
   }
 }

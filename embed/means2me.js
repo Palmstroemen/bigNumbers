@@ -55,7 +55,26 @@
 .m2m-sheet::before{display:none}
 .m2m-sheet .m2m-close{display:block}
 .m2m-sheet .m2m-list li{background:var(--m2m-soft);border-radius:14px;padding:11px 14px}
-.m2m-sheet .m2m-list b{font-size:25px}`;
+.m2m-sheet .m2m-list b{font-size:25px}
+.m2m-sheet{max-height:88vh;overflow-y:auto}
+.m2m-more{display:flex;justify-content:space-between;align-items:center;width:100%;min-height:42px;margin-top:12px;padding:0 12px;
+  border:1px solid var(--m2m-line);border-radius:10px;background:var(--m2m-bg);color:var(--m2m-accent);font:inherit;font-size:14px;
+  font-weight:600;cursor:pointer}
+.m2m-more:focus-visible{outline:2px solid var(--m2m-accent);outline-offset:1px}
+.m2m-more span{transition:transform .15s}
+.m2m-more[aria-expanded=true] span{transform:rotate(180deg)}
+.m2m-cmp{margin-top:8px}
+.m2m-cmp[hidden]{display:none}
+.m2m-note{margin:0 0 4px;color:var(--m2m-muted);font-size:12px}
+.m2m-rows{list-style:none;margin:0;padding:0}
+.m2m-rows li+li{border-top:1px solid var(--m2m-line)}
+.m2m-rows a,.m2m-mine{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:7px 2px;
+  color:var(--m2m-text);text-decoration:none;font-size:13.5px;line-height:1.3}
+.m2m-rows a:hover span{text-decoration:underline}
+.m2m-rows small{margin-left:4px;color:var(--m2m-muted)}
+.m2m-rows b{flex:none;font-weight:700;white-space:nowrap}
+.m2m-rows .m2m-mine{padding:7px 8px;border-radius:8px;background:color-mix(in srgb,var(--m2m-accent) 10%,var(--m2m-bg));
+  color:var(--m2m-accent);font-weight:700}`;
 
   const asOfText = (d) => {
     const date = new Date(`${d}T12:00:00`);
@@ -104,6 +123,7 @@
       list.append(li);
     }
     panel.append(head, list);
+    if (data.compare && (data.compare.smaller?.length || data.compare.larger?.length)) panel.append(...comparison(data));
 
     let seen = true;
     try { seen = localStorage.getItem(SEEN) === "1"; localStorage.setItem(SEEN, "1"); } catch { /* private mode */ }
@@ -127,6 +147,56 @@
     const by = data.by === "auto" ? "Automatische Vorschau" : "Ausgewählt von der Redaktion";
     panel.append(el("p", "m2m-meta", [by, when && `Datenstand ${when}`].filter(Boolean).join(" · ")));
     return panel;
+  }
+
+  /** "Vergleich mit anderen Zahlen": a button and the neighbouring entries, folded until asked for. */
+  function comparison(data) {
+    const id = `m2m-cmp-${Math.random().toString(36).slice(2, 8)}`;
+    const more = el("button", "m2m-more", "Vergleich mit anderen Zahlen");
+    more.type = "button";
+    more.setAttribute("aria-expanded", "false");
+    more.setAttribute("aria-controls", id);
+    more.append(el("span", "", "▾"));
+    more.lastChild.setAttribute("aria-hidden", "true");
+
+    const box = el("div", "m2m-cmp");
+    box.id = id;
+    box.hidden = true;
+    if (data.compare.note) box.append(el("p", "m2m-note", data.compare.note));
+    const rows = el("ol", "m2m-rows");
+    const row = (r) => {
+      const li = el("li");
+      const a = el("a");
+      a.href = r.source;
+      a.target = "_blank";
+      a.rel = "noopener";
+      const title = el("span", "", r.title);
+      if (r.year) title.append(el("small", "", String(r.year)));
+      a.append(title, el("b", "", r.text));
+      li.append(a);
+      return li;
+    };
+    for (const r of data.compare.smaller ?? []) rows.append(row(r));
+    const mine = el("li");
+    const m = el("div", "m2m-mine");
+    m.append(el("span", "", "Diese Zahl"), el("b", "", data.label));
+    mine.append(m);
+    rows.append(mine);
+    for (const r of data.compare.larger ?? []) rows.append(row(r));
+    box.append(rows);
+
+    more.addEventListener("click", () => {
+      box.hidden = !box.hidden;
+      more.setAttribute("aria-expanded", String(!box.hidden));
+      if (open) {
+        open.hovered = false;          // opening the comparison keeps the panel open
+        if (!open.backdrop) {
+          place(open.panel, open.button);
+          if (!box.hidden) open.panel.scrollIntoView({ block: "nearest", behavior: "smooth" });
+        }
+      }
+    });
+    return [more, box];
   }
 
   /** Under the number, or above it when there is no room below; inside the window horizontally. */
