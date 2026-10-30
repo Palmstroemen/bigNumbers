@@ -361,6 +361,18 @@ button { font: inherit; color: inherit; cursor: pointer; }
   font: inherit; font-weight: 400; padding: 10px 12px; border-radius: 10px;
   border: 1px solid var(--line); background: var(--surface); color: var(--text);
 }
+.m2m-list li.m2m-mine { background: var(--accent-soft); box-shadow: inset 0 0 0 1.5px var(--accent); }
+.m2m-mine .m2m-value { color: var(--accent); }
+.m2m-edit { border: 0; background: none; color: var(--accent); font: inherit; font-size: .85rem; font-weight: 600; padding: 0 2px; min-height: 32px; }
+.m2m-list li.m2m-invite { padding: 0; background: none; }
+.m2m-invite button {
+  width: 100%; text-align: left; display: flex; flex-direction: column; gap: 2px; padding: 12px 14px;
+  border: 1.5px dashed var(--accent); border-radius: var(--radius); background: var(--accent-soft); color: var(--text); font: inherit;
+}
+.m2m-invite strong { color: var(--accent); }
+.m2m-invite span { color: var(--muted); font-size: .85rem; }
+.tax-remove { border: 0; background: none; color: var(--muted); font: inherit; min-height: 44px; }
+.tax-remove[hidden] { display: none; }
 .custom-form button[type="submit"] {
   border: 0; border-radius: var(--radius); padding: 12px; font-weight: 600;
   background: var(--accent); color: var(--on-accent); min-height: 44px;

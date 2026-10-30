@@ -101,7 +101,7 @@ Länder für „Für mich“. Mit dem Land kommen seine Grunddaten; jede Grundgr
 | `currency` | string | Landeswährung, wird beim Wechsel vorausgewählt |
 | `capital` | string | Hauptstadt |
 | `locales` / `timezones` | string[] | Browser-Sprachen und Zeitzonen für die automatische Vorauswahl |
-| `facts` | object | Grundgrößen → Eintrags-ID oder `null`: `population`, `capital_population`, `households`, `median_income_year`, `median_wage_month`, `gdp`, `federal_budget` |
+| `facts` | object | Grundgrößen → Eintrags-ID oder `null`: `population`, `capital_population`, `households`, `median_income_year`, `median_wage_month`, `median_net_income_year`, `gdp`, `federal_budget`, `government_expenditure`, `income_tax_revenue` (Lohn- und Einkommensteuer aller Privatpersonen; Grundlage für „Dein Anteil“) |
 
 Eigene Bezugsgrößen der Nutzerin oder des Nutzers (z. B. „Autofahrer in Österreich“) speichert die App nur auf dem Gerät, im selben Aufbau wie ein Kontext mit `factor_value`.
 

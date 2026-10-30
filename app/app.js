@@ -28,6 +28,7 @@ const state = {
   unit: "EUR",
   country: null,         // country code for "Für mich"
   custom: [],            // the user's own Mean2Me divisors: { id, title, value }
+  myTax: null,           // the user's income tax per year: { value, currency, country }; only on this device
   pane: 1,
   lastClip: null,
 };
@@ -202,14 +203,24 @@ function renderMean2Me() {
   const v = value();
   const c0 = country();
   $("#country-btn").innerHTML = `<span class="flag" aria-hidden="true">${esc(c0.flag)}</span>${esc(c0.name)} <span aria-hidden="true">▾</span>`;
-  const items = bn.mean2me(v, { country: c0.code, unit: state.unit, custom: state.custom }).map((m) => `
-        <li>
+  const items = bn.mean2me(v, { country: c0.code, unit: state.unit, custom: state.custom, myTax: state.myTax }).map((m) => `
+        <li${m.mine ? ' class="m2m-mine"' : ""}>
           <div class="m2m-label">${esc(m.title)}${m.custom
-            ? `<button type="button" class="m2m-remove" data-remove="${esc(m.id)}" aria-label="${esc(m.title)} entfernen">✕</button>` : ""}</div>
+            ? `<button type="button" class="m2m-remove" data-remove="${esc(m.id)}" aria-label="${esc(m.title)} entfernen">✕</button>` : ""}${m.mine
+            ? '<button type="button" class="m2m-edit" data-tax aria-label="Meine Steuer ändern">Ändern</button>' : ""}</div>
           <div class="m2m-value">${esc(m.text)}</div>
           <div class="m2m-source">${esc(m.basis)}</div>
         </li>`);
-  $("#m2m-list").innerHTML = v ? items.join("") : '<li class="empty">Gib in der Mitte eine Zahl ein.</li>';
+  // invite to enter one's own tax where the country's income tax revenue is known
+  const ask = state.unit && bn.hasTaxShare(c0.code) && state.myTax?.country !== c0.code;
+  const invite = ask ? `
+        <li class="m2m-invite">
+          <button type="button" data-tax>
+            <strong>Wie viel davon zahlst du?</strong>
+            <span>Mit deiner Lohn- oder Einkommensteuer rechnet die App deinen Anteil aus statt pro Kopf.</span>
+          </button>
+        </li>` : "";
+  $("#m2m-list").innerHTML = v ? invite + items.join("") : '<li class="empty">Gib in der Mitte eine Zahl ein.</li>';
   renderUnitChips();
 }
 
@@ -252,6 +263,28 @@ function setCountry(code) {
   } catch { /* private mode */ }
   state.below = state.above = STEP;
   render();
+}
+
+/** The tax sheet, filled with the saved value when it belongs to the current country. */
+function openTaxSheet() {
+  const c0 = country();
+  const form = $("#tax-form");
+  form.reset();
+  const mine = state.myTax?.country === c0.code ? state.myTax : null;
+  if (mine) form.elements.value.value = formatFull(mine.value);
+  $("#tax-unit").textContent = unitLabel(c0.currency);
+  $("#tax-country").textContent = c0.name_in ?? c0.name;
+  $("#tax-remove").hidden = !mine;
+  $("#tax-sheet").showModal();
+}
+
+function saveMyTax(value) {
+  state.myTax = value;
+  try {
+    if (value) localStorage.setItem("bn.mytax", JSON.stringify(value));
+    else localStorage.removeItem("bn.mytax");
+  } catch { /* private mode */ }
+  renderMean2Me();
 }
 
 function saveCustom() {
@@ -491,7 +524,22 @@ $("#custom-form").addEventListener("submit", (e) => {
   saveCustom();
   renderMean2Me();
 });
+$("#tax-form").addEventListener("submit", (e) => {
+  const n = parseNumberFromText(String(new FormData(e.target).get("value")));
+  if (!n || n <= 0) {
+    e.preventDefault();
+    toast("Bitte deine Steuer pro Jahr als Zahl größer als 0 eingeben");
+    return;
+  }
+  saveMyTax({ value: n, currency: country().currency, country: country().code });
+});
+$("#tax-remove").addEventListener("click", () => {
+  saveMyTax(null);
+  $("#tax-sheet").close();
+});
+
 $("#m2m-list").addEventListener("click", (e) => {
+  if (e.target.closest("[data-tax]")) { openTaxSheet(); return; }
   const id = e.target.closest("[data-remove]")?.dataset.remove;
   if (!id) return;
   state.custom = state.custom.filter((c) => c.id !== id);
@@ -512,6 +560,8 @@ async function start() {
   let savedUnit = null;
   try {
     savedUnit = localStorage.getItem("bn.unit");
+    const tax = JSON.parse(localStorage.getItem("bn.mytax"));
+    if (tax?.value > 0 && tax.currency && tax.country) state.myTax = tax;
     const custom = JSON.parse(localStorage.getItem("bn.custom"));
     // entries saved before the "Titel" field had only a label after "Pro"
     if (Array.isArray(custom)) {

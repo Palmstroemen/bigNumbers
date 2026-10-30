@@ -158,14 +158,17 @@ export class BigNumbers {
   /**
    * `value` broken down for a country: per citizen, per household, share of GDP, ...
    * plus the global ones and the user's own divisors ({ id, title, value }).
-   * Each item: { id, title, custom, result, text, basis }.
+   * With `myTax` ({ value, currency, country }: the user's own income tax per year)
+   * the first item is the user's share: `value` times their share of all income tax.
+   * Each item: { id, title, custom, mine, result, text, basis }.
    */
-  mean2me(value, { country, unit, custom = [] }) {
+  mean2me(value, { country, unit, custom = [], myTax = null }) {
     const sym = unit ? unitLabel(unit) : "";
+    const share = this.taxShare(value, { country, unit, myTax });
     const own = custom.map((c) => ({
       id: c.id, title: c.title, kind: "divide", factor_value: c.value, factor_source: "Eigene Angabe", custom: true,
     }));
-    return [...this.contexts.filter((c) => c.country_code === country || c.country_code === "GLOBAL"), ...own]
+    const items = [...this.contexts.filter((c) => c.country_code === country || c.country_code === "GLOBAL"), ...own]
       .filter((c) => unit || !c.only_currency)
       .map((c) => {
         const source = c.factor_entry ?? null;
@@ -182,6 +185,33 @@ export class BigNumbers {
           : `Bezug: ${c.factor_source}${c.custom ? ` (${formatFull(c.factor_value)})` : ""}`;
         return { id: c.id, title: c.title, custom: !!c.custom, result, text, basis };
       });
+    return share ? [share, ...items] : items;
+  }
+
+  /** Whether the user's share can be computed for `country`: its income tax revenue is known. */
+  hasTaxShare(country) {
+    return !!this.country(country)?.facts?.income_tax_revenue;
+  }
+
+  /**
+   * The user's share of `value`, weighted by their income tax: value × (my tax / all
+   * income tax in the country). Null without a currency, without the country's
+   * revenue, or when the tax was entered for another country.
+   */
+  taxShare(value, { country, unit, myTax }) {
+    const revenue = this.country(country)?.facts?.income_tax_revenue;
+    if (!revenue || !(myTax?.value > 0) || myTax.country !== country || !unit || !this.convert.isCurrency(unit)) return null;
+    const total = this.money(revenue, unit).value;
+    const mine = this.convert(myTax.value, myTax.currency, unit);
+    const share = mine / total;
+    const result = value * share;
+    return {
+      id: "m2m_my_share", title: "Dein Anteil, nach deiner Lohn- und Einkommensteuer", custom: false, mine: true,
+      result, share, text: Number.isFinite(result) ? `${formatShort(result)} ${unitLabel(unit)}` : "–",
+      basis: `Deine Steuer ${formatFull(myTax.value)} ${unitLabel(myTax.currency)} von ${formatShort(revenue.value_original)} ` +
+        `${unitLabel(revenue.unit)} insgesamt = ${formatPercent(share * 100)} · ${revenue.title}` +
+        `${revenue.title.includes(String(revenue.year_original)) ? "" : ` ${revenue.year_original}`}, ${revenue.source_title.split(":")[0]}`,
+    };
   }
 
   /**

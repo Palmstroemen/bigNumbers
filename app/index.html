@@ -113,6 +113,21 @@
     </form>
   </dialog>
 
+  <dialog class="sheet" id="tax-sheet" aria-labelledby="tax-title">
+    <header class="sheet-head">
+      <h2 id="tax-title">Deine Lohn- und Einkommensteuer</h2>
+      <button type="button" data-close aria-label="Schließen">✕</button>
+    </header>
+    <p class="sheet-intro">Wie viel Lohn- oder Einkommensteuer zahlst du im Jahr? Sie steht auf dem Jahreslohnzettel, der Lohnsteuerbescheinigung oder im Steuerbescheid. Sozialversicherung und Mehrwertsteuer gehören nicht dazu.</p>
+    <p class="sheet-intro">Die App rechnet aus, welchen Anteil an allen Lohn- und Einkommensteuern <span id="tax-country"></span> du trägst, und gibt dir diesen Anteil an jeder Zahl. Das ist eine Näherung: als ob alles so verteilt wäre wie die Einkommensteuer.</p>
+    <p class="sheet-intro"><strong>Bleibt nur auf diesem Gerät.</strong> Die Zahl wird nirgendwohin übertragen.</p>
+    <form class="custom-form" id="tax-form" method="dialog">
+      <label><span>Steuer pro Jahr (<span id="tax-unit"></span>)</span><input name="value" required inputmode="decimal" placeholder="z. B. 8.400" autocomplete="off"></label>
+      <button type="submit">Speichern</button>
+      <button type="button" class="tax-remove" id="tax-remove">Entfernen</button>
+    </form>
+  </dialog>
+
   <div class="toast" id="toast" hidden></div>
   <script type="module" src="app.js"></script>
 </body>

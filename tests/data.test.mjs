@@ -93,5 +93,18 @@ await t("Snapshot mit Vergleichen: nur Geldbeträge, nächste Nachbarn, ausgesch
   assert.ok(![...without.compare.smaller, ...without.compare.larger].some((r) => r.id === rows[0].id));
 });
 
+await t("Dein Anteil nach der eigenen Lohn- und Einkommensteuer", () => {
+  const myTax = { value: 12000, currency: "EUR", country: "AT" };
+  const [first] = bn.mean2me(38e6, { country: "AT", unit: "EUR", myTax });
+  assert.equal(first.id, "m2m_my_share");
+  const revenue = bn.money(bn.country("AT").facts.income_tax_revenue, "EUR").value;
+  assert.ok(Math.abs(first.result - 38e6 * 12000 / revenue) < 1e-9);
+  assert.equal(bn.mean2me(38e6, { country: "DE", unit: "EUR", myTax })[0].id, "m2m_population_de", "Steuer gilt nur für ihr Land");
+  assert.equal(bn.taxShare(38e6, { country: "AT", unit: "", myTax }), null, "ohne Währung kein Anteil");
+  const usd = bn.taxShare(38e6, { country: "AT", unit: "USD", myTax });
+  assert.ok(Math.abs(usd.share - first.share) < 1e-15, "der Anteil hängt nicht von der Anzeigewährung ab");
+  assert.ok(bn.countries.filter((c) => bn.hasTaxShare(c.code)).length >= 29);
+});
+
 console.log(fails ? `${fails} Fehler` : "alle Tests bestanden");
 process.exitCode = fails ? 1 : 0;

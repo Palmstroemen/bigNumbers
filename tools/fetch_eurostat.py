@@ -8,8 +8,10 @@ hand-researched national figures (e.g. for Austria) stay. It also adds ECB rates
 and Eurostat HICP series for currencies that are still missing.
 
     python3 tools/fetch_eurostat.py && python3 tools/build_lists.py
+    python3 tools/fetch_eurostat.py income_tax_revenue   # only these facts
 """
 import json
+import sys
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -33,6 +35,9 @@ DATASETS = {
     "government_expenditure": ("gov_10a_main", {"unit": "MIO_NAC", "sector": "S13", "na_item": "TE"}, 1e6,
                                "currency", None, "Staatsausgaben {gen} (Gesamtstaat)",
                                "Gesamtausgaben des Staates (Sektor S13)"),
+    "income_tax_revenue": ("gov_10a_taxag", {"unit": "MIO_NAC", "sector": "S13_S212", "na_item": "D51A_C1"}, 1e6,
+                           "currency", None, "Lohn- und Einkommensteuer {gen}",
+                           "Steuern auf Einkommen privater Haushalte (Lohn- und Einkommensteuer)"),
     "capital_population": ("urb_cpop1", {"indic_ur": "DE1001V"}, 1, "count", "people",
                            "Einwohner {capital}", "Bevölkerung am 1. Januar, Stadt"),
 }
@@ -81,7 +86,13 @@ def main():
                                      "Wirtschaftsleistung und Staatsausgaben, automatisch aus Eurostat.",
                       "icon": "globe", "color": "#0e7490", "color_dark": "#67e8f9", "image": None})
 
+    only = [a for a in sys.argv[1:] if not a.startswith("-")]
+    unknown = set(only) - set(DATASETS)
+    if unknown:
+        sys.exit(f"unbekannt: {', '.join(sorted(unknown))}; bekannt: {', '.join(DATASETS)}")
     for fact, (ds, filters, factor, unit_type, unit, title, label) in DATASETS.items():
+        if only and fact not in only:
+            continue
         params = {**filters, "sinceTimePeriod": 2015}
         if fact == "capital_population":
             params["cities"] = [f"{g}001C" for g in geos]

@@ -26,7 +26,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_be",
       "gdp": "entry_estat_gdp_be",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_be"
+      "government_expenditure": "entry_estat_government_expenditure_be",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_be"
     }
   },
   {
@@ -54,7 +55,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_bg",
       "gdp": "entry_estat_gdp_bg",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_bg"
+      "government_expenditure": "entry_estat_government_expenditure_bg",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_bg"
     }
   },
   {
@@ -83,7 +85,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_de",
       "gdp": "entry_bip_deutschland_2024",
       "federal_budget": "entry_de_bundeshaushalt_2025",
-      "government_expenditure": "entry_estat_government_expenditure_de"
+      "government_expenditure": "entry_estat_government_expenditure_de",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_de"
     }
   },
   {
@@ -111,7 +114,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_dk",
       "gdp": "entry_estat_gdp_dk",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_dk"
+      "government_expenditure": "entry_estat_government_expenditure_dk",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_dk"
     }
   },
   {
@@ -139,7 +143,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_ee",
       "gdp": "entry_estat_gdp_ee",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_ee"
+      "government_expenditure": "entry_estat_government_expenditure_ee",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_ee"
     }
   },
   {
@@ -169,7 +174,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_fi",
       "gdp": "entry_estat_gdp_fi",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_fi"
+      "government_expenditure": "entry_estat_government_expenditure_fi",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_fi"
     }
   },
   {
@@ -197,7 +203,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_fr",
       "gdp": "entry_estat_gdp_fr",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_fr"
+      "government_expenditure": "entry_estat_government_expenditure_fr",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_fr"
     }
   },
   {
@@ -225,7 +232,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_gr",
       "gdp": "entry_estat_gdp_gr",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_gr"
+      "government_expenditure": "entry_estat_government_expenditure_gr",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_gr"
     }
   },
   {
@@ -254,7 +262,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_ie",
       "gdp": "entry_estat_gdp_ie",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_ie"
+      "government_expenditure": "entry_estat_government_expenditure_ie",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_ie"
     }
   },
   {
@@ -282,7 +291,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_it",
       "gdp": "entry_estat_gdp_it",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_it"
+      "government_expenditure": "entry_estat_government_expenditure_it",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_it"
     }
   },
   {
@@ -310,7 +320,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_hr",
       "gdp": "entry_estat_gdp_hr",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_hr"
+      "government_expenditure": "entry_estat_government_expenditure_hr",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_hr"
     }
   },
   {
@@ -338,7 +349,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_lv",
       "gdp": "entry_estat_gdp_lv",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_lv"
+      "government_expenditure": "entry_estat_government_expenditure_lv",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_lv"
     }
   },
   {
@@ -366,7 +378,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_lt",
       "gdp": "entry_estat_gdp_lt",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_lt"
+      "government_expenditure": "entry_estat_government_expenditure_lt",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_lt"
     }
   },
   {
@@ -396,7 +409,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_lu",
       "gdp": "entry_estat_gdp_lu",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_lu"
+      "government_expenditure": "entry_estat_government_expenditure_lu",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_lu"
     }
   },
   {
@@ -425,7 +439,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_mt",
       "gdp": "entry_estat_gdp_mt",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_mt"
+      "government_expenditure": "entry_estat_government_expenditure_mt",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_mt"
     }
   },
   {
@@ -453,7 +468,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_nl",
       "gdp": "entry_estat_gdp_nl",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_nl"
+      "government_expenditure": "entry_estat_government_expenditure_nl",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_nl"
     }
   },
   {
@@ -481,7 +497,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_pl",
       "gdp": "entry_estat_gdp_pl",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_pl"
+      "government_expenditure": "entry_estat_government_expenditure_pl",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_pl"
     }
   },
   {
@@ -511,7 +528,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_pt",
       "gdp": "entry_estat_gdp_pt",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_pt"
+      "government_expenditure": "entry_estat_government_expenditure_pt",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_pt"
     }
   },
   {
@@ -539,7 +557,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_ro",
       "gdp": "entry_estat_gdp_ro",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_ro"
+      "government_expenditure": "entry_estat_government_expenditure_ro",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_ro"
     }
   },
   {
@@ -567,7 +586,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_se",
       "gdp": "entry_estat_gdp_se",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_se"
+      "government_expenditure": "entry_estat_government_expenditure_se",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_se"
     }
   },
   {
@@ -598,7 +618,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_ch",
       "gdp": "entry_bip_schweiz_2024",
       "federal_budget": "entry_ausgaben_bund_schweiz_2025",
-      "government_expenditure": "entry_estat_government_expenditure_ch"
+      "government_expenditure": "entry_estat_government_expenditure_ch",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_ch"
     }
   },
   {
@@ -626,7 +647,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_sk",
       "gdp": "entry_estat_gdp_sk",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_sk"
+      "government_expenditure": "entry_estat_government_expenditure_sk",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_sk"
     }
   },
   {
@@ -654,7 +676,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_si",
       "gdp": "entry_estat_gdp_si",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_si"
+      "government_expenditure": "entry_estat_government_expenditure_si",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_si"
     }
   },
   {
@@ -687,7 +710,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_es",
       "gdp": "entry_estat_gdp_es",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_es"
+      "government_expenditure": "entry_estat_government_expenditure_es",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_es"
     }
   },
   {
@@ -715,7 +739,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_cz",
       "gdp": "entry_estat_gdp_cz",
       "federal_budget": "entry_staatshaushalt_tschechien_2026",
-      "government_expenditure": "entry_estat_government_expenditure_cz"
+      "government_expenditure": "entry_estat_government_expenditure_cz",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_cz"
     }
   },
   {
@@ -753,7 +778,8 @@
       "median_net_income_year": null,
       "gdp": "entry_bip_usa_2024",
       "federal_budget": "entry_bundeshaushalt_usa_2026",
-      "government_expenditure": null
+      "government_expenditure": null,
+      "income_tax_revenue": "entry_us_individual_income_taxes_fy2025"
     }
   },
   {
@@ -781,7 +807,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_hu",
       "gdp": "entry_estat_gdp_hu",
       "federal_budget": "entry_staatshaushalt_ungarn_2024",
-      "government_expenditure": "entry_estat_government_expenditure_hu"
+      "government_expenditure": "entry_estat_government_expenditure_hu",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_hu"
     }
   },
   {
@@ -812,7 +839,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_cy",
       "gdp": "entry_estat_gdp_cy",
       "federal_budget": null,
-      "government_expenditure": "entry_estat_government_expenditure_cy"
+      "government_expenditure": "entry_estat_government_expenditure_cy",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_cy"
     }
   },
   {
@@ -840,7 +868,8 @@
       "median_net_income_year": "entry_estat_median_net_income_year_at",
       "gdp": "entry_bip_oesterreich_2024",
       "federal_budget": "entry_at_bundeshaushalt_auszahlungen_2024",
-      "government_expenditure": "entry_estat_government_expenditure_at"
+      "government_expenditure": "entry_estat_government_expenditure_at",
+      "income_tax_revenue": "entry_estat_income_tax_revenue_at"
     }
   }
 ]
