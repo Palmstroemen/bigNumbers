@@ -780,7 +780,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_nvidia_boersenwert_2025",
     "sort_value": 4638000000000,
-    "sort_order": 680,
+    "sort_order": 750,
     "note": "Aggregatorseite, keine Primärquelle; Wert zum Jahresende 2025."
   },
   {
@@ -788,7 +788,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_amazon_umsatz_2024",
     "sort_value": 638000000000,
-    "sort_order": 630,
+    "sort_order": 700,
     "note": null
   },
   {
@@ -796,7 +796,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_red_bull_dosen_2025",
     "sort_value": 13969000000,
-    "sort_order": 510,
+    "sort_order": 580,
     "note": null
   },
   {
@@ -804,14 +804,14 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_reichster_mensch_musk_2026",
     "sort_value": 839000000000,
-    "sort_order": 640
+    "sort_order": 710
   },
   {
     "id": "le_105",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_rekordtransfer_neymar_2017",
     "sort_value": 222000000,
-    "sort_order": 340,
+    "sort_order": 410,
     "note": null
   },
   {
@@ -819,7 +819,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_fussball_wm_katar_kosten_2022",
     "sort_value": 220000000000,
-    "sort_order": 580,
+    "sort_order": 650,
     "note": "Umstrittene Schätzung (Forbes via Wikipedia), umfasst Infrastruktur seit 2010; offiziell 8 Mrd. USD."
   },
   {
@@ -827,7 +827,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_olympia_paris_2024_kosten",
     "sort_value": 9000000000,
-    "sort_order": 480,
+    "sort_order": 550,
     "note": "Prognosewert („expected“), auf Wikipedia nur mit schwacher Quelle belegt; die Cour des comptes nennt nur öffentliche Ausgaben (3,02 + 3,63 Mrd. €)."
   },
   {
@@ -835,7 +835,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_olympia_paris_2024_athleten",
     "sort_value": 10714,
-    "sort_order": 30,
+    "sort_order": 40,
     "note": null
   },
   {
@@ -843,7 +843,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_burj_khalifa_baukosten",
     "sort_value": 1500000000,
-    "sort_order": 400,
+    "sort_order": 470,
     "note": null
   },
   {
@@ -851,14 +851,14 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_gpt4_trainingskosten",
     "sort_value": 78000000,
-    "sort_order": 310
+    "sort_order": 380
   },
   {
     "id": "le_111",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_netflix_abonnements_2026",
     "sort_value": 325000000,
-    "sort_order": 360,
+    "sort_order": 430,
     "note": "Wikipedia-Zahl (Stand 20. Jänner 2026); Primärquelle (Netflix bzw. Reuters) nicht abrufbar."
   },
   {
@@ -866,7 +866,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_median_bruttojahreseinkommen_oesterreich_2024",
     "sort_value": 38043,
-    "sort_order": 60,
+    "sort_order": 70,
     "note": null
   },
   {
@@ -874,7 +874,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_einwohner_oesterreich_2026",
     "sort_value": 9215956,
-    "sort_order": 260,
+    "sort_order": 320,
     "note": null
   },
   {
@@ -882,7 +882,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_einwohner_wien_2026",
     "sort_value": 2040914,
-    "sort_order": 210,
+    "sort_order": 230,
     "note": null
   },
   {
@@ -890,7 +890,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_weltbevoelkerung_8_milliarden_2022",
     "sort_value": 8000000000,
-    "sort_order": 450,
+    "sort_order": 520,
     "note": null
   },
   {
@@ -898,7 +898,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bip_oesterreich_2024",
     "sort_value": 534790720467,
-    "sort_order": 620,
+    "sort_order": 690,
     "note": null
   },
   {
@@ -906,7 +906,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bip_welt_2024",
     "sort_value": 111669432109121,
-    "sort_order": 730,
+    "sort_order": 800,
     "note": null
   },
   {
@@ -1033,7 +1033,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_wimbledon_2025_preisgeld_erste_runde_einzel",
     "sort_value": 66000,
-    "sort_order": 100,
+    "sort_order": 110,
     "note": null
   },
   {
@@ -1073,7 +1073,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_vienna_city_marathon_2025_anmeldungen",
     "sort_value": 46083,
-    "sort_order": 70,
+    "sort_order": 80,
     "note": null
   },
   {
@@ -1081,7 +1081,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bezug_buergermeister_wien_2025_monat",
     "sort_value": 22656.8,
-    "sort_order": 40,
+    "sort_order": 50,
     "note": null
   },
   {
@@ -1089,7 +1089,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_einfamilienhaus_durchschnittspreis_at_2025",
     "sort_value": 340223,
-    "sort_order": 170,
+    "sort_order": 190,
     "note": null
   },
   {
@@ -1097,7 +1097,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_kitzbuehel_hahnenkamm_siegpraemie_2026",
     "sort_value": 101000,
-    "sort_order": 130,
+    "sort_order": 140,
     "note": null
   },
   {
@@ -1112,14 +1112,14 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_vw_golf_einstiegspreis_at_2026",
     "sort_value": 26790,
-    "sort_order": 50
+    "sort_order": 60
   },
   {
     "id": "le_144",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_pkw_neuzulassungen_at_2025",
     "sort_value": 284978,
-    "sort_order": 140,
+    "sort_order": 160,
     "note": null
   },
   {
@@ -1127,7 +1127,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_elektro_pkw_neuzulassungen_at_2025",
     "sort_value": 60651,
-    "sort_order": 90,
+    "sort_order": 100,
     "note": null
   },
   {
@@ -1142,35 +1142,35 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_einwohner_deutschland_2026",
     "sort_value": 83300000,
-    "sort_order": 320
+    "sort_order": 390
   },
   {
     "id": "le_148",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_fahrgaeste_wiener_linien_2025",
     "sort_value": 903000000,
-    "sort_order": 390
+    "sort_order": 460
   },
   {
     "id": "le_149",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_dauerticket_besitzer_wiener_linien_2025",
     "sort_value": 1340000,
-    "sort_order": 190
+    "sort_order": 210
   },
   {
     "id": "le_150",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_passagiere_flughafen_wien_2025",
     "sort_value": 32600000,
-    "sort_order": 270
+    "sort_order": 330
   },
   {
     "id": "le_151",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_besucher_oktoberfest_2026",
     "sort_value": 7400000,
-    "sort_order": 250,
+    "sort_order": 300,
     "note": "Vorläufige Zahl der Festleitung; Besucherzahlen der Wiesn sind Schätzungen."
   },
   {
@@ -1178,7 +1178,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_eintritte_schloss_schoenbrunn_2025",
     "sort_value": 3963000,
-    "sort_order": 230
+    "sort_order": 260
   },
   {
     "id": "le_153",
@@ -1192,35 +1192,35 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_geburten_oesterreich_2025",
     "sort_value": 76067,
-    "sort_order": 120
+    "sort_order": 130
   },
   {
     "id": "le_155",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_geburten_deutschland_2025",
     "sort_value": 654241,
-    "sort_order": 180
+    "sort_order": 200
   },
   {
     "id": "le_156",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_pkw_bestand_oesterreich_2025",
     "sort_value": 5286101,
-    "sort_order": 240
+    "sort_order": 290
   },
   {
     "id": "le_157",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_pkw_bestand_deutschland_2026",
     "sort_value": 49500000,
-    "sort_order": 290
+    "sort_order": 360
   },
   {
     "id": "le_158",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_fahrgaeste_oebb_2025",
     "sort_value": 559000000,
-    "sort_order": 370
+    "sort_order": 440
   },
   {
     "id": "le_159",
@@ -1234,7 +1234,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_internetnutzer_weltweit_2025",
     "sort_value": 6000000000,
-    "sort_order": 440,
+    "sort_order": 510,
     "note": "Schätzung der ITU."
   },
   {
@@ -1242,28 +1242,28 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_einspielergebnis_avengers_endgame",
     "sort_value": 2942185132,
-    "sort_order": 420
+    "sort_order": 490
   },
   {
     "id": "le_162",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_verkaufte_exemplare_gta_v_2026",
     "sort_value": 230000000,
-    "sort_order": 350
+    "sort_order": 420
   },
   {
     "id": "le_163",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_median_bruttojahresverdienst_deutschland_2025",
     "sort_value": 54066,
-    "sort_order": 80
+    "sort_order": 90
   },
   {
     "id": "le_164",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_einwohner_niederoesterreich_2026",
     "sort_value": 1730094,
-    "sort_order": 200,
+    "sort_order": 220,
     "note": "Vorläufige Daten von Statistik Austria."
   },
   {
@@ -1271,7 +1271,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_einwohner_burgenland_2026",
     "sort_value": 301674,
-    "sort_order": 150,
+    "sort_order": 170,
     "note": "Vorläufige Daten von Statistik Austria."
   },
   {
@@ -1279,7 +1279,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_besucher_donauinselfest_2014",
     "sort_value": 3100000,
-    "sort_order": 220,
+    "sort_order": 240,
     "note": "Veranstalterangabe; Besucherzahlen bei freiem Eintritt sind Schätzungen."
   },
   {
@@ -1287,7 +1287,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_kapazitaet_allianz_arena",
     "sort_value": 75024,
-    "sort_order": 110,
+    "sort_order": 120,
     "note": "Nur Wikipedia als Quelle; Betreiberseite war nicht erreichbar."
   },
   {
@@ -1295,7 +1295,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_spotify_nutzer_monatlich_2026",
     "sort_value": 788000000,
-    "sort_order": 380
+    "sort_order": 450
   },
   {
     "id": "le_169",
@@ -2242,70 +2242,70 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bip_deutschland_2024",
     "sort_value": 4685592577805,
-    "sort_order": 690
+    "sort_order": 760
   },
   {
     "id": "le_301",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bip_schweiz_2024",
     "sort_value": 969919786395,
-    "sort_order": 650
+    "sort_order": 720
   },
   {
     "id": "le_302",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bip_usa_2024",
     "sort_value": 29298013000000,
-    "sort_order": 720
+    "sort_order": 790
   },
   {
     "id": "le_303",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bip_china_2024",
     "sort_value": 18729668435848,
-    "sort_order": 700
+    "sort_order": 770
   },
   {
     "id": "le_304",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bip_eu_2024",
     "sort_value": 19501078750999,
-    "sort_order": 710
+    "sort_order": 780
   },
   {
     "id": "le_305",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_naechtigungen_oesterreich_2025",
     "sort_value": 157270000,
-    "sort_order": 330
+    "sort_order": 400
   },
   {
     "id": "le_306",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_naechtigungen_deutsche_gaeste_oesterreich_2025",
     "sort_value": 58550000,
-    "sort_order": 300
+    "sort_order": 370
   },
   {
     "id": "le_307",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_arbeitslose_oesterreich_2025",
     "sort_value": 317540,
-    "sort_order": 160
+    "sort_order": 180
   },
   {
     "id": "le_308",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_erwerbstaetige_deutschland_2025",
     "sort_value": 46000000,
-    "sort_order": 280
+    "sort_order": 350
   },
   {
     "id": "le_309",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_warenexporte_oesterreich_2025",
     "sort_value": 190140000000,
-    "sort_order": 570,
+    "sort_order": 640,
     "note": "Vorläufiges Ergebnis von Statistik Austria."
   },
   {
@@ -2313,70 +2313,70 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_handel_deutschland_china_2025",
     "sort_value": 251800000000,
-    "sort_order": 590
+    "sort_order": 660
   },
   {
     "id": "le_311",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_exporte_deutschland_usa_2025",
     "sort_value": 146200000000,
-    "sort_order": 560
+    "sort_order": 630
   },
   {
     "id": "le_312",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_signa_holding_forderungen_2025",
     "sort_value": 8350000000,
-    "sort_order": 460
+    "sort_order": 530
   },
   {
     "id": "le_313",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_signa_holding_anerkannte_forderungen_2025",
     "sort_value": 2760000000,
-    "sort_order": 410
+    "sort_order": 480
   },
   {
     "id": "le_314",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_umsatz_omv_2025",
     "sort_value": 24300000000,
-    "sort_order": 530
+    "sort_order": 600
   },
   {
     "id": "le_315",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_umsatz_voestalpine_2025_26",
     "sort_value": 15100000000,
-    "sort_order": 520
+    "sort_order": 590
   },
   {
     "id": "le_316",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_umsatz_siemens_2025",
     "sort_value": 78900000000,
-    "sort_order": 540
+    "sort_order": 610
   },
   {
     "id": "le_317",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_umsatz_volkswagen_konzern_2025",
     "sort_value": 321900000000,
-    "sort_order": 600
+    "sort_order": 670
   },
   {
     "id": "le_318",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_umsatz_apple_2025",
     "sort_value": 416000000000,
-    "sort_order": 610
+    "sort_order": 680
   },
   {
     "id": "le_319",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bereinigter_gewinn_saudi_aramco_2025",
     "sort_value": 104700000000,
-    "sort_order": 550,
+    "sort_order": 620,
     "note": "Bereinigte Kennzahl (nicht nach IFRS); Quelle gibt die Aramco-Pressemitteilung wieder, Originalseite aramco.com per curl nicht abrufbar."
   },
   {
@@ -2384,21 +2384,21 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_umsatz_red_bull_2025",
     "sort_value": 12200000000,
-    "sort_order": 500
+    "sort_order": 570
   },
   {
     "id": "le_321",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_marketingausgaben_red_bull_2025",
     "sort_value": 3200000000,
-    "sort_order": 430
+    "sort_order": 500
   },
   {
     "id": "le_322",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_boersenwert_apple_3_billionen_2022",
     "sort_value": 3000000000000,
-    "sort_order": 670,
+    "sort_order": 740,
     "note": "Wert wurde nur im Handelsverlauf erreicht (Intraday), runde Schwellenangabe."
   },
   {
@@ -2406,14 +2406,14 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_finanzvermoegen_haushalte_oesterreich_2026",
     "sort_value": 1011000000000,
-    "sort_order": 660
+    "sort_order": 730
   },
   {
     "id": "le_324",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_suezkanal_blockade_warenwert_pro_tag_2021",
     "sort_value": 9600000000,
-    "sort_order": 490,
+    "sort_order": 560,
     "note": "Schätzung des aufgehaltenen Warenwerts, kein tatsächlicher wirtschaftlicher Schaden."
   },
   {
@@ -2421,6 +2421,56 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bundesgarantie_ubs_credit_suisse_2023",
     "sort_value": 9000000000,
-    "sort_order": 470
+    "sort_order": 540
+  },
+  {
+    "id": "le_326",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_einwohner_schweiz_2025",
+    "sort_value": 9127100,
+    "sort_order": 310
+  },
+  {
+    "id": "le_327",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_einwohner_bern_2026",
+    "sort_value": 147124,
+    "sort_order": 150
+  },
+  {
+    "id": "le_328",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_medianlohn_schweiz_monat_2024",
+    "sort_value": 7024,
+    "sort_order": 30
+  },
+  {
+    "id": "le_329",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_einwohner_berlin_2025",
+    "sort_value": 3700577,
+    "sort_order": 250
+  },
+  {
+    "id": "le_330",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_privathaushalte_oesterreich_2025",
+    "sort_value": 4182100,
+    "sort_order": 280
+  },
+  {
+    "id": "le_331",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_privathaushalte_deutschland_2025",
+    "sort_value": 41126000,
+    "sort_order": 340,
+    "note": "Vorläufiges Ergebnis (p) des Mikrozensus 2025, Angabe in 1000; gezählt werden Hauptwohnsitzhaushalte."
+  },
+  {
+    "id": "le_332",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_privathaushalte_schweiz_2025",
+    "sort_value": 4105458,
+    "sort_order": 270
   }
 ]

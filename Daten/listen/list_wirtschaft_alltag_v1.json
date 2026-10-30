@@ -45,6 +45,24 @@
       "status": "draft"
     },
     {
+      "id": "entry_medianlohn_schweiz_monat_2024",
+      "title": "Medianer Bruttomonatslohn in der Schweiz",
+      "value_original": 7024,
+      "unit_type": "currency",
+      "unit": "CHF",
+      "year_original": 2024,
+      "country_code": "CH",
+      "index_id": "idx_ch_cpi",
+      "short_description": "Der monatliche Bruttomedianlohn für eine Vollzeitstelle lag in der Schweiz 2024 bei 7024 Franken.",
+      "long_description": "Der Wert gilt für den privaten und öffentlichen Sektor zusammen und ist ein Monatslohn. Deutlich darüber lagen die Löhne in den Branchen Finanz- und Versicherungsdienstleistungen (10 192 Franken) sowie Information und Kommunikation (9473 Franken).",
+      "source_url": "https://statistik.admin.ch/de/themen/arbeit-erwerb/loehne-erwerbseinkommen-arbeitskosten",
+      "source_title": "Bundesamt für Statistik (BFS), Portal Statistik Schweiz: Löhne, Erwerbseinkommen und Arbeitskosten (Lohnstrukturerhebung 2024)",
+      "source2_url": null,
+      "source2_title": null,
+      "confidence_level": 2,
+      "status": "draft"
+    },
+    {
       "id": "entry_olympia_paris_2024_athleten",
       "title": "Athletinnen und Athleten bei Olympia Paris 2024",
       "value_original": 10714,
@@ -289,6 +307,24 @@
       }
     },
     {
+      "id": "entry_einwohner_bern_2026",
+      "title": "Einwohner der Stadt Bern",
+      "value_original": 147124,
+      "unit_type": "count",
+      "unit": "people",
+      "year_original": 2026,
+      "country_code": "CH",
+      "index_id": null,
+      "short_description": "Mitte 2026 zählt die Stadt Bern 147 124 Einwohnerinnen und Einwohner.",
+      "long_description": "Das sind 257 Personen (+0,2 %) mehr als zu Jahresbeginn. Die Zunahme geht laut Statistik Stadt Bern auf einen positiven Wanderungssaldo von 179 und einen positiven Geburtensaldo von 78 zurück, obwohl die 649 Geburten den tiefsten Halbjahresstand seit 2006 darstellen.",
+      "source_url": "https://www.bern.ch/themen/stadt-recht-und-politik/bern-in-zahlen/publikationen/2026-2030/download-2026-2030/2026-07-28-bev-2026-ersteshalbjahr-mm.pdf",
+      "source_title": "Statistik Stadt Bern: Medienmitteilung „Stadtbevölkerung wächst im 1. Halbjahr 2026 um gut 250 Personen“ (28.07.2026)",
+      "source2_url": null,
+      "source2_title": null,
+      "confidence_level": 2,
+      "status": "draft"
+    },
+    {
       "id": "entry_pkw_neuzulassungen_at_2025",
       "title": "Pkw-Neuzulassungen Österreich 2025",
       "value_original": 284978,
@@ -472,6 +508,24 @@
       "note": "Veranstalterangabe; Besucherzahlen bei freiem Eintritt sind Schätzungen."
     },
     {
+      "id": "entry_einwohner_berlin_2025",
+      "title": "Einwohner Berlins",
+      "value_original": 3700577,
+      "unit_type": "count",
+      "unit": "people",
+      "year_original": 2025,
+      "country_code": "DE",
+      "index_id": null,
+      "short_description": "In Berlin lebten Ende 2025 insgesamt 3.700.577 Menschen.",
+      "long_description": "Die Stadt überschritt damit laut amtlicher Bevölkerungsfortschreibung die Marke von 3,7 Millionen Einwohnenden. Die Bevölkerungszahl stieg gegenüber dem Vorjahr um 15.312 Personen (+0,4 %), getragen von einem Wanderungsgewinn von 19.699 Personen bei einem Sterbeüberschuss von 4.345 Personen.",
+      "source_url": "https://www.statistik-berlin-brandenburg.de/presse/2026/73-bevoelkerungsfortschreibung-2025-berlin/",
+      "source_title": "Amt für Statistik Berlin-Brandenburg: Pressemitteilung Nr. 73/2026 „Berlins Bevölkerungszahl erreicht 3,7 Millionen“ (2026)",
+      "source2_url": null,
+      "source2_title": null,
+      "confidence_level": 2,
+      "status": "draft"
+    },
+    {
       "id": "entry_eintritte_schloss_schoenbrunn_2025",
       "title": "Eintritte Schloss Schönbrunn",
       "value_original": 3963000,
@@ -497,6 +551,42 @@
         "license": "CC BY-SA 3.0 de",
         "source_url": "https://commons.wikimedia.org/wiki/File:Schloss_Sch%C3%B6nbrunn_Wien_2014_(Zuschnitt_1).jpg"
       }
+    },
+    {
+      "id": "entry_privathaushalte_schweiz_2025",
+      "title": "Privathaushalte in der Schweiz",
+      "value_original": 4105458,
+      "unit_type": "count",
+      "unit": "households",
+      "year_original": 2025,
+      "country_code": "CH",
+      "index_id": null,
+      "short_description": "Ende 2025 zählte die Schweiz 4 105 458 Privathaushalte.",
+      "long_description": "Davon waren 1 537 386 Einpersonenhaushalte (Statistik der Bevölkerung und der Haushalte, STATPOP). Im Jahr 1850 zählte die Schweiz erst 485 087 Privathaushalte.",
+      "source_url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36841336/master",
+      "source_title": "Bundesamt für Statistik (BFS): Tabelle je-d-01.02.02.09 „Anzahl Privathaushalte und Anzahl Personen in Privathaushalten nach Haushaltsgrösse, 1850 - 2025“ (Excel, Spalte STATPOP 2025; veröffentlicht 17.09.2026)",
+      "source2_url": null,
+      "source2_title": null,
+      "confidence_level": 2,
+      "status": "draft"
+    },
+    {
+      "id": "entry_privathaushalte_oesterreich_2025",
+      "title": "Privathaushalte in Österreich",
+      "value_original": 4182100,
+      "unit_type": "count",
+      "unit": "households",
+      "year_original": 2025,
+      "country_code": "AT",
+      "index_id": null,
+      "short_description": "In Österreich gab es 2025 rund 4 182 100 Privathaushalte.",
+      "long_description": "Davon waren 1 633 800 Einpersonenhaushalte; die durchschnittliche Haushaltsgröße lag 2025 bei 2,16 Personen. Ein Privathaushalt wird dabei mit einer Wohnpartei gleichgesetzt.",
+      "source_url": "https://www.statistik.at/statistiken/bevoelkerung-und-soziales/bevoelkerung/familien-haushalte-lebensformen/privathaushalte",
+      "source_title": "Statistik Austria: Privathaushalte (Themenseite, Mikrozensus-Arbeitskräfteerhebung 2025)",
+      "source2_url": null,
+      "source2_title": null,
+      "confidence_level": 2,
+      "status": "draft"
     },
     {
       "id": "entry_pkw_bestand_oesterreich_2025",
@@ -545,6 +635,24 @@
       "note": "Vorläufige Zahl der Festleitung; Besucherzahlen der Wiesn sind Schätzungen."
     },
     {
+      "id": "entry_einwohner_schweiz_2025",
+      "title": "Ständige Wohnbevölkerung der Schweiz",
+      "value_original": 9127100,
+      "unit_type": "count",
+      "unit": "people",
+      "year_original": 2025,
+      "country_code": "CH",
+      "index_id": null,
+      "short_description": "Am 31. Dezember 2025 umfasste die ständige Wohnbevölkerung der Schweiz 9 127 100 Personen.",
+      "long_description": "Das sind 0,8 % mehr als 2024; das Wachstum verlangsamte sich, weil weniger Personen einwanderten und mehr auswanderten. Von den Einwohnerinnen und Einwohnern waren 6 599 000 schweizerische und 2 528 100 ausländische Staatsangehörige. Erstmals ist die Zahl der Personen ab 65 Jahren grösser als die der unter 20-Jährigen.",
+      "source_url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36680491/master",
+      "source_title": "Bundesamt für Statistik (BFS): Medienmitteilung „Bestand und Entwicklung der Bevölkerung der Schweiz im Jahr 2025: Definitive Ergebnisse“ (20.08.2026)",
+      "source2_url": null,
+      "source2_title": null,
+      "confidence_level": 2,
+      "status": "draft"
+    },
+    {
       "id": "entry_einwohner_oesterreich_2026",
       "title": "Einwohner Österreichs",
       "value_original": 9215956,
@@ -588,6 +696,25 @@
         "license": "Public domain",
         "source_url": "https://commons.wikimedia.org/wiki/File:Wien_Flughafen_Schwechat_outside_Panorama.jpg"
       }
+    },
+    {
+      "id": "entry_privathaushalte_deutschland_2025",
+      "title": "Privathaushalte in Deutschland",
+      "value_original": 41126000,
+      "unit_type": "count",
+      "unit": "households",
+      "year_original": 2025,
+      "country_code": "DE",
+      "index_id": null,
+      "short_description": "In Deutschland gab es 2025 rund 41,1 Millionen Hauptwohnsitzhaushalte.",
+      "long_description": "Laut Mikrozensus 2025 lebten in diesen Haushalten 82,7 Millionen Haushaltsmitglieder, im Schnitt 2,01 Personen je Haushalt.",
+      "source_url": "https://www.statistikportal.de/de/bevoelkerung/haushalte",
+      "source_title": "Statistische Ämter des Bundes und der Länder (Statistikportal): Haushalte – Hauptwohnsitzhaushalte 2025 (Mikrozensus)",
+      "source2_url": null,
+      "source2_title": null,
+      "confidence_level": 1,
+      "status": "draft",
+      "note": "Vorläufiges Ergebnis (p) des Mikrozensus 2025, Angabe in 1000; gezählt werden Hauptwohnsitzhaushalte."
     },
     {
       "id": "entry_erwerbstaetige_deutschland_2025",

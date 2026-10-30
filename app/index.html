@@ -24,9 +24,6 @@
           <div class="pane-number" data-bind="short"></div>
           <div class="pane-sub" id="bn-sub">Womit ist das vergleichbar?</div>
           <div class="chips unit-chips" id="bn-unit-chips">
-            <button data-unit="EUR">€</button>
-            <button data-unit="USD">$</button>
-            <button data-unit="">ohne Einheit</button>
           </div>
           <div class="chips" id="list-chips"></div>
         </header>
@@ -69,15 +66,16 @@
       <!-- Right: Mean2Me -->
       <section class="pane" id="pane-m2m" aria-label="Für mich">
         <header class="pane-head">
-          <div class="pane-number" data-bind="short"></div>
+          <div class="m2m-head">
+            <div class="pane-number" data-bind="short"></div>
+            <button type="button" class="country-btn" id="country-btn" aria-haspopup="dialog" aria-label="Land wechseln"></button>
+          </div>
           <div class="pane-sub">Was bedeutet das für mich?</div>
           <div class="chips unit-chips" id="unit-chips">
-            <button data-unit="EUR">€</button>
-            <button data-unit="USD">$</button>
-            <button data-unit="">ohne Einheit</button>
           </div>
         </header>
         <ul class="m2m-list" id="m2m-list"></ul>
+        <button class="more" id="custom-add">+ Eigene Bezugsgröße</button>
       </section>
     </main>
   </div>
@@ -85,10 +83,32 @@
   <dialog class="sheet" id="list-sheet" aria-labelledby="sheet-title">
     <header class="sheet-head">
       <h2 id="sheet-title">Listen</h2>
-      <button type="button" id="sheet-close" aria-label="Schließen">✕</button>
+      <button type="button" data-close aria-label="Schließen">✕</button>
     </header>
     <p class="sheet-intro">Wähle, welche Listen in die Vergleiche einfließen. Die App führt alle aktiven Listen zusammen.</p>
     <ul class="sheet-lists" id="sheet-lists"></ul>
+  </dialog>
+
+  <dialog class="sheet" id="country-sheet" aria-labelledby="country-title">
+    <header class="sheet-head">
+      <h2 id="country-title">Land</h2>
+      <button type="button" data-close aria-label="Schließen">✕</button>
+    </header>
+    <p class="sheet-intro">Für welches Land soll „Für mich“ rechnen? Einwohner, Einkommen und Haushalte kommen mit dem Land.</p>
+    <ul class="sheet-lists" id="country-list"></ul>
+  </dialog>
+
+  <dialog class="sheet" id="custom-sheet" aria-labelledby="custom-title">
+    <header class="sheet-head">
+      <h2 id="custom-title">Eigene Bezugsgröße</h2>
+      <button type="button" data-close aria-label="Schließen">✕</button>
+    </header>
+    <p class="sheet-intro">Zum Beispiel deine Gemeinde, dein Bundesland oder alle Autofahrer. Die App teilt die Zahl dadurch. Gespeichert wird nur auf diesem Gerät.</p>
+    <form class="custom-form" id="custom-form" method="dialog">
+      <label>Pro …<input name="label" required maxlength="60" placeholder="Autofahrer in Österreich" autocomplete="off"></label>
+      <label>Anzahl<input name="value" required inputmode="decimal" placeholder="z. B. 5,3 Mio." autocomplete="off"></label>
+      <button type="submit" class="k-eq-like">Hinzufügen</button>
+    </form>
   </dialog>
 
   <div class="toast" id="toast" hidden></div>

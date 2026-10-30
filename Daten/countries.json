@@ -1,0 +1,75 @@
+[
+  {
+    "code": "AT",
+    "name": "Österreich",
+    "name_genitive": "Österreichs",
+    "name_in": "in Österreich",
+    "flag": "🇦🇹",
+    "currency": "EUR",
+    "capital": "Wien",
+    "locales": [
+      "de-AT"
+    ],
+    "timezones": [
+      "Europe/Vienna"
+    ],
+    "facts": {
+      "population": "entry_einwohner_oesterreich_2026",
+      "capital_population": "entry_einwohner_wien_2026",
+      "households": "entry_privathaushalte_oesterreich_2025",
+      "median_income_year": "entry_median_bruttojahreseinkommen_oesterreich_2024",
+      "gdp": "entry_bip_oesterreich_2024",
+      "federal_budget": "entry_at_bundeshaushalt_auszahlungen_2024"
+    }
+  },
+  {
+    "code": "DE",
+    "name": "Deutschland",
+    "name_genitive": "Deutschlands",
+    "name_in": "in Deutschland",
+    "flag": "🇩🇪",
+    "currency": "EUR",
+    "capital": "Berlin",
+    "locales": [
+      "de-DE"
+    ],
+    "timezones": [
+      "Europe/Berlin",
+      "Europe/Busingen"
+    ],
+    "facts": {
+      "population": "entry_einwohner_deutschland_2026",
+      "capital_population": "entry_einwohner_berlin_2025",
+      "households": "entry_privathaushalte_deutschland_2025",
+      "median_income_year": "entry_median_bruttojahresverdienst_deutschland_2025",
+      "gdp": "entry_bip_deutschland_2024",
+      "federal_budget": "entry_de_bundeshaushalt_2025"
+    }
+  },
+  {
+    "code": "CH",
+    "name": "Schweiz",
+    "name_genitive": "der Schweiz",
+    "name_in": "in der Schweiz",
+    "flag": "🇨🇭",
+    "currency": "CHF",
+    "capital": "Bern",
+    "locales": [
+      "de-CH",
+      "fr-CH",
+      "it-CH",
+      "rm-CH"
+    ],
+    "timezones": [
+      "Europe/Zurich"
+    ],
+    "facts": {
+      "population": "entry_einwohner_schweiz_2025",
+      "capital_population": "entry_einwohner_bern_2026",
+      "households": "entry_privathaushalte_schweiz_2025",
+      "median_wage_month": "entry_medianlohn_schweiz_monat_2024",
+      "gdp": "entry_bip_schweiz_2024",
+      "federal_budget": "entry_ausgaben_bund_schweiz_2025"
+    }
+  }
+]

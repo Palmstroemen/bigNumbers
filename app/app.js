@@ -27,6 +27,8 @@ const state = {
   above: STEP,
   expanded: null,
   unit: "EUR",
+  country: null,         // country code for "Für mich"
+  custom: [],            // the user's own Mean2Me divisors: { id, label, value }
   pane: 1,
   lastClip: null,
 };
@@ -54,6 +56,7 @@ async function loadData() {
     lists: catalog.lists,
     packages: new Map(),   // list id -> loaded list file
     contexts: m2m.contexts,
+    countries: m2m.countries,
     rateOf,
     convert: makeConverter(rates),
     inflate: makeInflator(indexValues),
@@ -288,34 +291,92 @@ async function toggleList(id, on) {
   renderBigNumbers();
 }
 
+const country = () => state.data.countries.find((c) => c.code === state.country) ?? state.data.countries[0];
+
+/** "1,9 %"; very small shares keep three significant digits ("0,00423 %"). */
+const formatPercent = (p) => `${formatShort(p)} %`;
+
 function renderMean2Me() {
   const v = value();
   const { contexts } = state.data;
   const sym = state.unit ? unitLabel(state.unit) : "";
-  const items = contexts
+  const c0 = country();
+  $("#country-btn").innerHTML = `<span class="flag" aria-hidden="true">${esc(c0.flag)}</span>${esc(c0.name)} <span aria-hidden="true">▾</span>`;
+  const own = state.custom.map((c) => ({
+    id: c.id, title: `Pro ${c.label}`, kind: "divide", factor_value: c.value, factor_source: "Eigene Angabe", custom: true,
+  }));
+  const items = [...contexts.filter((c) => c.country_code === c0.code || c.country_code === "GLOBAL"), ...own]
     .filter((c) => state.unit || !c.only_currency)
     .map((c) => {
       const source = c.factor_entry ?? null;
       const money = source ? moneyOf(source) : null;
       const factor = money ? money.value : source ? source.value_original : c.factor_value;
-      const r = v / factor;
-      const shown = c.only_currency ? `${formatShort(r)} Jahre` : `${formatShort(r)} ${sym}`.trim();
+      const share = c.kind === "share";
+      const r = share ? v / factor * 100 : v / factor;
+      const shown = share ? formatPercent(r) : `${formatShort(r)} ${c.result_unit ?? sym}`.trim();
       const basis = source
         ? `Bezug: ${formatFull(source.value_original)} ${unitLabel(source.unit)}` +
-          (money?.changed ? ` (≈ ${formatFull(Math.round(factor))} ${unitLabel(state.unit)} in Preisen von ${money.infl?.to ?? state.data.priceYear})` : "") +
+          (money?.changed ? ` (≈ ${formatShort(factor)} ${unitLabel(state.unit)} in Preisen von ${money.infl?.to ?? state.data.priceYear})` : "") +
           ` · ${source.source_title} (${source.year_original})`
-        : `Bezug: ${c.factor_source}`;
+        : `Bezug: ${c.factor_source}${c.custom ? ` (${formatFull(c.factor_value)})` : ""}`;
       return `
         <li>
-          <div class="m2m-label">${esc(c.title)}</div>
+          <div class="m2m-label">${esc(c.title)}${c.custom
+            ? `<button type="button" class="m2m-remove" data-remove="${esc(c.id)}" aria-label="${esc(c.title)} entfernen">✕</button>` : ""}</div>
           <div class="m2m-value">${esc(Number.isFinite(r) ? shown : "–")}</div>
           <div class="m2m-source">${esc(basis)}</div>
         </li>`;
     });
   $("#m2m-list").innerHTML = v ? items.join("") : '<li class="empty">Gib in der Mitte eine Zahl ein.</li>';
-  for (const b of document.querySelectorAll(".unit-chips button")) {
-    b.setAttribute("aria-pressed", String(b.dataset.unit === state.unit));
+  renderUnitChips();
+}
+
+/** Currency chips: the country's currency first, then € and $, then "ohne Einheit". */
+function renderUnitChips() {
+  const units = [...new Set([country().currency, "EUR", "USD", state.unit].filter(Boolean)), ""];
+  const html = units.map((u) =>
+    `<button data-unit="${esc(u)}" aria-pressed="${u === state.unit}">${esc(u ? unitLabel(u) : "ohne Einheit")}</button>`).join("");
+  for (const el of document.querySelectorAll(".unit-chips")) el.innerHTML = html;
+}
+
+function renderCountrySheet() {
+  $("#country-list").innerHTML = state.data.countries.map((c) => `
+    <li>
+      <button type="button" class="country-choice" data-country="${esc(c.code)}" aria-pressed="${c.code === state.country}">
+        <span class="flag" aria-hidden="true">${esc(c.flag)}</span>
+        <span class="sheet-text"><strong>${esc(c.name)}</strong><span>Hauptstadt ${esc(c.capital)} · ${esc(unitLabel(c.currency))}</span></span>
+      </button>
+    </li>`).join("");
+}
+
+/** First guess of the user's country: saved choice, else time zone, else browser language. */
+function guessCountry(countries) {
+  let saved = null;
+  try { saved = localStorage.getItem("bn.country"); } catch { /* private mode */ }
+  if (countries.some((c) => c.code === saved)) return saved;
+  const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const byTz = countries.find((c) => c.timezones.includes(tz));
+  if (byTz) return byTz.code;
+  for (const lang of navigator.languages ?? [navigator.language]) {
+    const hit = countries.find((c) => c.locales.includes(lang));
+    if (hit) return hit.code;
   }
+  return countries[0].code;
+}
+
+function setCountry(code) {
+  state.country = code;
+  state.unit = country().currency;
+  try {
+    localStorage.setItem("bn.country", code);
+    localStorage.setItem("bn.unit", state.unit);
+  } catch { /* private mode */ }
+  state.below = state.above = STEP;
+  render();
+}
+
+function saveCustom() {
+  try { localStorage.setItem("bn.custom", JSON.stringify(state.custom)); } catch { /* private mode */ }
 }
 
 let urlTimer;
@@ -485,9 +546,7 @@ $("#list-chips").addEventListener("click", async (e) => {
 $("#sheet-lists").addEventListener("change", (e) => {
   if (e.target.dataset.list) toggleList(e.target.dataset.list, e.target.checked);
 });
-$("#sheet-close").addEventListener("click", () => $("#list-sheet").close());
-// a tap on the backdrop closes the sheet
-$("#list-sheet").addEventListener("click", (e) => { if (e.target === e.currentTarget) e.currentTarget.close(); });
+
 
 $("#bn-list").addEventListener("click", (e) => {
   const li = e.target.closest("li[data-id]");
@@ -522,13 +581,52 @@ for (const chips of document.querySelectorAll(".unit-chips")) {
   });
 }
 
+$("#country-btn").addEventListener("click", () => { renderCountrySheet(); $("#country-sheet").showModal(); });
+$("#country-list").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-country]");
+  if (!b) return;
+  setCountry(b.dataset.country);
+  $("#country-sheet").close();
+});
+
+$("#custom-add").addEventListener("click", () => { $("#custom-form").reset(); $("#custom-sheet").showModal(); });
+$("#custom-form").addEventListener("submit", (e) => {
+  const form = new FormData(e.target);
+  const label = String(form.get("label")).trim().replace(/^pro\s+/i, "");
+  const n = parseNumberFromText(String(form.get("value")));
+  if (!label || !n || n <= 0) {
+    e.preventDefault();
+    toast("Bitte eine Bezeichnung und eine Zahl größer als 0 eingeben");
+    return;
+  }
+  state.custom.push({ id: `own_${Date.now()}`, label, value: n });
+  saveCustom();
+  renderMean2Me();
+});
+$("#m2m-list").addEventListener("click", (e) => {
+  const id = e.target.closest("[data-remove]")?.dataset.remove;
+  if (!id) return;
+  state.custom = state.custom.filter((c) => c.id !== id);
+  saveCustom();
+  renderMean2Me();
+});
+
+// every sheet: the ✕ button and a tap on the backdrop close it
+for (const sheet of document.querySelectorAll("dialog.sheet")) {
+  sheet.addEventListener("click", (e) => {
+    if (e.target === sheet || e.target.closest("[data-close]")) sheet.close();
+  });
+}
+
 // --- Start ----------------------------------------------------------------------------------------
 
 async function start() {
+  let savedUnit = null;
   try {
-    const saved = localStorage.getItem("bn.unit");
-    if (saved !== null) state.unit = saved;
-  } catch { /* private mode */ }
+    savedUnit = localStorage.getItem("bn.unit");
+    const custom = JSON.parse(localStorage.getItem("bn.custom"));
+    if (Array.isArray(custom)) state.custom = custom.filter((c) => c && c.label && c.value > 0);
+  } catch { /* none, or private mode */ }
 
   const params = new URLSearchParams(location.search);
   const fromUrl = Number(params.get("n"));
@@ -545,6 +643,8 @@ async function start() {
 
   try {
     state.data = await loadData();
+    state.country = guessCountry(state.data.countries);
+    state.unit = savedUnit ?? country().currency;
     const known = new Set(state.data.lists.map((l) => l.id));
     let saved = null;
     try { saved = JSON.parse(localStorage.getItem("bn.lists")); } catch { /* none or private mode */ }

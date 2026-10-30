@@ -73,19 +73,37 @@ Referenzierte Preis- und Kostenindizes.
 
 ## 5. `mean2me_contexts`
 
-Kontexte für persönliche Umrechnungen.
+Bezugsgrößen für „Für mich“. In `Daten/` sind sie Vorlagen: Ein Kontext mit `country_code: "*"` wird für jedes Land in `countries.json` erzeugt, das die Grundgröße aus `basis` hat. `tools/build_lists.py` setzt dabei `{country}`, `{country_in}`, `{country_genitive}` und `{capital}` im Titel ein.
 
 | Feld | Typ | Beschreibung |
 | --- | --- | --- |
-| `id` | string | Kontext-ID |
-| `title` | string | Anzeigename |
-| `country_code` | string | Land oder Region |
-| `factor_source` | string | Quelle des Divisors |
-| `factor_value` | number | Divisor für die Umrechnung |
-| `unit_label` | string | z. B. `pro Einwohner` |
-| `icon` | string/null | optionale Icon-Referenz |
-| `is_default` | boolean | Standardkontext für das Land |
+| `id` | string | Kontext-ID (beim Erzeugen um den Ländercode ergänzt) |
+| `country_code` | string | `*` für eine Ländervorlage, `GLOBAL` für länderunabhängige Kontexte |
+| `basis` | string/null | Name der Grundgröße in `countries.facts`, z. B. `population`, `gdp` |
+| `kind` | string | `divide` (Zahl ÷ Bezug) oder `share` (Anteil am Bezug in Prozent) |
+| `title` | string | Anzeigename, bei Vorlagen mit Platzhaltern |
+| `factor_entry_id` | string/null | nur `GLOBAL`: Eintrag, der den Bezugswert liefert |
+| `factor_value` | number/null | nur `GLOBAL`: fester Bezugswert, z. B. 365 Tage |
+| `factor_source` | string/null | Beschreibung des festen Bezugswerts |
+| `result_unit` | string/null | Einheit des Ergebnisses, z. B. `Jahre`; leer = Währung der Zahl |
+| `only_currency` | boolean | nur zeigen, wenn die Zahl eine Währung hat |
 | `notes` | string | Hinweise zur Interpretation |
+
+## 6. `countries`
+
+Länder für „Für mich“. Mit dem Land kommen seine Grunddaten; jede Grundgröße verweist auf einen belegten Eintrag in `entries.json`.
+
+| Feld | Typ | Beschreibung |
+| --- | --- | --- |
+| `code` | string | ISO-Ländercode |
+| `name` / `name_in` / `name_genitive` | string | Name, z. B. `Schweiz` / `in der Schweiz` / `der Schweiz` |
+| `flag` | string | Flaggen-Emoji für die Länderwahl |
+| `currency` | string | Landeswährung, wird beim Wechsel vorausgewählt |
+| `capital` | string | Hauptstadt |
+| `locales` / `timezones` | string[] | Browser-Sprachen und Zeitzonen für die automatische Vorauswahl |
+| `facts` | object | Grundgrößen → Eintrags-ID oder `null`: `population`, `capital_population`, `households`, `median_income_year`, `median_wage_month`, `gdp`, `federal_budget` |
+
+Eigene Bezugsgrößen der Nutzerin oder des Nutzers (z. B. „Autofahrer in Österreich“) speichert die App nur auf dem Gerät, im selben Aufbau wie ein Kontext mit `factor_value`.
 
 ## Beziehungsidee
 

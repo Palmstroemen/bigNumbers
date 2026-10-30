@@ -53,14 +53,37 @@ def build():
             "access": lst.get("access", "free"),
         })
     files["index.json"] = {"lists": catalog}
-    contexts = []
-    for c in load("mean2me_contexts.json"):
-        c = dict(c)
-        if c.get("factor_entry_id"):
-            c["factor_entry"] = entry_for_app(entries[c["factor_entry_id"]])
-        contexts.append(c)
-    files["mean2me.json"] = {"contexts": contexts}
+    files["mean2me.json"] = build_mean2me(entries)
     return {name: json.dumps(data, indent=2, ensure_ascii=False) + "\n" for name, data in files.items()}
+
+
+def build_mean2me(entries):
+    """Countries with their facts, and the Mean2Me contexts expanded per country.
+
+    A context with country_code "*" is a template: it becomes one context per country
+    that has the fact named in `basis`; {country}, {country_in}, {country_genitive} and {capital}
+    in the title are filled in. GLOBAL contexts are taken as they are.
+    """
+    countries, contexts = [], []
+    templates = load("mean2me_contexts.json")
+    for c in load("countries.json"):
+        facts = {k: entry_for_app(entries[v]) for k, v in c["facts"].items() if v}
+        countries.append({**{k: v for k, v in c.items() if k != "facts"}, "facts": facts})
+        for t in templates:
+            if t["country_code"] != "*" or t["basis"] not in facts:
+                continue
+            title = (t["title"].replace("{country_genitive}", c["name_genitive"]).replace("{country_in}", c["name_in"])
+                     .replace("{country}", c["name"]).replace("{capital}", c["capital"]))
+            contexts.append({**t, "id": f"{t['id']}_{c['code'].lower()}", "country_code": c["code"],
+                             "title": title, "factor_entry": facts[t["basis"]]})
+    for t in templates:
+        if t["country_code"] == "*":
+            continue
+        t = dict(t)
+        if t.get("factor_entry_id"):
+            t["factor_entry"] = entry_for_app(entries[t["factor_entry_id"]])
+        contexts.append(t)
+    return {"countries": countries, "contexts": contexts}
 
 
 def main():

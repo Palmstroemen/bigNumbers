@@ -28,12 +28,12 @@ Enter or paste a number in the center, then swipe sideways: the comparisons are 
 
 ## Dataset
 
-`Daten/` currently holds 325 entries in 6 lists:
+`Daten/` currently holds 332 entries in 6 lists:
 
 | List | Entries |
 | --- | --- |
 | Budget und Steuern | 84 |
-| Wirtschaft und Alltag | 73 |
+| Wirtschaft und Alltag | 80 |
 | Rüstung und Großprojekte | 53 |
 | Natur und Weltraum | 40 |
 | Gesundheit | 38 |
@@ -49,6 +49,8 @@ Files:
 * `list_entries.json` – assigns entries to lists, sorted by value.
 * `indices.json` – price indices (CPI, HICP, ...) used to convert historic money values into today's values.
 * `index_values.json` – one value per index and year (annual averages from BLS, Eurostat and the World Bank). US values go back to 1913. For the other indices, years before the official series are estimates (flag `estimated`), back to 1945; `indices.json` describes the method in `estimate_note`.
+* `countries.json` – the countries for “Für mich” (Austria, Germany, Switzerland) with flag, currency, capital and their base facts (population, capital, households, median income, GDP, federal budget), each pointing to a sourced entry.
+* `mean2me_contexts.json` – the “Für mich” calculations; most are templates that `tools/build_lists.py` expands for every country.
 * `exchange_rates.json` – exchange rates (ECB reference rates, annual average) used to compare money values in different currencies.
 * `source_quotes.json` – for each researched entry, the literal quote from the source page that contains the number.
 * `bilder/` – pictures for the detail view (800 px JPEGs from Wikimedia Commons). Each entry names its picture in `image` with author, license and source page; only licenses that allow commercial use (CC BY, CC BY-SA, public domain).
@@ -62,7 +64,7 @@ All entries are `draft`. Nothing has been reviewed by a human yet.
 
 * `confidence_level: 2` – value seen on the source page and backed by a quote in `source_quotes.json`.
 * `confidence_level: 1` – estimate, lower bound, forecast, contradictory sources or old data. These entries carry a note in `list_entries.json`.
-  All entries were checked against their sources in October 2026. Of the 325 entries, 47 are at this level, each with a note saying why.
+  All entries were checked against their sources in October 2026. Of the 332 entries, 48 are at this level, each with a note saying why.
   All 15 entries from the 2013 collection have been checked against their sources (October 2026). Four remain at this level: two derived monthly values and two Eurofighter averages computed by Wikipedia.
 
 Workflow for an entry: `draft` → `reviewed` (value, source and description checked by a person) → `published`.
