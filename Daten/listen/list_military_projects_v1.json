@@ -3,7 +3,10 @@
   "name": "Rüstung und Großprojekte",
   "version": "v1",
   "description": "Verteidigungsbudgets, Waffensysteme und Militärbetrieb sowie Kosten großer Bau- und Infrastrukturprojekte.",
-  "icon": "shield",
+  "icon": "arch",
+  "color": "#a35b00",
+  "color_dark": "#f0a24a",
+  "image": null,
   "entries": [
     {
       "id": "entry_artilleriegranate_155mm_l15_ukraine",

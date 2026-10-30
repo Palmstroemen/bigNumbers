@@ -6,6 +6,16 @@ const DATA_BASES = ["../Daten/", "Daten/"];
 const PANE_HASHES = ["vergleiche", "zahl", "fuer-mich"];
 const STEP = 8;   // entries shown above and below the user's number, and per "more" click
 
+// Line icons of the lists (24×24, stroke); lists.json names them in `icon`.
+const ICONS = {
+  government: "M3 21h18M5 21V10M19 21V10M9.7 21V10M14.3 21V10M2 10l10-6 10 6",
+  arch: "M2 19h20M4 19v-5a8 8 0 0 1 16 0v5M9 19v-3a3 3 0 0 1 6 0v3",
+  health: "M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z",
+  energy: "M13 2L4 14h7l-1 8 9-12h-7z",
+  chart: "M3 21h18M6 21v-7M11 21V9M16 21v-5M20 21V4",
+  moon: "M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z",
+};
+
 const $ = (sel) => document.querySelector(sel);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
@@ -58,14 +68,37 @@ async function loadActiveLists() {
     .map(async (l) => packages.set(l.id, await loadJson("listen/" + l.file))));
 }
 
-/** Entries of all active lists, merged; an entry in several lists appears once. */
+/** Entries of all active lists, merged; an entry in several lists appears once, marked with the first. */
 function activeEntries() {
   const seen = new Map();
   for (const l of state.data.lists) {
     if (!state.active.has(l.id)) continue;
-    for (const e of state.data.packages.get(l.id)?.entries ?? []) if (!seen.has(e.id)) seen.set(e.id, e);
+    for (const e of state.data.packages.get(l.id)?.entries ?? []) if (!seen.has(e.id)) seen.set(e.id, { ...e, list: l });
   }
   return [...seen.values()];
+}
+
+/** The list's colors as CSS variables; `.lc` elements pick light or dark. */
+const listColors = (l) => `--lc: ${l.color ?? "var(--accent)"}; --lc-dark: ${l.color_dark ?? l.color ?? "var(--accent)"}`;
+
+/** The list's line icon in its color; `label` makes it an image with a name, else decoration. */
+function listIcon(l, cls = "list-icon", label = true) {
+  const a11y = label ? `role="img" aria-label="${esc(l.name)}"` : 'aria-hidden="true"';
+  return `<svg class="${cls} lc" style="${listColors(l)}" viewBox="0 0 24 24" fill="none" stroke="currentColor"` +
+    ` stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ${a11y}><path d="${ICONS[l.icon] ?? ICONS.chart}"/></svg>`;
+}
+
+/** Picture at the top of the detail view: the entry's own image, else the list's, else the list's icon panel. */
+function detailImage(e) {
+  const img = e.image ?? e.list.image;
+  if (img?.src) {
+    return `<figure class="bn-figure">
+        <img src="${esc(img.src)}" alt="${esc(img.alt ?? e.title)}" loading="lazy"
+          ${img.width ? `width="${esc(img.width)}" height="${esc(img.height)}"` : ""}>
+        ${img.credit ? `<figcaption>${esc(img.credit)}${img.license ? `, ${esc(img.license)}` : ""}</figcaption>` : ""}
+      </figure>`;
+  }
+  return `<div class="bn-panel lc" style="${listColors(e.list)}">${listIcon(e.list, "bn-panel-icon", false)}<span>${esc(e.list.name)}</span></div>`;
 }
 
 function saveActive() {
@@ -175,9 +208,9 @@ function entryRow(e, v) {
       <p>Quelle: <a href="${esc(e.source_url)}" target="_blank" rel="noopener">${esc(e.source_title)}</a></p>
     </div>` : "";
   return `
-    <li data-id="${esc(e.id)}">
+    <li data-id="${esc(e.id)}"${open ? ' class="open"' : ""}>${open ? detailImage(e) : ""}
       <div class="bn-row">
-        <div class="bn-title">${esc(e.title)}${year ? `<small>${esc(year)}</small>` : ""}</div>
+        <div class="bn-title">${listIcon(e.list)}${esc(e.title)}${year ? `<small>${esc(year)}</small>` : ""}</div>
         <div>
           <div class="bn-value">${esc(shown)}</div>
           <div class="bn-ratio">${esc(original + ratio)}</div>
@@ -209,7 +242,8 @@ function renderBigNumbers() {
 
 function renderListChips() {
   $("#list-chips").innerHTML = state.data.lists.map((l) =>
-    `<button data-list="${esc(l.id)}" aria-pressed="${state.active.has(l.id)}">${esc(l.name)}</button>`).join("") +
+    `<button class="list-chip lc" style="${listColors(l)}" data-list="${esc(l.id)}" aria-pressed="${state.active.has(l.id)}">` +
+    `${listIcon(l, "list-icon", false)}${esc(l.name)}</button>`).join("") +
     '<button data-sheet aria-haspopup="dialog">Listen …</button>';
 }
 
@@ -217,6 +251,7 @@ function renderListSheet() {
   $("#sheet-lists").innerHTML = state.data.lists.map((l) => `
     <li>
       <label>
+        ${listIcon(l, "sheet-icon", false)}
         <span class="sheet-text">
           <strong>${esc(l.name)}</strong>
           <span>${esc(l.description)}</span>

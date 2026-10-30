@@ -4,6 +4,9 @@
   "version": "v1",
   "description": "Unternehmen, Vermögen, Produkte, Bevölkerung und Alltagswerte.",
   "icon": "chart",
+  "color": "#7a3ad1",
+  "color_dark": "#b794f6",
+  "image": null,
   "entries": [
     {
       "id": "entry_durchschnittsmiete_oesterreich_2025",

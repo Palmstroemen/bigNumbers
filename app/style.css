@@ -225,6 +225,28 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .bn-row { display: flex; gap: 10px; align-items: baseline; }
 .bn-title { flex: 1; min-width: 0; }
+
+/* List marks: each list brings its own color (--lc / --lc-dark) and line icon. */
+.lc { color: var(--lc); }
+@media (prefers-color-scheme: dark) { .lc { color: var(--lc-dark); } }
+.list-icon { width: 15px; height: 15px; vertical-align: -2px; margin-right: 6px; flex: none; }
+.chips .list-chip { display: inline-flex; align-items: center; }
+.chips .list-chip[aria-pressed="true"] { border-color: currentColor; background: var(--surface); color: var(--lc); }
+@media (prefers-color-scheme: dark) { .chips .list-chip[aria-pressed="true"] { color: var(--lc-dark); } }
+.chips .list-chip[aria-pressed="false"] { color: var(--muted); }
+.chips .list-chip .list-icon { margin-right: 5px; }
+.bn-list li.open { padding: 0; overflow: hidden; }
+.bn-list li.open .bn-row { padding: 10px 12px 0; }
+.bn-list li.open .bn-detail { padding: 0 12px 12px; }
+.bn-figure { margin: 0; }
+.bn-figure img { display: block; width: 100%; height: auto; max-height: 240px; object-fit: cover; }
+.bn-figure figcaption { font-size: .7rem; color: var(--muted); text-align: right; padding: 4px 12px 0; }
+.bn-panel {
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  height: 96px; font-weight: 700; font-size: 1.05rem;
+  background: color-mix(in srgb, currentColor 12%, var(--surface));
+}
+.bn-panel-icon { width: 44px; height: 44px; stroke-width: 1.5; }
 .bn-title small { color: var(--muted); margin-left: 4px; }
 .bn-value { font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .bn-ratio { color: var(--muted); font-size: .8rem; text-align: right; }
@@ -299,6 +321,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .sheet-lists { list-style: none; margin: 0; padding: 0; }
 .sheet-lists li { background: var(--surface); border-radius: var(--radius); margin: 8px 0; }
 .sheet-lists label { display: flex; gap: 12px; align-items: center; padding: 12px 14px; cursor: pointer; }
+.sheet-icon { width: 24px; height: 24px; flex: none; align-self: flex-start; margin-top: 2px; }
 .sheet-text { flex: 1; display: flex; flex-direction: column; gap: 2px; }
 .sheet-text span { font-size: .9rem; color: var(--muted); }
 .sheet-text small { font-size: .75rem; color: var(--muted); }

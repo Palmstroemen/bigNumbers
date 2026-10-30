@@ -25,6 +25,7 @@ Fachliche Einträge für `Big Numbers`.
 | `source2_title` | string/null | Titel der zweiten Quelle |
 | `confidence_level` | number | einfacher Prüfstatus, z. B. `0-7` |
 | `status` | string | z. B. `draft`, `reviewed`, `published` |
+| `image` | object/null | optionales Bild für die Detailansicht: `src`, `width`, `height`, `alt`, `credit` (Urheber), `license` (z. B. `CC BY-SA 4.0`), `source_url`. Nur Lizenzen, die kommerzielle Nutzung erlauben. |
 
 ## 2. `lists`
 
@@ -37,7 +38,10 @@ Versionierte Listen, in denen Einträge gruppiert oder publiziert werden.
 | `version` | string | z. B. `v1` |
 | `country_code` | string/null | Landeskontext oder `null` für global |
 | `description` | string | Kurzbeschreibung der Liste |
-| `icon` | string/null | optionale Icon-Referenz |
+| `icon` | string/null | Name des Liniensymbols der Liste (`government`, `arch`, `health`, `energy`, `chart`, `moon`) |
+| `color` | string/null | Kennfarbe der Liste im hellen Modus (Hex) |
+| `color_dark` | string/null | Kennfarbe der Liste im dunklen Modus (Hex) |
+| `image` | object/null | Ersatzbild für Einträge ohne eigenes Bild, Aufbau wie `entries.image` |
 
 ## 3. `list_entries`
 

@@ -18,8 +18,10 @@ OUT = DATEN / "listen"
 ENTRY_FIELDS = [
     "id", "title", "value_original", "unit_type", "unit", "year_original", "country_code", "index_id",
     "short_description", "long_description", "source_url", "source_title", "source2_url", "source2_title",
-    "confidence_level", "status",
+    "confidence_level", "status", "image",
 ]
+# Fields of a list that the catalog and each package carry.
+LIST_FIELDS = ["id", "name", "version", "description", "icon", "color", "color_dark", "image"]
 
 
 def load(name):
@@ -27,7 +29,7 @@ def load(name):
 
 
 def entry_for_app(e, note=None):
-    out = {k: e.get(k) for k in ENTRY_FIELDS}
+    out = {k: e.get(k) for k in ENTRY_FIELDS if k != "image" or e.get(k)}
     if note:
         out["note"] = note
     return out
@@ -41,16 +43,12 @@ def build():
     catalog = []
     for lst in lists:
         rows = sorted((le for le in list_entries if le["list_id"] == lst["id"]), key=lambda le: le["sort_order"])
-        package = {
-            "id": lst["id"], "name": lst["name"], "version": lst["version"],
-            "description": lst["description"], "icon": lst["icon"],
-            "entries": [entry_for_app(entries[le["entry_id"]], le.get("note")) for le in rows],
-        }
+        package = {k: lst.get(k) for k in LIST_FIELDS}
+        package["entries"] = [entry_for_app(entries[le["entry_id"]], le.get("note")) for le in rows]
         file = f"{lst['id']}.json"
         files[file] = package
         catalog.append({
-            "id": lst["id"], "name": lst["name"], "version": lst["version"],
-            "description": lst["description"], "icon": lst["icon"], "country_code": lst.get("country_code"),
+            **{k: lst.get(k) for k in LIST_FIELDS}, "country_code": lst.get("country_code"),
             "count": len(rows), "file": file,
             "access": lst.get("access", "free"),
         })

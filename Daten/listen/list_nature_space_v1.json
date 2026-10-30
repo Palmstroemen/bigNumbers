@@ -4,6 +4,9 @@
   "version": "v1",
   "description": "Vergleichswerte aus Natur, Astronomie und Biologie.",
   "icon": "moon",
+  "color": "#2e7d32",
+  "color_dark": "#6fcf75",
+  "image": null,
   "entries": [
     {
       "id": "entry_dna_laenge_pro_zelle_2017",

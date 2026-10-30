@@ -4,6 +4,9 @@
   "version": "v1",
   "description": "Energieverbrauch, Emissionen, Kraftwerke und Klimafinanzierung.",
   "icon": "energy",
+  "color": "#c2410c",
+  "color_dark": "#fb923c",
+  "image": null,
   "entries": [
     {
       "id": "entry_co2_preis_deutschland_2025",

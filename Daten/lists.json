@@ -5,7 +5,10 @@
     "version": "v1",
     "country_code": null,
     "description": "Verteidigungsbudgets, Waffensysteme und Militärbetrieb sowie Kosten großer Bau- und Infrastrukturprojekte.",
-    "icon": "shield"
+    "icon": "arch",
+    "color": "#a35b00",
+    "color_dark": "#f0a24a",
+    "image": null
   },
   {
     "id": "list_budget_steuern_v1",
@@ -13,7 +16,10 @@
     "version": "v1",
     "country_code": null,
     "description": "Staatshaushalte, Steuereinnahmen, Soziales, Bildung und Infrastruktur in Österreich, Deutschland und der EU.",
-    "icon": "government"
+    "icon": "government",
+    "color": "#2f5bea",
+    "color_dark": "#7d9bff",
+    "image": null
   },
   {
     "id": "list_gesundheit_v1",
@@ -21,7 +27,10 @@
     "version": "v1",
     "country_code": null,
     "description": "Gesundheitsausgaben und Kennzahlen des Gesundheitswesens.",
-    "icon": "health"
+    "icon": "health",
+    "color": "#0b7d6e",
+    "color_dark": "#4fd1bd",
+    "image": null
   },
   {
     "id": "list_energie_klima_v1",
@@ -29,7 +38,10 @@
     "version": "v1",
     "country_code": null,
     "description": "Energieverbrauch, Emissionen, Kraftwerke und Klimafinanzierung.",
-    "icon": "energy"
+    "icon": "energy",
+    "color": "#c2410c",
+    "color_dark": "#fb923c",
+    "image": null
   },
   {
     "id": "list_wirtschaft_alltag_v1",
@@ -37,7 +49,10 @@
     "version": "v1",
     "country_code": null,
     "description": "Unternehmen, Vermögen, Produkte, Bevölkerung und Alltagswerte.",
-    "icon": "chart"
+    "icon": "chart",
+    "color": "#7a3ad1",
+    "color_dark": "#b794f6",
+    "image": null
   },
   {
     "id": "list_nature_space_v1",
@@ -45,6 +60,9 @@
     "version": "v1",
     "country_code": null,
     "description": "Vergleichswerte aus Natur, Astronomie und Biologie.",
-    "icon": "moon"
+    "icon": "moon",
+    "color": "#2e7d32",
+    "color_dark": "#6fcf75",
+    "image": null
   }
 ]

@@ -4,6 +4,9 @@
   "version": "v1",
   "description": "Staatshaushalte, Steuereinnahmen, Soziales, Bildung und Infrastruktur in Österreich, Deutschland und der EU.",
   "icon": "government",
+  "color": "#2f5bea",
+  "color_dark": "#7d9bff",
+  "image": null,
   "entries": [
     {
       "id": "entry_deutschlandticket_preis_2026",
