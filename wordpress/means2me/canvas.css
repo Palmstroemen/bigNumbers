@@ -1,0 +1,4 @@
+/* Marked amounts in the editor canvas, like on the site but without the button */
+.means2me { text-decoration: underline dotted; text-decoration-thickness: 1.5px; text-underline-offset: .25em; text-decoration-color: #2f5bea; }
+.means2me::after { content: ""; display: inline-block; width: .6em; height: .6em; margin-left: .1em; vertical-align: .55em;
+  background: no-repeat center / contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232f5bea' stroke-linejoin='miter'%3E%3Ccircle cx='12' cy='12' r='10.4' stroke-width='2.2'/%3E%3Cpath d='M1.65 11.6 L7 7.6 L12 11 L17 7.6 L22.35 11.6' stroke-width='2.6'/%3E%3Cpath d='M3 17.2 L7 13.2 L12 16.6 L17 13.2 L21 17.2' stroke-width='2.6'/%3E%3C/svg%3E"); }
