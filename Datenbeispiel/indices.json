@@ -7,7 +7,7 @@
     "base_year": 2024,
     "source_url": "https://www.bls.gov/",
     "source_title": "U.S. Bureau of Labor Statistics",
-    "notes": "Fuer historische Bauwerkskosten, wenn ein allgemeiner Verbraucherpreisindex fachlich zu grob waere."
+    "notes": "Für historische Bauwerkskosten, wenn ein allgemeiner Verbraucherpreisindex fachlich zu grob wäre."
   },
   {
     "id": "idx_li_cpi",
@@ -17,7 +17,7 @@
     "base_year": 2024,
     "source_url": "https://www.llv.li",
     "source_title": "Liechtensteinische Landesverwaltung",
-    "notes": "Allgemeiner Verbraucherpreisindex fuer liechtensteinische Geldwerte."
+    "notes": "Allgemeiner Verbraucherpreisindex für liechtensteinische Geldwerte."
   },
   {
     "id": "idx_at_cpi",
@@ -27,6 +27,6 @@
     "base_year": 2024,
     "source_url": "https://www.statistik.at",
     "source_title": "Statistik Austria",
-    "notes": "Referenzindex fuer allgemeine oesterreichische Geldwerte."
+    "notes": "Referenzindex für allgemeine österreichische Geldwerte."
   }
 ]

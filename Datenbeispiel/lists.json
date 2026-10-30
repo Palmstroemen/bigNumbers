@@ -4,7 +4,7 @@
     "name": "Global Core",
     "version": "v1",
     "country_code": null,
-    "description": "Allgemeine, internationale Vergleichswerte fuer den ersten MVP.",
+    "description": "Allgemeine, internationale Vergleichswerte für den ersten MVP.",
     "icon": "globe"
   },
   {
@@ -12,7 +12,7 @@
     "name": "DACH Politik und Budget",
     "version": "v1",
     "country_code": "AT",
-    "description": "Politische und budgetbezogene Vergleichswerte fuer Oesterreich und den DACH-Raum.",
+    "description": "Politische und budgetbezogene Vergleichswerte für Österreich und den DACH-Raum.",
     "icon": "government"
   },
   {

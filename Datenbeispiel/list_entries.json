@@ -21,7 +21,7 @@
     "entry_id": "entry_red_blood_cells_per_mm3",
     "sort_value": 5000000,
     "sort_order": 5,
-    "note": "Biologischer Vergleichswert fuer kleinere Millionenbetraege."
+    "note": "Biologischer Vergleichswert für kleinere Millionenbeträge."
   },
   {
     "id": "le_004",
@@ -37,6 +37,6 @@
     "entry_id": "entry_earth_moon_distance_meters",
     "sort_value": 384400000,
     "sort_order": 10,
-    "note": "Wissenschaftlicher Vergleich in derselben Groessenordnung."
+    "note": "Wissenschaftlicher Vergleich in derselben Größenordnung."
   }
 ]

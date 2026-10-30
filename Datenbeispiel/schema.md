@@ -4,7 +4,7 @@ Dieses Schema ist bewusst einfach gehalten und soll den Kern des Datenmodells ze
 
 ## 1. `entries`
 
-Fachliche Eintraege fuer `Big Numbers`.
+Fachliche Einträge für `Big Numbers`.
 
 | Feld | Typ | Beschreibung |
 | --- | --- | --- |
@@ -15,33 +15,33 @@ Fachliche Eintraege fuer `Big Numbers`.
 | `unit_type` | string | z. B. `currency`, `length`, `count` |
 | `unit` | string | z. B. `USD`, `EUR`, `m`, `people` |
 | `year_original` | number | Bezugsjahr des Originalwertes |
-| `country_code` | string | ISO-oder projektspezifischer Laendercode |
+| `country_code` | string | ISO-oder projektspezifischer Ländercode |
 | `index_id` | string/null | Referenz auf verwendeten Index |
-| `short_description` | string | kurzer Anreisser |
-| `long_description` | string | laengerer Beschreibungstext |
-| `source_url` | string | primaere Quelle |
-| `source_title` | string | Titel der primaeren Quelle |
+| `short_description` | string | kurzer Anreißer |
+| `long_description` | string | längerer Beschreibungstext |
+| `source_url` | string | primäre Quelle |
+| `source_title` | string | Titel der primären Quelle |
 | `source2_url` | string/null | optionale zweite Quelle |
 | `source2_title` | string/null | Titel der zweiten Quelle |
-| `confidence_level` | number | einfacher Pruefstatus, z. B. `0-7` |
+| `confidence_level` | number | einfacher Prüfstatus, z. B. `0-7` |
 | `status` | string | z. B. `draft`, `reviewed`, `published` |
 
 ## 2. `lists`
 
-Versionierte Listen, in denen Eintraege gruppiert oder publiziert werden.
+Versionierte Listen, in denen Einträge gruppiert oder publiziert werden.
 
 | Feld | Typ | Beschreibung |
 | --- | --- | --- |
 | `id` | string | Listen-ID |
 | `name` | string | Anzeigename |
 | `version` | string | z. B. `v1` |
-| `country_code` | string/null | Landeskontext oder `null` fuer global |
+| `country_code` | string/null | Landeskontext oder `null` für global |
 | `description` | string | Kurzbeschreibung der Liste |
 | `icon` | string/null | optionale Icon-Referenz |
 
 ## 3. `list_entries`
 
-Zuordnungstabelle zwischen Listen und Eintraegen.
+Zuordnungstabelle zwischen Listen und Einträgen.
 
 | Feld | Typ | Beschreibung |
 | --- | --- | --- |
@@ -61,15 +61,15 @@ Referenzierte Preis- und Kostenindizes.
 | `id` | string | Index-ID |
 | `name` | string | Anzeigename |
 | `type` | string | z. B. `cpi`, `construction_cost`, `energy_price` |
-| `country_code` | string | Laendercode |
+| `country_code` | string | Ländercode |
 | `base_year` | number/null | Basisjahr des Index |
 | `source_url` | string | Quellenlink |
 | `source_title` | string | Quellentitel |
-| `notes` | string | redaktionelle Erklaerung |
+| `notes` | string | redaktionelle Erklärung |
 
 ## 5. `mean2me_contexts`
 
-Kontexte fuer persoenliche Umrechnungen.
+Kontexte für persönliche Umrechnungen.
 
 | Feld | Typ | Beschreibung |
 | --- | --- | --- |
@@ -77,15 +77,15 @@ Kontexte fuer persoenliche Umrechnungen.
 | `title` | string | Anzeigename |
 | `country_code` | string | Land oder Region |
 | `factor_source` | string | Quelle des Divisors |
-| `factor_value` | number | Divisor fuer die Umrechnung |
+| `factor_value` | number | Divisor für die Umrechnung |
 | `unit_label` | string | z. B. `pro Einwohner` |
 | `icon` | string/null | optionale Icon-Referenz |
-| `is_default` | boolean | Standardkontext fuer das Land |
+| `is_default` | boolean | Standardkontext für das Land |
 | `notes` | string | Hinweise zur Interpretation |
 
 ## Beziehungsidee
 
 - Ein `entry` kann in mehreren `lists` vorkommen.
 - Ein `entry` verweist optional auf genau einen Standard-`index`.
-- Ein `mean2me_context` gehoert zu einem Land oder Markt.
-- Nutzerwerte wie "heute in EUR" oder "pro Einwohner fuer den aktuellen Nutzer" werden spaeter aus diesen Stammdaten abgeleitet.
+- Ein `mean2me_context` gehört zu einem Land oder Markt.
+- Nutzerwerte wie "heute in EUR" oder "pro Einwohner für den aktuellen Nutzer" werden später aus diesen Stammdaten abgeleitet.

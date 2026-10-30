@@ -1,46 +1,46 @@
 [
   {
     "id": "m2m_at_population_2024",
-    "title": "Pro Einwohner in Oesterreich",
+    "title": "Pro Einwohner in Österreich",
     "country_code": "AT",
-    "factor_source": "Statistik Austria Bevoelkerung 2024",
+    "factor_source": "Statistik Austria Bevölkerung 2024",
     "factor_value": 9200000,
     "unit_label": "pro Einwohner",
     "icon": "person",
     "is_default": true,
-    "notes": "Teilt den Betrag durch die Gesamtbevoelkerung Oesterreichs."
+    "notes": "Teilt den Betrag durch die Gesamtbevölkerung Österreichs."
   },
   {
     "id": "m2m_at_taxpayers_2024",
-    "title": "Pro Steuerzahler in Oesterreich",
+    "title": "Pro Steuerzahler in Österreich",
     "country_code": "AT",
     "factor_source": "Beispielwert steuerlich erfasste Personen 2024",
     "factor_value": 4600000,
     "unit_label": "pro Steuerzahler",
     "icon": "receipt",
     "is_default": true,
-    "notes": "Fuer politische oder budgetbezogene Einordnungen besonders relevant."
+    "notes": "Für politische oder budgetbezogene Einordnungen besonders relevant."
   },
   {
     "id": "m2m_at_households_2024",
-    "title": "Pro Haushalt in Oesterreich",
+    "title": "Pro Haushalt in Österreich",
     "country_code": "AT",
     "factor_source": "Haushaltsstatistik 2024",
     "factor_value": 4100000,
     "unit_label": "pro Haushalt",
     "icon": "home",
     "is_default": true,
-    "notes": "Anschauliche Umrechnung fuer alltagsnahe Einordnungen."
+    "notes": "Anschauliche Umrechnung für alltagsnahe Einordnungen."
   },
   {
     "id": "m2m_vienna_population_2024",
     "title": "Pro Einwohner in Wien",
     "country_code": "AT-VIE",
-    "factor_source": "Stadt Wien Bevoelkerung 2024",
+    "factor_source": "Stadt Wien Bevölkerung 2024",
     "factor_value": 2000000,
     "unit_label": "pro Wiener",
     "icon": "city",
     "is_default": false,
-    "notes": "Regionaler Kontext fuer lokalpolitische Zahlen."
+    "notes": "Regionaler Kontext für lokalpolitische Zahlen."
   }
 ]
