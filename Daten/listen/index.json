@@ -10,7 +10,7 @@
       "color_dark": "#f0a24a",
       "image": null,
       "country_code": null,
-      "count": 53,
+      "count": 72,
       "file": "list_military_projects_v1.json",
       "access": "free"
     },
@@ -24,7 +24,7 @@
       "color_dark": "#7d9bff",
       "image": null,
       "country_code": null,
-      "count": 84,
+      "count": 103,
       "file": "list_budget_steuern_v1.json",
       "access": "free"
     },
@@ -38,7 +38,7 @@
       "color_dark": "#4fd1bd",
       "image": null,
       "country_code": null,
-      "count": 38,
+      "count": 48,
       "file": "list_gesundheit_v1.json",
       "access": "free"
     },
@@ -52,7 +52,7 @@
       "color_dark": "#fb923c",
       "image": null,
       "country_code": null,
-      "count": 37,
+      "count": 48,
       "file": "list_energie_klima_v1.json",
       "access": "free"
     },
@@ -66,7 +66,7 @@
       "color_dark": "#b794f6",
       "image": null,
       "country_code": null,
-      "count": 80,
+      "count": 100,
       "file": "list_wirtschaft_alltag_v1.json",
       "access": "free"
     },

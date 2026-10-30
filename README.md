@@ -32,19 +32,19 @@ Enter or paste a number in the center, then swipe sideways: the comparisons are 
 
 ## Dataset
 
-`Daten/` currently holds 483 entries in 7 lists:
+`Daten/` currently holds 591 entries in 7 lists:
 
 | List | Entries |
 | --- | --- |
-| Länder (generated from Eurostat, plus Hungary, Czechia, USA) | 151 |
-| Budget und Steuern | 84 |
-| Wirtschaft und Alltag | 80 |
-| Rüstung und Großprojekte | 53 |
+| Länder (generated from Eurostat, plus Hungary, Czechia, USA) | 180 |
+| Budget und Steuern | 103 |
+| Wirtschaft und Alltag | 100 |
+| Rüstung und Großprojekte | 72 |
 | Natur und Weltraum | 40 |
-| Gesundheit | 38 |
-| Energie und Klima | 37 |
+| Gesundheit | 48 |
+| Energie und Klima | 48 |
 
-The values range from single euros (a monthly ticket) to 10¹⁸ (the water on Earth in m³), with most entries between 10 million and 1 trillion.
+The values range from single euros (a monthly ticket) to 10¹⁸ (the water on Earth in m³), with most entries between 1 million and 1 trillion.
 The focus is on Austria, Germany and the EU, complemented by global values.
 
 Files:
@@ -69,7 +69,7 @@ All entries are `draft`. Nothing has been reviewed by a human yet.
 
 * `confidence_level: 2` – value seen on the source page and backed by a quote in `source_quotes.json`.
 * `confidence_level: 1` – estimate, lower bound, forecast, contradictory sources or old data. These entries carry a note in `list_entries.json`.
-  All entries were checked against their sources in October 2026. Of the 483 entries, 73 are at this level (23 of them Eurostat values flagged as provisional, estimated or with a break in series), each with a note saying why.
+  All entries were checked against their sources in October 2026. Of the 591 entries, 101 are at this level (25 of them Eurostat values flagged as provisional, estimated or with a break in series), each with a note saying why.
   All 15 entries from the 2013 collection have been checked against their sources (October 2026). Four remain at this level: two derived monthly values and two Eurofighter averages computed by Wikipedia.
 
 Workflow for an entry: `draft` → `reviewed` (value, source and description checked by a person) → `published`.

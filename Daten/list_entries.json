@@ -4,14 +4,14 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_us_military_energy_cost_per_year_2006",
     "sort_value": 2200000000,
-    "sort_order": 270
+    "sort_order": 460
   },
   {
     "id": "le_002",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_us_military_energy_cost_per_month_2006",
     "sort_value": 183333333,
-    "sort_order": 140,
+    "sort_order": 330,
     "note": "Abgeleiteter Wert (Jahreswert / 12); steht so nicht in der Quelle."
   },
   {
@@ -19,14 +19,14 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_f35_program_usa_2012",
     "sort_value": 1510000000000,
-    "sort_order": 510
+    "sort_order": 700
   },
   {
     "id": "le_004",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_apollo_program_1973",
     "sort_value": 25400000000,
-    "sort_order": 420,
+    "sort_order": 610,
     "note": "Summe nominaler Ausgaben 1960–1973. Die Inflationsbereinigung ab 1973 unterschätzt den heutigen Wert, weil der Großteil früher ausgegeben wurde. Die Planetary Society kommt mit jahresweiser Bereinigung auf rund 309 Mrd. USD (Tabelle; Preisbasis dort widersprüchlich als 2020 bzw. 2025 angegeben)."
   },
   {
@@ -34,21 +34,21 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_f16_ab_1998",
     "sort_value": 14600000,
-    "sort_order": 50
+    "sort_order": 80
   },
   {
     "id": "le_006",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_f16_cd_1998",
     "sort_value": 18800000,
-    "sort_order": 60
+    "sort_order": 120
   },
   {
     "id": "le_007",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_eurofighter_tranche_1_1998",
     "sort_value": 47300000,
-    "sort_order": 90,
+    "sort_order": 210,
     "note": "Von Wikipedia errechneter Durchschnitt aus dem Vertragswert; enthält Reservetriebwerke und Ersatzteile, kein reiner Flyaway-Preis."
   },
   {
@@ -56,28 +56,28 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_eurofighter_tranche_2_2004",
     "sort_value": 55000000,
-    "sort_order": 100
+    "sort_order": 240
   },
   {
     "id": "le_009",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_eurofighter_tranche_3_2009",
     "sort_value": 9000000000,
-    "sort_order": 360
+    "sort_order": 550
   },
   {
     "id": "le_010",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_eurofighter_system_cost_de_2003",
     "sort_value": 133000000,
-    "sort_order": 120
+    "sort_order": 310
   },
   {
     "id": "le_011",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_eurofighter_system_cost_it_2008",
     "sort_value": 149600000,
-    "sort_order": 130,
+    "sort_order": 320,
     "note": "Wikipedia nennt kein Bezugsjahr; 2008 aus der zitierten Seite der Camera dei deputati abgeleitet (Tranche 3 dort noch nicht unterzeichnet). Pro-Stück-Wert von Wikipedia errechnet."
   },
   {
@@ -85,21 +85,21 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_nimitz_cvn77_2005",
     "sort_value": 6350000000,
-    "sort_order": 340
+    "sort_order": 530
   },
   {
     "id": "le_013",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_nimitz_class_operation_per_year_1997",
     "sort_value": 300000000,
-    "sort_order": 170
+    "sort_order": 360
   },
   {
     "id": "le_014",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_nimitz_class_operation_per_month_1997",
     "sort_value": 25000000,
-    "sort_order": 70,
+    "sort_order": 150,
     "note": "Abgeleiteter Wert (Jahreswert / 12); steht so nicht in der Quelle."
   },
   {
@@ -107,14 +107,14 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_virginia_class_submarine_2024",
     "sort_value": 4500000000,
-    "sort_order": 300
+    "sort_order": 490
   },
   {
     "id": "le_016",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_at_bundeshaushalt_auszahlungen_2024",
     "sort_value": 120687300000,
-    "sort_order": 690,
+    "sort_order": 880,
     "note": null
   },
   {
@@ -122,7 +122,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_at_staatsausgaben_gesamtstaat_2024",
     "sort_value": 271300000000,
-    "sort_order": 730,
+    "sort_order": 920,
     "note": null
   },
   {
@@ -130,7 +130,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_at_staatsschulden_2024",
     "sort_value": 394100000000,
-    "sort_order": 760,
+    "sort_order": 950,
     "note": null
   },
   {
@@ -138,7 +138,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_at_lohnsteuer_2024",
     "sort_value": 37600000000,
-    "sort_order": 590,
+    "sort_order": 780,
     "note": null
   },
   {
@@ -146,7 +146,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_at_mehrwertsteuer_2024",
     "sort_value": 39200000000,
-    "sort_order": 600,
+    "sort_order": 790,
     "note": null
   },
   {
@@ -154,7 +154,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_at_koerperschaftsteuer_2024",
     "sort_value": 13700000000,
-    "sort_order": 510,
+    "sort_order": 700,
     "note": null
   },
   {
@@ -162,7 +162,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_at_bund_pensionen_2024",
     "sort_value": 30015000000,
-    "sort_order": 580,
+    "sort_order": 770,
     "note": null
   },
   {
@@ -170,7 +170,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_at_bund_bildung_wissenschaft_2024",
     "sort_value": 18907000000,
-    "sort_order": 540,
+    "sort_order": 730,
     "note": null
   },
   {
@@ -178,7 +178,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_at_bund_zinsen_2024",
     "sort_value": 7365000000,
-    "sort_order": 410,
+    "sort_order": 600,
     "note": null
   },
   {
@@ -186,7 +186,7 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_at_gesundheitsausgaben_2024",
     "sort_value": 57837000000,
-    "sort_order": 280,
+    "sort_order": 380,
     "note": null
   },
   {
@@ -194,7 +194,7 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_at_langzeitpflege_ausgaben_2024",
     "sort_value": 8299000000,
-    "sort_order": 230,
+    "sort_order": 330,
     "note": null
   },
   {
@@ -202,7 +202,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_at_familienbeihilfe_2024",
     "sort_value": 4200000000,
-    "sort_order": 330,
+    "sort_order": 520,
     "note": null
   },
   {
@@ -210,7 +210,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_at_wien_voranschlag_2025",
     "sort_value": 20230000000,
-    "sort_order": 560,
+    "sort_order": 750,
     "note": null
   },
   {
@@ -218,7 +218,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_at_koralmbahn_kosten",
     "sort_value": 5900000000,
-    "sort_order": 370,
+    "sort_order": 560,
     "note": null
   },
   {
@@ -226,7 +226,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_brenner_basistunnel_kosten",
     "sort_value": 11700000000,
-    "sort_order": 470
+    "sort_order": 660
   },
   {
     "id": "le_031",
@@ -257,7 +257,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_de_bundeshaushalt_2025",
     "sort_value": 502500000000,
-    "sort_order": 790,
+    "sort_order": 980,
     "note": null
   },
   {
@@ -265,7 +265,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_de_steuereinnahmen_2024",
     "sort_value": 948000000000,
-    "sort_order": 820,
+    "sort_order": 1010,
     "note": null
   },
   {
@@ -273,7 +273,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_de_oeffentliche_schulden_2026_q2",
     "sort_value": 2753500000000,
-    "sort_order": 840,
+    "sort_order": 1030,
     "note": null
   },
   {
@@ -281,7 +281,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_de_sondervermoegen_infrastruktur",
     "sort_value": 500000000000,
-    "sort_order": 780,
+    "sort_order": 970,
     "note": null
   },
   {
@@ -289,7 +289,7 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_de_gesundheitsausgaben_2024",
     "sort_value": 538200000000,
-    "sort_order": 350,
+    "sort_order": 450,
     "note": null
   },
   {
@@ -297,7 +297,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_de_rentenversicherung_ausgaben_2024",
     "sort_value": 402800000000,
-    "sort_order": 770,
+    "sort_order": 960,
     "note": null
   },
   {
@@ -312,7 +312,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_de_buergergeld_zahlungsansprueche_2025",
     "sort_value": 46650000000,
-    "sort_order": 630,
+    "sort_order": 820,
     "note": null
   },
   {
@@ -320,7 +320,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_de_buergergeld_empfaenger_2025",
     "sort_value": 5320000,
-    "sort_order": 190,
+    "sort_order": 230,
     "note": null
   },
   {
@@ -328,7 +328,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_de_jobcenter_verwaltungskosten_2025",
     "sort_value": 6788000000,
-    "sort_order": 390,
+    "sort_order": 580,
     "note": null
   },
   {
@@ -336,7 +336,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_de_hundesteuer_2022",
     "sort_value": 414000000,
-    "sort_order": 200,
+    "sort_order": 390,
     "note": null
   },
   {
@@ -351,7 +351,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_eu_haushalt_2025",
     "sort_value": 199438435982,
-    "sort_order": 720,
+    "sort_order": 910,
     "note": null
   },
   {
@@ -359,7 +359,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_eu_nextgenerationeu",
     "sort_value": 806900000000,
-    "sort_order": 810,
+    "sort_order": 1000,
     "note": null
   },
   {
@@ -367,7 +367,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_eu_gap_2021_2027",
     "sort_value": 386600000000,
-    "sort_order": 750,
+    "sort_order": 940,
     "note": null
   },
   {
@@ -375,7 +375,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_de_elbphilharmonie_baukosten",
     "sort_value": 866000000,
-    "sort_order": 210,
+    "sort_order": 400,
     "note": null
   },
   {
@@ -383,21 +383,21 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_de_ber_gesamtkosten",
     "sort_value": 7300000000,
-    "sort_order": 400
+    "sort_order": 590
   },
   {
     "id": "le_051",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_de_stuttgart_21_kosten",
     "sort_value": 14500000000,
-    "sort_order": 520
+    "sort_order": 710
   },
   {
     "id": "le_052",
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_co2_emissionen_fossil_welt_2025",
     "sort_value": 38100000000,
-    "sort_order": 230,
+    "sort_order": 340,
     "note": null
   },
   {
@@ -405,7 +405,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_treibhausgas_emissionen_deutschland_2025",
     "sort_value": 649000000,
-    "sort_order": 150,
+    "sort_order": 260,
     "note": null
   },
   {
@@ -413,7 +413,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_treibhausgas_emissionen_oesterreich_2024",
     "sort_value": 66600000,
-    "sort_order": 110,
+    "sort_order": 220,
     "note": null
   },
   {
@@ -421,7 +421,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_stromverbrauch_deutschland_2025",
     "sort_value": 517200000000,
-    "sort_order": 350,
+    "sort_order": 460,
     "note": null
   },
   {
@@ -429,7 +429,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_stromverbrauch_oesterreich_2025",
     "sort_value": 66750000000,
-    "sort_order": 250,
+    "sort_order": 360,
     "note": null
   },
   {
@@ -444,7 +444,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_leistung_akw_block_isar_2",
     "sort_value": 1410000000,
-    "sort_order": 170,
+    "sort_order": 280,
     "note": null
   },
   {
@@ -452,14 +452,14 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_leistung_donaukraftwerk_freudenau",
     "sort_value": 172000000,
-    "sort_order": 130
+    "sort_order": 240
   },
   {
     "id": "le_060",
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_nennleistung_neues_windrad_deutschland_2024",
     "sort_value": 5100000,
-    "sort_order": 90,
+    "sort_order": 100,
     "note": null
   },
   {
@@ -467,7 +467,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_baukosten_hinkley_point_c",
     "sort_value": 35000000000,
-    "sort_order": 220,
+    "sort_order": 330,
     "note": "Wikipedia als Sekundärquelle; Wert in Preisen von 2015 (Stand 2026). Primärquelle EDF prüfen."
   },
   {
@@ -475,7 +475,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_abwehrschirm_energiekrise_deutschland",
     "sort_value": 200000000000,
-    "sort_order": 300,
+    "sort_order": 410,
     "note": null
   },
   {
@@ -483,7 +483,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_fossile_subventionen_welt_iea_2023",
     "sort_value": 620000000000,
-    "sort_order": 360,
+    "sort_order": 470,
     "note": null
   },
   {
@@ -491,7 +491,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_investitionen_solarenergie_welt_2025",
     "sort_value": 450000000000,
-    "sort_order": 340,
+    "sort_order": 450,
     "note": null
   },
   {
@@ -499,7 +499,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_klimafinanzierungsziel_cop29",
     "sort_value": 300000000000,
-    "sort_order": 310,
+    "sort_order": 420,
     "note": null
   },
   {
@@ -507,7 +507,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_oelverbrauch_welt_pro_tag_2024",
     "sort_value": 102900000,
-    "sort_order": 120,
+    "sort_order": 230,
     "note": null
   },
   {
@@ -515,7 +515,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_einnahmen_eu_emissionshandel_2025",
     "sort_value": 43000000000,
-    "sort_order": 240
+    "sort_order": 350
   },
   {
     "id": "le_068",
@@ -649,7 +649,7 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_sipri_militaerausgaben_welt_2025",
     "sort_value": 2887000000000,
-    "sort_order": 530,
+    "sort_order": 720,
     "note": null
   },
   {
@@ -657,7 +657,7 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_sipri_militaerausgaben_usa_2025",
     "sort_value": 954000000000,
-    "sort_order": 500,
+    "sort_order": 690,
     "note": null
   },
   {
@@ -665,14 +665,14 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_sipri_militaerausgaben_russland_2025",
     "sort_value": 190000000000,
-    "sort_order": 480
+    "sort_order": 670
   },
   {
     "id": "le_087",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_sipri_militaerausgaben_deutschland_2025",
     "sort_value": 114000000000,
-    "sort_order": 470,
+    "sort_order": 660,
     "note": null
   },
   {
@@ -680,7 +680,7 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_verteidigungsbudget_oesterreich_2026",
     "sort_value": 4760000000,
-    "sort_order": 310,
+    "sort_order": 500,
     "note": null
   },
   {
@@ -688,7 +688,7 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_sondervermoegen_bundeswehr_2022",
     "sort_value": 100000000000,
-    "sort_order": 450,
+    "sort_order": 640,
     "note": null
   },
   {
@@ -696,14 +696,14 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_aufbauplan_bundesheer_2032_investitionen",
     "sort_value": 16600000000,
-    "sort_order": 400
+    "sort_order": 590
   },
   {
     "id": "le_091",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_f_35a_stueckpreis_lose_15_17",
     "sort_value": 82500000,
-    "sort_order": 110,
+    "sort_order": 300,
     "note": null
   },
   {
@@ -711,7 +711,7 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_leopard_2a8_erstauftrag_18_panzer",
     "sort_value": 525600000,
-    "sort_order": 190,
+    "sort_order": 380,
     "note": null
   },
   {
@@ -719,14 +719,14 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_patriot_vier_systeme_bundeswehr_2024",
     "sort_value": 1400000000,
-    "sort_order": 240
+    "sort_order": 430
   },
   {
     "id": "le_094",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_eurofighter_tranche_5_20_jets",
     "sort_value": 3750000000,
-    "sort_order": 280,
+    "sort_order": 470,
     "note": null
   },
   {
@@ -742,7 +742,7 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_black_hawk_oesterreich_12_hubschrauber",
     "sort_value": 715000000,
-    "sort_order": 210,
+    "sort_order": 400,
     "note": null
   },
   {
@@ -750,14 +750,14 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_fregatte_f126_erwartete_kosten_sechs_schiffe",
     "sort_value": 18000000000,
-    "sort_order": 410
+    "sort_order": 600
   },
   {
     "id": "le_098",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_flugzeugtraeger_gerald_r_ford_cvn78",
     "sort_value": 13316500000,
-    "sort_order": 390,
+    "sort_order": 580,
     "note": null
   },
   {
@@ -765,7 +765,7 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_ukraine_hilfe_deutschland_gesamt_2026",
     "sort_value": 100000000000,
-    "sort_order": 460
+    "sort_order": 650
   },
   {
     "id": "le_100",
@@ -780,7 +780,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_nvidia_boersenwert_2025",
     "sort_value": 4638000000000,
-    "sort_order": 750,
+    "sort_order": 950,
     "note": "Aggregatorseite, keine Primärquelle; Wert zum Jahresende 2025."
   },
   {
@@ -788,7 +788,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_amazon_umsatz_2024",
     "sort_value": 638000000000,
-    "sort_order": 700,
+    "sort_order": 900,
     "note": null
   },
   {
@@ -796,7 +796,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_red_bull_dosen_2025",
     "sort_value": 13969000000,
-    "sort_order": 580,
+    "sort_order": 780,
     "note": null
   },
   {
@@ -804,14 +804,14 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_reichster_mensch_musk_2026",
     "sort_value": 839000000000,
-    "sort_order": 710
+    "sort_order": 910
   },
   {
     "id": "le_105",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_rekordtransfer_neymar_2017",
     "sort_value": 222000000,
-    "sort_order": 410,
+    "sort_order": 610,
     "note": null
   },
   {
@@ -819,7 +819,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_fussball_wm_katar_kosten_2022",
     "sort_value": 220000000000,
-    "sort_order": 650,
+    "sort_order": 850,
     "note": "Umstrittene Schätzung (Forbes via Wikipedia), umfasst Infrastruktur seit 2010; offiziell 8 Mrd. USD."
   },
   {
@@ -827,7 +827,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_olympia_paris_2024_kosten",
     "sort_value": 9000000000,
-    "sort_order": 550,
+    "sort_order": 750,
     "note": "Prognosewert („expected“), auf Wikipedia nur mit schwacher Quelle belegt; die Cour des comptes nennt nur öffentliche Ausgaben (3,02 + 3,63 Mrd. €)."
   },
   {
@@ -843,7 +843,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_burj_khalifa_baukosten",
     "sort_value": 1500000000,
-    "sort_order": 470,
+    "sort_order": 670,
     "note": null
   },
   {
@@ -851,14 +851,14 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_gpt4_trainingskosten",
     "sort_value": 78000000,
-    "sort_order": 380
+    "sort_order": 560
   },
   {
     "id": "le_111",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_netflix_abonnements_2026",
     "sort_value": 325000000,
-    "sort_order": 430,
+    "sort_order": 630,
     "note": "Wikipedia-Zahl (Stand 20. Jänner 2026); Primärquelle (Netflix bzw. Reuters) nicht abrufbar."
   },
   {
@@ -874,7 +874,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_einwohner_oesterreich_2026",
     "sort_value": 9215956,
-    "sort_order": 320,
+    "sort_order": 360,
     "note": null
   },
   {
@@ -890,7 +890,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_weltbevoelkerung_8_milliarden_2022",
     "sort_value": 8000000000,
-    "sort_order": 520,
+    "sort_order": 720,
     "note": null
   },
   {
@@ -898,7 +898,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bip_oesterreich_2024",
     "sort_value": 534790720467,
-    "sort_order": 690,
+    "sort_order": 890,
     "note": null
   },
   {
@@ -906,7 +906,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bip_welt_2024",
     "sort_value": 111669432109121,
-    "sort_order": 800,
+    "sort_order": 1000,
     "note": null
   },
   {
@@ -914,7 +914,7 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_at_oegk_aufwendungen_2025",
     "sort_value": 21400000000,
-    "sort_order": 260,
+    "sort_order": 360,
     "note": "Vorläufiger Wert aus Gebarungsvorschau (Feb. 2026); endgültigen Rechnungsabschluss der ÖGK abwarten."
   },
   {
@@ -922,7 +922,7 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_at_heilmittelkosten_sozialversicherung_2025",
     "sort_value": 4900000000,
-    "sort_order": 210,
+    "sort_order": 310,
     "note": null
   },
   {
@@ -930,7 +930,7 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_at_pflegegeld_ausgaben_2025",
     "sort_value": 3630000000,
-    "sort_order": 190,
+    "sort_order": 290,
     "note": null
   },
   {
@@ -962,7 +962,7 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_at_klinik_floridsdorf_baukosten",
     "sort_value": 1263000000,
-    "sort_order": 170,
+    "sort_order": 270,
     "note": null
   },
   {
@@ -970,7 +970,7 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_de_gkv_ausgaben_2024",
     "sort_value": 327410000000,
-    "sort_order": 330,
+    "sort_order": 430,
     "note": null
   },
   {
@@ -978,7 +978,7 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_us_gesundheitsausgaben_2024",
     "sort_value": 5300000000000,
-    "sort_order": 370,
+    "sort_order": 470,
     "note": null
   },
   {
@@ -986,14 +986,14 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_global_gesundheitsausgaben_2022",
     "sort_value": 9800000000000,
-    "sort_order": 380
+    "sort_order": 480
   },
   {
     "id": "le_128",
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_roche_umsatz_2025",
     "sort_value": 61516000000,
-    "sort_order": 290,
+    "sort_order": 390,
     "note": null
   },
   {
@@ -1001,7 +1001,7 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_eu_covid_impfstoff_vertraege_2021",
     "sort_value": 71000000000,
-    "sort_order": 310,
+    "sort_order": 410,
     "note": null
   },
   {
@@ -1009,7 +1009,7 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_us_preis_hemgenix_gentherapie",
     "sort_value": 3500000,
-    "sort_order": 130,
+    "sort_order": 160,
     "note": null
   },
   {
@@ -1135,21 +1135,21 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_f35_betriebskosten_gao_2023",
     "sort_value": 1580000000000,
-    "sort_order": 520
+    "sort_order": 710
   },
   {
     "id": "le_147",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_einwohner_deutschland_2026",
     "sort_value": 83300000,
-    "sort_order": 390
+    "sort_order": 570
   },
   {
     "id": "le_148",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_fahrgaeste_wiener_linien_2025",
     "sort_value": 903000000,
-    "sort_order": 460
+    "sort_order": 660
   },
   {
     "id": "le_149",
@@ -1163,14 +1163,14 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_passagiere_flughafen_wien_2025",
     "sort_value": 32600000,
-    "sort_order": 330
+    "sort_order": 430
   },
   {
     "id": "le_151",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_besucher_oktoberfest_2026",
     "sort_value": 7400000,
-    "sort_order": 300,
+    "sort_order": 330,
     "note": "Vorläufige Zahl der Festleitung; Besucherzahlen der Wiesn sind Schätzungen."
   },
   {
@@ -1178,7 +1178,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_eintritte_schloss_schoenbrunn_2025",
     "sort_value": 3963000,
-    "sort_order": 260
+    "sort_order": 290
   },
   {
     "id": "le_153",
@@ -1206,21 +1206,21 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_pkw_bestand_oesterreich_2025",
     "sort_value": 5286101,
-    "sort_order": 290
+    "sort_order": 320
   },
   {
     "id": "le_157",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_pkw_bestand_deutschland_2026",
     "sort_value": 49500000,
-    "sort_order": 360
+    "sort_order": 480
   },
   {
     "id": "le_158",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_fahrgaeste_oebb_2025",
     "sort_value": 559000000,
-    "sort_order": 440
+    "sort_order": 640
   },
   {
     "id": "le_159",
@@ -1234,7 +1234,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_internetnutzer_weltweit_2025",
     "sort_value": 6000000000,
-    "sort_order": 510,
+    "sort_order": 710,
     "note": "Schätzung der ITU."
   },
   {
@@ -1242,14 +1242,14 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_einspielergebnis_avengers_endgame",
     "sort_value": 2942185132,
-    "sort_order": 490
+    "sort_order": 690
   },
   {
     "id": "le_162",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_verkaufte_exemplare_gta_v_2026",
     "sort_value": 230000000,
-    "sort_order": 420
+    "sort_order": 620
   },
   {
     "id": "le_163",
@@ -1279,7 +1279,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_besucher_donauinselfest_2014",
     "sort_value": 3100000,
-    "sort_order": 240,
+    "sort_order": 270,
     "note": "Veranstalterangabe; Besucherzahlen bei freiem Eintritt sind Schätzungen."
   },
   {
@@ -1295,91 +1295,91 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_spotify_nutzer_monatlich_2026",
     "sort_value": 788000000,
-    "sort_order": 450
+    "sort_order": 650
   },
   {
     "id": "le_169",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_bildungsbudget_ug30_2026",
     "sort_value": 12547500000,
-    "sort_order": 490
+    "sort_order": 680
   },
   {
     "id": "le_170",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_justizbudget_ug13_2026",
     "sort_value": 2413300000,
-    "sort_order": 290
+    "sort_order": 480
   },
   {
     "id": "le_171",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_innenministerium_budget_ug11_2026",
     "sort_value": 4140400000,
-    "sort_order": 320
+    "sort_order": 510
   },
   {
     "id": "le_172",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_universitaeten_bundesbudget_2026",
     "sort_value": 5325000000,
-    "sort_order": 360
+    "sort_order": 550
   },
   {
     "id": "le_173",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_oebb_zuschussvertraege_2026",
     "sort_value": 4508000000,
-    "sort_order": 340
+    "sort_order": 530
   },
   {
     "id": "le_174",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_klimabonus_auszahlungen_2024",
     "sort_value": 1910000000,
-    "sort_order": 270
+    "sort_order": 460
   },
   {
     "id": "le_175",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_finanzierungskosten_bund_2026",
     "sort_value": 8913000000,
-    "sort_order": 430
+    "sort_order": 620
   },
   {
     "id": "le_176",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_arbeitslosenversicherung_leistungen_2026",
     "sort_value": 6527000000,
-    "sort_order": 380
+    "sort_order": 570
   },
   {
     "id": "le_177",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_tabaksteuer_oesterreich_2024",
     "sort_value": 2140000000,
-    "sort_order": 280
+    "sort_order": 470
   },
   {
     "id": "le_178",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_zigaretten_geraucht_oesterreich_2024",
     "sort_value": 12500000000,
-    "sort_order": 480
+    "sort_order": 670
   },
   {
     "id": "le_179",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_mineraloelsteuer_oesterreich_2024",
     "sort_value": 3800000000,
-    "sort_order": 310
+    "sort_order": 500
   },
   {
     "id": "le_180",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_oekosteuern_oesterreich_2024",
     "sort_value": 10300000000,
-    "sort_order": 440
+    "sort_order": 630
   },
   {
     "id": "le_181",
@@ -1400,7 +1400,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_kosten_pensionsanpassung_2026",
     "sort_value": 1730000000,
-    "sort_order": 260,
+    "sort_order": 450,
     "note": "Regierungsangabe bei Präsentation, Planwert"
   },
   {
@@ -1408,14 +1408,14 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_foerderungen_bund_gesamt_2024",
     "sort_value": 39300000000,
-    "sort_order": 610
+    "sort_order": 800
   },
   {
     "id": "le_185",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_foerderung_thermische_sanierung_2024",
     "sort_value": 1090000000,
-    "sort_order": 220
+    "sort_order": 410
   },
   {
     "id": "le_186",
@@ -1429,7 +1429,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_landesbudget_niederoesterreich_2027",
     "sort_value": 10500000000,
-    "sort_order": 450,
+    "sort_order": 640,
     "note": "Voranschlag (Planwert) für 2027"
   },
   {
@@ -1437,63 +1437,63 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_sozialausgaben_oesterreich_2024",
     "sort_value": 161500000000,
-    "sort_order": 700
+    "sort_order": 890
   },
   {
     "id": "le_189",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_krankengeld_oesterreich_2024",
     "sort_value": 1200000000,
-    "sort_order": 230
+    "sort_order": 420
   },
   {
     "id": "le_190",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_nettokreditaufnahme_bund_2026",
     "sort_value": 97970000000,
-    "sort_order": 680
+    "sort_order": 870
   },
   {
     "id": "le_191",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_schuldenbremse_relevante_kreditaufnahme_2026",
     "sort_value": 40390000000,
-    "sort_order": 620
+    "sort_order": 810
   },
   {
     "id": "le_192",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_einzelplan_arbeit_soziales_2026",
     "sort_value": 197340000000,
-    "sort_order": 710
+    "sort_order": 900
   },
   {
     "id": "le_193",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_verteidigungsetat_einzelplan_14_2026",
     "sort_value": 82690000000,
-    "sort_order": 660
+    "sort_order": 850
   },
   {
     "id": "le_194",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_verkehrsetat_bund_2026",
     "sort_value": 27900000000,
-    "sort_order": 570
+    "sort_order": 760
   },
   {
     "id": "le_195",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_etat_deutscher_bundestag_2026",
     "sort_value": 1280000000,
-    "sort_order": 240
+    "sort_order": 430
   },
   {
     "id": "le_196",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_einzelplan_bundeskanzleramt_2026",
     "sort_value": 5000000000,
-    "sort_order": 350
+    "sort_order": 540
   },
   {
     "id": "le_197",
@@ -1507,21 +1507,21 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_tabaksteuer_einnahmen_2025",
     "sort_value": 17630000000,
-    "sort_order": 530
+    "sort_order": 720
   },
   {
     "id": "le_199",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_versteuerte_zigaretten_deutschland_2025",
     "sort_value": 66400000000,
-    "sort_order": 650
+    "sort_order": 840
   },
   {
     "id": "le_200",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_elterngeld_haushaltsansatz_2025",
     "sort_value": 7410000000,
-    "sort_order": 420,
+    "sort_order": 610,
     "note": "Ansatz im Regierungsentwurf, kein Ist-Wert."
   },
   {
@@ -1529,7 +1529,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_kinderzuschlag_haushaltsansatz_2025",
     "sort_value": 3380000000,
-    "sort_order": 300,
+    "sort_order": 490,
     "note": "Ansatz im Regierungsentwurf, kein Ist-Wert."
   },
   {
@@ -1537,7 +1537,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_deutschlandticket_bundeszuschuss_pro_jahr_2026",
     "sort_value": 1500000000,
-    "sort_order": 250
+    "sort_order": 440
   },
   {
     "id": "le_203",
@@ -1551,7 +1551,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_laenderfinanzausgleich_volumen_2025",
     "sort_value": 20000000000,
-    "sort_order": 550,
+    "sort_order": 740,
     "note": "Gerundeter, vorläufiger Wert vor der endgültigen Abrechnung."
   },
   {
@@ -1559,7 +1559,7 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_laenderfinanzausgleich_bayern_2025",
     "sort_value": 11700000000,
-    "sort_order": 460,
+    "sort_order": 650,
     "note": "Erste Schätzung des bayerischen Finanzministeriums."
   },
   {
@@ -1567,42 +1567,42 @@
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_bundeszuschuss_allgemeine_rentenversicherung_2026",
     "sort_value": 63950000000,
-    "sort_order": 640
+    "sort_order": 830
   },
   {
     "id": "le_207",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_eu_nettozahlung_deutschland_2024",
     "sort_value": 13100000000,
-    "sort_order": 500
+    "sort_order": 690
   },
   {
     "id": "le_208",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_ausgaben_bund_schweiz_2025",
     "sort_value": 86000000000,
-    "sort_order": 670
+    "sort_order": 860
   },
   {
     "id": "le_209",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_eu_kohaesionspolitik_2021_2027",
     "sort_value": 372600000000,
-    "sort_order": 740
+    "sort_order": 930
   },
   {
     "id": "le_210",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_eu_mehrjaehriger_finanzrahmen_2021_2027",
     "sort_value": 1211000000000,
-    "sort_order": 830
+    "sort_order": 1020
   },
   {
     "id": "le_211",
     "list_id": "list_budget_steuern_v1",
     "entry_id": "entry_eu_aufbau_und_resilienzfazilitaet_rrf",
     "sort_value": 723800000000,
-    "sort_order": 800
+    "sort_order": 990
   },
   {
     "id": "le_212",
@@ -1623,7 +1623,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_hochwasser_oesterreich_schaden_2024",
     "sort_value": 1300000000,
-    "sort_order": 160,
+    "sort_order": 270,
     "note": "Erste Schätzung von Ökonomen, ohne Infrastrukturschäden."
   },
   {
@@ -1631,21 +1631,21 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_aufbauhilfe_ahrtal_sondervermoegen_2021",
     "sort_value": 30000000000,
-    "sort_order": 210
+    "sort_order": 320
   },
   {
     "id": "le_216",
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_stromverbrauch_rechenzentren_welt_2024",
     "sort_value": 415000000000,
-    "sort_order": 320
+    "sort_order": 430
   },
   {
     "id": "le_217",
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_gasspeicher_kapazitaet_oesterreich_2026",
     "sort_value": 100000000000,
-    "sort_order": 280
+    "sort_order": 390
   },
   {
     "id": "le_218",
@@ -1673,21 +1673,21 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_gasverbrauch_oesterreich_2025",
     "sort_value": 80900000000,
-    "sort_order": 270
+    "sort_order": 380
   },
   {
     "id": "le_222",
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_stromerzeugung_oesterreich_2025",
     "sort_value": 73300000000,
-    "sort_order": 260
+    "sort_order": 370
   },
   {
     "id": "le_223",
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_klimaticket_kosten_bund_2025",
     "sort_value": 490000000,
-    "sort_order": 140,
+    "sort_order": 250,
     "note": "Voraussichtlicher Wert, da das Jahr 2025 zum Zeitpunkt der Aussage noch nicht abgeschlossen war."
   },
   {
@@ -1702,7 +1702,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_netzausbau_uebertragungsnetz_deutschland_2045",
     "sort_value": 440000000000,
-    "sort_order": 330,
+    "sort_order": 440,
     "note": "Prognose der Netzbetreiber für den Ausbau bis 2045."
   },
   {
@@ -1717,7 +1717,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_photovoltaik_leistung_deutschland_2025",
     "sort_value": 117000000000,
-    "sort_order": 290
+    "sort_order": 400
   },
   {
     "id": "le_228",
@@ -1738,7 +1738,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_drei_schluchten_talsperre_leistung_2012",
     "sort_value": 22500000000,
-    "sort_order": 200,
+    "sort_order": 310,
     "note": "Nur Wikipedia als Quelle."
   },
   {
@@ -1746,21 +1746,21 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_energieimporte_oesterreich_kosten_2024",
     "sort_value": 14100000000,
-    "sort_order": 190
+    "sort_order": 300
   },
   {
     "id": "le_232",
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_solarstrom_erzeugung_welt_2025",
     "sort_value": 2778000000000,
-    "sort_order": 370
+    "sort_order": 480
   },
   {
     "id": "le_233",
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_treibhausgas_emissionen_eu_2024",
     "sort_value": 2827000000,
-    "sort_order": 180,
+    "sort_order": 290,
     "note": "Vorläufige Schätzung (approximiertes Inventar) der EEA."
   },
   {
@@ -1768,7 +1768,7 @@
     "list_id": "list_energie_klima_v1",
     "entry_id": "entry_voestalpine_linz_co2_emissionen_2023",
     "sort_value": 9400000,
-    "sort_order": 100,
+    "sort_order": 140,
     "note": "Bezugsjahr im Artikel nicht genannt; Jahr des Artikels (2023) angesetzt."
   },
   {
@@ -1811,28 +1811,28 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_who_basisbudget_2026_2027",
     "sort_value": 4200000000,
-    "sort_order": 200
+    "sort_order": 300
   },
   {
     "id": "le_241",
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_corona_kosten_gesundheitsministerium_oesterreich_2020_2024",
     "sort_value": 11460000000,
-    "sort_order": 240
+    "sort_order": 340
   },
   {
     "id": "le_242",
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_corona_tests_kosten_oesterreich_2020_2024",
     "sort_value": 5180000000,
-    "sort_order": 220
+    "sort_order": 320
   },
   {
     "id": "le_243",
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_corona_impfungen_oesterreich_bis_2024",
     "sort_value": 21500000,
-    "sort_order": 160
+    "sort_order": 200
   },
   {
     "id": "le_244",
@@ -1846,7 +1846,7 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_nih_budget_fy2026",
     "sort_value": 47493000000,
-    "sort_order": 270
+    "sort_order": 370
   },
   {
     "id": "le_246",
@@ -1860,7 +1860,7 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_gkv_ausgaben_2025",
     "sort_value": 352400000000,
-    "sort_order": 340,
+    "sort_order": 440,
     "note": "Vorläufige Finanzergebnisse (Quartalsstatistik KV 45)."
   },
   {
@@ -1868,14 +1868,14 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_eli_lilly_umsatz_2025",
     "sort_value": 65179000000,
-    "sort_order": 300
+    "sort_order": 400
   },
   {
     "id": "le_249",
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_lenmeldy_preis_2024",
     "sort_value": 4250000,
-    "sort_order": 140
+    "sort_order": 170
   },
   {
     "id": "le_250",
@@ -1890,21 +1890,21 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_gesundheitsausgaben_eu_2023",
     "sort_value": 1720000000000,
-    "sort_order": 360
+    "sort_order": 460
   },
   {
     "id": "le_252",
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_gesundheitsausgaben_frankreich_2023",
     "sort_value": 325000000000,
-    "sort_order": 320
+    "sort_order": 420
   },
   {
     "id": "le_253",
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_adipositas_kosten_oesterreich_2019",
     "sort_value": 2400000000,
-    "sort_order": 180,
+    "sort_order": 280,
     "note": "Schätzung des IHS auf Basis von Gesundheitsdaten aus 2019."
   },
   {
@@ -1912,21 +1912,21 @@
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_blutspenden_drk_deutschland_2025",
     "sort_value": 3182081,
-    "sort_order": 120
+    "sort_order": 140
   },
   {
     "id": "le_255",
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_pflegebeduerftige_deutschland_2023",
     "sort_value": 5700000,
-    "sort_order": 150
+    "sort_order": 180
   },
   {
     "id": "le_256",
     "list_id": "list_gesundheit_v1",
     "entry_id": "entry_spitalskosten_fondsspitaeler_oesterreich_2025",
     "sort_value": 20246569063,
-    "sort_order": 250
+    "sort_order": 350
   },
   {
     "id": "le_257",
@@ -2099,63 +2099,63 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_fehmarnbelt_tunnel_kosten_2026",
     "sort_value": 7400000000,
-    "sort_order": 350
+    "sort_order": 540
   },
   {
     "id": "le_281",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_bundesheer_luftabwehr_iris_t_modernisierung_2023",
     "sort_value": 2000000000,
-    "sort_order": 260
+    "sort_order": 450
   },
   {
     "id": "le_282",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_iter_mehrkosten_verzoegerung_2024",
     "sort_value": 5000000000,
-    "sort_order": 320
+    "sort_order": 510
   },
   {
     "id": "le_283",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_militaerausgaben_china_2025",
     "sort_value": 336000000000,
-    "sort_order": 490
+    "sort_order": 680
   },
   {
     "id": "le_284",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_militaerausgaben_ukraine_2025",
     "sort_value": 84100000000,
-    "sort_order": 440
+    "sort_order": 630
   },
   {
     "id": "le_285",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_militaerausgaben_frankreich_2025",
     "sort_value": 68000000000,
-    "sort_order": 430
+    "sort_order": 620
   },
   {
     "id": "le_286",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_militaerausgaben_guyana_2025",
     "sort_value": 248000000,
-    "sort_order": 150
+    "sort_order": 340
   },
   {
     "id": "le_287",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_f35_beschaffung_deutschland_2022",
     "sort_value": 9990000000,
-    "sort_order": 370
+    "sort_order": 560
   },
   {
     "id": "le_288",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_semmering_basistunnel_kosten_2026",
     "sort_value": 4200000000,
-    "sort_order": 290,
+    "sort_order": 480,
     "note": "Prognose laut Rahmenplan 2025/30, Projekt noch nicht abgeschlossen."
   },
   {
@@ -2163,35 +2163,35 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_gotthard_basistunnel_kosten_2016",
     "sort_value": 12200000000,
-    "sort_order": 380
+    "sort_order": 570
   },
   {
     "id": "le_290",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_gotthard_basistunnel_ausbruchmaterial",
     "sort_value": 28200000,
-    "sort_order": 80
+    "sort_order": 170
   },
   {
     "id": "le_291",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_bundesheer_aw169_hubschrauber_2022",
     "sort_value": 873000000,
-    "sort_order": 220
+    "sort_order": 410
   },
   {
     "id": "le_292",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_rheinmetall_munitionswerk_unterluess_investition_2024",
     "sort_value": 300000000,
-    "sort_order": 160
+    "sort_order": 350
   },
   {
     "id": "le_293",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_u2_u5_finanzpaket_wien_2022",
     "sort_value": 5700000000,
-    "sort_order": 330,
+    "sort_order": 520,
     "note": "Jahr aus „vor drei Jahren“ (Artikel von 2025) abgeleitet; Endkosten dürften höher liegen."
   },
   {
@@ -2199,14 +2199,14 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_kamikaze_drohnen_bundeswehr_erstauftrag_2026",
     "sort_value": 540000000,
-    "sort_order": 200
+    "sort_order": 390
   },
   {
     "id": "le_295",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_pandur_evolution_bundesheer_2024",
     "sort_value": 1800000000,
-    "sort_order": 250
+    "sort_order": 440
   },
   {
     "id": "le_296",
@@ -2221,14 +2221,14 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_wien_hauptbahnhof_investition_2014",
     "sort_value": 1000000000,
-    "sort_order": 230
+    "sort_order": 420
   },
   {
     "id": "le_298",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_allianz_arena_baukosten_2005",
     "sort_value": 340000000,
-    "sort_order": 180
+    "sort_order": 370
   },
   {
     "id": "le_299",
@@ -2242,49 +2242,49 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bip_deutschland_2024",
     "sort_value": 4685592577805,
-    "sort_order": 760
+    "sort_order": 960
   },
   {
     "id": "le_301",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bip_schweiz_2024",
     "sort_value": 969919786395,
-    "sort_order": 720
+    "sort_order": 920
   },
   {
     "id": "le_302",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bip_usa_2024",
     "sort_value": 29298013000000,
-    "sort_order": 790
+    "sort_order": 990
   },
   {
     "id": "le_303",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bip_china_2024",
     "sort_value": 18729668435848,
-    "sort_order": 770
+    "sort_order": 970
   },
   {
     "id": "le_304",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bip_eu_2024",
     "sort_value": 19501078750999,
-    "sort_order": 780
+    "sort_order": 980
   },
   {
     "id": "le_305",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_naechtigungen_oesterreich_2025",
     "sort_value": 157270000,
-    "sort_order": 400
+    "sort_order": 600
   },
   {
     "id": "le_306",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_naechtigungen_deutsche_gaeste_oesterreich_2025",
     "sort_value": 58550000,
-    "sort_order": 370
+    "sort_order": 520
   },
   {
     "id": "le_307",
@@ -2298,14 +2298,14 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_erwerbstaetige_deutschland_2025",
     "sort_value": 46000000,
-    "sort_order": 350
+    "sort_order": 470
   },
   {
     "id": "le_309",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_warenexporte_oesterreich_2025",
     "sort_value": 190140000000,
-    "sort_order": 640,
+    "sort_order": 840,
     "note": "Vorläufiges Ergebnis von Statistik Austria."
   },
   {
@@ -2313,70 +2313,70 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_handel_deutschland_china_2025",
     "sort_value": 251800000000,
-    "sort_order": 660
+    "sort_order": 860
   },
   {
     "id": "le_311",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_exporte_deutschland_usa_2025",
     "sort_value": 146200000000,
-    "sort_order": 630
+    "sort_order": 830
   },
   {
     "id": "le_312",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_signa_holding_forderungen_2025",
     "sort_value": 8350000000,
-    "sort_order": 530
+    "sort_order": 730
   },
   {
     "id": "le_313",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_signa_holding_anerkannte_forderungen_2025",
     "sort_value": 2760000000,
-    "sort_order": 480
+    "sort_order": 680
   },
   {
     "id": "le_314",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_umsatz_omv_2025",
     "sort_value": 24300000000,
-    "sort_order": 600
+    "sort_order": 800
   },
   {
     "id": "le_315",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_umsatz_voestalpine_2025_26",
     "sort_value": 15100000000,
-    "sort_order": 590
+    "sort_order": 790
   },
   {
     "id": "le_316",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_umsatz_siemens_2025",
     "sort_value": 78900000000,
-    "sort_order": 610
+    "sort_order": 810
   },
   {
     "id": "le_317",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_umsatz_volkswagen_konzern_2025",
     "sort_value": 321900000000,
-    "sort_order": 670
+    "sort_order": 870
   },
   {
     "id": "le_318",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_umsatz_apple_2025",
     "sort_value": 416000000000,
-    "sort_order": 680
+    "sort_order": 880
   },
   {
     "id": "le_319",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bereinigter_gewinn_saudi_aramco_2025",
     "sort_value": 104700000000,
-    "sort_order": 620,
+    "sort_order": 820,
     "note": "Bereinigte Kennzahl (nicht nach IFRS); Quelle gibt die Aramco-Pressemitteilung wieder, Originalseite aramco.com per curl nicht abrufbar."
   },
   {
@@ -2384,21 +2384,21 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_umsatz_red_bull_2025",
     "sort_value": 12200000000,
-    "sort_order": 570
+    "sort_order": 770
   },
   {
     "id": "le_321",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_marketingausgaben_red_bull_2025",
     "sort_value": 3200000000,
-    "sort_order": 500
+    "sort_order": 700
   },
   {
     "id": "le_322",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_boersenwert_apple_3_billionen_2022",
     "sort_value": 3000000000000,
-    "sort_order": 740,
+    "sort_order": 940,
     "note": "Wert wurde nur im Handelsverlauf erreicht (Intraday), runde Schwellenangabe."
   },
   {
@@ -2406,14 +2406,14 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_finanzvermoegen_haushalte_oesterreich_2026",
     "sort_value": 1011000000000,
-    "sort_order": 730
+    "sort_order": 930
   },
   {
     "id": "le_324",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_suezkanal_blockade_warenwert_pro_tag_2021",
     "sort_value": 9600000000,
-    "sort_order": 560,
+    "sort_order": 760,
     "note": "Schätzung des aufgehaltenen Warenwerts, kein tatsächlicher wirtschaftlicher Schaden."
   },
   {
@@ -2421,14 +2421,14 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_bundesgarantie_ubs_credit_suisse_2023",
     "sort_value": 9000000000,
-    "sort_order": 540
+    "sort_order": 740
   },
   {
     "id": "le_326",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_einwohner_schweiz_2025",
     "sort_value": 9127100,
-    "sort_order": 310
+    "sort_order": 350
   },
   {
     "id": "le_327",
@@ -2449,21 +2449,21 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_einwohner_berlin_2025",
     "sort_value": 3700577,
-    "sort_order": 250
+    "sort_order": 280
   },
   {
     "id": "le_330",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_privathaushalte_oesterreich_2025",
     "sort_value": 4182100,
-    "sort_order": 280
+    "sort_order": 310
   },
   {
     "id": "le_331",
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_privathaushalte_deutschland_2025",
     "sort_value": 41126000,
-    "sort_order": 340,
+    "sort_order": 460,
     "note": "Vorläufiges Ergebnis (p) des Mikrozensus 2025, Angabe in 1000; gezählt werden Hauptwohnsitzhaushalte."
   },
   {
@@ -2471,7 +2471,7 @@
     "list_id": "list_wirtschaft_alltag_v1",
     "entry_id": "entry_privathaushalte_schweiz_2025",
     "sort_value": 4105458,
-    "sort_order": 270
+    "sort_order": 300
   },
   {
     "id": "le_333",
@@ -3759,5 +3759,584 @@
     "entry_id": "entry_us_individual_income_taxes_fy2025",
     "sort_value": 2656044447275.63,
     "sort_order": 1680
+  },
+  {
+    "id": "le_525",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_generalsanierung_stadthallenbad_wien_2011",
+    "sort_value": 17000000,
+    "sort_order": 300
+  },
+  {
+    "id": "le_526",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_parteienfoerderung_wien_2025",
+    "sort_value": 53000000,
+    "sort_order": 380
+  },
+  {
+    "id": "le_527",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_parteienfoerderung_burgenland_2025",
+    "sort_value": 4800000,
+    "sort_order": 210
+  },
+  {
+    "id": "le_528",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_neubau_volksschule_mittelschule_leonding_2022",
+    "sort_value": 43000000,
+    "sort_order": 360
+  },
+  {
+    "id": "le_529",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_kosten_landtagswahl_hessen_2023",
+    "sort_value": 5500000,
+    "sort_order": 240
+  },
+  {
+    "id": "le_530",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_vier_e_busse_linz_ag_2026",
+    "sort_value": 2300000,
+    "sort_order": 190
+  },
+  {
+    "id": "le_531",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_umfahrung_pyburg_windpassing_2015",
+    "sort_value": 14000000,
+    "sort_order": 270
+  },
+  {
+    "id": "le_532",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_feuerwehrhaus_stuttgart_muenster_2025",
+    "sort_value": 14100000,
+    "sort_order": 290,
+    "note": "Kostenschätzung vor Baubeginn"
+  },
+  {
+    "id": "le_533",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_schulhausneubau_horw_2025",
+    "sort_value": 32000000,
+    "sort_order": 340
+  },
+  {
+    "id": "le_534",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_fassadensanierung_wiener_rathaus_2012",
+    "sort_value": 35700000,
+    "sort_order": 350
+  },
+  {
+    "id": "le_535",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_kindergarten_westendorf_2023",
+    "sort_value": 7000000,
+    "sort_order": 250,
+    "note": "Noch nicht endabgerechnet, Angabe des Bürgermeisters"
+  },
+  {
+    "id": "le_536",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_winterdienst_kanton_zuerich_2022",
+    "sort_value": 18500000,
+    "sort_order": 320
+  },
+  {
+    "id": "le_537",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_simmeringer_bad_umbau_2025",
+    "sort_value": 18000000,
+    "sort_order": 310
+  },
+  {
+    "id": "le_538",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_gemeindebudget_marchtrenk_2025",
+    "sort_value": 48000000,
+    "sort_order": 370
+  },
+  {
+    "id": "le_539",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_feuerwehrhaus_hart_bei_graz_2026",
+    "sort_value": 5000000,
+    "sort_order": 220,
+    "note": "Geplante Investition, Bau noch nicht abgeschlossen"
+  },
+  {
+    "id": "le_540",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_feuerwehr_paket_land_steiermark_2024",
+    "sort_value": 25000000,
+    "sort_order": 330
+  },
+  {
+    "id": "le_541",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_kindergarten_zuschuss_land_salzburg_2025",
+    "sort_value": 2500000,
+    "sort_order": 200
+  },
+  {
+    "id": "le_542",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_hallenbad_sanierung_waldenbuch_2025",
+    "sort_value": 14000000,
+    "sort_order": 280,
+    "note": "Kostenschätzung („gut 14 Millionen“), Sanierung noch nicht umgesetzt"
+  },
+  {
+    "id": "le_543",
+    "list_id": "list_budget_steuern_v1",
+    "entry_id": "entry_feuerwehrgebaeude_eschenbach_sg_2025",
+    "sort_value": 7100000,
+    "sort_order": 260
+  },
+  {
+    "id": "le_544",
+    "list_id": "list_energie_klima_v1",
+    "entry_id": "entry_hochwasserschutz_linzer_hafen_2024",
+    "sort_value": 40000000,
+    "sort_order": 200
+  },
+  {
+    "id": "le_545",
+    "list_id": "list_energie_klima_v1",
+    "entry_id": "entry_hochwasserschutz_gmuend_lainsitz_2025",
+    "sort_value": 12200000,
+    "sort_order": 160
+  },
+  {
+    "id": "le_546",
+    "list_id": "list_energie_klima_v1",
+    "entry_id": "entry_lawinenschutz_tirol_2025",
+    "sort_value": 13000000,
+    "sort_order": 170,
+    "note": "Gerundeter Planwert („fast 13 Millionen“)."
+  },
+  {
+    "id": "le_547",
+    "list_id": "list_energie_klima_v1",
+    "entry_id": "entry_schutzwald_moelltal_2026",
+    "sort_value": 6000000,
+    "sort_order": 110
+  },
+  {
+    "id": "le_548",
+    "list_id": "list_energie_klima_v1",
+    "entry_id": "entry_renaturierung_pielach_2025",
+    "sort_value": 4200000,
+    "sort_order": 90
+  },
+  {
+    "id": "le_549",
+    "list_id": "list_energie_klima_v1",
+    "entry_id": "entry_wasserkraftwerk_wankham_2025",
+    "sort_value": 20000000,
+    "sort_order": 180
+  },
+  {
+    "id": "le_550",
+    "list_id": "list_energie_klima_v1",
+    "entry_id": "entry_windpark_grosskrut_altlichtenwarth_2026",
+    "sort_value": 50000000,
+    "sort_order": 210
+  },
+  {
+    "id": "le_551",
+    "list_id": "list_energie_klima_v1",
+    "entry_id": "entry_solarpark_merzig_2025",
+    "sort_value": 7000000,
+    "sort_order": 120
+  },
+  {
+    "id": "le_552",
+    "list_id": "list_energie_klima_v1",
+    "entry_id": "entry_heizungstausch_foerderung_burgenland_2025",
+    "sort_value": 8500000,
+    "sort_order": 130
+  },
+  {
+    "id": "le_553",
+    "list_id": "list_energie_klima_v1",
+    "entry_id": "entry_fernwaerme_transportleitung_lavanttal_2025",
+    "sort_value": 11000000,
+    "sort_order": 150
+  },
+  {
+    "id": "le_554",
+    "list_id": "list_energie_klima_v1",
+    "entry_id": "entry_fernwaermeleitung_duernrohr_st_poelten_2009",
+    "sort_value": 35000000,
+    "sort_order": 190
+  },
+  {
+    "id": "le_555",
+    "list_id": "list_gesundheit_v1",
+    "entry_id": "entry_davinci_op_roboter_steyr_2024",
+    "sort_value": 1900000,
+    "sort_order": 120
+  },
+  {
+    "id": "le_556",
+    "list_id": "list_gesundheit_v1",
+    "entry_id": "entry_mrt_geraet_kinderradiologie_dresden_2023",
+    "sort_value": 1900000,
+    "sort_order": 130
+  },
+  {
+    "id": "le_557",
+    "list_id": "list_gesundheit_v1",
+    "entry_id": "entry_klinikum_soemmerda_neubau_2024",
+    "sort_value": 33700000,
+    "sort_order": 230
+  },
+  {
+    "id": "le_558",
+    "list_id": "list_gesundheit_v1",
+    "entry_id": "entry_klinikum_freistadt_weiterentwicklung_2026",
+    "sort_value": 44000000,
+    "sort_order": 250
+  },
+  {
+    "id": "le_559",
+    "list_id": "list_gesundheit_v1",
+    "entry_id": "entry_pflegezentrum_bad_voeslau_neubau_2026",
+    "sort_value": 50000000,
+    "sort_order": 260,
+    "note": "Kostenschätzung (veranschlagt) zu Baubeginn; Fertigstellung erst 2030."
+  },
+  {
+    "id": "le_560",
+    "list_id": "list_gesundheit_v1",
+    "entry_id": "entry_influenza_impfung_budget_oesterreich_2024",
+    "sort_value": 40960000,
+    "sort_order": 240
+  },
+  {
+    "id": "le_561",
+    "list_id": "list_gesundheit_v1",
+    "entry_id": "entry_oeamtc_notarzthubschrauber_h135_2020",
+    "sort_value": 30000000,
+    "sort_order": 210,
+    "note": "Obergrenze („bis zu“) für fünf bis sechs Hubschrauber inklusive Ausrüstung."
+  },
+  {
+    "id": "le_562",
+    "list_id": "list_gesundheit_v1",
+    "entry_id": "entry_heizkostenzuschuss_tirol_2025",
+    "sort_value": 3300000,
+    "sort_order": 150
+  },
+  {
+    "id": "le_563",
+    "list_id": "list_gesundheit_v1",
+    "entry_id": "entry_bundesprogramm_frauenhaeuser_pro_jahr_2020",
+    "sort_value": 30000000,
+    "sort_order": 220,
+    "note": "Planwert aus der Ankündigung 2019, vorbehaltlich Zustimmung des Bundestages."
+  },
+  {
+    "id": "le_564",
+    "list_id": "list_gesundheit_v1",
+    "entry_id": "entry_rotes_kreuz_dienststelle_traun_2025",
+    "sort_value": 6900000,
+    "sort_order": 190,
+    "note": "Kostenschätzung in der Planungsphase."
+  },
+  {
+    "id": "le_565",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_polizeihubschrauber_aw169_stueckpreis_2022",
+    "sort_value": 15000000,
+    "sort_order": 90
+  },
+  {
+    "id": "le_566",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_polizeihubschrauber_niedersachsen_2026",
+    "sort_value": 42700000,
+    "sort_order": 180
+  },
+  {
+    "id": "le_567",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_polizeihubschrauber_flotte_nrw_2016",
+    "sort_value": 65000000,
+    "sort_order": 260,
+    "note": "Gerundete Angabe („knapp 65 Millionen Euro“)."
+  },
+  {
+    "id": "le_568",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_radschnellwegbruecke_boeblingen_2025",
+    "sort_value": 5800000,
+    "sort_order": 60
+  },
+  {
+    "id": "le_569",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_strassenbahn_graz_linien_4_6_verlaengerung_2021",
+    "sort_value": 72300000,
+    "sort_order": 280,
+    "note": "Vorläufige Kosten (Stand Mai 2021)."
+  },
+  {
+    "id": "le_570",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_strassenbahn_linz_traun_netzerweiterung_2021",
+    "sort_value": 72200000,
+    "sort_order": 270
+  },
+  {
+    "id": "le_571",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_bahnhof_bad_gastein_umbau_2026",
+    "sort_value": 23100000,
+    "sort_order": 140
+  },
+  {
+    "id": "le_572",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_bahnhof_sigmundsherberg_modernisierung_2026",
+    "sort_value": 53000000,
+    "sort_order": 220
+  },
+  {
+    "id": "le_573",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_imster_bergbahnen_neubau_2021",
+    "sort_value": 20500000,
+    "sort_order": 130,
+    "note": "Auftragssumme bei Vergabe, nicht Endabrechnung."
+  },
+  {
+    "id": "le_574",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_stadtbibliothek_koeln_generalsanierung_2022",
+    "sort_value": 81200000,
+    "sort_order": 290,
+    "note": "Kostenberechnung vor Baubeginn (Stand Februar 2022)."
+  },
+  {
+    "id": "le_575",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_stadthalle_heidelberg_sanierung_2025",
+    "sort_value": 57000000,
+    "sort_order": 250
+  },
+  {
+    "id": "le_576",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_einheitsdenkmal_berlin_kosten_2025",
+    "sort_value": 17800000,
+    "sort_order": 100,
+    "note": "Zwischenstand eines unvollendeten Projekts; Quelle ist ein Stadtentwicklungsportal."
+  },
+  {
+    "id": "le_577",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_e_faehre_artemis_bodensee_2022",
+    "sort_value": 3600000,
+    "sort_order": 50
+  },
+  {
+    "id": "le_578",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_lng_faehre_konstanz_meersburg_2020",
+    "sort_value": 18700000,
+    "sort_order": 110,
+    "note": "Kostenangabe vor Fertigstellung des Schiffs."
+  },
+  {
+    "id": "le_579",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_stadion_wiener_neustadt_neubau_2018",
+    "sort_value": 10600000,
+    "sort_order": 70,
+    "note": "Kostenschätzung vor Baubeginn."
+  },
+  {
+    "id": "le_580",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_montforthaus_feldkirch_neubau_2014",
+    "sort_value": 43500000,
+    "sort_order": 200
+  },
+  {
+    "id": "le_581",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_allianz_stadion_rapid_wien_2016",
+    "sort_value": 53000000,
+    "sort_order": 230,
+    "note": "Nur Wikipedia als Quelle; veranschlagter Wert."
+  },
+  {
+    "id": "le_582",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_isarphilharmonie_muenchen_baukosten_2021",
+    "sort_value": 43000000,
+    "sort_order": 190,
+    "note": "Nur Wikipedia als Quelle."
+  },
+  {
+    "id": "le_583",
+    "list_id": "list_military_projects_v1",
+    "entry_id": "entry_velotunnel_zuerich_kredit_2021",
+    "sort_value": 28000000,
+    "sort_order": 160,
+    "note": "Bewilligter Kredit, nicht Endabrechnung."
+  },
+  {
+    "id": "le_584",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_wimbledon_siegpraemie_einzel_2025",
+    "sort_value": 3000000,
+    "sort_order": 260
+  },
+  {
+    "id": "le_585",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_klimt_fraeulein_lieser_auktion_2024",
+    "sort_value": 30000000,
+    "sort_order": 420
+  },
+  {
+    "id": "le_586",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_salzburger_festspiele_haushaltsplan_2025",
+    "sort_value": 77280000,
+    "sort_order": 550
+  },
+  {
+    "id": "le_587",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_esc_2026_finanzrahmen_stadt_wien",
+    "sort_value": 22600000,
+    "sort_order": 400
+  },
+  {
+    "id": "le_588",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_esc_2026_veranstaltungskosten_wien",
+    "sort_value": 36000000,
+    "sort_order": 450,
+    "note": "Schätzung aus einer Studie vor der Austragung."
+  },
+  {
+    "id": "le_589",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_rewe_kartellstrafe_oesterreich_2025",
+    "sort_value": 70000000,
+    "sort_order": 540
+  },
+  {
+    "id": "le_590",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_porr_kartellstrafe_baukartell_2021",
+    "sort_value": 62350000,
+    "sort_order": 530
+  },
+  {
+    "id": "le_591",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_lotto_6aus49_jackpot_thueringen_2026",
+    "sort_value": 50000000,
+    "sort_order": 490
+  },
+  {
+    "id": "le_592",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_super_bowl_werbespot_30_sekunden_2026",
+    "sort_value": 8000000,
+    "sort_order": 340
+  },
+  {
+    "id": "le_593",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_transfer_hoejlund_sturm_graz_2022",
+    "sort_value": 17000000,
+    "sort_order": 380,
+    "note": "Ablösesumme nur kolportiert, nicht offiziell bestätigt."
+  },
+  {
+    "id": "le_594",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_transfer_adeyemi_salzburg_dortmund_2022",
+    "sort_value": 35000000,
+    "sort_order": 440,
+    "note": "Ablösesumme nur medial kolportiert; offizielle Angaben gibt es laut Quelle nicht."
+  },
+  {
+    "id": "le_595",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_vorstandsverguetung_sap_chef_klein_2025",
+    "sort_value": 10900000,
+    "sort_order": 370
+  },
+  {
+    "id": "le_596",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_adidas_dfb_ausruestervertrag_pro_jahr",
+    "sort_value": 50000000,
+    "sort_order": 500,
+    "note": "Vertragssumme vom DFB nicht offiziell bestätigt; Medienangabe."
+  },
+  {
+    "id": "le_597",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_nike_dfb_ausruestervertrag_pro_jahr",
+    "sort_value": 100000000,
+    "sort_order": 590,
+    "note": "Nur laut Medienberichten, vom DFB nicht bestätigt."
+  },
+  {
+    "id": "le_598",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_dsgvo_strafe_oesterreichische_post_2019",
+    "sort_value": 18000000,
+    "sort_order": 390,
+    "note": "Nicht rechtskräftig; laut späteren Berichten vom Bundesverwaltungsgericht aus formalen Gründen aufgehoben."
+  },
+  {
+    "id": "le_599",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_refurbed_finanzierungsrunde_2025",
+    "sort_value": 50000000,
+    "sort_order": 510
+  },
+  {
+    "id": "le_600",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_stephansdom_instandhaltung_pro_jahr",
+    "sort_value": 2200000,
+    "sort_order": 240
+  },
+  {
+    "id": "le_601",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_klimt_dame_mit_faecher_auktion_2023",
+    "sort_value": 85305000,
+    "sort_order": 580
+  },
+  {
+    "id": "le_602",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_tour_de_france_preisgeld_gesamt_2025",
+    "sort_value": 2577731,
+    "sort_order": 250
+  },
+  {
+    "id": "le_603",
+    "list_id": "list_wirtschaft_alltag_v1",
+    "entry_id": "entry_budget_jim_knopf_film_2018",
+    "sort_value": 25000000,
+    "sort_order": 410,
+    "note": "Filmbudgets werden selten offiziell kommuniziert; laut Quelle kolportierte Zahl."
   }
 ]
