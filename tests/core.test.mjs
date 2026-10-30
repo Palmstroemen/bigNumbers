@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { parseNumberFromText as p, findAmounts, formatShort, formatWords, windowAround, makeConverter, makeInflator } from "../core/index.js";
+import { parseNumberFromText as p, findAmounts, formatShort, formatWords, windowAround, nearest, makeConverter, makeInflator } from "../core/index.js";
 import { Calculator } from "../app/calculator.js";
 
 const run = (keys) => { const c = new Calculator(); for (const k of keys) {
@@ -66,5 +66,9 @@ const amounts = [
 for (const [text, want] of amounts) {
   t(`Beträge: "${text}"`, () => assert.deepEqual(findAmounts(text).map((a) => [text.slice(a.index, a.index + a.length), a.value, a.currency]), want));
 }
+const near = [1, 3, 9, 11, 12, 30, 200].map((v) => ({ value_original: v }));
+t("nearest: nächste nach Faktor, beide Seiten", () => { const w = nearest(near, 10, { count: 4 }); assert.deepEqual([w.smaller.map((e) => e.value_original), w.larger.map((e) => e.value_original)], [[9], [11, 12, 30]]); });
+t("nearest: mehr als Faktor 10 entfernt fällt weg", () => { const w = nearest(near, 10, { count: 9 }); assert.ok(![...w.smaller, ...w.larger].some((e) => e.value_original === 200)); });
+t("nearest: zu wenig nahe, dann trotzdem die zwei nächsten", () => { const w = nearest(near, 1e6, { count: 6 }); assert.deepEqual(w.smaller.map((e) => e.value_original), [30, 200]); });
 console.log(fails ? `${fails} Fehler` : "alle Tests bestanden");
 process.exitCode = fails ? 1 : 0;

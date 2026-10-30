@@ -81,11 +81,12 @@ await t("Snapshot für einen Artikel: Auswahl in Reihenfolge, Datenstand", () =>
   assert.throws(() => bn.snapshot(1, { country: "AT", unit: "EUR", pick: ["gibt_es_nicht"] }), /gibt es für AT nicht/);
 });
 
-await t("Snapshot mit Vergleichen: nur Geldbeträge, je 3 kleiner und größer, ausgeschlossene fehlen", () => {
+await t("Snapshot mit Vergleichen: nur Geldbeträge, nächste Nachbarn, ausgeschlossene fehlen", () => {
   const lists = ["list_budget_steuern_v1", "list_wirtschaft_alltag_v1"];
   const s = bn.snapshot(38e6, { country: "AT", unit: "EUR", pick: ["m2m_households_at"], compare: { lists } });
   const rows = [...s.compare.smaller, ...s.compare.larger];
-  assert.deepEqual([s.compare.smaller.length, s.compare.larger.length], [3, 3]);
+  assert.ok(rows.length >= 2 && rows.length <= 6);
+  assert.ok(rows.every((r) => !r.id.includes("feuerwehr")), "720.000 € ist mehr als zehnmal kleiner");
   assert.ok(rows.every((r) => r.title && r.text.endsWith("€") && r.source.startsWith("http")));
   assert.match(s.compare.note, /Preisen von \d{4}/);
   const without = bn.snapshot(38e6, { country: "AT", unit: "EUR", pick: [], compare: { lists, exclude: [rows[0].id] } });

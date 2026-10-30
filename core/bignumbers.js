@@ -4,7 +4,7 @@
 
 import { formatShort, formatFull, formatPercent, unitLabel } from "./format.js";
 import { makeConverter, makeInflator } from "./money.js";
-import { windowAround } from "./compare.js";
+import { windowAround, nearest } from "./compare.js";
 
 async function fetchJson(url) {
   const res = await fetch(url);
@@ -188,8 +188,8 @@ export class BigNumbers {
    * What an article embeds for `value` (see embed/means2me.js): the Mean2Me items
    * with the ids in `pick`, in that order, frozen with today's data so the text a
    * newsroom approved never changes by itself.
-   * `compare: { lists, below, above, exclude }` adds the neighbouring entries of
-   * those (loaded) lists; for a money value only money entries, in today's prices.
+   * `compare: { lists, count, maxFactor, exclude }` adds the entries of those (loaded)
+   * lists closest to the value; for a money value only money entries, in today's prices.
    */
   snapshot(value, { country, unit, pick, custom = [], compare = null, date = new Date() }) {
     const all = this.mean2me(value, { country, unit, custom });
@@ -208,13 +208,11 @@ export class BigNumbers {
   }
 
   /** The neighbours of `value` as plain text: { note, smaller, larger }, each row { title, year, text, source }. */
-  frozenComparison(value, unit, { lists, below = 3, above = 3, exclude = [] }) {
+  frozenComparison(value, unit, { lists, count = 6, maxFactor = 10, exclude = [] }) {
     const money = !!unit && this.convert.isCurrency(unit);
     const skip = new Set(exclude);
-    const w = this.compare(value, {
-      lists, unit, below, above,
-      filter: (e) => !skip.has(e.id) && (!money || this.convert.isCurrency(e.unit)),
-    });
+    const pool = this.entries(lists).filter((e) => !skip.has(e.id) && (!money || this.convert.isCurrency(e.unit)));
+    const w = nearest(pool, value, { count, maxFactor, key: (e) => this.compareValue(e, unit) });
     const row = (e) => {
       const m = this.money(e, unit);
       return {
