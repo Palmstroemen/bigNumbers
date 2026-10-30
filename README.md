@@ -59,8 +59,8 @@ All entries are `draft`. Nothing has been reviewed by a human yet.
 
 * `confidence_level: 2` – value seen on the source page and backed by a quote in `source_quotes.json`.
 * `confidence_level: 1` – estimate, lower bound, forecast, contradictory sources or old data. These entries carry a note in `list_entries.json`.
-  All entries were checked against their sources in October 2026; 16 of 146 remain at this level, each with a note saying why.
-  All 15 entries from the 2013 collection have been checked against their sources (October 2026). Six remain at this level: two derived monthly values, two F-16 costs whose official source could not be opened, and two Eurofighter averages computed by Wikipedia.
+  All entries were checked against their sources in October 2026; 14 of 146 remain at this level, each with a note saying why.
+  All 15 entries from the 2013 collection have been checked against their sources (October 2026). Four remain at this level: two derived monthly values and two Eurofighter averages computed by Wikipedia.
 
 Workflow for an entry: `draft` → `reviewed` (value, source and description checked by a person) → `published`.
 

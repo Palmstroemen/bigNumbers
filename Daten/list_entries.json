@@ -34,16 +34,14 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_f16_ab_1998",
     "sort_value": 14600000,
-    "sort_order": 30,
-    "note": "Wert und Bezugsjahr nur über Kopien des USAF-Fact-Sheets bestätigt; af.mil war beim Abruf gesperrt (HTTP 403). Zitat im Browser gegenprüfen, dann Stufe 2."
+    "sort_order": 30
   },
   {
     "id": "le_006",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_f16_cd_1998",
     "sort_value": 18800000,
-    "sort_order": 40,
-    "note": "Wert und Bezugsjahr nur über Kopien des USAF-Fact-Sheets bestätigt; af.mil war beim Abruf gesperrt (HTTP 403). Zitat im Browser gegenprüfen, dann Stufe 2."
+    "sort_order": 40
   },
   {
     "id": "le_007",
