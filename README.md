@@ -82,4 +82,5 @@ Workflow for an entry: `draft` → `reviewed` (value, source and description che
 
 ## License
 
-Not decided yet.
+* Code (`app/`, `core/`, `tools/`, `tests/`): [MIT](LICENSE).
+* Data (`Daten/`, `Datenbeispiel/`): [CC BY 4.0](Daten/LICENSE.md). Pictures and literal source quotes keep their own licenses, see there.
