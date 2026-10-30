@@ -1,0 +1,288 @@
+:root {
+  --bg: #f4f5f8;
+  --surface: #ffffff;
+  --text: #16213a;
+  --muted: #6b7489;
+  --line: #e2e5ec;
+  --accent: #2f5bea;
+  --accent-soft: #e6ecff;
+  --on-accent: #ffffff;
+  --warn: #b5650d;
+  --key: #ffffff;
+  --key-fn: #e7e9f0;
+  --key-op: #dfe6ff;
+  --radius: 14px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1525;
+    --surface: #182036;
+    --text: #eef1f8;
+    --muted: #98a2bb;
+    --line: #273152;
+    --accent: #7d9bff;
+    --accent-soft: #24305a;
+    --on-accent: #0f1525;
+    --warn: #f0a24a;
+    --key: #1d2640;
+    --key-fn: #263052;
+    --key-op: #2b3a6e;
+  }
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+button { font: inherit; color: inherit; cursor: pointer; }
+
+/* Same phone layout everywhere; on wide screens it is just centered. */
+.app {
+  height: 100dvh;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+
+/* --- Tabs ------------------------------------------------------------------- */
+.tabs {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: env(safe-area-inset-top);
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.tabs button {
+  border: 0;
+  background: none;
+  padding: 12px 4px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.tabs button[aria-selected="true"] { color: var(--accent); }
+.tab-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 33.333%;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: transform .15s ease-out;
+}
+
+/* --- Panes: horizontal swipe with scroll snap --------------------------------- */
+.panes {
+  flex: 1;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+.panes::-webkit-scrollbar { display: none; }
+.pane {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  overflow-y: auto;
+  padding: 0 16px calc(16px + env(safe-area-inset-bottom));
+}
+
+.pane-head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--bg);
+  padding: 14px 0 8px;
+}
+.pane-number { font-size: 1.6rem; font-weight: 700; }
+.pane-sub { color: var(--muted); font-size: .9rem; }
+
+.chips {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 10px 0 2px;
+  scrollbar-width: none;
+}
+.chips::-webkit-scrollbar { display: none; }
+.chips button {
+  flex: 0 0 auto;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: .85rem;
+}
+.chips button[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+
+/* --- Center: display and keypad ------------------------------------------------ */
+.pane-pad {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  padding-top: 8px;
+}
+.display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  min-height: 0;
+  padding: 8px 4px;
+  overflow: hidden;
+}
+.clip-note {
+  align-self: stretch;
+  text-align: left;
+  font-size: .85rem;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-bottom: auto;
+}
+.clip-note button {
+  border: 0;
+  background: none;
+  color: inherit;
+  text-decoration: underline;
+  padding: 0 0 0 6px;
+}
+.expr {
+  color: var(--muted);
+  font-size: 1.1rem;
+  min-height: 1.5em;
+  word-break: break-all;
+}
+.result {
+  max-width: 100%;
+  font-size: 3.2rem;       /* app.js shrinks it so long numbers stay on one line */
+  font-weight: 700;
+  line-height: 1.1;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.words { color: var(--accent); font-weight: 600; min-height: 1.4em; }
+
+.hint {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0 10px;
+}
+.hint-btn {
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font-size: .9rem;
+  padding: 6px 2px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.keypad button {
+  height: clamp(52px, 8.5dvh, 68px);
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--key);
+  font-size: 1.45rem;
+  box-shadow: 0 1px 0 var(--line);
+  touch-action: manipulation;
+  user-select: none;
+}
+.keypad button:active { filter: brightness(.92); transform: scale(.97); }
+.keypad .k-fn { background: var(--key-fn); }
+.keypad .k-op { background: var(--key-op); color: var(--accent); font-weight: 600; }
+.keypad .k-eq { background: var(--accent); color: var(--on-accent); font-weight: 600; }
+.keypad .k-000 { font-weight: 700; color: var(--accent); }
+
+/* --- Big Numbers list ------------------------------------------------------------- */
+.bn-list, .m2m-list { list-style: none; margin: 0; padding: 0; }
+.bn-list li {
+  background: var(--surface);
+  border-radius: var(--radius);
+  margin: 6px 0;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+.bn-row { display: flex; gap: 10px; align-items: baseline; }
+.bn-title { flex: 1; min-width: 0; }
+.bn-title small { color: var(--muted); margin-left: 4px; }
+.bn-value { font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.bn-ratio { color: var(--muted); font-size: .8rem; text-align: right; }
+.bn-list li.mine {
+  background: var(--accent);
+  color: var(--on-accent);
+  cursor: default;
+}
+.bn-detail { margin-top: 8px; font-size: .9rem; color: var(--muted); }
+.bn-detail p { margin: 6px 0; }
+.bn-detail a { color: var(--accent); }
+.badge {
+  display: inline-block;
+  font-size: .7rem;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 1px 6px;
+  margin-right: 4px;
+  background: var(--key-fn);
+  color: var(--muted);
+}
+.badge.warn { color: var(--warn); }
+.more {
+  width: 100%;
+  border: 1px dashed var(--line);
+  background: none;
+  color: var(--accent);
+  border-radius: var(--radius);
+  padding: 10px;
+  margin: 6px 0;
+}
+.more[hidden] { display: none; }
+
+/* --- Mean2Me ---------------------------------------------------------------------------- */
+.m2m-list li {
+  background: var(--surface);
+  border-radius: var(--radius);
+  margin: 8px 0;
+  padding: 12px 14px;
+}
+.m2m-value { font-size: 1.5rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.m2m-label { font-weight: 600; }
+.m2m-source { color: var(--muted); font-size: .8rem; margin-top: 4px; }
+
+.empty { color: var(--muted); text-align: center; padding: 40px 10px; }
+
+/* --- Toast -------------------------------------------------------------------------------- */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(24px + env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  max-width: calc(100% - 32px);
+  background: var(--text);
+  color: var(--bg);
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: .9rem;
+  z-index: 10;
+}

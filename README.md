@@ -20,6 +20,7 @@ Enter or paste a number in the center, then swipe sideways: the comparisons are 
 
 ## Folders
 
+* `app/` – first prototype of the mobile web app (plain HTML/CSS/JS, no build step). Run `python3 -m http.server` in the repository root and open http://localhost:8000/app/.
 * `Daten/` – the current dataset (JSON), see below.
 * `Datenbeispiel/` – a small example of the data model, including `mean2me_contexts`. `schema.md` describes all fields.
 * `Altbestand/` – the original material from 2013: `BigNumbers.ods` (first collection of lists) and `Designdokument.odt` (first app design).

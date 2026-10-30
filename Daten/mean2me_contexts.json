@@ -1,0 +1,80 @@
+[
+  {
+    "id": "m2m_at_population",
+    "title": "Pro Einwohner in Oesterreich",
+    "country_code": "AT",
+    "factor_source": "Bevoelkerung zu Jahres-/Quartalsanfang - Statistik Austria (2026)",
+    "factor_entry_id": "entry_einwohner_oesterreich_2026",
+    "factor_value": 9215956,
+    "unit_label": "pro Einwohner",
+    "icon": "person",
+    "is_default": true,
+    "only_currency": false,
+    "notes": "Teilt die Zahl durch die Bevoelkerung Oesterreichs."
+  },
+  {
+    "id": "m2m_vienna_population",
+    "title": "Pro Einwohner in Wien",
+    "country_code": "AT",
+    "factor_source": "Wien - Wikipedia (2026)",
+    "factor_entry_id": "entry_einwohner_wien_2026",
+    "factor_value": 2040914,
+    "unit_label": "pro Wienerin/Wiener",
+    "icon": "city",
+    "is_default": false,
+    "only_currency": false,
+    "notes": "Regionaler Kontext fuer lokalpolitische Zahlen."
+  },
+  {
+    "id": "m2m_world_population",
+    "title": "Pro Mensch auf der Erde",
+    "country_code": "GLOBAL",
+    "factor_source": "World population - Wikipedia (2022)",
+    "factor_entry_id": "entry_weltbevoelkerung_8_milliarden_2022",
+    "factor_value": 8000000000,
+    "unit_label": "pro Mensch",
+    "icon": "globe",
+    "is_default": true,
+    "only_currency": false,
+    "notes": "Teilt die Zahl durch die Weltbevoelkerung."
+  },
+  {
+    "id": "m2m_at_median_income",
+    "title": "In Jahren Arbeit (Medianeinkommen Oesterreich)",
+    "country_code": "AT",
+    "factor_source": "Jaehrliche Personeneinkommen - Statistik Austria (2024)",
+    "factor_entry_id": "entry_median_bruttojahreseinkommen_oesterreich_2024",
+    "factor_value": 38043,
+    "unit_label": "Jahre Arbeit",
+    "icon": "work",
+    "is_default": true,
+    "only_currency": true,
+    "notes": "Wie viele Jahre muesste jemand mit mittlerem Bruttojahreseinkommen dafuer arbeiten?"
+  },
+  {
+    "id": "m2m_per_day",
+    "title": "Pro Tag, ueber ein Jahr verteilt",
+    "country_code": "GLOBAL",
+    "factor_source": "365 Tage",
+    "factor_entry_id": null,
+    "factor_value": 365,
+    "unit_label": "pro Tag",
+    "icon": "calendar",
+    "is_default": true,
+    "only_currency": false,
+    "notes": "Hilfreich fuer Jahresbudgets."
+  },
+  {
+    "id": "m2m_per_second",
+    "title": "Pro Sekunde, ueber ein Jahr verteilt",
+    "country_code": "GLOBAL",
+    "factor_source": "365 x 24 x 60 x 60 Sekunden",
+    "factor_entry_id": null,
+    "factor_value": 31536000,
+    "unit_label": "pro Sekunde",
+    "icon": "clock",
+    "is_default": true,
+    "only_currency": false,
+    "notes": "Macht Jahresbetraege im Milliardenbereich greifbar."
+  }
+]

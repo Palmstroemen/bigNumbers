@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#16213a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Big Numbers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-pane="0">Vergleiche</button>
+      <button role="tab" data-pane="1">Zahl</button>
+      <button role="tab" data-pane="2">Für mich</button>
+      <span class="tab-indicator"></span>
+    </nav>
+
+    <main class="panes" id="panes">
+      <!-- Left: Big Numbers -->
+      <section class="pane" id="pane-bn" aria-label="Vergleiche">
+        <header class="pane-head">
+          <div class="pane-number" data-bind="short"></div>
+          <div class="pane-sub">Womit ist das vergleichbar?</div>
+          <div class="chips" id="list-chips"></div>
+        </header>
+        <button class="more" id="more-smaller">↑ kleinere Werte</button>
+        <ol class="bn-list" id="bn-list"></ol>
+        <button class="more" id="more-larger">↓ größere Werte</button>
+      </section>
+
+      <!-- Center: number pad and calculator -->
+      <section class="pane pane-pad" id="pane-pad" aria-label="Zahl">
+        <div class="display">
+          <div class="clip-note" id="clip-note" hidden></div>
+          <div class="expr" id="expr"></div>
+          <div class="result" id="result"></div>
+          <div class="words" id="words"></div>
+        </div>
+        <div class="hint">
+          <button class="hint-btn" data-goto="0">‹ Vergleiche</button>
+          <button class="hint-btn" data-goto="2">Für mich ›</button>
+        </div>
+        <div class="keypad" id="keypad">
+          <button data-k="C" class="k-fn">C</button>
+          <button data-k="back" class="k-fn" aria-label="Löschen">⌫</button>
+          <button data-k="/" class="k-op">÷</button>
+          <button data-k="*" class="k-op">×</button>
+          <button data-k="7">7</button><button data-k="8">8</button><button data-k="9">9</button>
+          <button data-k="-" class="k-op">−</button>
+          <button data-k="4">4</button><button data-k="5">5</button><button data-k="6">6</button>
+          <button data-k="+" class="k-op">+</button>
+          <button data-k="1">1</button><button data-k="2">2</button><button data-k="3">3</button>
+          <button data-k="=" class="k-eq">=</button>
+          <button data-k="paste" class="k-fn" aria-label="Aus Zwischenablage einfügen">📋</button>
+          <button data-k="0">0</button>
+          <button data-k="000" class="k-000">000</button>
+          <button data-k=",">,</button>
+        </div>
+      </section>
+
+      <!-- Right: Mean2Me -->
+      <section class="pane" id="pane-m2m" aria-label="Für mich">
+        <header class="pane-head">
+          <div class="pane-number" data-bind="short"></div>
+          <div class="pane-sub">Was bedeutet das für mich?</div>
+          <div class="chips" id="unit-chips">
+            <button data-unit="EUR">€</button>
+            <button data-unit="USD">$</button>
+            <button data-unit="">ohne Einheit</button>
+          </div>
+        </header>
+        <ul class="m2m-list" id="m2m-list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" hidden></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
