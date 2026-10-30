@@ -1,5 +1,5 @@
 import {
-  Calculator, formatShort, formatWords, formatFull, unitLabel, parseNumberFromText, windowAround,
+  Calculator, formatShort, formatWords, formatFull, unitLabel, parseNumberFromText, windowAround, makeConverter,
 } from "./core.js";
 
 const DATA_BASES = ["../Daten/", "Daten/"];
@@ -34,8 +34,9 @@ async function loadJson(name) {
 }
 
 async function loadData() {
-  const [entries, lists, listEntries, contexts] = await Promise.all(
-    ["entries.json", "lists.json", "list_entries.json", "mean2me_contexts.json"].map(loadJson));
+  const [entries, lists, listEntries, contexts, rates] = await Promise.all(
+    ["entries.json", "lists.json", "list_entries.json", "mean2me_contexts.json", "exchange_rates.json"]
+      .map(loadJson));
   const byId = new Map(entries.map((e) => [e.id, e]));
   const listsOf = new Map();
   const notes = new Map();
@@ -44,13 +45,33 @@ async function loadData() {
     listsOf.get(le.entry_id).add(le.list_id);
     if (le.note) notes.set(le.entry_id, le.note);
   }
-  const sorted = [...entries].sort((a, b) => a.value_original - b.value_original);
-  return { entries, byId, lists, listsOf, notes, sorted, contexts };
+  const rateOf = new Map(rates.map((r) => [r.currency, r]));
+  return { entries, byId, lists, listsOf, notes, contexts, rateOf, convert: makeConverter(rates) };
 }
 
 // --- Rendering --------------------------------------------------------------------------
 
 const value = () => state.calc.value();
+
+/** True if the entry is money in another currency than the one chosen for the user's number. */
+function needsConversion(e) {
+  const { convert } = state.data;
+  return Boolean(state.unit) && convert.isCurrency(e.unit) && e.unit !== state.unit;
+}
+
+/** Value used to sort and compare: money is converted into the chosen currency. */
+function compareValue(e) {
+  return needsConversion(e) ? state.data.convert(e.value_original, e.unit, state.unit) : e.value_original;
+}
+
+/** "1 € = 1,13 $ (EZB, Jahresdurchschnitt 2025)" for the currency pair of a converted entry. */
+function rateText(from) {
+  const { convert, rateOf } = state.data;
+  const r = rateOf.get(from === "EUR" ? state.unit : from) ?? rateOf.get(state.unit);
+  const fmt = new Intl.NumberFormat("de-DE", { maximumFractionDigits: 4 });
+  return `1 ${unitLabel(from)} = ${fmt.format(convert(1, from, state.unit))} ${unitLabel(state.unit)}` +
+    ` (EZB-Referenzkurs, Jahresdurchschnitt ${r.year})`;
+}
 
 function renderDisplay() {
   const v = value();
@@ -62,7 +83,7 @@ function renderDisplay() {
   fitResult();
   $("#words").textContent = Number.isFinite(v) ? formatWords(v) : "";
   for (const el of document.querySelectorAll('[data-bind="short"]')) {
-    el.textContent = Number.isFinite(v) ? formatShort(v) : "–";
+    el.textContent = Number.isFinite(v) ? `${formatShort(v)} ${unitLabel(state.unit)}`.trim() : "–";
   }
 }
 
@@ -80,7 +101,13 @@ function fitResult() {
 function entryRow(e, v) {
   const year = e.title.includes(String(e.year_original)) ? "" : e.year_original;
   const open = state.expanded === e.id;
-  const ratio = v > 0 ? `${formatShort(e.value_original / v)} ×` : "";
+  const converted = needsConversion(e);
+  const cmp = compareValue(e);
+  const ratio = v > 0 ? `${formatShort(cmp / v)} ×` : "";
+  const shown = converted
+    ? `≈ ${formatShort(cmp)} ${unitLabel(state.unit)}`
+    : `${formatShort(e.value_original)} ${unitLabel(e.unit)}`;
+  const original = converted ? `${formatShort(e.value_original)} ${unitLabel(e.unit)} · ` : "";
   const note = state.data.notes.get(e.id);
   const detail = open ? `
     <div class="bn-detail">
@@ -90,6 +117,7 @@ function entryRow(e, v) {
       </div>
       <p>${esc(e.long_description || e.short_description)}</p>
       <p>Originalwert: ${esc(formatFull(e.value_original))} ${esc(unitLabel(e.unit))} (${esc(e.year_original)}, ${esc(e.country_code)})</p>
+      ${converted ? `<p>Umgerechnet: ${esc(formatFull(Math.round(cmp)))} ${esc(unitLabel(state.unit))}, ${esc(rateText(e.unit))}. Nicht inflationsbereinigt.</p>` : ""}
       ${note ? `<p>Hinweis: ${esc(note)}</p>` : ""}
       <p>Quelle: <a href="${esc(e.source_url)}" target="_blank" rel="noopener">${esc(e.source_title)}</a></p>
     </div>` : "";
@@ -98,23 +126,25 @@ function entryRow(e, v) {
       <div class="bn-row">
         <div class="bn-title">${esc(e.title)}${year ? `<small>${esc(year)}</small>` : ""}</div>
         <div>
-          <div class="bn-value">${esc(formatShort(e.value_original))} ${esc(unitLabel(e.unit))}</div>
-          <div class="bn-ratio">${esc(ratio)}</div>
+          <div class="bn-value">${esc(shown)}</div>
+          <div class="bn-ratio">${esc(original + ratio)}</div>
         </div>
       </div>${detail}
     </li>`;
 }
 
 function renderBigNumbers() {
-  const { sorted, listsOf } = state.data;
+  const { entries, listsOf } = state.data;
   const v = value();
-  const pool = state.listId ? sorted.filter((e) => listsOf.get(e.id)?.has(state.listId)) : sorted;
-  const w = windowAround(pool, Number.isFinite(v) ? v : 0, state.below, state.above);
+  const pool = (state.listId ? entries.filter((e) => listsOf.get(e.id)?.has(state.listId)) : [...entries])
+    .sort((a, b) => compareValue(a) - compareValue(b));
+  const w = windowAround(pool, Number.isFinite(v) ? v : 0, state.below, state.above, compareValue);
+  const sym = state.unit ? ` ${unitLabel(state.unit)}` : "";
   const mine = `
     <li class="mine" id="bn-mine">
       <div class="bn-row">
         <div class="bn-title">Deine Zahl</div>
-        <div><div class="bn-value">${esc(Number.isFinite(v) ? formatShort(v) : "–")}</div></div>
+        <div><div class="bn-value">${esc(Number.isFinite(v) ? formatShort(v) + sym : "–")}</div></div>
       </div>
     </li>`;
   $("#bn-list").innerHTML =
@@ -131,17 +161,21 @@ function renderListChips() {
 
 function renderMean2Me() {
   const v = value();
-  const { contexts, byId } = state.data;
+  const { contexts, byId, convert } = state.data;
   const sym = state.unit ? unitLabel(state.unit) : "";
   const items = contexts
     .filter((c) => state.unit || !c.only_currency)
     .map((c) => {
       const source = c.factor_entry_id ? byId.get(c.factor_entry_id) : null;
-      const factor = source ? source.value_original : c.factor_value;
+      const money = source && state.unit && convert.isCurrency(source.unit);
+      const factor = money ? convert(source.value_original, source.unit, state.unit)
+        : source ? source.value_original : c.factor_value;
       const r = v / factor;
       const shown = c.only_currency ? `${formatShort(r)} Jahre` : `${formatShort(r)} ${sym}`.trim();
       const basis = source
-        ? `Bezug: ${formatFull(factor)} ${unitLabel(source.unit)} · ${source.source_title} (${source.year_original})`
+        ? `Bezug: ${formatFull(source.value_original)} ${unitLabel(source.unit)}` +
+          (money && source.unit !== state.unit ? ` (≈ ${formatFull(Math.round(factor))} ${unitLabel(state.unit)})` : "") +
+          ` · ${source.source_title} (${source.year_original})`
         : `Bezug: ${c.factor_source}`;
       return `
         <li>
@@ -151,7 +185,7 @@ function renderMean2Me() {
         </li>`;
     });
   $("#m2m-list").innerHTML = v ? items.join("") : '<li class="empty">Gib in der Mitte eine Zahl ein.</li>';
-  for (const b of document.querySelectorAll("#unit-chips button")) {
+  for (const b of document.querySelectorAll(".unit-chips button")) {
     b.setAttribute("aria-pressed", String(b.dataset.unit === state.unit));
   }
 }
@@ -338,13 +372,19 @@ function showMore(side) {
 $("#more-smaller").addEventListener("click", () => showMore("below"));
 $("#more-larger").addEventListener("click", () => showMore("above"));
 
-$("#unit-chips").addEventListener("click", (e) => {
-  const b = e.target.closest("button");
-  if (!b) return;
-  state.unit = b.dataset.unit;
-  try { localStorage.setItem("bn.unit", state.unit); } catch { /* private mode */ }
-  renderMean2Me();
-});
+// The unit of the user's number; the same choice in both side panes.
+for (const chips of document.querySelectorAll(".unit-chips")) {
+  chips.addEventListener("click", (e) => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    state.unit = b.dataset.unit;
+    try { localStorage.setItem("bn.unit", state.unit); } catch { /* private mode */ }
+    state.below = state.above = STEP;
+    renderDisplay();
+    renderBigNumbers();
+    renderMean2Me();
+  });
+}
 
 // --- Start ----------------------------------------------------------------------------------------
 

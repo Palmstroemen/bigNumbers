@@ -1,0 +1,35 @@
+[
+  {
+    "id": "fx_ecb_usd_2025",
+    "base_currency": "EUR",
+    "currency": "USD",
+    "rate": 1.1300,
+    "year": 2025,
+    "rate_type": "annual_average",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.USD.EUR.SP00.A",
+    "source_title": "EZB Data Portal: Euro-Referenzkurs US-Dollar, Jahresdurchschnitt",
+    "notes": "1 EUR = 1,1300 USD. Jahresdurchschnitt 2025 der EZB-Referenzkurse (1,12998), auf 4 Stellen gerundet."
+  },
+  {
+    "id": "fx_ecb_gbp_2025",
+    "base_currency": "EUR",
+    "currency": "GBP",
+    "rate": 0.8568,
+    "year": 2025,
+    "rate_type": "annual_average",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.GBP.EUR.SP00.A",
+    "source_title": "EZB Data Portal: Euro-Referenzkurs Pfund Sterling, Jahresdurchschnitt",
+    "notes": "1 EUR = 0,8568 GBP. Jahresdurchschnitt 2025 der EZB-Referenzkurse (0,85679), auf 4 Stellen gerundet."
+  },
+  {
+    "id": "fx_ecb_chf_2025",
+    "base_currency": "EUR",
+    "currency": "CHF",
+    "rate": 0.9370,
+    "year": 2025,
+    "rate_type": "annual_average",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/EXR/EXR.A.CHF.EUR.SP00.A",
+    "source_title": "EZB Data Portal: Euro-Referenzkurs Schweizer Franken, Jahresdurchschnitt",
+    "notes": "1 EUR = 0,9370 CHF. Jahresdurchschnitt 2025 der EZB-Referenzkurse (0,93703), auf 4 Stellen gerundet."
+  }
+]

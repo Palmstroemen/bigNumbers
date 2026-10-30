@@ -23,6 +23,11 @@
         <header class="pane-head">
           <div class="pane-number" data-bind="short"></div>
           <div class="pane-sub">Womit ist das vergleichbar?</div>
+          <div class="chips unit-chips" id="bn-unit-chips">
+            <button data-unit="EUR">€</button>
+            <button data-unit="USD">$</button>
+            <button data-unit="">ohne Einheit</button>
+          </div>
           <div class="chips" id="list-chips"></div>
         </header>
         <button class="more" id="more-smaller">↑ kleinere Werte</button>
@@ -65,7 +70,7 @@
         <header class="pane-head">
           <div class="pane-number" data-bind="short"></div>
           <div class="pane-sub">Was bedeutet das für mich?</div>
-          <div class="chips" id="unit-chips">
+          <div class="chips unit-chips" id="unit-chips">
             <button data-unit="EUR">€</button>
             <button data-unit="USD">$</button>
             <button data-unit="">ohne Einheit</button>

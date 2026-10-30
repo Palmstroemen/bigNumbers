@@ -223,15 +223,35 @@ export class Calculator {
   }
 }
 
+// --- Currency conversion -----------------------------------------------------------
+
+/**
+ * Converter from rows like { base_currency: "EUR", currency: "USD", rate: 1.13 }
+ * (1 EUR = 1.13 USD). Returns a function (value, from, to) that gives the converted
+ * value, or null if one of the currencies is unknown.
+ */
+export function makeConverter(rates) {
+  const perEur = new Map([["EUR", 1]]);
+  for (const r of rates) if (r.base_currency === "EUR") perEur.set(r.currency, r.rate);
+  const convert = (value, from, to) => {
+    if (from === to) return value;
+    if (!perEur.has(from) || !perEur.has(to)) return null;
+    return value / perEur.get(from) * perEur.get(to);
+  };
+  convert.isCurrency = (unit) => perEur.has(unit);
+  return convert;
+}
+
 // --- Big Numbers list ------------------------------------------------------------
 
 /**
  * Entries sorted ascending by value; returns `below` smaller entries and `above`
  * larger entries around `value`, plus whether more exist on either side.
+ * `key` reads the value to compare (e.g. a converted amount).
  */
-export function windowAround(sorted, value, below, above) {
+export function windowAround(sorted, value, below, above, key = (e) => e.value_original) {
   let i = 0;
-  while (i < sorted.length && sorted[i].value_original < value) i++;
+  while (i < sorted.length && key(sorted[i]) < value) i++;
   const start = Math.max(0, i - below);
   const end = Math.min(sorted.length, i + above);
   return {
