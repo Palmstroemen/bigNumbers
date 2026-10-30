@@ -31,7 +31,7 @@
 }
 
 * { box-sizing: border-box; }
-html, body { margin: 0; height: 100%; }
+html, body { margin: 0; height: 100%; overscroll-behavior: none; }  /* no swipe-to-go-back from the panes */
 body {
   background: var(--bg);
   color: var(--text);
@@ -213,7 +213,6 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .keypad .k-fn { background: var(--key-fn); }
 .keypad .k-op { background: var(--key-op); color: var(--accent); font-weight: 600; }
 .keypad .k-eq { background: var(--accent); color: var(--on-accent); font-weight: 600; }
-.keypad .k-000 { font-weight: 700; color: var(--accent); }
 
 /* --- Big Numbers list ------------------------------------------------------------- */
 .bn-list, .m2m-list { list-style: none; margin: 0; padding: 0; }
