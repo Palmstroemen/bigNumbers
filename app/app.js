@@ -28,7 +28,7 @@ const state = {
   expanded: null,
   unit: "EUR",
   country: null,         // country code for "Für mich"
-  custom: [],            // the user's own Mean2Me divisors: { id, label, value }
+  custom: [],            // the user's own Mean2Me divisors: { id, title, value }
   pane: 1,
   lastClip: null,
 };
@@ -303,7 +303,7 @@ function renderMean2Me() {
   const c0 = country();
   $("#country-btn").innerHTML = `<span class="flag" aria-hidden="true">${esc(c0.flag)}</span>${esc(c0.name)} <span aria-hidden="true">▾</span>`;
   const own = state.custom.map((c) => ({
-    id: c.id, title: `Pro ${c.label}`, kind: "divide", factor_value: c.value, factor_source: "Eigene Angabe", custom: true,
+    id: c.id, title: c.title, kind: "divide", factor_value: c.value, factor_source: "Eigene Angabe", custom: true,
   }));
   const items = [...contexts.filter((c) => c.country_code === c0.code || c.country_code === "GLOBAL"), ...own]
     .filter((c) => state.unit || !c.only_currency)
@@ -446,8 +446,12 @@ $("#keypad").addEventListener("click", (e) => {
   if (k) press(k);
 });
 
+/** True while the user types into a form field or a sheet is open: the keypad then stays out of the way. */
+const typingElsewhere = (e) => e.target.closest?.("input, textarea, select, [contenteditable], dialog") ||
+  document.querySelector("dialog[open]");
+
 document.addEventListener("keydown", (e) => {
-  if (e.ctrlKey || e.metaKey || e.altKey) return;
+  if (e.ctrlKey || e.metaKey || e.altKey || typingElsewhere(e)) return;
   const map = { Enter: "=", Backspace: "back", Escape: "C", Delete: "C", ".": ",", x: "*" };
   const k = map[e.key] ?? e.key;
   if (/^[\d,+\-*/=]$/.test(k) || k === "back" || k === "C") {
@@ -517,6 +521,7 @@ window.addEventListener("focus", async () => {
 });
 
 document.addEventListener("paste", (e) => {
+  if (typingElsewhere(e)) return;
   const text = e.clipboardData?.getData("text");
   if (text) { e.preventDefault(); takeNumberFrom(text, { quiet: false }); }
 });
@@ -592,14 +597,14 @@ $("#country-list").addEventListener("click", (e) => {
 $("#custom-add").addEventListener("click", () => { $("#custom-form").reset(); $("#custom-sheet").showModal(); });
 $("#custom-form").addEventListener("submit", (e) => {
   const form = new FormData(e.target);
-  const label = String(form.get("label")).trim().replace(/^pro\s+/i, "");
+  const title = String(form.get("title")).trim();
   const n = parseNumberFromText(String(form.get("value")));
-  if (!label || !n || n <= 0) {
+  if (!title || !n || n <= 0) {
     e.preventDefault();
     toast("Bitte eine Bezeichnung und eine Zahl größer als 0 eingeben");
     return;
   }
-  state.custom.push({ id: `own_${Date.now()}`, label, value: n });
+  state.custom.push({ id: `own_${Date.now()}`, title, value: n });
   saveCustom();
   renderMean2Me();
 });
@@ -625,7 +630,11 @@ async function start() {
   try {
     savedUnit = localStorage.getItem("bn.unit");
     const custom = JSON.parse(localStorage.getItem("bn.custom"));
-    if (Array.isArray(custom)) state.custom = custom.filter((c) => c && c.label && c.value > 0);
+    // entries saved before the "Titel" field had only a label after "Pro"
+    if (Array.isArray(custom)) {
+      state.custom = custom.filter((c) => c && (c.title || c.label) && c.value > 0)
+        .map((c) => ({ id: c.id, title: c.title ?? `Pro ${c.label}`, value: c.value }));
+    }
   } catch { /* none, or private mode */ }
 
   const params = new URLSearchParams(location.search);
