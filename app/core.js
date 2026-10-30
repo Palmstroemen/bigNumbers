@@ -242,6 +242,31 @@ export function makeConverter(rates) {
   return convert;
 }
 
+// --- Inflation -----------------------------------------------------------------------
+
+/**
+ * Inflation adjustment from rows like { index_id, year, value }.
+ * `adjust(indexId, year)` returns { factor, from, to } to bring a value from `year`
+ * to the latest year of that index, or null if the index has no value for `year`.
+ * Values from the latest year or later are taken as they are (factor 1).
+ */
+export function makeInflator(rows) {
+  const series = new Map();
+  for (const r of rows) {
+    if (!series.has(r.index_id)) series.set(r.index_id, new Map());
+    series.get(r.index_id).set(r.year, r.value);
+  }
+  const latest = new Map([...series].map(([id, s]) => [id, Math.max(...s.keys())]));
+  return (indexId, year) => {
+    const s = series.get(indexId);
+    if (!s) return null;
+    const to = latest.get(indexId);
+    if (year >= to) return { factor: 1, from: year, to: year };
+    if (!s.has(year)) return null;
+    return { factor: s.get(to) / s.get(year), from: year, to };
+  };
+}
+
 // --- Big Numbers list ------------------------------------------------------------
 
 /**

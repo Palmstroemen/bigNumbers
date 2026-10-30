@@ -1,5 +1,5 @@
 import {
-  Calculator, formatShort, formatWords, formatFull, unitLabel, parseNumberFromText, windowAround, makeConverter,
+  Calculator, formatShort, formatWords, formatFull, unitLabel, parseNumberFromText, windowAround, makeConverter, makeInflator,
 } from "./core.js";
 
 const DATA_BASES = ["../Daten/", "Daten/"];
@@ -34,9 +34,9 @@ async function loadJson(name) {
 }
 
 async function loadData() {
-  const [entries, lists, listEntries, contexts, rates] = await Promise.all(
-    ["entries.json", "lists.json", "list_entries.json", "mean2me_contexts.json", "exchange_rates.json"]
-      .map(loadJson));
+  const [entries, lists, listEntries, contexts, rates, indices, indexValues] = await Promise.all(
+    ["entries.json", "lists.json", "list_entries.json", "mean2me_contexts.json", "exchange_rates.json",
+      "indices.json", "index_values.json"].map(loadJson));
   const byId = new Map(entries.map((e) => [e.id, e]));
   const listsOf = new Map();
   const notes = new Map();
@@ -46,22 +46,36 @@ async function loadData() {
     if (le.note) notes.set(le.entry_id, le.note);
   }
   const rateOf = new Map(rates.map((r) => [r.currency, r]));
-  return { entries, byId, lists, listsOf, notes, contexts, rateOf, convert: makeConverter(rates) };
+  return {
+    entries, byId, lists, listsOf, notes, contexts, rateOf,
+    convert: makeConverter(rates),
+    inflate: makeInflator(indexValues),
+    indexOf: new Map(indices.map((i) => [i.id, i])),
+    priceYear: Math.max(...indexValues.map((r) => r.year)),
+  };
 }
 
 // --- Rendering --------------------------------------------------------------------------
 
 const value = () => state.calc.value();
 
-/** True if the entry is money in another currency than the one chosen for the user's number. */
-function needsConversion(e) {
-  const { convert } = state.data;
-  return Boolean(state.unit) && convert.isCurrency(e.unit) && e.unit !== state.unit;
+/**
+ * Money in today's prices and in the currency chosen for the user's number:
+ * first adjusted for inflation in its own currency, then converted at the current rate.
+ * Null for entries that are not money, or when no currency is chosen.
+ */
+function moneyOf(e) {
+  const { convert, inflate } = state.data;
+  if (!state.unit || !convert.isCurrency(e.unit)) return null;
+  const infl = inflate(e.index_id, e.year_original);
+  const value = convert(e.value_original * (infl?.factor ?? 1), e.unit, state.unit);
+  const changed = e.unit !== state.unit || (infl !== null && infl.factor !== 1);
+  return { value, infl, changed };
 }
 
-/** Value used to sort and compare: money is converted into the chosen currency. */
+/** Value used to sort and compare. */
 function compareValue(e) {
-  return needsConversion(e) ? state.data.convert(e.value_original, e.unit, state.unit) : e.value_original;
+  return moneyOf(e)?.value ?? e.value_original;
 }
 
 /** "1 € = 1,13 $ (EZB, Jahresdurchschnitt 2025)" for the currency pair of a converted entry. */
@@ -98,10 +112,29 @@ function fitResult() {
   }
 }
 
+/** Explains how a money value was brought to today's prices and the chosen currency. */
+function moneyDetail(e, money) {
+  const { indexOf, priceYear } = state.data;
+  const lines = [];
+  if (money.changed) {
+    lines.push(`In Preisen von ${money.infl?.to ?? priceYear}: ${formatFull(Math.round(money.value))} ${unitLabel(state.unit)}`);
+  }
+  if (!money.infl) {
+    lines.push(`Nicht inflationsbereinigt: Für ${e.year_original} gibt es keinen Indexwert.`);
+  } else if (money.infl.factor !== 1) {
+    const pct = new Intl.NumberFormat("de-DE", { maximumFractionDigits: 0, signDisplay: "always" })
+      .format((money.infl.factor - 1) * 100);
+    lines.push(`Inflation ${money.infl.from}–${money.infl.to}: ${pct} % laut ${indexOf.get(e.index_id)?.name ?? e.index_id}`);
+  }
+  if (e.unit !== state.unit) lines.push(`Kurs: ${rateText(e.unit)}`);
+  return lines.map((l) => `<p>${esc(l)}</p>`).join("");
+}
+
 function entryRow(e, v) {
   const year = e.title.includes(String(e.year_original)) ? "" : e.year_original;
   const open = state.expanded === e.id;
-  const converted = needsConversion(e);
+  const money = moneyOf(e);
+  const converted = money?.changed;
   const cmp = compareValue(e);
   const ratio = v > 0 ? `${formatShort(cmp / v)} ×` : "";
   const shown = converted
@@ -117,7 +150,7 @@ function entryRow(e, v) {
       </div>
       <p>${esc(e.long_description || e.short_description)}</p>
       <p>Originalwert: ${esc(formatFull(e.value_original))} ${esc(unitLabel(e.unit))} (${esc(e.year_original)}, ${esc(e.country_code)})</p>
-      ${converted ? `<p>Umgerechnet: ${esc(formatFull(Math.round(cmp)))} ${esc(unitLabel(state.unit))}, ${esc(rateText(e.unit))}. Nicht inflationsbereinigt.</p>` : ""}
+      ${money ? moneyDetail(e, money) : ""}
       ${note ? `<p>Hinweis: ${esc(note)}</p>` : ""}
       <p>Quelle: <a href="${esc(e.source_url)}" target="_blank" rel="noopener">${esc(e.source_title)}</a></p>
     </div>` : "";
@@ -140,6 +173,9 @@ function renderBigNumbers() {
     .sort((a, b) => compareValue(a) - compareValue(b));
   const w = windowAround(pool, Number.isFinite(v) ? v : 0, state.below, state.above, compareValue);
   const sym = state.unit ? ` ${unitLabel(state.unit)}` : "";
+  $("#bn-sub").textContent = state.unit
+    ? `Womit ist das vergleichbar? Geldbeträge in Preisen von ${state.data.priceYear}.`
+    : "Womit ist das vergleichbar?";
   const mine = `
     <li class="mine" id="bn-mine">
       <div class="bn-row">
@@ -161,20 +197,19 @@ function renderListChips() {
 
 function renderMean2Me() {
   const v = value();
-  const { contexts, byId, convert } = state.data;
+  const { contexts, byId } = state.data;
   const sym = state.unit ? unitLabel(state.unit) : "";
   const items = contexts
     .filter((c) => state.unit || !c.only_currency)
     .map((c) => {
       const source = c.factor_entry_id ? byId.get(c.factor_entry_id) : null;
-      const money = source && state.unit && convert.isCurrency(source.unit);
-      const factor = money ? convert(source.value_original, source.unit, state.unit)
-        : source ? source.value_original : c.factor_value;
+      const money = source ? moneyOf(source) : null;
+      const factor = money ? money.value : source ? source.value_original : c.factor_value;
       const r = v / factor;
       const shown = c.only_currency ? `${formatShort(r)} Jahre` : `${formatShort(r)} ${sym}`.trim();
       const basis = source
         ? `Bezug: ${formatFull(source.value_original)} ${unitLabel(source.unit)}` +
-          (money && source.unit !== state.unit ? ` (≈ ${formatFull(Math.round(factor))} ${unitLabel(state.unit)})` : "") +
+          (money?.changed ? ` (≈ ${formatFull(Math.round(factor))} ${unitLabel(state.unit)} in Preisen von ${money.infl?.to ?? state.data.priceYear})` : "") +
           ` · ${source.source_title} (${source.year_original})`
         : `Bezug: ${c.factor_source}`;
       return `

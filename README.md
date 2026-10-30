@@ -47,6 +47,7 @@ Files:
 * `lists.json` – the lists. An entry can belong to several lists.
 * `list_entries.json` – assigns entries to lists, sorted by value.
 * `indices.json` – price indices (CPI, HICP, ...) used to convert historic money values into today's values.
+* `index_values.json` – one value per index and year (annual averages from BLS, Eurostat and the World Bank).
 * `exchange_rates.json` – exchange rates (ECB reference rates, annual average) used to compare money values in different currencies.
 * `source_quotes.json` – for each researched entry, the literal quote from the source page that contains the number.
 
