@@ -4,24 +4,22 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_us_military_energy_cost_per_year_2006",
     "sort_value": 2200000000,
-    "sort_order": 170,
-    "note": null
+    "sort_order": 160
   },
   {
     "id": "le_002",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_us_military_energy_cost_per_month_2006",
     "sort_value": 183333333,
-    "sort_order": 120,
-    "note": "Abgeleitet: Jahreswert / 12."
+    "sort_order": 110,
+    "note": "Abgeleiteter Wert (Jahreswert / 12); steht so nicht in der Quelle."
   },
   {
     "id": "le_003",
     "list_id": "list_military_projects_v1",
-    "entry_id": "entry_f35_program_usa_2013",
+    "entry_id": "entry_f35_program_usa_2012",
     "sort_value": 1510000000000,
-    "sort_order": 310,
-    "note": "Prüfen: vermutlich Lebenszykluskosten inkl. Betrieb, nicht nur Beschaffung."
+    "sort_order": 310
   },
   {
     "id": "le_004",
@@ -37,7 +35,7 @@
     "entry_id": "entry_f16_ab_1998",
     "sort_value": 14600000,
     "sort_order": 30,
-    "note": null
+    "note": "Wert und Bezugsjahr nur über Kopien des USAF-Fact-Sheets bestätigt; af.mil war beim Abruf gesperrt (HTTP 403). Zitat im Browser gegenprüfen, dann Stufe 2."
   },
   {
     "id": "le_006",
@@ -45,7 +43,7 @@
     "entry_id": "entry_f16_cd_1998",
     "sort_value": 18800000,
     "sort_order": 40,
-    "note": null
+    "note": "Wert und Bezugsjahr nur über Kopien des USAF-Fact-Sheets bestätigt; af.mil war beim Abruf gesperrt (HTTP 403). Zitat im Browser gegenprüfen, dann Stufe 2."
   },
   {
     "id": "le_007",
@@ -53,55 +51,50 @@
     "entry_id": "entry_eurofighter_tranche_1_1998",
     "sort_value": 47300000,
     "sort_order": 60,
-    "note": null
+    "note": "Von Wikipedia errechneter Durchschnitt aus dem Vertragswert; enthält Reservetriebwerke und Ersatzteile, kein reiner Flyaway-Preis."
   },
   {
     "id": "le_008",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_eurofighter_tranche_2_2004",
     "sort_value": 55000000,
-    "sort_order": 70,
-    "note": null
+    "sort_order": 70
   },
   {
     "id": "le_009",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_eurofighter_tranche_3_2009",
-    "sort_value": 80300000,
-    "sort_order": 80,
-    "note": null
+    "sort_value": 9000000000,
+    "sort_order": 210
   },
   {
     "id": "le_010",
     "list_id": "list_military_projects_v1",
-    "entry_id": "entry_eurofighter_system_cost_de_2013",
+    "entry_id": "entry_eurofighter_system_cost_de_2003",
     "sort_value": 133000000,
-    "sort_order": 100,
-    "note": null
+    "sort_order": 90
   },
   {
     "id": "le_011",
     "list_id": "list_military_projects_v1",
-    "entry_id": "entry_eurofighter_system_cost_it_2013",
+    "entry_id": "entry_eurofighter_system_cost_it_2008",
     "sort_value": 149600000,
-    "sort_order": 110,
-    "note": null
+    "sort_order": 100,
+    "note": "Wikipedia nennt kein Bezugsjahr; 2008 aus der zitierten Seite der Camera dei deputati abgeleitet (Tranche 3 dort noch nicht unterzeichnet). Pro-Stück-Wert von Wikipedia errechnet."
   },
   {
     "id": "le_012",
     "list_id": "list_military_projects_v1",
-    "entry_id": "entry_nimitz_class_carrier_2013",
-    "sort_value": 6000000000,
-    "sort_order": 210,
-    "note": null
+    "entry_id": "entry_nimitz_cvn77_2005",
+    "sort_value": 6350000000,
+    "sort_order": 200
   },
   {
     "id": "le_013",
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_nimitz_class_operation_per_year_1997",
     "sort_value": 300000000,
-    "sort_order": 130,
-    "note": null
+    "sort_order": 120
   },
   {
     "id": "le_014",
@@ -109,15 +102,14 @@
     "entry_id": "entry_nimitz_class_operation_per_month_1997",
     "sort_value": 25000000,
     "sort_order": 50,
-    "note": "Abgeleitet: Jahreswert / 12."
+    "note": "Abgeleiteter Wert (Jahreswert / 12); steht so nicht in der Quelle."
   },
   {
     "id": "le_015",
     "list_id": "list_military_projects_v1",
-    "entry_id": "entry_virginia_class_submarine_2005",
-    "sort_value": 2600000000,
-    "sort_order": 180,
-    "note": "Prüfen: Währung EUR bei US-Projekt unplausibel, vermutlich USD."
+    "entry_id": "entry_virginia_class_submarine_2024",
+    "sort_value": 4500000000,
+    "sort_order": 180
   },
   {
     "id": "le_016",
@@ -700,7 +692,7 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_verteidigungsbudget_oesterreich_2026",
     "sort_value": 4760000000,
-    "sort_order": 200,
+    "sort_order": 190,
     "note": null
   },
   {
@@ -724,7 +716,7 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_f_35a_stueckpreis_lose_15_17",
     "sort_value": 82500000,
-    "sort_order": 90,
+    "sort_order": 80,
     "note": null
   },
   {
@@ -732,7 +724,7 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_leopard_2a8_erstauftrag_18_panzer",
     "sort_value": 525600000,
-    "sort_order": 140,
+    "sort_order": 130,
     "note": null
   },
   {
@@ -740,7 +732,7 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_patriot_vier_systeme_bundeswehr_2024",
     "sort_value": 1400000000,
-    "sort_order": 160,
+    "sort_order": 150,
     "note": "Unsicher, prüfen."
   },
   {
@@ -748,7 +740,7 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_eurofighter_tranche_5_20_jets",
     "sort_value": 3750000000,
-    "sort_order": 190,
+    "sort_order": 170,
     "note": null
   },
   {
@@ -764,7 +756,7 @@
     "list_id": "list_military_projects_v1",
     "entry_id": "entry_black_hawk_oesterreich_12_hubschrauber",
     "sort_value": 715000000,
-    "sort_order": 150,
+    "sort_order": 140,
     "note": null
   },
   {
