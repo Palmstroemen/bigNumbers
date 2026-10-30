@@ -148,6 +148,21 @@ button { font: inherit; color: inherit; cursor: pointer; }
   padding: 8px 4px;
   overflow: hidden;
 }
+/* Short explanation of the app; hidden when the display gets too low for it. */
+.display { container-type: size; }
+.intro {
+  align-self: stretch;
+  text-align: left;
+  margin: 4px 0 auto;
+  color: var(--muted);
+  font-size: .95rem;
+  line-height: 1.45;
+}
+.intro span { display: block; margin-top: 6px; font-size: .85rem; }
+@container (max-height: 230px) { .intro { font-size: .8rem; line-height: 1.35; } .intro span { display: none; } }
+@container (max-height: 140px) { .intro { display: none; } }
+.intro + .clip-note:not([hidden]) { margin-top: 10px; }
+.intro:has(+ .clip-note:not([hidden])) { margin-bottom: 0; }
 .clip-note {
   align-self: stretch;
   text-align: left;
@@ -241,6 +256,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .bn-figure { margin: 0; }
 .bn-figure img { display: block; width: 100%; height: auto; max-height: 240px; object-fit: cover; }
 .bn-figure figcaption { font-size: .7rem; color: var(--muted); text-align: right; padding: 4px 12px 0; }
+.bn-figure figcaption a { color: inherit; }
 .bn-panel {
   display: flex; align-items: center; justify-content: center; gap: 12px;
   height: 96px; font-weight: 700; font-size: 1.05rem;

@@ -168,7 +168,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_eurofighter_tranche_2_2004.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Eurofighter der deutschen Luftwaffe im Flug",
+      "credit": "Krasimir Grozev",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:German_eurofighter.JPG"
+    }
   },
   {
     "id": "entry_eurofighter_tranche_3_2009",
@@ -244,7 +253,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_nimitz_cvn77_2005.jpg",
+      "width": 800,
+      "height": 590,
+      "alt": "Flugzeugträger USS George H. W. Bush auf dem Atlantik",
+      "credit": "U.S. Navy photo by Mass Communication Specialist 3rd Class Nicholas Hall",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:US_Navy_110129-N-3885H-179_USS_George_H.W._Bush_(CVN_77)_is_underway_in_the_Atlantic_Ocean.jpg"
+    }
   },
   {
     "id": "entry_nimitz_class_operation_per_year_1997",
@@ -586,7 +604,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_brenner_basistunnel_kosten.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Tunnelröhre des Brenner-Basistunnels im Baulos Aicha–Mauls",
+      "credit": "BBT SE",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Brenner_Base_Tunnel_Aicha-Mauls.jpg"
+    }
   },
   {
     "id": "entry_at_bundespraesident_bezug_monat_2026",
@@ -947,7 +974,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_de_elbphilharmonie_baukosten.jpg",
+      "width": 800,
+      "height": 600,
+      "alt": "Elbphilharmonie in Hamburg",
+      "credit": "Hackercatxxy",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Elbphilharmonie,_Hamburg.jpg"
+    }
   },
   {
     "id": "entry_de_ber_gesamtkosten",
@@ -966,7 +1002,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_de_ber_gesamtkosten.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Terminal des Flughafens Berlin Brandenburg, 2019",
+      "credit": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Airport_berlin_BER_2019.jpg"
+    }
   },
   {
     "id": "entry_de_stuttgart_21_kosten",
@@ -1137,7 +1182,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_leistung_donaukraftwerk_freudenau.jpg",
+      "width": 800,
+      "height": 632,
+      "alt": "Donaukraftwerk Freudenau in Wien",
+      "credit": "Verbund",
+      "license": "CC BY-SA 3.0 de",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Donaukraftwerk_Freudenau_BFR_KW15.jpg"
+    }
   },
   {
     "id": "entry_nennleistung_neues_windrad_deutschland_2024",
@@ -4367,7 +4421,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 1,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_drei_schluchten_talsperre_leistung_2012.jpg",
+      "width": 800,
+      "height": 533,
+      "alt": "Hauptmauer der Drei-Schluchten-Talsperre, 2006",
+      "credit": "Christoph Filnkößl",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dreischluchtendamm_hauptwall_2006.jpg"
+    }
   },
   {
     "id": "entry_energieimporte_oesterreich_kosten_2024",
@@ -4880,7 +4943,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_entfernung_erde_mond_2025.jpg",
+      "width": 800,
+      "height": 808,
+      "alt": "Vollmond",
+      "credit": "Luc Viatour",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Full_Moon_Luc_Viatour.jpg"
+    }
   },
   {
     "id": "entry_durchmesser_sonne_2025",
@@ -4899,7 +4971,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_durchmesser_sonne_2025.jpg",
+      "width": 466,
+      "height": 463,
+      "alt": "Die Sonne, Aufnahme der NASA",
+      "credit": "NASA",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sun920607.jpg"
+    }
   },
   {
     "id": "entry_durchmesser_erde_aequator_2025",
@@ -4956,7 +5037,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_masse_iss_2025.jpg",
+      "width": 800,
+      "height": 489,
+      "alt": "Die Internationale Raumstation, fotografiert aus einer Crew-Dragon-Kapsel",
+      "credit": "NASA",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_station_pictured_from_the_SpaceX_Crew_Dragon_1.jpg"
+    }
   },
   {
     "id": "entry_kosten_iss_esa_schaetzung",
@@ -4994,7 +5084,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 1,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_kosten_james_webb_teleskop_2018.jpg",
+      "width": 800,
+      "height": 640,
+      "alt": "Modell des James-Webb-Weltraumteleskops von oben",
+      "credit": "NASA",
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:James_Webb_Space_Telescope_2009_top.jpg"
+    }
   },
   {
     "id": "entry_kosten_artemis_start_2022",
@@ -5146,7 +5245,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_flaeche_neusiedler_see_2025.jpg",
+      "width": 797,
+      "height": 937,
+      "alt": "Satellitenbild des Neusiedler Sees",
+      "credit": null,
+      "license": "Public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Neusiedler_Lake_satellite.png"
+    }
   },
   {
     "id": "entry_hoehe_grossglockner_2025",
@@ -5165,7 +5273,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_hoehe_grossglockner_2025.jpg",
+      "width": 800,
+      "height": 543,
+      "alt": "Großglockner mit Kleinglockner und Glocknerwand, Mai 2025",
+      "credit": "Stefan.straub",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Adlersruhe_bahnhof_kleinglockner_gro%C3%9Fglockner_glocknerhorn_teufelshorn_untere_glocknerscharte_glocknerwand_glocknerkees_glocknerbiwak_teufelskampkees_mai_2025.jpg"
+    }
   },
   {
     "id": "entry_flaeche_nationalpark_hohe_tauern_2025",
@@ -5241,7 +5358,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_rueckzug_pasterze_2025.jpg",
+      "width": 800,
+      "height": 595,
+      "alt": "Pasterze mit Gletschersee und Johannisberg, Mai 2025",
+      "credit": "Stefan.straub",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pasterze_mit_see_und_johannisberg_gro%C3%9Fglockner_mai_2025.jpg"
+    }
   },
   {
     "id": "entry_bienenvoelker_oesterreich_2024",
@@ -5640,7 +5766,16 @@
     "source2_url": null,
     "source2_title": null,
     "confidence_level": 2,
-    "status": "draft"
+    "status": "draft",
+    "image": {
+      "src": "bilder/entry_wien_hauptbahnhof_investition_2014.jpg",
+      "width": 800,
+      "height": 557,
+      "alt": "Wien Hauptbahnhof, 2023",
+      "credit": "Geolina163",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wien_Hbf_2023_07.jpg"
+    }
   },
   {
     "id": "entry_allianz_arena_baukosten_2005",

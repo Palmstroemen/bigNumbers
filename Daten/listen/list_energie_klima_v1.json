@@ -241,7 +241,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_leistung_donaukraftwerk_freudenau.jpg",
+        "width": 800,
+        "height": 632,
+        "alt": "Donaukraftwerk Freudenau in Wien",
+        "credit": "Verbund",
+        "license": "CC BY-SA 3.0 de",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Donaukraftwerk_Freudenau_BFR_KW15.jpg"
+      }
     },
     {
       "id": "entry_klimaticket_kosten_bund_2025",
@@ -371,6 +380,15 @@
       "source2_title": null,
       "confidence_level": 1,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_drei_schluchten_talsperre_leistung_2012.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Hauptmauer der Drei-Schluchten-Talsperre, 2006",
+        "credit": "Christoph Filnkößl",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Dreischluchtendamm_hauptwall_2006.jpg"
+      },
       "note": "Nur Wikipedia als Quelle."
     },
     {

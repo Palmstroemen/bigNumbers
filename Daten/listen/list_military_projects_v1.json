@@ -190,7 +190,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_eurofighter_tranche_2_2004.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Eurofighter der deutschen Luftwaffe im Flug",
+        "credit": "Krasimir Grozev",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:German_eurofighter.JPG"
+      }
     },
     {
       "id": "entry_f_35a_stueckpreis_lose_15_17",
@@ -426,7 +435,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_wien_hauptbahnhof_investition_2014.jpg",
+        "width": 800,
+        "height": 557,
+        "alt": "Wien Hauptbahnhof, 2023",
+        "credit": "Geolina163",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wien_Hbf_2023_07.jpg"
+      }
     },
     {
       "id": "entry_patriot_vier_systeme_bundeswehr_2024",
@@ -626,7 +644,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_nimitz_cvn77_2005.jpg",
+        "width": 800,
+        "height": 590,
+        "alt": "Flugzeugträger USS George H. W. Bush auf dem Atlantik",
+        "credit": "U.S. Navy photo by Mass Communication Specialist 3rd Class Nicholas Hall",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:US_Navy_110129-N-3885H-179_USS_George_H.W._Bush_(CVN_77)_is_underway_in_the_Atlantic_Ocean.jpg"
+      }
     },
     {
       "id": "entry_fehmarnbelt_tunnel_kosten_2026",

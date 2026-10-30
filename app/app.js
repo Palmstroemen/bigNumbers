@@ -33,11 +33,13 @@ const state = {
 
 // --- Data ---------------------------------------------------------------------------
 
+let dataBase = DATA_BASES[0];   // the base that served data; images in the data are relative to it
+
 async function loadJson(name) {
   for (const base of DATA_BASES) {
     try {
       const res = await fetch(base + name);
-      if (res.ok) return await res.json();
+      if (res.ok) { dataBase = base; return await res.json(); }
     } catch { /* try next base */ }
   }
   throw new Error(`${name} nicht gefunden`);
@@ -92,10 +94,13 @@ function listIcon(l, cls = "list-icon", label = true) {
 function detailImage(e) {
   const img = e.image ?? e.list.image;
   if (img?.src) {
+    const src = /^https?:/.test(img.src) ? img.src : dataBase + img.src;
+    const credit = [img.credit, img.license].filter(Boolean).map(esc).join(", ");
+    const via = img.source_url ? `<a href="${esc(img.source_url)}" target="_blank" rel="noopener">Wikimedia Commons</a>` : "";
     return `<figure class="bn-figure">
-        <img src="${esc(img.src)}" alt="${esc(img.alt ?? e.title)}" loading="lazy"
+        <img src="${esc(src)}" alt="${esc(img.alt ?? e.title)}" loading="lazy"
           ${img.width ? `width="${esc(img.width)}" height="${esc(img.height)}"` : ""}>
-        ${img.credit ? `<figcaption>${esc(img.credit)}${img.license ? `, ${esc(img.license)}` : ""}</figcaption>` : ""}
+        <figcaption>Bild: ${[credit, via].filter(Boolean).join(" · ")}</figcaption>
       </figure>`;
   }
   return `<div class="bn-panel lc" style="${listColors(e.list)}">${listIcon(e.list, "bn-panel-icon", false)}<span>${esc(e.list.name)}</span></div>`;

@@ -42,7 +42,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_rueckzug_pasterze_2025.jpg",
+        "width": 800,
+        "height": 595,
+        "alt": "Pasterze mit Gletschersee und Johannisberg, Mai 2025",
+        "credit": "Stefan.straub",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pasterze_mit_see_und_johannisberg_gro%C3%9Fglockner_mai_2025.jpg"
+      }
     },
     {
       "id": "entry_hoehe_grossglockner_2025",
@@ -60,7 +69,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_hoehe_grossglockner_2025.jpg",
+        "width": 800,
+        "height": 543,
+        "alt": "Großglockner mit Kleinglockner und Glocknerwand, Mai 2025",
+        "credit": "Stefan.straub",
+        "license": "CC BY 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Adlersruhe_bahnhof_kleinglockner_gro%C3%9Fglockner_glocknerhorn_teufelshorn_untere_glocknerscharte_glocknerwand_glocknerkees_glocknerbiwak_teufelskampkees_mai_2025.jpg"
+      }
     },
     {
       "id": "entry_mount_everest_hoehe_m",
@@ -150,7 +168,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_masse_iss_2025.jpg",
+        "width": 800,
+        "height": 489,
+        "alt": "Die Internationale Raumstation, fotografiert aus einer Crew-Dragon-Kapsel",
+        "credit": "NASA",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:The_station_pictured_from_the_SpaceX_Crew_Dragon_1.jpg"
+      }
     },
     {
       "id": "entry_bienenvoelker_oesterreich_2024",
@@ -279,7 +306,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_flaeche_neusiedler_see_2025.jpg",
+        "width": 797,
+        "height": 937,
+        "alt": "Satellitenbild des Neusiedler Sees",
+        "credit": null,
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Neusiedler_Lake_satellite.png"
+      }
     },
     {
       "id": "entry_entfernung_erde_mond_2025",
@@ -297,7 +333,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_entfernung_erde_mond_2025.jpg",
+        "width": 800,
+        "height": 808,
+        "alt": "Vollmond",
+        "credit": "Luc Viatour",
+        "license": "CC BY-SA 3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Full_Moon_Luc_Viatour.jpg"
+      }
     },
     {
       "id": "entry_holzvorrat_oesterreich_2021",
@@ -333,7 +378,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_durchmesser_sonne_2025.jpg",
+        "width": 466,
+        "height": 463,
+        "alt": "Die Sonne, Aufnahme der NASA",
+        "credit": "NASA",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Sun920607.jpg"
+      }
     },
     {
       "id": "entry_blitze_pro_jahr",
@@ -480,6 +534,15 @@
       "source2_title": null,
       "confidence_level": 1,
       "status": "draft",
+      "image": {
+        "src": "bilder/entry_kosten_james_webb_teleskop_2018.jpg",
+        "width": 800,
+        "height": 640,
+        "alt": "Modell des James-Webb-Weltraumteleskops von oben",
+        "credit": "NASA",
+        "license": "Public domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:James_Webb_Space_Telescope_2009_top.jpg"
+      },
       "note": "Schätzung der NASA von 2018 vor dem Start."
     },
     {

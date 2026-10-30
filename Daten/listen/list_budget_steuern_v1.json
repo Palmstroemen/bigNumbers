@@ -384,7 +384,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_de_elbphilharmonie_baukosten.jpg",
+        "width": 800,
+        "height": 600,
+        "alt": "Elbphilharmonie in Hamburg",
+        "credit": "Hackercatxxy",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Elbphilharmonie,_Hamburg.jpg"
+      }
     },
     {
       "id": "entry_foerderung_thermische_sanierung_2024",
@@ -728,7 +737,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_de_ber_gesamtkosten.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Terminal des Flughafens Berlin Brandenburg, 2019",
+        "credit": "Arne Müseler",
+        "license": "CC BY-SA 3.0 de",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Airport_berlin_BER_2019.jpg"
+      }
     },
     {
       "id": "entry_at_bund_zinsen_2024",
@@ -857,7 +875,16 @@
       "source2_url": null,
       "source2_title": null,
       "confidence_level": 2,
-      "status": "draft"
+      "status": "draft",
+      "image": {
+        "src": "bilder/entry_brenner_basistunnel_kosten.jpg",
+        "width": 800,
+        "height": 533,
+        "alt": "Tunnelröhre des Brenner-Basistunnels im Baulos Aicha–Mauls",
+        "credit": "BBT SE",
+        "license": "CC BY-SA 4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Brenner_Base_Tunnel_Aicha-Mauls.jpg"
+      }
     },
     {
       "id": "entry_zigaretten_geraucht_oesterreich_2024",
