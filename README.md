@@ -20,7 +20,9 @@ Enter or paste a number in the center, then swipe sideways: the comparisons are 
 
 ## Folders
 
-* `app/` – first prototype of the mobile web app (plain HTML/CSS/JS, no build step). Run `python3 -m http.server` in the repository root and open http://localhost:8000/app/.
+* `app/` – first prototype of the mobile web app (plain HTML/CSS/JS, no build step). It holds only the user interface and the calculator; everything else comes from `core/`. Run `python3 -m http.server` in the repository root and open http://localhost:8000/app/.
+* `core/` – the core shared by every form of Big Numbers (app, and later an embed widget, a browser extension, generated pages or an API): loading the dataset, comparisons, inflation and currency adjustment, Mean2Me breakdowns, number formatting and parsing. Plain ES modules without DOM or storage access, so they also run in node. Entry point `core/index.js`; `openBigNumbers({ bases, load })` loads the data from a folder URL, or from disk with your own `load` function (see `tests/data.test.mjs`).
+* `tests/` – `node tests/core.test.mjs` (formatting, parsing, calculator, conversion) and `node tests/data.test.mjs` (the core with the real dataset).
 * `Daten/` – the current dataset (JSON), see below.
 * `tools/fetch_eurostat.py` – fetches the base facts of all EU countries and Switzerland from Eurostat (population, households, median net income, GDP, government expenditure, capital), plus ECB rates and HICP series for their currencies. Run it to update, then `tools/build_lists.py`.
 * `tools/build_lists.py` – builds the list packages in `Daten/listen/` from the master data. Run it after every data change; `--check` reports whether the packages are up to date.

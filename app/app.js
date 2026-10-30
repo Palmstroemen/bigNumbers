@@ -1,6 +1,5 @@
-import {
-  Calculator, formatShort, formatWords, formatFull, unitLabel, parseNumberFromText, windowAround, makeConverter, makeInflator,
-} from "./core.js";
+import { formatShort, formatWords, formatFull, unitLabel, parseNumberFromText, openBigNumbers } from "../core/index.js";
+import { Calculator } from "./calculator.js";
 
 const DATA_BASES = ["../Daten/", "Daten/"];
 const PANE_HASHES = ["vergleiche", "zahl", "fuer-mich"];
@@ -22,7 +21,6 @@ const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(
 
 const state = {
   calc: new Calculator(),
-  data: null,
   active: null,          // Set of active list ids; null until the catalog is loaded
   below: STEP,
   above: STEP,
@@ -36,53 +34,9 @@ const state = {
 
 // --- Data ---------------------------------------------------------------------------
 
-let dataBase = DATA_BASES[0];   // the base that served data; images in the data are relative to it
+let bn = null;   // the dataset (core/bignumbers.js); null until loaded
 
-async function loadJson(name) {
-  for (const base of DATA_BASES) {
-    try {
-      const res = await fetch(base + name);
-      if (res.ok) { dataBase = base; return await res.json(); }
-    } catch { /* try next base */ }
-  }
-  throw new Error(`${name} nicht gefunden`);
-}
-
-async function loadData() {
-  const [catalog, m2m, rates, indices, indexValues] = await Promise.all(
-    ["listen/index.json", "listen/mean2me.json", "exchange_rates.json", "indices.json", "index_values.json"]
-      .map(loadJson));
-  const rateOf = new Map(rates.map((r) => [r.currency, r]));
-  return {
-    lists: catalog.lists,
-    packages: new Map(),   // list id -> loaded list file
-    contexts: m2m.contexts,
-    countries: m2m.countries,
-    rateOf,
-    convert: makeConverter(rates),
-    inflate: makeInflator(indexValues),
-    indexOf: new Map(indices.map((i) => [i.id, i])),
-    priceYear: Math.max(...indexValues.map((r) => r.year)),
-  };
-}
-
-/** Load the files of all active lists that are not loaded yet. */
-async function loadActiveLists() {
-  const { lists, packages } = state.data;
-  await Promise.all(lists
-    .filter((l) => state.active.has(l.id) && !packages.has(l.id))
-    .map(async (l) => packages.set(l.id, await loadJson("listen/" + l.file))));
-}
-
-/** Entries of all active lists, merged; an entry in several lists appears once, marked with the first. */
-function activeEntries() {
-  const seen = new Map();
-  for (const l of state.data.lists) {
-    if (!state.active.has(l.id)) continue;
-    for (const e of state.data.packages.get(l.id)?.entries ?? []) if (!seen.has(e.id)) seen.set(e.id, { ...e, list: l });
-  }
-  return [...seen.values()];
-}
+const activeIds = () => [...state.active];
 
 /** The list's colors as CSS variables; `.lc` elements pick light or dark. */
 const listColors = (l) => `--lc: ${l.color ?? "var(--accent)"}; --lc-dark: ${l.color_dark ?? l.color ?? "var(--accent)"}`;
@@ -98,7 +52,7 @@ function listIcon(l, cls = "list-icon", label = true) {
 function detailImage(e) {
   const img = e.image ?? e.list.image;
   if (img?.src) {
-    const src = /^https?:/.test(img.src) ? img.src : dataBase + img.src;
+    const src = bn.imageSrc(img);
     const credit = [img.credit, img.license].filter(Boolean).map(esc).join(", ");
     const via = img.source_url ? `<a href="${esc(img.source_url)}" target="_blank" rel="noopener">Wikimedia Commons</a>` : "";
     return `<figure class="bn-figure">
@@ -117,34 +71,6 @@ function saveActive() {
 // --- Rendering --------------------------------------------------------------------------
 
 const value = () => state.calc.value();
-
-/**
- * Money in today's prices and in the currency chosen for the user's number:
- * first adjusted for inflation in its own currency, then converted at the current rate.
- * Null for entries that are not money, or when no currency is chosen.
- */
-function moneyOf(e) {
-  const { convert, inflate } = state.data;
-  if (!state.unit || !convert.isCurrency(e.unit)) return null;
-  const infl = inflate(e.index_id, e.year_original);
-  const value = convert(e.value_original * (infl?.factor ?? 1), e.unit, state.unit);
-  const changed = e.unit !== state.unit || (infl !== null && infl.factor !== 1);
-  return { value, infl, changed };
-}
-
-/** Value used to sort and compare. */
-function compareValue(e) {
-  return moneyOf(e)?.value ?? e.value_original;
-}
-
-/** "1 € = 1,13 $ (EZB, Jahresdurchschnitt 2025)" for the currency pair of a converted entry. */
-function rateText(from) {
-  const { convert, rateOf } = state.data;
-  const r = rateOf.get(from === "EUR" ? state.unit : from) ?? rateOf.get(state.unit);
-  const fmt = new Intl.NumberFormat("de-DE", { maximumFractionDigits: 4 });
-  return `1 ${unitLabel(from)} = ${fmt.format(convert(1, from, state.unit))} ${unitLabel(state.unit)}` +
-    ` (EZB-Referenzkurs, Jahresdurchschnitt ${r.year})`;
-}
 
 function renderDisplay() {
   const v = value();
@@ -171,33 +97,12 @@ function fitResult() {
   }
 }
 
-/** Explains how a money value was brought to today's prices and the chosen currency. */
-function moneyDetail(e, money) {
-  const { indexOf, priceYear } = state.data;
-  const lines = [];
-  if (money.changed) {
-    lines.push(`In Preisen von ${money.infl?.to ?? priceYear}: ${formatFull(Math.round(money.value))} ${unitLabel(state.unit)}`);
-  }
-  if (!money.infl) {
-    lines.push(`Nicht inflationsbereinigt: Für ${e.year_original} gibt es keinen Indexwert.`);
-  } else if (money.infl.factor !== 1) {
-    const pct = new Intl.NumberFormat("de-DE", { maximumFractionDigits: 0, signDisplay: "always" })
-      .format((money.infl.factor - 1) * 100);
-    const index = indexOf.get(e.index_id);
-    lines.push(`Inflation ${money.infl.from}–${money.infl.to}: ${pct} % laut ${index?.name ?? e.index_id}` +
-      (money.infl.estimated ? " (geschätzt)" : ""));
-    if (money.infl.estimated && index?.estimate_note) lines.push(`Geschätzt: ${index.estimate_note}`);
-  }
-  if (e.unit !== state.unit) lines.push(`Kurs: ${rateText(e.unit)}`);
-  return lines.map((l) => `<p>${esc(l)}</p>`).join("");
-}
-
 function entryRow(e, v) {
   const year = e.title.includes(String(e.year_original)) ? "" : e.year_original;
   const open = state.expanded === e.id;
-  const money = moneyOf(e);
+  const money = bn.money(e, state.unit);
   const converted = money?.changed;
-  const cmp = compareValue(e);
+  const cmp = money?.value ?? e.value_original;
   const ratio = v > 0 ? `${formatShort(cmp / v)} ×` : "";
   const shown = converted
     ? `≈ ${formatShort(cmp)} ${unitLabel(state.unit)}`
@@ -212,7 +117,7 @@ function entryRow(e, v) {
       </div>
       <p>${esc(e.long_description || e.short_description)}</p>
       <p>Originalwert: ${esc(formatFull(e.value_original))} ${esc(unitLabel(e.unit))} (${esc(e.year_original)}, ${esc(e.country_code)})</p>
-      ${money ? moneyDetail(e, money) : ""}
+      ${money ? bn.explainMoney(e, money, state.unit).map((l) => `<p>${esc(l)}</p>`).join("") : ""}
       ${note ? `<p>Hinweis: ${esc(note)}</p>` : ""}
       <p>Quelle: <a href="${esc(e.source_url)}" target="_blank" rel="noopener">${esc(e.source_title)}</a></p>
     </div>` : "";
@@ -230,11 +135,10 @@ function entryRow(e, v) {
 
 function renderBigNumbers() {
   const v = value();
-  const pool = activeEntries().sort((a, b) => compareValue(a) - compareValue(b));
-  const w = windowAround(pool, Number.isFinite(v) ? v : 0, state.below, state.above, compareValue);
+  const w = bn.compare(v, { lists: activeIds(), unit: state.unit, below: state.below, above: state.above });
   const sym = state.unit ? ` ${unitLabel(state.unit)}` : "";
   $("#bn-sub").textContent = state.unit
-    ? `Womit ist das vergleichbar? Geldbeträge in Preisen von ${state.data.priceYear}.`
+    ? `Womit ist das vergleichbar? Geldbeträge in Preisen von ${bn.priceYear}.`
     : "Womit ist das vergleichbar?";
   const mine = `
     <li class="mine" id="bn-mine">
@@ -251,14 +155,14 @@ function renderBigNumbers() {
 
 function renderListChips() {
   // only active lists appear here; the sheet ("Listen …") switches others back on
-  $("#list-chips").innerHTML = state.data.lists.filter((l) => state.active.has(l.id)).map((l) =>
+  $("#list-chips").innerHTML = bn.lists.filter((l) => state.active.has(l.id)).map((l) =>
     `<button class="list-chip lc" style="${listColors(l)}" data-list="${esc(l.id)}" aria-pressed="${state.active.has(l.id)}">` +
     `${listIcon(l, "list-icon", false)}${esc(l.name)}</button>`).join("") +
     '<button data-sheet aria-haspopup="dialog">Listen …</button>';
 }
 
 function renderListSheet() {
-  $("#sheet-lists").innerHTML = state.data.lists.map((l) => `
+  $("#sheet-lists").innerHTML = bn.lists.map((l) => `
     <li>
       <label>
         ${listIcon(l, "sheet-icon", false)}
@@ -282,7 +186,7 @@ async function toggleList(id, on) {
   if (on) state.active.add(id); else state.active.delete(id);
   saveActive();
   try {
-    await loadActiveLists();
+    await bn.loadLists(activeIds());
   } catch (err) {
     toast(`Liste konnte nicht geladen werden (${err.message})`);
   }
@@ -292,42 +196,19 @@ async function toggleList(id, on) {
   renderBigNumbers();
 }
 
-const country = () => state.data.countries.find((c) => c.code === state.country) ?? state.data.countries[0];
-
-/** "1,9 %"; very small shares keep three significant digits ("0,00423 %"). */
-const formatPercent = (p) => `${formatShort(p)} %`;
+const country = () => bn.country(state.country);
 
 function renderMean2Me() {
   const v = value();
-  const { contexts } = state.data;
-  const sym = state.unit ? unitLabel(state.unit) : "";
   const c0 = country();
   $("#country-btn").innerHTML = `<span class="flag" aria-hidden="true">${esc(c0.flag)}</span>${esc(c0.name)} <span aria-hidden="true">▾</span>`;
-  const own = state.custom.map((c) => ({
-    id: c.id, title: c.title, kind: "divide", factor_value: c.value, factor_source: "Eigene Angabe", custom: true,
-  }));
-  const items = [...contexts.filter((c) => c.country_code === c0.code || c.country_code === "GLOBAL"), ...own]
-    .filter((c) => state.unit || !c.only_currency)
-    .map((c) => {
-      const source = c.factor_entry ?? null;
-      const money = source ? moneyOf(source) : null;
-      const factor = money ? money.value : source ? source.value_original : c.factor_value;
-      const share = c.kind === "share";
-      const r = share ? v / factor * 100 : v / factor;
-      const shown = share ? formatPercent(r) : `${formatShort(r)} ${c.result_unit ?? sym}`.trim();
-      const basis = source
-        ? `Bezug: ${formatFull(source.value_original)} ${unitLabel(source.unit)}` +
-          (money?.changed ? ` (≈ ${formatShort(factor)} ${unitLabel(state.unit)} in Preisen von ${money.infl?.to ?? state.data.priceYear})` : "") +
-          ` · ${source.source_title} (${source.year_original})`
-        : `Bezug: ${c.factor_source}${c.custom ? ` (${formatFull(c.factor_value)})` : ""}`;
-      return `
+  const items = bn.mean2me(v, { country: c0.code, unit: state.unit, custom: state.custom }).map((m) => `
         <li>
-          <div class="m2m-label">${esc(c.title)}${c.custom
-            ? `<button type="button" class="m2m-remove" data-remove="${esc(c.id)}" aria-label="${esc(c.title)} entfernen">✕</button>` : ""}</div>
-          <div class="m2m-value">${esc(Number.isFinite(r) ? shown : "–")}</div>
-          <div class="m2m-source">${esc(basis)}</div>
-        </li>`;
-    });
+          <div class="m2m-label">${esc(m.title)}${m.custom
+            ? `<button type="button" class="m2m-remove" data-remove="${esc(m.id)}" aria-label="${esc(m.title)} entfernen">✕</button>` : ""}</div>
+          <div class="m2m-value">${esc(m.text)}</div>
+          <div class="m2m-source">${esc(m.basis)}</div>
+        </li>`);
   $("#m2m-list").innerHTML = v ? items.join("") : '<li class="empty">Gib in der Mitte eine Zahl ein.</li>';
   renderUnitChips();
 }
@@ -341,7 +222,7 @@ function renderUnitChips() {
 }
 
 function renderCountrySheet() {
-  const sorted = [...state.data.countries].sort((a, b) => a.name.localeCompare(b.name, "de"));
+  const sorted = [...bn.countries].sort((a, b) => a.name.localeCompare(b.name, "de"));
   $("#country-list").innerHTML = sorted.map((c) => `
     <li>
       <button type="button" class="country-choice" data-country="${esc(c.code)}" aria-pressed="${c.code === state.country}">
@@ -352,18 +233,14 @@ function renderCountrySheet() {
 }
 
 /** First guess of the user's country: saved choice, else time zone, else browser language. */
-function guessCountry(countries) {
+function guessCountry() {
   let saved = null;
   try { saved = localStorage.getItem("bn.country"); } catch { /* private mode */ }
-  if (countries.some((c) => c.code === saved)) return saved;
-  const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  const byTz = countries.find((c) => c.timezones.includes(tz));
-  if (byTz) return byTz.code;
-  for (const lang of navigator.languages ?? [navigator.language]) {
-    const hit = countries.find((c) => c.locales.includes(lang));
-    if (hit) return hit.code;
-  }
-  return countries[0].code;
+  return bn.guessCountry({
+    saved,
+    timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    languages: navigator.languages ?? [navigator.language],
+  });
 }
 
 function setCountry(code) {
@@ -384,7 +261,7 @@ function saveCustom() {
 let urlTimer;
 function render() {
   renderDisplay();
-  if (state.data) { renderBigNumbers(); renderMean2Me(); }
+  if (bn) { renderBigNumbers(); renderMean2Me(); }
   clearTimeout(urlTimer);
   urlTimer = setTimeout(updateUrl, 300);
 }
@@ -543,7 +420,7 @@ $("#list-chips").addEventListener("click", async (e) => {
   const b = e.target.closest("button");
   if (!b) return;
   if (b.hasAttribute("data-sheet")) { renderListSheet(); $("#list-sheet").showModal(); return; }
-  const list = state.data.lists.find((l) => l.id === b.dataset.list);
+  const list = bn.lists.find((l) => l.id === b.dataset.list);
   const wasLast = state.active.size === 1;
   await toggleList(list.id, false);
   if (!wasLast) toast(`„${list.name}“ ausgeblendet. Über „Listen …“ wieder einblenden.`);
@@ -657,17 +534,16 @@ async function start() {
   render();
 
   try {
-    state.data = await loadData();
-    state.country = guessCountry(state.data.countries);
+    bn = await openBigNumbers({ bases: DATA_BASES });
+    state.country = guessCountry();
     state.unit = savedUnit ?? country().currency;
-    const known = new Set(state.data.lists.map((l) => l.id));
+    const known = new Set(bn.lists.map((l) => l.id));
     let saved = null;
     try { saved = JSON.parse(localStorage.getItem("bn.lists")); } catch { /* none or private mode */ }
     const active = Array.isArray(saved) ? saved.filter((id) => known.has(id)) : [];
     // default: all free lists
-    state.active = new Set(active.length ? active
-      : state.data.lists.filter((l) => l.access === "free").map((l) => l.id));
-    await loadActiveLists();
+    state.active = new Set(active.length ? active : bn.defaultLists);
+    await bn.loadLists(activeIds());
     renderListChips();
     render();
   } catch (err) {

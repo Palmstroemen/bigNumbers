@@ -1,0 +1,9 @@
+{
+  "name": "bignumbers-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Big Numbers core: put big numbers into context. Dataset access, comparisons, inflation and currency adjustment, Mean2Me breakdowns. No DOM.",
+  "type": "module",
+  "main": "index.js",
+  "exports": "./index.js"
+}
