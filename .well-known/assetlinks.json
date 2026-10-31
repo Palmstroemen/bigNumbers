@@ -1,11 +1,16 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "de.means2me.app",
       "sha256_cert_fingerprints": [
-        "E2:8C:15:ED:1B:FD:47:A8:D0:D0:49:79:FC:F2:20:D4:5D:6B:03:F2:60:85:CE:E0:4B:11:7F:E5:E3:41:3E:3D"
+        "E2:8C:15:ED:1B:FD:47:A8:D0:D0:49:79:FC:F2:20:D4:5D:6B:03:F2:60:85:CE:E0:4B:11:7F:E5:E3:41:3E:3D",
+        "2D:14:84:7E:3C:9B:D8:71:57:39:E5:00:30:26:40:5B:1A:62:1C:AC:B3:99:B0:4E:BC:5F:10:02:32:68:23:1B",
+        "80:A5:57:E3:E3:25:BD:E4:FF:00:38:8D:46:59:C7:B3:9F:B2:C4:A9:06:63:96:29:45:0C:1F:71:EC:8A:A7:3B",
+        "44:64:44:19:3F:57:E2:37:27:FF:E9:EA:AC:6E:C0:36:67:F5:C4:AD:A0:4B:8F:F4:3E:E6:8A:DD:CC:80:15:77"
       ]
     }
   }
