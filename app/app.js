@@ -611,3 +611,6 @@ async function start() {
 }
 
 start();
+
+// works offline once loaded (sw.js); also what makes it installable as an app
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => { /* still works online */ });
