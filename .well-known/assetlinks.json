@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "de.means2me.app",
+      "sha256_cert_fingerprints": [
+        "E2:8C:15:ED:1B:FD:47:A8:D0:D0:49:79:FC:F2:20:D4:5D:6B:03:F2:60:85:CE:E0:4B:11:7F:E5:E3:41:3E:3D"
+      ]
+    }
+  }
+]
