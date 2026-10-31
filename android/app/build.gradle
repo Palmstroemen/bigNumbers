@@ -58,7 +58,7 @@ android {
         minSdkVersion 24
         targetSdkVersion 36
         versionCode 1
-        versionName "1"
+        versionName "1.0.0"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name
@@ -150,9 +150,26 @@ android {
 
         
     }
+    // Upload key for Play: path and passwords in android/keystore.properties, which is
+    // not in git (see keystore.properties.example). Without it only debug builds work.
+    def keystoreFile = rootProject.file('keystore.properties')
+    if (keystoreFile.exists()) {
+        def keystore = new Properties()
+        keystoreFile.withInputStream { keystore.load(it) }
+        signingConfigs {
+            release {
+                storeFile file(keystore['storeFile'].replace('~', System.getProperty('user.home')))
+                storePassword keystore['storePassword']
+                keyAlias keystore['keyAlias']
+                keyPassword keystore['keyPassword']
+            }
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled true
+            if (keystoreFile.exists()) signingConfig signingConfigs.release
         }
     }
     compileOptions {
