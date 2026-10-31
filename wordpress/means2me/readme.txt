@@ -18,7 +18,7 @@ Große Beträge im Text einordnen: pro Einwohner, pro Haushalt, als Anteil am Bu
 * Beim Lesen lädt nur ein kleines Script (14 KB) von deiner eigenen Seite. Keine Anfrage an fremde Server, keine Cookies, kein Tracking.
 * Daten für 29 Länder (EU, Schweiz, Vereinigtes Königreich, USA) aus Eurostat und amtlichen Quellen, dazu rund 590 Vergleichsbeträge mit Quellenangabe.
 
-Der Link „Rechenweg und Quellen“ im Fenster führt zur Means2Me-App auf palmstroemen.github.io.
+Der Link „Rechenweg und Quellen“ im Fenster führt zur Means2Me-App auf means2me.de.
 
 == Installation ==
 

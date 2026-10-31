@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Means2Me
- * Plugin URI:        https://palmstroemen.github.io/bigNumbers/
+ * Plugin URI:        https://means2me.de/
  * Description:       Große Beträge im Text einordnen: pro Einwohner, pro Haushalt, als Anteil am Budget und im Vergleich mit anderen Zahlen. Die Werte werden beim Schreiben eingefroren; beim Lesen gibt es keine Anfrage an fremde Server.
  * Version:           0.1.0
  * Requires at least: 6.3
@@ -17,7 +17,7 @@ if (!defined('ABSPATH')) {
 }
 
 const MEANS2ME_VERSION = '0.1.0';
-const MEANS2ME_APP = 'https://palmstroemen.github.io/bigNumbers/app/';
+const MEANS2ME_APP = 'https://means2me.de/app/';
 
 /** Settings with their defaults: country of the readers, accent colour of the mark. */
 function means2me_options() {
