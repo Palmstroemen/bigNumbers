@@ -20,8 +20,8 @@
     "path": "/home/oliver/Schluessel/means2me-upload.jks",
     "alias": "means2me"
   },
-  "appVersionName": "1",
-  "appVersionCode": 1,
+  "appVersionName": "1.0.1",
+  "appVersionCode": 2,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://means2me.de/app/manifest.webmanifest",
@@ -60,5 +60,5 @@
   "fileHandlers": [],
   "launchHandlerClientMode": "",
   "displayOverride": [],
-  "appVersion": "1"
+  "appVersion": "2"
 }
