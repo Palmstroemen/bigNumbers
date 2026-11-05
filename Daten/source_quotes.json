@@ -302,7 +302,6 @@
   "entry_bip_schweiz_2024": "\"country\":{\"id\":\"CH\",\"value\":\"Switzerland\"},\"countryiso3code\":\"CHE\",\"date\":\"2024\",\"value\":969919786394.884",
   "entry_bip_usa_2024": "\"country\":{\"id\":\"US\",\"value\":\"United States\"},\"countryiso3code\":\"USA\",\"date\":\"2024\",\"value\":29298013000000",
   "entry_bip_china_2024": "\"country\":{\"id\":\"CN\",\"value\":\"China\"},\"countryiso3code\":\"CHN\",\"date\":\"2024\",\"value\":18729668435848",
-  "entry_bip_eu_2024": "\"country\":{\"id\":\"EU\",\"value\":\"European Union\"},\"countryiso3code\":\"EUU\",\"date\":\"2024\",\"value\":19501078750999.4",
   "entry_naechtigungen_oesterreich_2025": "Im Kalenderjahr 2025 verzeichnete der heimische Tourismus 157,27 Mio. Nächtigungen.",
   "entry_naechtigungen_deutsche_gaeste_oesterreich_2025": "Die wichtigsten Herkunftsmärkte waren Deutschland (58,55 Mio.), die Niederlande (11,26 Mio.) sowie die Schweiz und Liechtenstein (4,34 Mio.).",
   "entry_arbeitslose_oesterreich_2025": "2025 waren durchschnittlich 317.540 Personen arbeitslos vorgemerkt.",
@@ -589,5 +588,9 @@
   "entry_stephansdom_instandhaltung_pro_jahr": "Laut Verein werden jedes Jahr rund 2,2 Millionen Euro allein für die Instandhaltung benötigt.",
   "entry_klimt_dame_mit_faecher_auktion_2023": "Es wurde der vorausgesagte Europarekord: Gustav Klimts „Dame mit Fächer“ hat heute Abend bei einer Auktion von Sotheby’s in London mit 74 Mio. Pfund Hammerpreis respektive 85,305 Mio. Pfund (rund 99,33 Mio. Euro) inklusive Aufschlägen den bis dato höchsten Preis für ein in Europa versteigertes Kunstwerk erzielt.",
   "entry_tour_de_france_preisgeld_gesamt_2025": "2.577.731 Euro werden es diesmal insgesamt sein - und damit fast exakt genauso viel wie im vergangenen Jahr.",
-  "entry_budget_jim_knopf_film_2018": "„Jim Knopf und Lukas der Lokomotivführer“ ist also mit einem Budget von 25 Millionen Euro der teuerste deutschsprachige Film!"
+  "entry_budget_jim_knopf_film_2018": "„Jim Knopf und Lukas der Lokomotivführer“ ist also mit einem Budget von 25 Millionen Euro der teuerste deutschsprachige Film!",
+  "entry_median_nettoaequivalenz_eu_2025": "Eurostat ilc_di03, European Union - 27 countries (from 2020), 2025: 22 939 (EUR)",
+  "entry_estat_population_eu": "Eurostat tps00001, European Union - 27 countries (from 2020), 2026: 451 990 314 (ep)",
+  "entry_estat_households_eu": "Eurostat lfst_hhnhtych, European Union - 27 countries (from 2020), 2025: 203 172.2 Tausend",
+  "entry_estat_gdp_eu": "Eurostat nama_10_gdp, European Union - 27 countries (from 2020), 2025: 18 884 566.3 Mio."
 }

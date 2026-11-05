@@ -16,7 +16,7 @@ Große Beträge im Text einordnen: pro Einwohner, pro Haushalt, als Anteil am Bu
 * Im Block-Editor: Betrag markieren oder den Cursor hineinsetzen, auf das Means2Me-Zeichen in der Werkzeugleiste tippen, Einordnungen auswählen.
 * Die Werte werden beim Übernehmen fest in den Beitrag geschrieben. Ein freigegebener Text ändert sich später nicht von selbst.
 * Beim Lesen lädt nur ein kleines Script (14 KB) von deiner eigenen Seite. Keine Anfrage an fremde Server, keine Cookies, kein Tracking.
-* Daten für 29 Länder (EU, Schweiz, Vereinigtes Königreich, USA) aus Eurostat und amtlichen Quellen, dazu rund 590 Vergleichsbeträge mit Quellenangabe.
+* Daten für die EU als Ganzes und 29 Länder (EU-Länder, Schweiz, USA) aus Eurostat und amtlichen Quellen, dazu rund 590 Vergleichsbeträge mit Quellenangabe.
 
 Der Link „Rechenweg und Quellen“ im Fenster führt zur Means2Me-App auf means2me.de.
 

@@ -239,7 +239,7 @@ function renderCountrySheet() {
     <li>
       <button type="button" class="country-choice" data-country="${esc(c.code)}" aria-pressed="${c.code === state.country}">
         <span class="flag" aria-hidden="true">${esc(c.flag)}</span>
-        <span class="sheet-text"><strong>${esc(c.name)}</strong><span>Hauptstadt ${esc(c.capital)} · ${esc(unitLabel(c.currency))}</span></span>
+        <span class="sheet-text"><strong>${esc(c.name)}</strong><span>${c.capital ? `Hauptstadt ${esc(c.capital)} · ` : ""}${esc(unitLabel(c.currency))}</span></span>
       </button>
     </li>`).join("");
 }

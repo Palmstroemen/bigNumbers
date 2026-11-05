@@ -871,5 +871,35 @@
       "government_expenditure": "entry_estat_government_expenditure_at",
       "income_tax_revenue": "entry_estat_income_tax_revenue_at"
     }
+  },
+  {
+    "code": "EU",
+    "eurostat_geo": "EU27_2020",
+    "eurostat_skip": [
+      "capital_population",
+      "government_expenditure",
+      "income_tax_revenue"
+    ],
+    "name": "Europäische Union",
+    "name_in": "in der EU",
+    "name_genitive": "der EU",
+    "flag": "🇪🇺",
+    "currency": "EUR",
+    "capital": null,
+    "locales": [],
+    "timezones": [],
+    "budget_name": "Haushalt",
+    "facts": {
+      "population": "entry_estat_population_eu",
+      "capital_population": null,
+      "households": "entry_estat_households_eu",
+      "median_income_year": null,
+      "median_wage_month": null,
+      "median_net_income_year": "entry_median_nettoaequivalenz_eu_2025",
+      "gdp": "entry_estat_gdp_eu",
+      "federal_budget": "entry_eu_haushalt_2025",
+      "government_expenditure": null,
+      "income_tax_revenue": null
+    }
   }
 ]

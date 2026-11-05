@@ -70,7 +70,7 @@
     "name": "Länder",
     "version": "v1",
     "country_code": "EU",
-    "description": "Grunddaten der EU-Länder und der Schweiz: Einwohner, Haushalte, Einkommen, Wirtschaftsleistung und Staatsausgaben, automatisch aus Eurostat.",
+    "description": "Grunddaten der EU, ihrer Länder und der Schweiz: Einwohner, Haushalte, Einkommen, Wirtschaftsleistung und Staatsausgaben, automatisch aus Eurostat.",
     "icon": "globe",
     "color": "#0e7490",
     "color_dark": "#67e8f9",

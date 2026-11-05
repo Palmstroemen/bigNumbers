@@ -74,7 +74,7 @@ def build_mean2me(entries):
             if t["country_code"] != "*" or t["basis"] not in facts or any(u in facts for u in t.get("unless", [])):
                 continue
             title = (t["title"].replace("{country_genitive}", c["name_genitive"]).replace("{country_in}", c["name_in"]).replace("{budget_name}", c.get("budget_name", "Bundeshaushalt"))
-                     .replace("{country}", c["name"]).replace("{capital}", c["capital"]))
+                     .replace("{country}", c["name"]).replace("{capital}", c["capital"] or ""))
             contexts.append({**t, "id": f"{t['id']}_{c['code'].lower()}", "country_code": c["code"],
                              "title": title, "factor_entry": facts[t["basis"]]})
     for t in templates:

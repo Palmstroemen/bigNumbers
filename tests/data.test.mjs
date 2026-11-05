@@ -52,6 +52,17 @@ await t("keine Einheit: Geldwerte unverändert", () => {
   assert.equal(bn.compareValue(e, ""), e.value_original);
 });
 
+await t("EU als Ganzes: eigene Bezugsgrößen, nie geraten, kein Steueranteil", () => {
+  const ids = bn.mean2me(1e9, { country: "EU", unit: "EUR" }).map((m) => m.id);
+  for (const id of ["m2m_population_eu", "m2m_households_eu", "m2m_median_net_income_year_eu", "m2m_gdp_share_eu", "m2m_federal_budget_share_eu"]) {
+    assert.ok(ids.includes(id), id);
+  }
+  assert.ok(!ids.includes("m2m_government_expenditure_share_eu"));
+  assert.equal(bn.hasTaxShare("EU"), false);
+  assert.equal(bn.countries[0].code, "BE", "die EU ist nicht das Ersatzland");
+  assert.equal(bn.guessCountry({ timeZone: "Asia/Tokyo", languages: ["ja-JP"] }), "BE");
+});
+
 await t("Land erraten: gespeichert, Zeitzone, Sprache", () => {
   assert.equal(bn.guessCountry({ saved: "CZ", timeZone: "Europe/Vienna" }), "CZ");
   assert.equal(bn.guessCountry({ saved: "XX", timeZone: "Europe/Berlin" }), "DE");

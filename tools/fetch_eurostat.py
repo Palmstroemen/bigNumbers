@@ -9,6 +9,11 @@ and Eurostat HICP series for currencies that are still missing.
 
     python3 tools/fetch_eurostat.py && python3 tools/build_lists.py
     python3 tools/fetch_eurostat.py income_tax_revenue   # only these facts
+    python3 tools/fetch_eurostat.py --country=EU         # only this country
+
+A country lists the facts this script must not fill in `eurostat_skip`: the EU as a
+whole has no capital, and its "income tax" or "government spending" would be the sum
+over its member states, not the EU's own.
 """
 import json
 import sys
@@ -77,8 +82,8 @@ def main():
     lists = json.loads((DATEN / "lists.json").read_text())
     quotes = json.loads((DATEN / "source_quotes.json").read_text())
     by_id = {e["id"]: e for e in entries}
-    eu = [c for c in countries if c.get("eurostat_geo")]
-    geos = [c["eurostat_geo"] for c in eu]
+    pick = next((a.split("=")[1] for a in sys.argv[1:] if a.startswith("--country=")), None)
+    eu = [c for c in countries if c.get("eurostat_geo") and pick in (None, c["code"])]
 
     if not any(l["id"] == LIST_ID for l in lists):
         lists.append({"id": LIST_ID, "name": "Länder", "version": "v1", "country_code": "EU",
@@ -94,6 +99,9 @@ def main():
         if only and fact not in only:
             continue
         params = {**filters, "sinceTimePeriod": 2015}
+        geos = [c["eurostat_geo"] for c in eu if fact not in c.get("eurostat_skip", [])]
+        if not geos:
+            continue
         if fact == "capital_population":
             params["cities"] = [f"{g}001C" for g in geos]
             d = get(ds, params)
@@ -107,6 +115,8 @@ def main():
             if value is not None and (geo not in latest or year > latest[geo][0]):
                 latest[geo] = (year, value, status)
         for c in eu:
+            if fact in c.get("eurostat_skip", []):
+                continue
             key = f"{c['eurostat_geo']}001C" if fact == "capital_population" else c["eurostat_geo"]
             if key not in latest:
                 continue

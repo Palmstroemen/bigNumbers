@@ -1912,24 +1912,6 @@
       "status": "draft"
     },
     {
-      "id": "entry_bip_eu_2024",
-      "title": "Bruttoinlandsprodukt der EU",
-      "value_original": 19501078750999,
-      "unit_type": "currency",
-      "unit": "USD",
-      "year_original": 2024,
-      "country_code": "EU",
-      "index_id": "idx_us_cpi",
-      "short_description": "Das nominale Bruttoinlandsprodukt der Europäischen Union betrug 2024 rund 19,5 Billionen US-Dollar.",
-      "long_description": "Laut Weltbank lag das Bruttoinlandsprodukt der Europäischen Union im Jahr 2024 in laufenden US-Dollar bei rund 19,5 Billionen.",
-      "source_url": "https://api.worldbank.org/v2/country/EUU/indicator/NY.GDP.MKTP.CD?date=2024&format=json",
-      "source_title": "Weltbank: World Development Indicators, GDP (current US$) – European Union",
-      "source2_url": null,
-      "source2_title": null,
-      "confidence_level": 2,
-      "status": "draft"
-    },
-    {
       "id": "entry_bip_usa_2024",
       "title": "Bruttoinlandsprodukt der USA",
       "value_original": 29298013000000,
