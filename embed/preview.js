@@ -34,7 +34,8 @@
   function guessCountry() {
     const { bn } = state;
     const tld = location.hostname.split(".").pop().toUpperCase();
-    if (bn.countries.some((c) => c.code === tld)) return tld;
+    // our own example page says nothing about where the reader is
+    if (location.hostname !== "means2me.de" && bn.countries.some((c) => c.code === tld)) return tld;
     return bn.guessCountry({
       timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
       languages: [document.documentElement.lang, ...(navigator.languages ?? [])].filter(Boolean),
@@ -114,7 +115,8 @@
       svg{width:20px;height:20px;flex:none;color:#9db1ff}
       .text{min-width:0}
       select,button{font:inherit;border:0;border-radius:9px;min-height:36px;cursor:pointer}
-      select{max-width:150px;padding:0 6px;background:#2a3554;color:#fff}
+      select{max-width:150px;padding:0 24px 0 8px;-webkit-appearance:none;appearance:none;color:#fff;
+        background:#2a3554 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M0 0h10L5 6z' fill='%23fff'/%3E%3C/svg%3E") no-repeat right 8px center/10px 6px}
       button{width:36px;background:#2a3554;color:#fff;font-size:18px}
       select:focus-visible,button:focus-visible{outline:2px solid #9db1ff}
     </style>
@@ -141,7 +143,7 @@
     const n = state.spans.length;
     // numbers the newsroom marked itself stay as they are (see SKIP)
     const own = document.querySelectorAll("[data-means2me]:not([data-m2m-text])").length;
-    const found = n ? `${n} ${n === 1 ? "Betrag" : "Beträge"} markiert, nur in deinem Browser` : "Keine weiteren Beträge ab 1 Mio.";
+    const found = n ? `${n} ${n === 1 ? "Betrag" : "Beträge"} markiert, nur in diesem Browser` : "Keine weiteren Beträge ab 1 Mio.";
     root.querySelector(".text").textContent = text ??
       (own ? `${found} · ${own} schon von der Redaktion markiert` : n ? found : "Keine Beträge ab 1 Mio. gefunden");
   }
