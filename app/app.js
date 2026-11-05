@@ -85,6 +85,7 @@ function renderDisplay() {
   for (const el of document.querySelectorAll('[data-bind="short"]')) {
     el.textContent = Number.isFinite(v) ? `${formatShort(v)} ${unitLabel(state.unit)}`.trim() : "–";
   }
+  for (const el of document.querySelectorAll("[data-share]")) el.hidden = !Number.isFinite(v) || v === 0;
 }
 
 /** Shrink the result font until the number fits on one line. */
@@ -610,24 +611,89 @@ async function start() {
   if (!params.has("n")) readClipboard(true);
 }
 
-// --- iPhone and iPad: Safari offers no install prompt, so the app explains the home screen itself ---
+// --- Sharing -------------------------------------------------------------------------------
 
+const appUrl = () => new URL("./", location.href).href;
+
+/** The phone's share menu; where there is none, text and link go to the clipboard. Resolves true if passed on. */
+async function share(text, url) {
+  try {
+    if (navigator.share) await navigator.share({ text, url });
+    else {
+      await navigator.clipboard.writeText(`${text} ${url}`);
+      toast("Text und Link kopiert");
+    }
+    return true;
+  } catch (err) {
+    if (err.name !== "AbortError") toast("Teilen hat nicht geklappt");
+    return false;
+  }
+}
+
+/** The number on the screen with what it is per inhabitant. Never the user's tax or own divisors: those stay on the device. */
+function shareNumber() {
+  const v = value();
+  const c = country();
+  const q = new URLSearchParams({ n: v, c: c.code, u: state.unit });
+  const label = `${formatShort(v)} ${unitLabel(state.unit)}`.trim();
+  const m = bn.mean2me(v, { country: c.code, unit: state.unit }).find((x) => x.id === `m2m_population_${c.code.toLowerCase()}`);
+  const fact = m ? ` ${m.title} sind das rund ${m.text}.` : "";
+  return share(`${label} klingen abstrakt.${fact} Hier kannst du jede Zahl selbst einordnen:`, `${appUrl()}?${q}#fuer-mich`);
+}
+
+function closeShareCard() {
+  $("#share-card").hidden = true;
+  remember("bn.share-card", "closed");
+}
+
+async function recommend() {
+  const text = "Hey, ich habe Means2Me entdeckt: Damit siehst du, was die großen Zahlen aus den Nachrichten wirklich bedeuten. Falls dich das auch interessiert:";
+  if (await share(text, appUrl())) closeShareCard();
+}
+
+for (const el of document.querySelectorAll("[data-share]")) {
+  el.addEventListener("click", () => { if (bn) shareNumber(); });
+}
+for (const el of document.querySelectorAll("[data-recommend]")) el.addEventListener("click", recommend);
+$("#share-card-close").addEventListener("click", closeShareCard);
+
+// --- Tips at the end of "Für mich": one at a time ------------------------------------------
+
+function recall(key) {
+  try { return localStorage.getItem(key); } catch { return null; }   // private mode
+}
+
+function remember(key, value) {
+  try { localStorage.setItem(key, value); } catch { /* private mode */ }
+}
+
+/** iPhone and iPad: Safari offers no install prompt, so the app explains the home screen itself. Returns whether it shows. */
 function initIosCard() {
   // iPads report themselves as Macs, but Macs have no touch screen
   const iPad = /iPad/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-  if (!iPad && !/iPhone|iPod/.test(navigator.userAgent)) return;
-  if (navigator.standalone) return;   // already started from the home screen
-  try { if (localStorage.getItem("bn.ios-card") === "closed") return; } catch { /* private mode */ }
+  if (!iPad && !/iPhone|iPod/.test(navigator.userAgent)) return false;
+  if (navigator.standalone) return false;   // already started from the home screen
+  if (recall("bn.ios-card") === "closed") return false;
   if (iPad) document.querySelectorAll("[data-ios-device]").forEach((el) => { el.textContent = "iPad"; });
   $("#ios-card").hidden = false;
   $("#ios-card-how").addEventListener("click", () => $("#ios-sheet").showModal());
   $("#ios-card-close").addEventListener("click", () => {
     $("#ios-card").hidden = true;
-    try { localStorage.setItem("bn.ios-card", "closed"); } catch { /* private mode */ }
+    remember("bn.ios-card", "closed");
   });
+  return true;
 }
 
-initIosCard();
+/** Ask for a recommendation only once someone has come back a few times. */
+function initShareCard() {
+  const starts = (Number(recall("bn.starts")) || 0) + 1;
+  remember("bn.starts", starts);
+  if (starts >= 3 && recall("bn.share-card") !== "closed") $("#share-card").hidden = false;
+}
+
+const iosCard = initIosCard();
+initShareCard();
+if (iosCard) $("#share-card").hidden = true;
 start();
 
 // works offline once loaded (sw.js); also what makes it installable as an app

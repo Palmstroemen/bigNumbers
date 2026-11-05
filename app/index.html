@@ -6,6 +6,16 @@
   <meta name="theme-color" content="#16213a">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <title>Means2Me</title>
+  <meta name="description" content="Die Milliarden aus den Nachrichten eingeordnet: pro Kopf, pro Haushalt und im Vergleich mit anderen Zahlen. Mit Quellen, kostenlos, ohne Konto.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Means2Me">
+  <meta property="og:title" content="Means2Me: Was große Zahlen für dich bedeuten">
+  <meta property="og:description" content="Die Milliarden aus den Nachrichten eingeordnet: pro Kopf, pro Haushalt und im Vergleich mit anderen Zahlen. Mit Quellen, kostenlos, ohne Konto.">
+  <meta property="og:url" content="https://means2me.de/app/">
+  <meta property="og:image" content="https://means2me.de/app/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -25,7 +35,7 @@
       <section class="pane" id="pane-bn" aria-label="Vergleiche">
         <header class="pane-head">
           <div class="pane-number" data-bind="short"></div>
-          <div class="pane-sub" id="bn-sub">Womit ist das vergleichbar?</div>
+          <div class="pane-sub-row"><div class="pane-sub" id="bn-sub">Womit ist das vergleichbar?</div><button type="button" class="share-btn" data-share hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3M8 7l4-4 4 4M6 11H5v10h14V11h-1"/></svg>Teilen</button></div>
           <div class="chips unit-chips" id="bn-unit-chips">
           </div>
           <div class="chips" id="list-chips"></div>
@@ -73,18 +83,23 @@
             <div class="pane-number" data-bind="short"></div>
             <button type="button" class="country-btn" id="country-btn" aria-haspopup="dialog" aria-label="Land wechseln"></button>
           </div>
-          <div class="pane-sub">Was bedeutet das für mich?</div>
+          <div class="pane-sub-row"><div class="pane-sub">Was bedeutet das für mich?</div><button type="button" class="share-btn" data-share hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3M8 7l4-4 4 4M6 11H5v10h14V11h-1"/></svg>Teilen</button></div>
           <div class="chips unit-chips" id="unit-chips">
           </div>
         </header>
         <ul class="m2m-list" id="m2m-list"></ul>
         <button class="more" id="custom-add">+ Eigene Bezugsgröße</button>
-        <aside class="ios-card" id="ios-card" hidden>
-          <button type="button" class="ios-card-close" id="ios-card-close" aria-label="Hinweis schließen">✕</button>
+        <aside class="tip-card" id="ios-card" hidden>
+          <button type="button" class="tip-card-close" id="ios-card-close" aria-label="Hinweis schließen">✕</button>
           <p>Wenn dir Means2Me gefällt, mach es dir auf deinem <span data-ios-device>iPhone</span> jederzeit verfügbar: Leg es dir als App auf den Homescreen.</p>
-          <button type="button" class="ios-card-how" id="ios-card-how">So geht es ganz einfach</button>
+          <button type="button" class="tip-card-action" id="ios-card-how">So geht es ganz einfach</button>
         </aside>
-        <p class="legal"><a href="../iphone.html">Für iPhone</a> · <a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a></p>
+        <aside class="tip-card" id="share-card" hidden>
+          <button type="button" class="tip-card-close" id="share-card-close" aria-label="Hinweis schließen">✕</button>
+          <p>Wenn dir Means2Me gefällt, hilfst du uns sehr, wenn du es weiterempfiehlst.</p>
+          <button type="button" class="tip-card-action" data-recommend>Weiterempfehlen</button>
+        </aside>
+        <p class="legal"><button type="button" data-recommend>Weiterempfehlen</button> · <a href="../iphone.html">Für iPhone</a> · <a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a></p>
       </section>
     </main>
   </div>
