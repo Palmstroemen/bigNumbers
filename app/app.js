@@ -610,6 +610,24 @@ async function start() {
   if (!params.has("n")) readClipboard(true);
 }
 
+// --- iPhone and iPad: Safari offers no install prompt, so the app explains the home screen itself ---
+
+function initIosCard() {
+  // iPads report themselves as Macs, but Macs have no touch screen
+  const iPad = /iPad/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  if (!iPad && !/iPhone|iPod/.test(navigator.userAgent)) return;
+  if (navigator.standalone) return;   // already started from the home screen
+  try { if (localStorage.getItem("bn.ios-card") === "closed") return; } catch { /* private mode */ }
+  if (iPad) document.querySelectorAll("[data-ios-device]").forEach((el) => { el.textContent = "iPad"; });
+  $("#ios-card").hidden = false;
+  $("#ios-card-how").addEventListener("click", () => $("#ios-sheet").showModal());
+  $("#ios-card-close").addEventListener("click", () => {
+    $("#ios-card").hidden = true;
+    try { localStorage.setItem("bn.ios-card", "closed"); } catch { /* private mode */ }
+  });
+}
+
+initIosCard();
 start();
 
 // works offline once loaded (sw.js); also what makes it installable as an app

@@ -294,6 +294,14 @@ button { font: inherit; color: inherit; cursor: pointer; }
   margin: 6px 0;
 }
 .more[hidden] { display: none; }
+.ios-card { position: relative; background: var(--accent-soft); border-radius: var(--radius); padding: 12px 40px 12px 14px; margin: 14px 0 0; }
+.ios-card[hidden] { display: none; }
+.ios-card p { margin: 0 0 8px; }
+.ios-card-close { position: absolute; top: 6px; right: 6px; border: 0; background: none; color: var(--muted); font-size: 1rem; padding: 6px; }
+.ios-card-how { border: 0; background: none; color: var(--accent); font: inherit; font-weight: 600; padding: 0; }
+.ios-steps { margin: 0 0 12px; padding-left: 22px; }
+.ios-steps li { margin-bottom: 10px; }
+.ios-share { width: 20px; height: 20px; vertical-align: -4px; color: var(--accent); }
 .legal { margin: 18px 0 8px; text-align: center; font-size: 13px; color: var(--muted); }
 .legal a { color: inherit; }
 

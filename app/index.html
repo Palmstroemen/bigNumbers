@@ -79,7 +79,12 @@
         </header>
         <ul class="m2m-list" id="m2m-list"></ul>
         <button class="more" id="custom-add">+ Eigene Bezugsgröße</button>
-        <p class="legal"><a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a></p>
+        <aside class="ios-card" id="ios-card" hidden>
+          <button type="button" class="ios-card-close" id="ios-card-close" aria-label="Hinweis schließen">✕</button>
+          <p>Wenn dir Means2Me gefällt, mach es dir auf deinem <span data-ios-device>iPhone</span> jederzeit verfügbar: Leg es dir als App auf den Homescreen.</p>
+          <button type="button" class="ios-card-how" id="ios-card-how">So geht es ganz einfach</button>
+        </aside>
+        <p class="legal"><a href="../iphone.html">Für iPhone</a> · <a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a></p>
       </section>
     </main>
   </div>
@@ -128,6 +133,19 @@
       <button type="submit">Speichern</button>
       <button type="button" class="tax-remove" id="tax-remove">Entfernen</button>
     </form>
+  </dialog>
+
+  <dialog class="sheet" id="ios-sheet" aria-labelledby="ios-title">
+    <header class="sheet-head">
+      <h2 id="ios-title">Als App auf den Homescreen</h2>
+      <button type="button" data-close aria-label="Schließen">✕</button>
+    </header>
+    <ol class="ios-steps">
+      <li>Tippe auf das Teilen-Symbol <svg class="ios-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Teilen-Symbol"><path d="M12 15V3M8 7l4-4 4 4M6 11H5v10h14V11h-1"/></svg>. In Safari ist es in der Leiste am Bildschirmrand, manchmal erst hinter „…“. In Chrome ist es oben rechts in der Adressleiste.</li>
+      <li>Wähle <strong>Zum Home-Bildschirm</strong>. Falls du es nicht gleich siehst, wisch im Menü nach unten.</li>
+      <li>Tippe auf <strong>Hinzufügen</strong>.</li>
+    </ol>
+    <p class="sheet-intro">Means2Me liegt dann wie jede andere App auf deinem <span data-ios-device>iPhone</span> und startet auch ohne Internet. Es kostet nichts und braucht kein Konto.</p>
   </dialog>
 
   <div class="toast" id="toast" hidden></div>
